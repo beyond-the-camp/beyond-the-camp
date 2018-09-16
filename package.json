@@ -16,9 +16,14 @@
   },
   "dependencies": {
     "gatsby": "next",
+    "gatsby-plugin-react-helmet": "next",
     "gatsby-plugin-typescript": "next",
+    "gatsby-source-datocms": "next",
+    "gatsby-source-filesystem": "next",
+    "gatsby-transformer-remark": "next",
     "react": "^16.5.1",
     "react-dom": "^16.5.1",
+    "react-helmet": "^5.2.0",
     "typescript": "^3.0.3"
   },
   "devDependencies": {
