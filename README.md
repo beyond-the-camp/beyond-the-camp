@@ -11,16 +11,16 @@ To run or build this project locally, you'll need a DatoCMS API token to retriev
 
 ## Usage
 
-Install dependencies using yarn:
+Install dependencies using [yarn](https://yarnpkg.com/):
 
 ```
 yarn install
 ```
 
-Start a development server that will update as you make changes to the source:
+Start a development server that reloads as you make changes:
 
 ```
-yarn dev
+yarn develop
 ```
 
 Build the final production version of the project:
