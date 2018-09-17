@@ -26,8 +26,8 @@ export default ({ data }: Props) => (
 );
 
 export const query = graphql`
-  query ProjectQuery($slug: String!) {
-    datoCmsProject(slug: { eq: $slug }) {
+  query ProjectQuery($slug: String!, $locale: String!) {
+    datoCmsProject(slug: { eq: $slug }, locale: { eq: $locale }) {
       title
       descriptionNode {
         childMarkdownRemark {

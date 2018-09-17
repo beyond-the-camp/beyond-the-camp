@@ -1,6 +1,10 @@
 const path = require(`path`);
 const { createFilePath } = require(`gatsby-source-filesystem`);
 
+const locales = ['en', 'fr'];
+
+const defaultLocale = locales[0];
+
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions;
 
@@ -10,6 +14,7 @@ exports.createPages = ({ graphql, actions }) => {
         allDatoCmsProject {
           edges {
             node {
+              locale
               slug
             }
           }
@@ -17,11 +22,17 @@ exports.createPages = ({ graphql, actions }) => {
       }
     `).then(result => {
       result.data.allDatoCmsProject.edges.map(({ node: project }) => {
+        const pathElements = [];
+        if (project.locale !== 'en') {
+          pathElements.push(project.locale);
+        }
+        pathElements.push('projects', project.slug);
         createPage({
-          path: `projects/${project.slug}`,
+          path: `${pathElements.join('/')}`,
           component: path.resolve(`./src/templates/project.tsx`),
           context: {
-            slug: project.slug
+            slug: project.slug,
+            locale: project.locale
           }
         });
       });
