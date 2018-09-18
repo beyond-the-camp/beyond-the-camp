@@ -1,42 +1,51 @@
 const path = require(`path`);
 const { createFilePath } = require(`gatsby-source-filesystem`);
 
-const locales = ['en', 'fr'];
-
-const defaultLocale = locales[0];
-
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions;
 
-  return new Promise((resolve, reject) => {
-    graphql(`
-      {
-        allDatoCmsProject {
-          edges {
-            node {
-              locale
-              slug
-            }
+  return graphql(`
+    {
+      home: allDatoCmsHome {
+        edges {
+          node {
+            locale
+            categoriesTitle
           }
         }
       }
-    `).then(result => {
-      result.data.allDatoCmsProject.edges.map(({ node: project }) => {
-        const pathElements = [];
-        if (project.locale !== 'en') {
-          pathElements.push(project.locale);
-        }
-        pathElements.push('projects', project.slug);
-        createPage({
-          path: `${pathElements.join('/')}`,
-          component: path.resolve(`./src/templates/project.tsx`),
-          context: {
-            slug: project.slug,
-            locale: project.locale
+
+      projects: allDatoCmsProject {
+        edges {
+          node {
+            locale
+            slug
           }
-        });
+        }
+      }
+    }
+  `).then(result => {
+    const homePageTemplate = path.resolve(`./src/templates/index.tsx`);
+    result.data.home.edges.map(({ node: home }) => {
+      createPage({
+        path: `${home.locale}`,
+        component: homePageTemplate,
+        context: {
+          locale: home.locale
+        }
       });
-      resolve();
+    });
+
+    const projectPageTemplate = path.resolve(`./src/templates/project.tsx`);
+    result.data.projects.edges.map(({ node: project }) => {
+      createPage({
+        path: `${project.locale}/projects/${project.slug}`,
+        component: projectPageTemplate,
+        context: {
+          slug: project.slug,
+          locale: project.locale
+        }
+      });
     });
   });
 };

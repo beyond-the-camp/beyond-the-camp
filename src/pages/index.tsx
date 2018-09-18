@@ -1,23 +1,17 @@
 import * as React from 'react';
 import { graphql, Link } from 'gatsby';
 
-interface Project {
+interface Language {
   id: string;
+  name: string;
   locale: string;
-  slug: string;
-  title: string;
-}
-
-function getProjectPath(project: Project): string {
-  const prefix = project.locale !== 'en' ? `/${project.locale}` : '';
-  return `${prefix}/projects/${project.slug}`;
 }
 
 interface Props {
   data: {
-    allDatoCmsProject: {
+    allDatoCmsLanguage: {
       edges: Array<{
-        node: Project;
+        node: Language;
       }>;
     };
   };
@@ -25,26 +19,24 @@ interface Props {
 
 export default ({ data }: Props) => (
   <section>
-    <h1>Available projects:</h1>
     <ul>
-      {data.allDatoCmsProject.edges.map(({ node }) => (
+      {data.allDatoCmsLanguage.edges.map(({ node }) => (
         <li key={node.id}>
-          <Link to={getProjectPath(node)}>{node.title}</Link>
+          <Link to={node.locale}>{node.name}</Link>
         </li>
       ))}
     </ul>
   </section>
 );
 
-export const pageQuery = graphql`
-  query AllProjectsQuery {
-    allDatoCmsProject {
+export const query = graphql`
+  query Languages {
+    allDatoCmsLanguage {
       edges {
         node {
           id
+          name
           locale
-          slug
-          title
         }
       }
     }
