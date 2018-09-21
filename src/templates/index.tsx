@@ -1,38 +1,43 @@
 import * as React from 'react';
+
 import { graphql, Link } from 'gatsby';
 
-interface Project {
+interface IProjectNode {
   id: string;
   locale: string;
   slug: string;
   title: string;
 }
 
-function getProjectPath(project: Project): string {
+function getProjectPath(project: IProjectNode): string {
   return `${project.locale}/projects/${project.slug}`;
 }
 
-interface Props {
+const ProjectItem = ({ node }: { node: IProjectNode }) => (
+  <li key={node.id}>
+    <Link to={getProjectPath(node)}>{node.title}</Link>
+  </li>
+);
+
+interface IProps {
   data: {
     home: {
       categoriesTitle: string;
     };
     project: {
       edges: Array<{
-        node: Project;
+        node: IProjectNode;
       }>;
     };
   };
 }
 
-export default ({ data }: Props) => (
+export default ({ data }: IProps) => (
   <section>
     <h1>{data.home.categoriesTitle}</h1>
     <ul>
       {data.project.edges.map(({ node }) => (
-        <li key={node.id}>
-          <Link to={getProjectPath(node)}>{node.title}</Link>
-        </li>
+        <ProjectItem node={node} />
       ))}
     </ul>
   </section>

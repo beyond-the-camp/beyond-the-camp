@@ -1,7 +1,8 @@
 import * as React from 'react';
+
 import { graphql } from 'gatsby';
 
-interface Props {
+interface IProps {
   data: {
     datoCmsProject: {
       title: string;
@@ -14,7 +15,7 @@ interface Props {
   };
 }
 
-export default ({ data }: Props) => (
+export default ({ data }: IProps) => (
   <article>
     <h1>{data.datoCmsProject.title}</h1>
     <section

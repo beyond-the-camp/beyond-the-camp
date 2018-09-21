@@ -12,7 +12,8 @@
     "develop": "gatsby develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
-    "format": "prettier --write \"src/**/*.{ts,tsx}\""
+    "format": "prettier --write \"src/**/*.{ts,tsx}\"",
+    "lint": "tslint -c tslint.json 'src/**/*.{ts,tsx}'"
   },
   "dependencies": {
     "gatsby": "^2.0.7",
@@ -31,7 +32,9 @@
     "@types/react": "^16.4.14",
     "husky": "^1.0.0-rc.14",
     "lint-staged": "^7.3.0",
-    "prettier": "^1.14.3"
+    "prettier": "^1.14.3",
+    "tslint": "^5.11.0",
+    "tslint-config-prettier": "^1.15.0"
   },
   "husky": {
     "hooks": {
@@ -39,9 +42,16 @@
     }
   },
   "lint-staged": {
-    "*.{ts,tsx,js,json}": [
-      "prettier --write",
-      "git add"
-    ]
+    "concurrent": false,
+    "linters": {
+      "*.{ts,tsx,js,json}": [
+        "prettier --write",
+        "git add"
+      ],
+      "*.{ts,tsx}": [
+        "tslint --fix",
+        "git add"
+      ]
+    }
   }
 }

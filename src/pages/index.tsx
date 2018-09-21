@@ -1,23 +1,24 @@
 import * as React from 'react';
+
 import { graphql, Link } from 'gatsby';
 
-interface LanguageNode {
+interface ILanguageNode {
   id: string;
   name: string;
   locale: string;
 }
 
-interface Props {
+interface IProps {
   data: {
     language: {
       edges: Array<{
-        node: LanguageNode;
+        node: ILanguageNode;
       }>;
     };
   };
 }
 
-export default ({ data }: Props) => (
+export default ({ data }: IProps) => (
   <section>
     <ul>
       {data.language.edges.map(({ node }) => (
