@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { graphql, Link } from 'gatsby';
 
-interface Language {
+interface LanguageNode {
   id: string;
   name: string;
   locale: string;
@@ -9,9 +9,9 @@ interface Language {
 
 interface Props {
   data: {
-    allDatoCmsLanguage: {
+    language: {
       edges: Array<{
-        node: Language;
+        node: LanguageNode;
       }>;
     };
   };
@@ -20,7 +20,7 @@ interface Props {
 export default ({ data }: Props) => (
   <section>
     <ul>
-      {data.allDatoCmsLanguage.edges.map(({ node }) => (
+      {data.language.edges.map(({ node }) => (
         <li key={node.id}>
           <Link to={node.locale}>{node.name}</Link>
         </li>
@@ -31,7 +31,7 @@ export default ({ data }: Props) => (
 
 export const query = graphql`
   query Languages {
-    allDatoCmsLanguage {
+    language: allDatoCmsLanguage {
       edges {
         node {
           id
