@@ -2,31 +2,25 @@ import * as React from 'react';
 
 import { graphql, Link } from 'gatsby';
 
-interface IProjectNode {
+interface ICategoryNode {
   id: string;
   locale: string;
   slug: string;
   title: string;
 }
 
-function getProjectPath(project: IProjectNode): string {
-  return `${project.locale}/projects/${project.slug}`;
+function getCategoryPath(category: ICategoryNode): string {
+  return `${category.locale}/category/${category.slug}`;
 }
-
-const ProjectItem = ({ node }: { node: IProjectNode }) => (
-  <li key={node.id}>
-    <Link to={getProjectPath(node)}>{node.title}</Link>
-  </li>
-);
 
 interface IProps {
   data: {
     home: {
       categoriesTitle: string;
     };
-    project: {
+    category: {
       edges: Array<{
-        node: IProjectNode;
+        node: ICategoryNode;
       }>;
     };
   };
@@ -36,8 +30,10 @@ export default ({ data }: IProps) => (
   <section>
     <h1>{data.home.categoriesTitle}</h1>
     <ul>
-      {data.project.edges.map(({ node }) => (
-        <ProjectItem node={node} />
+      {data.category.edges.map(({ node }) => (
+        <li key={node.id}>
+          <Link to={getCategoryPath(node)}>{node.title}</Link>
+        </li>
       ))}
     </ul>
   </section>
@@ -49,7 +45,7 @@ export const query = graphql`
       categoriesTitle
     }
 
-    project: allDatoCmsProject(filter: { locale: { eq: $locale } }) {
+    category: allDatoCmsCategory(filter: { locale: { eq: $locale } }) {
       edges {
         node {
           id

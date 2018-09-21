@@ -15,6 +15,15 @@ exports.createPages = ({ graphql, actions }) => {
         }
       }
 
+      categories: allDatoCmsCategory {
+        edges {
+          node {
+            locale
+            slug
+          }
+        }
+      }
+
       projects: allDatoCmsProject {
         edges {
           node {
@@ -36,14 +45,26 @@ exports.createPages = ({ graphql, actions }) => {
       });
     });
 
+    const categoryPageTemplate = path.resolve(`./src/templates/category.tsx`);
+    result.data.categories.edges.map(({ node: category }) => {
+      createPage({
+        path: `${category.locale}/category/${category.slug}`,
+        component: categoryPageTemplate,
+        context: {
+          locale: category.locale,
+          slug: category.slug
+        }
+      });
+    });
+
     const projectPageTemplate = path.resolve(`./src/templates/project.tsx`);
     result.data.projects.edges.map(({ node: project }) => {
       createPage({
         path: `${project.locale}/projects/${project.slug}`,
         component: projectPageTemplate,
         context: {
-          slug: project.slug,
-          locale: project.locale
+          locale: project.locale,
+          slug: project.slug
         }
       });
     });

@@ -4,7 +4,7 @@ import { graphql } from 'gatsby';
 
 interface IProps {
   data: {
-    datoCmsProject: {
+    project: {
       title: string;
       descriptionNode: {
         childMarkdownRemark: {
@@ -17,18 +17,18 @@ interface IProps {
 
 export default ({ data }: IProps) => (
   <article>
-    <h1>{data.datoCmsProject.title}</h1>
+    <h1>{data.project.title}</h1>
     <section
       dangerouslySetInnerHTML={{
-        __html: data.datoCmsProject.descriptionNode.childMarkdownRemark.html
+        __html: data.project.descriptionNode.childMarkdownRemark.html
       }}
     />
   </article>
 );
 
 export const query = graphql`
-  query ProjectQuery($slug: String!, $locale: String!) {
-    datoCmsProject(slug: { eq: $slug }, locale: { eq: $locale }) {
+  query ProjectPageQuery($slug: String!, $locale: String!) {
+    project: datoCmsProject(slug: { eq: $slug }, locale: { eq: $locale }) {
       title
       descriptionNode {
         childMarkdownRemark {
