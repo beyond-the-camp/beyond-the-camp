@@ -2,31 +2,31 @@ import * as React from 'react';
 
 import { graphql, Link } from 'gatsby';
 
-interface ICategoryNode {
+interface CategoryNode {
   id: string;
   locale: string;
   slug: string;
   title: string;
 }
 
-function getCategoryPath(category: ICategoryNode): string {
+function getCategoryPath(category: CategoryNode): string {
   return `${category.locale}/category/${category.slug}`;
 }
 
-interface IProps {
+interface Props {
   data: {
     home: {
       categoriesTitle: string;
     };
     category: {
       edges: Array<{
-        node: ICategoryNode;
+        node: CategoryNode;
       }>;
     };
   };
 }
 
-export default ({ data }: IProps) => (
+export default ({ data }: Props) => (
   <section>
     <h1>{data.home.categoriesTitle}</h1>
     <ul>

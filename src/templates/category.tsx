@@ -2,18 +2,18 @@ import * as React from 'react';
 
 import { graphql, Link } from 'gatsby';
 
-interface IProjectNode {
+interface ProjectNode {
   id: string;
   locale: string;
   title: string;
   slug: string;
 }
 
-function getProjectPath(project: IProjectNode): string {
+function getProjectPath(project: ProjectNode): string {
   return `${project.locale}/projects/${project.slug}`;
 }
 
-interface IProps {
+interface Props {
   data: {
     category: {
       title: string;
@@ -21,13 +21,13 @@ interface IProps {
 
     project?: {
       edges: Array<{
-        node: IProjectNode;
+        node: ProjectNode;
       }>;
     };
   };
 }
 
-export default ({ data }: IProps) => (
+export default ({ data }: Props) => (
   <article>
     <h1>{data.category.title}</h1>
     <section>

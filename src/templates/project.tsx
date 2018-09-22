@@ -2,7 +2,7 @@ import * as React from 'react';
 
 import { graphql } from 'gatsby';
 
-interface IProps {
+interface Props {
   data: {
     project: {
       title: string;
@@ -15,7 +15,7 @@ interface IProps {
   };
 }
 
-export default ({ data }: IProps) => (
+export default ({ data }: Props) => (
   <article>
     <h1>{data.project.title}</h1>
     <section
