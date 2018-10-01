@@ -2,6 +2,8 @@ import * as React from 'react';
 
 import { graphql, Link } from 'gatsby';
 
+import { Layout } from '../components/Layout';
+
 interface ProjectNode {
   id: string;
   locale: string;
@@ -28,19 +30,21 @@ interface Props {
 }
 
 export default ({ data }: Props) => (
-  <article>
-    <h1>{data.category.title}</h1>
-    <section>
-      <ul>
-        {data.project &&
-          data.project.edges.map(({ node }) => (
-            <li key={node.id}>
-              <Link to={getProjectPath(node)}>{node.title}</Link>
-            </li>
-          ))}
-      </ul>
-    </section>
-  </article>
+  <Layout>
+    <article>
+      <h1>{data.category.title}</h1>
+      <section>
+        <ul>
+          {data.project &&
+            data.project.edges.map(({ node }) => (
+              <li key={node.id}>
+                <Link to={getProjectPath(node)}>{node.title}</Link>
+              </li>
+            ))}
+        </ul>
+      </section>
+    </article>
+  </Layout>
 );
 
 export const query = graphql`
