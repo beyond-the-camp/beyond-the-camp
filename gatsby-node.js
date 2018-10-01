@@ -10,7 +10,6 @@ exports.createPages = ({ graphql, actions }) => {
         edges {
           node {
             locale
-            categoriesTitle
           }
         }
       }
