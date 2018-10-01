@@ -2,7 +2,7 @@ import * as React from 'react';
 
 import { graphql, Link } from 'gatsby';
 
-import { Layout } from '../components/Layout';
+import { Card, Layout, PlainList } from '../components';
 
 interface CategoryNode {
   id: string;
@@ -31,14 +31,16 @@ interface Props {
 export default ({ data }: Props) => (
   <Layout>
     <section>
-      <h1>{data.home.categoriesTitle}</h1>
-      <ul>
+      <h2>{data.home.categoriesTitle}</h2>
+      <PlainList>
         {data.category.edges.map(({ node }) => (
           <li key={node.id}>
-            <Link to={getCategoryPath(node)}>{node.title}</Link>
+            <Link to={getCategoryPath(node)}>
+              <Card title={node.title} />
+            </Link>
           </li>
         ))}
-      </ul>
+      </PlainList>
     </section>
   </Layout>
 );

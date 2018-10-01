@@ -1,18 +1,8 @@
 import * as React from 'react';
 
 import { graphql, Link, navigate } from 'gatsby';
-import styled from 'react-emotion';
 
-import { Card } from '../components/Card';
-import { Layout } from '../components/Layout';
-
-const LanguageList = styled.ul`
-  padding: 10px 10px;
-
-  li {
-    margin: 10px 10px;
-  }
-`;
+import { Card, Layout, PlainList } from '../components';
 
 interface LanguageNode {
   id: string;
@@ -50,7 +40,7 @@ export default class LanguagePage extends React.Component<Props> {
     const { data } = this.props;
     return (
       <Layout>
-        <LanguageList>
+        <PlainList>
           {data.language.edges.map(({ node }) => (
             <li key={node.id}>
               <Link
@@ -61,7 +51,7 @@ export default class LanguagePage extends React.Component<Props> {
               </Link>
             </li>
           ))}
-        </LanguageList>
+        </PlainList>
       </Layout>
     );
   }

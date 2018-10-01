@@ -19,7 +19,7 @@ interface Props {
 export default ({ data }: Props) => (
   <Layout>
     <article>
-      <h1>{data.project.title}</h1>
+      <h2>{data.project.title}</h2>
       <section
         dangerouslySetInnerHTML={{
           __html: data.project.descriptionNode.childMarkdownRemark.html
