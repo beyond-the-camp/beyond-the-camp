@@ -1,7 +1,9 @@
 {
-  "app.js": "/beyondthecamp/static/js/app.792cd777.js",
-  "src-components-card.js": "/beyondthecamp/static/js/src-components-card.cb3f547c.js",
-  "vendors.js": "/beyondthecamp/static/js/vendors.2dc91a66.js",
-  "runtime~app.js": "/beyondthecamp/static/js/runtime~app.a73bfffc6fd1602457d9.js",
+  "vendors.js": "/beyondthecamp/static/js/vendors.991290be.js",
+  "app.js": "/beyondthecamp/static/js/app.400c2464.js",
+  "src-index.js": "/beyondthecamp/static/js/src-index.098f4d62.js",
+  "src-components-card.js": "/beyondthecamp/static/js/src-components-card.f43bd149.js",
+  "src-components-layout.js": "/beyondthecamp/static/js/src-components-layout.bd3351d4.js",
+  "runtime~app.js": "/beyondthecamp/static/js/runtime~app.5d970b8cb9fc74f2b13f.js",
   "index.html": "/beyondthecamp/index.html"
 }

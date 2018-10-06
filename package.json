@@ -61,11 +61,11 @@
   "lint-staged": {
     "concurrent": false,
     "linters": {
-      "*.{ts,tsx,js,json}": [
+      "src/**/*.{ts,tsx,js,json}": [
         "prettier --write",
         "git add"
       ],
-      "*.{ts,tsx}": [
+      "src/**/*.{ts,tsx}": [
         "tslint --fix",
         "git add"
       ]
