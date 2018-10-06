@@ -6,7 +6,7 @@ import { Card } from './Card';
 
 afterEach(cleanup);
 
-test('The list renders', () => {
+test('Card renders with text', () => {
   const { getByText } = render(<Card title="Card is here" />);
 
   expect(getByText('Card is here')).not.toBeNull();
