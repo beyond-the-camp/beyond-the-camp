@@ -1,4 +1,5 @@
 module.exports = {
   typescript: true,
-  dest: '/docs'
+  dest: '/docs',
+  base: '/beyondthecamp'
 };

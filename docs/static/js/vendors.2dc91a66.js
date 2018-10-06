@@ -48214,7 +48214,7 @@
                         { websocketUrl: r.websocketUrl },
                         Object(o.createElement)(
                           s ? ie : ne,
-                          { basename: '/' },
+                          { basename: '/beyondthecamp/' },
                           Object(o.createElement)(
                             jt,
                             null,

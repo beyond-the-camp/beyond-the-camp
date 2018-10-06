@@ -13,7 +13,8 @@
           repository: null,
           native: !1,
           typescript: !0,
-          dest: '/docs'
+          dest: '/docs',
+          base: '/beyondthecamp'
         },
         entries: {
           'src/components/Card.mdx': {

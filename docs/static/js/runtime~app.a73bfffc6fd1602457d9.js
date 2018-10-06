@@ -122,7 +122,7 @@
     (u.o = function(e, r) {
       return Object.prototype.hasOwnProperty.call(e, r);
     }),
-    (u.p = '/'),
+    (u.p = '/beyondthecamp/'),
     (u.oe = function(e) {
       throw (console.error(e), e);
     });
