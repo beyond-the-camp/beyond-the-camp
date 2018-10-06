@@ -15,7 +15,9 @@
     "test": "jest",
     "test:watch": "jest --watch",
     "format": "prettier --write \"src/**/*.{ts,tsx}\"",
-    "lint": "tslint -c tslint.json 'src/**/*.{ts,tsx}'"
+    "lint": "tslint -c tslint.json 'src/**/*.{ts,tsx}'",
+    "docz:dev": "docz dev",
+    "docz:build": "docz build"
   },
   "dependencies": {
     "emotion": "^9.2.10",
@@ -41,6 +43,7 @@
     "@babel/core": "7.1.0",
     "@types/jest": "^23.3.2",
     "@types/react": "^16.4.14",
+    "docz": "latest",
     "husky": "^1.0.1",
     "jest": "^23.6.0",
     "lint-staged": "^7.3.0",

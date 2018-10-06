@@ -3,6 +3,7 @@ import * as React from 'react';
 import { css } from 'react-emotion';
 
 interface Props {
+  /** Title to print on the card */
   title: string;
 }
 
