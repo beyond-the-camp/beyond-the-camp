@@ -7,11 +7,7 @@ interface Props {
   data: {
     project: {
       title: string;
-      descriptionNode: {
-        childMarkdownRemark: {
-          html: string;
-        };
-      };
+      content: string;
     };
   };
 }
@@ -19,10 +15,10 @@ interface Props {
 export default ({ data }: Props) => (
   <Layout>
     <article>
-      <h2>{data.project.title}</h2>
+      <h1>{data.project.title}</h1>
       <section
         dangerouslySetInnerHTML={{
-          __html: data.project.descriptionNode.childMarkdownRemark.html
+          __html: data.project.content
         }}
       />
     </article>
@@ -30,14 +26,10 @@ export default ({ data }: Props) => (
 );
 
 export const query = graphql`
-  query ProjectPageQuery($slug: String!, $locale: String!) {
-    project: datoCmsProject(slug: { eq: $slug }, locale: { eq: $locale }) {
+  query ProjectPageQuery($id: String!) {
+    project: wordpressWpProject(id: { eq: $id }) {
       title
-      descriptionNode {
-        childMarkdownRemark {
-          html
-        }
-      }
+      content
     }
   }
 `;

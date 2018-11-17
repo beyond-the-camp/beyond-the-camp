@@ -5,23 +5,23 @@ import { graphql, Link } from 'gatsby';
 import { Card, Layout, PlainList } from '../components';
 
 interface ProjectNode {
-  id: string;
-  locale: string;
-  title: string;
+  wordpress_id: number;
   slug: string;
+  polylang_current_lang: string;
+  title: string;
 }
 
 function getProjectPath(project: ProjectNode): string {
-  return `${project.locale}/projects/${project.slug}`;
+  return `${project.polylang_current_lang}/projects/${project.slug}`;
 }
 
 interface Props {
   data: {
     category: {
-      title: string;
+      name: string;
     };
 
-    project?: {
+    projects?: {
       edges: Array<{
         node: ProjectNode;
       }>;
@@ -32,12 +32,12 @@ interface Props {
 export default ({ data }: Props) => (
   <Layout>
     <article>
-      <h2>{data.category.title}</h2>
+      <h2>{data.category.name}</h2>
       <section>
         <PlainList>
-          {data.project &&
-            data.project.edges.map(({ node }) => (
-              <li key={node.id}>
+          {data.projects &&
+            data.projects.edges.map(({ node }) => (
+              <li key={node.wordpress_id}>
                 <Link to={getProjectPath(node)}>
                   <Card title={node.title} />
                 </Link>
@@ -50,20 +50,20 @@ export default ({ data }: Props) => (
 );
 
 export const query = graphql`
-  query CategoryPageQuery($slug: String!, $locale: String!) {
-    category: datoCmsCategory(slug: { eq: $slug }, locale: { eq: $locale }) {
-      title
+  query CategoryPageQuery($id: String!) {
+    category: wordpressCategory(id: { eq: $id }) {
+      name
     }
 
-    project: allDatoCmsProject(
-      filter: { category: { slug: { eq: $slug } }, locale: { eq: $locale } }
+    projects: allWordpressWpProject(
+      filter: { categories: { id: { eq: $id } } }
     ) {
       edges {
         node {
-          id
-          locale
-          title
+          wordpress_id
           slug
+          polylang_current_lang
+          title
         }
       }
     }

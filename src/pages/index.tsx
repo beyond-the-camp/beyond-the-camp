@@ -5,22 +5,22 @@ import { graphql, Link, navigate } from 'gatsby';
 import { Card, Layout, PlainList } from '../components';
 
 interface LanguageNode {
-  id: string;
   name: string;
   locale: string;
 }
 
-interface Props {
-  data: {
-    language: {
-      edges: Array<{
-        node: LanguageNode;
-      }>;
-    };
-  };
-}
+const languages: LanguageNode[] = [
+  {
+    name: 'English',
+    locale: 'en_GB'
+  },
+  {
+    name: 'Afrikaans',
+    locale: 'af'
+  }
+];
 
-export default class LanguagePage extends React.Component<Props> {
+export default class LanguagePage extends React.Component {
   private static loadLocale(): string {
     return localStorage.getItem('locale');
   }
@@ -37,12 +37,11 @@ export default class LanguagePage extends React.Component<Props> {
   }
 
   public render() {
-    const { data } = this.props;
     return (
       <Layout>
         <PlainList>
-          {data.language.edges.map(({ node }) => (
-            <li key={node.id}>
+          {languages.map(node => (
+            <li key={node.locale}>
               <Link
                 to={node.locale}
                 onClick={() => LanguagePage.storeLocale(node.locale)}
@@ -56,17 +55,3 @@ export default class LanguagePage extends React.Component<Props> {
     );
   }
 }
-
-export const query = graphql`
-  query Languages {
-    language: allDatoCmsLanguage {
-      edges {
-        node {
-          id
-          name
-          locale
-        }
-      }
-    }
-  }
-`;
