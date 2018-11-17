@@ -27,7 +27,22 @@ exports.createPages = ({ graphql, actions }) => {
       }
     }
   `).then(result => {
-    const categoryPageTemplate = path.resolve('./src/templates/category.tsx');
+    const categoryListPageTemplate = path.resolve(
+      './src/templates/category-list.tsx'
+    );
+    ['en_GB', 'af'].map(language => {
+      createPage({
+        path: `${language}`,
+        component: categoryListPageTemplate,
+        context: {
+          language: language
+        }
+      });
+    });
+
+    const categoryPageTemplate = path.resolve(
+      './src/templates/category-content.tsx'
+    );
     result.data.categories.edges.map(({ node: category }) => {
       createPage({
         path: `${category.polylang_current_lang}/categories/${category.slug}`,
