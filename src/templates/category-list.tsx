@@ -1,8 +1,9 @@
 import * as React from 'react';
 
+import { Card, CardContent, Content, Title } from 'bloomer';
 import { graphql, Link } from 'gatsby';
 
-import { Card, Layout, PlainList } from '../components';
+import Layout from '../components/Layout';
 
 interface CategoryNode {
   id: string;
@@ -27,18 +28,16 @@ interface Props {
 
 export default ({ data }: Props) => (
   <Layout>
-    <section>
-      <h2>Categories</h2>
-      <PlainList>
-        {data.categories.edges.map(({ node }) => (
-          <li key={node.id}>
-            <Link to={getCategoryPath(node)}>
-              <Card title={node.name} />
-            </Link>
-          </li>
-        ))}
-      </PlainList>
-    </section>
+    <Title>Categories</Title>
+    {data.categories.edges.map(({ node }) => (
+      <Link to={getCategoryPath(node)}>
+        <Card>
+          <CardContent>
+            <Content>{node.name}</Content>
+          </CardContent>
+        </Card>
+      </Link>
+    ))}
   </Layout>
 );
 

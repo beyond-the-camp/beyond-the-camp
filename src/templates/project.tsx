@@ -1,7 +1,7 @@
 import * as React from 'react';
 
+import { Container, Content, Section, Title } from 'bloomer';
 import { graphql } from 'gatsby';
-import { Layout } from '../components/Layout';
 
 interface Props {
   data: {
@@ -13,16 +13,18 @@ interface Props {
 }
 
 export default ({ data }: Props) => (
-  <Layout>
-    <article>
-      <h1>{data.project.title}</h1>
-      <section
-        dangerouslySetInnerHTML={{
-          __html: data.project.content
-        }}
-      />
-    </article>
-  </Layout>
+  <Section>
+    <Container>
+      <Title>{data.project.title}</Title>
+      <Content>
+        <section
+          dangerouslySetInnerHTML={{
+            __html: data.project.content
+          }}
+        />
+      </Content>
+    </Container>
+  </Section>
 );
 
 export const query = graphql`

@@ -7,14 +7,8 @@ module.exports = {
   plugins: [
     `gatsby-plugin-typescript`,
     `gatsby-plugin-react-helmet`,
-    {
-      resolve: `gatsby-plugin-typography`,
-      options: {
-        pathToConfigModule: `src/utils/typography.js`
-      }
-    },
-    `gatsby-plugin-emotion`,
     `gatsby-transformer-remark`,
+    `gatsby-plugin-sass`,
     {
       resolve: 'gatsby-source-wordpress',
       options: {

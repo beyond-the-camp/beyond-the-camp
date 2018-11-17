@@ -1,8 +1,7 @@
 import * as React from 'react';
 
-import { graphql, Link, navigate } from 'gatsby';
-
-import { Card, Layout, PlainList } from '../components';
+import { Card, CardContent, Container, Content } from 'bloomer';
+import { Link, navigate } from 'gatsby';
 
 interface LanguageNode {
   name: string;
@@ -38,20 +37,22 @@ export default class LanguagePage extends React.Component {
 
   public render() {
     return (
-      <Layout>
-        <PlainList>
-          {languages.map(node => (
-            <li key={node.locale}>
-              <Link
-                to={node.locale}
-                onClick={() => LanguagePage.storeLocale(node.locale)}
-              >
-                <Card title={node.name} />
-              </Link>
-            </li>
-          ))}
-        </PlainList>
-      </Layout>
+      <Container>
+        {languages.map(node => (
+          <li key={node.locale}>
+            <Link
+              to={node.locale}
+              onClick={() => LanguagePage.storeLocale(node.locale)}
+            >
+              <Card>
+                <CardContent>
+                  <Content>{node.name}</Content>
+                </CardContent>
+              </Card>
+            </Link>
+          </li>
+        ))}
+      </Container>
     );
   }
 }

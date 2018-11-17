@@ -1,17 +1,33 @@
 import * as React from 'react';
 
-import { css } from 'react-emotion';
+import {
+  Container,
+  Level,
+  LevelItem,
+  Navbar,
+  NavbarBrand,
+  NavbarItem
+} from 'bloomer';
 
-const style = css`
-  margin: 1rem auto;
-  max-width: 30rem;
-  padding: 1rem;
-`;
+import './all.sass';
 
 interface Props {
-  children: React.ReactNode;
+  children?: React.ReactNode;
 }
 
-export const Layout = ({ children }: Props) => (
-  <div className={style}>{children}</div>
+const Layout = ({ children }: Props) => (
+  <Container>
+    <Navbar>
+      <Level>
+        <LevelItem>
+          <NavbarBrand>
+            <NavbarItem>BeyondMoria</NavbarItem>
+          </NavbarBrand>
+        </LevelItem>
+      </Level>
+    </Navbar>
+    <Container>{children}</Container>
+  </Container>
 );
+
+export default Layout;

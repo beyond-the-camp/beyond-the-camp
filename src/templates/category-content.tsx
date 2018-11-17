@@ -2,7 +2,7 @@ import * as React from 'react';
 
 import { graphql, Link } from 'gatsby';
 
-import { Card, Layout, PlainList } from '../components';
+import { Card, CardContent, Container, Content, Section, Title } from 'bloomer';
 
 interface ProjectNode {
   wordpress_id: number;
@@ -30,23 +30,21 @@ interface Props {
 }
 
 export default ({ data }: Props) => (
-  <Layout>
-    <article>
-      <h2>{data.category.name}</h2>
-      <section>
-        <PlainList>
-          {data.projects &&
-            data.projects.edges.map(({ node }) => (
-              <li key={node.wordpress_id}>
-                <Link to={getProjectPath(node)}>
-                  <Card title={node.title} />
-                </Link>
-              </li>
-            ))}
-        </PlainList>
-      </section>
-    </article>
-  </Layout>
+  <Section>
+    <Container>
+      <Title>{data.category.name}</Title>
+      {data.projects &&
+        data.projects.edges.map(({ node }) => (
+          <Link to={getProjectPath(node)}>
+            <Card>
+              <CardContent>
+                <Content>{node.title}</Content>
+              </CardContent>
+            </Card>
+          </Link>
+        ))}
+    </Container>
+  </Section>
 );
 
 export const query = graphql`
@@ -56,7 +54,7 @@ export const query = graphql`
     }
 
     projects: allWordpressWpProject(
-      filter: { categories: { id: { eq: $id } } }
+      filter: { categories: { elemMatch: { id: { eq: $id } } } }
     ) {
       edges {
         node {
@@ -64,6 +62,10 @@ export const query = graphql`
           slug
           polylang_current_lang
           title
+          categories {
+            id
+            name
+          }
         }
       }
     }
