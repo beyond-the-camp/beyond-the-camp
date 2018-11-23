@@ -1,7 +1,8 @@
 import * as React from 'react';
 
-import { Card, CardContent, Container, Content } from 'bloomer';
 import { Link, navigate } from 'gatsby';
+
+import Layout from '../components/Layout';
 
 interface LanguageNode {
   name: string;
@@ -37,22 +38,22 @@ export default class LanguagePage extends React.Component {
 
   public render() {
     return (
-      <Container>
+      <Layout>
         {languages.map(node => (
           <li key={node.locale}>
             <Link
               to={node.locale}
               onClick={() => LanguagePage.storeLocale(node.locale)}
             >
-              <Card>
-                <CardContent>
-                  <Content>{node.name}</Content>
-                </CardContent>
-              </Card>
+              <div className="card">
+                <div className="card-content">
+                  <div className="content">{node.name}</div>
+                </div>
+              </div>
             </Link>
           </li>
         ))}
-      </Container>
+      </Layout>
     );
   }
 }

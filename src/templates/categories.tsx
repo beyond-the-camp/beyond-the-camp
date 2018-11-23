@@ -1,9 +1,9 @@
 import * as React from 'react';
 
-import { Card, CardContent, Content, Title } from 'bloomer';
 import { graphql, Link } from 'gatsby';
 
 import Layout from '../components/Layout';
+import * as routes from '../utils/routes';
 
 interface CategoryNode {
   id: string;
@@ -12,9 +12,8 @@ interface CategoryNode {
   name: string;
 }
 
-function getCategoryPath(category: CategoryNode): string {
-  return `${category.polylang_current_lang}/categories/${category.slug}`;
-}
+const getCategoryPath = (category: CategoryNode): string =>
+  routes.getCategoryPath(category.polylang_current_lang, category.slug);
 
 interface Props {
   data: {
@@ -28,14 +27,20 @@ interface Props {
 
 export default ({ data }: Props) => (
   <Layout>
-    <Title>Categories</Title>
+    <nav className="breadcrumb">
+      <ul>
+        <li className="is-active">
+          <Link to="">Home</Link>
+        </li>
+      </ul>
+    </nav>
     {data.categories.edges.map(({ node }) => (
       <Link to={getCategoryPath(node)}>
-        <Card>
-          <CardContent>
-            <Content>{node.name}</Content>
-          </CardContent>
-        </Card>
+        <div className="card">
+          <div className="card-content">
+            <div className="content">{node.name}</div>
+          </div>
+        </div>
       </Link>
     ))}
   </Layout>

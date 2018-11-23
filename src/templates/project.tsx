@@ -1,30 +1,60 @@
 import * as React from 'react';
 
-import { Container, Content, Section, Title } from 'bloomer';
-import { graphql } from 'gatsby';
+import { graphql, Link } from 'gatsby';
+
+import Layout from '../components/Layout';
+import * as routes from '../utils/routes';
 
 interface Props {
   data: {
     project: {
       title: string;
       content: string;
+      polylang_current_lang: string;
+    };
+  };
+  pageContext: {
+    category: {
+      name: string;
+      slug: string;
     };
   };
 }
 
-export default ({ data }: Props) => (
-  <Section>
-    <Container>
-      <Title>{data.project.title}</Title>
-      <Content>
-        <section
-          dangerouslySetInnerHTML={{
-            __html: data.project.content
-          }}
-        />
-      </Content>
-    </Container>
-  </Section>
+export default ({ data, pageContext }: Props) => (
+  <Layout>
+    <nav className="breadcrumb">
+      <ul>
+        <li>
+          <Link to={routes.getHomePath(data.project.polylang_current_lang)}>
+            Home
+          </Link>
+        </li>
+        <li>
+          <Link
+            to={routes.getCategoryPath(
+              data.project.polylang_current_lang,
+              pageContext.category.slug
+            )}
+          >
+            {pageContext.category.name}
+          </Link>
+        </li>
+        <li className="is-active">
+          <Link to="">{data.project.title}</Link>
+        </li>
+      </ul>
+    </nav>
+
+    <h1 className="title">{data.project.title}</h1>
+    <div className="content">
+      <section
+        dangerouslySetInnerHTML={{
+          __html: data.project.content
+        }}
+      />
+    </div>
+  </Layout>
 );
 
 export const query = graphql`
@@ -32,6 +62,7 @@ export const query = graphql`
     project: wordpressWpProject(id: { eq: $id }) {
       title
       content
+      polylang_current_lang
     }
   }
 `;

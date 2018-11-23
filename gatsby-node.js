@@ -1,5 +1,6 @@
 const path = require(`path`);
 const { createFilePath } = require(`gatsby-source-filesystem`);
+const routes = require('./src/utils/routes');
 
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions;
@@ -12,6 +13,10 @@ exports.createPages = ({ graphql, actions }) => {
             id
             slug
             polylang_current_lang
+            categories {
+              slug
+              name
+            }
           }
         }
       }
@@ -28,11 +33,11 @@ exports.createPages = ({ graphql, actions }) => {
     }
   `).then(result => {
     const categoryListPageTemplate = path.resolve(
-      './src/templates/category-list.tsx'
+      './src/templates/categories.tsx'
     );
     ['en_GB', 'af'].map(language => {
       createPage({
-        path: `${language}`,
+        path: routes.getHomePath(language),
         component: categoryListPageTemplate,
         context: {
           language: language
@@ -40,13 +45,16 @@ exports.createPages = ({ graphql, actions }) => {
       });
     });
 
-    const categoryPageTemplate = path.resolve(
-      './src/templates/category-content.tsx'
+    const projectListPageTemplate = path.resolve(
+      './src/templates/projects.tsx'
     );
     result.data.categories.edges.map(({ node: category }) => {
       createPage({
-        path: `${category.polylang_current_lang}/categories/${category.slug}`,
-        component: categoryPageTemplate,
+        path: routes.getCategoryPath(
+          category.polylang_current_lang,
+          category.slug
+        ),
+        component: projectListPageTemplate,
         context: {
           id: category.id
         }
@@ -55,12 +63,19 @@ exports.createPages = ({ graphql, actions }) => {
 
     const projectPageTemplate = path.resolve('./src/templates/project.tsx');
     result.data.projects.edges.map(({ node: project }) => {
-      createPage({
-        path: `${project.polylang_current_lang}/projects/${project.slug}`,
-        component: projectPageTemplate,
-        context: {
-          id: project.id
-        }
+      project.categories.map(category => {
+        createPage({
+          path: routes.getProjectPath(
+            project.polylang_current_lang,
+            category.slug,
+            project.slug
+          ),
+          component: projectPageTemplate,
+          context: {
+            id: project.id,
+            category: category
+          }
+        });
       });
     });
   });
