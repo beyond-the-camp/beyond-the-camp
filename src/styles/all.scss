@@ -7,3 +7,9 @@ $color4: rgb(170, 189, 140);
 $color5: rgb(233, 227, 180);
 
 @import '~bulma';
+
+.navbar-brand {
+  .navbar-item {
+    color: white;
+  }
+}

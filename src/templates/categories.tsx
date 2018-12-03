@@ -23,10 +23,13 @@ interface Props {
       }>;
     };
   };
+  pageContext: {
+    language: string;
+  };
 }
 
-export default ({ data }: Props) => (
-  <Layout>
+export default ({ data, pageContext }: Props) => (
+  <Layout currentLocale={pageContext.language}>
     <nav className="breadcrumb">
       <ul>
         <li className="is-active">

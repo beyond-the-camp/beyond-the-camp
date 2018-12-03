@@ -3,22 +3,12 @@ import * as React from 'react';
 import { Link, navigate } from 'gatsby';
 
 import Layout from '../components/Layout';
+import { getLanguageName, getLocaleList } from '../utils/languages';
 
 interface LanguageNode {
   name: string;
   locale: string;
 }
-
-const languages: LanguageNode[] = [
-  {
-    name: 'English',
-    locale: 'en_GB'
-  },
-  {
-    name: 'Afrikaans',
-    locale: 'af'
-  }
-];
 
 export default class LanguagePage extends React.Component {
   private static loadLocale(): string {
@@ -29,30 +19,32 @@ export default class LanguagePage extends React.Component {
     localStorage.setItem('locale', locale);
   }
 
-  public componentDidMount() {
-    const locale = LanguagePage.loadLocale();
-    if (locale) {
-      navigate(locale);
-    }
-  }
+  // public componentDidMount() {
+  //   const locale = LanguagePage.loadLocale();
+  //   if (locale) {
+  //     navigate(locale);
+  //   }
+  // }
 
   public render() {
     return (
       <Layout>
-        {languages.map(node => (
-          <li key={node.locale}>
-            <Link
-              to={node.locale}
-              onClick={() => LanguagePage.storeLocale(node.locale)}
-            >
-              <div className="card">
-                <div className="card-content">
-                  <div className="content">{node.name}</div>
+        <ul>
+          {getLocaleList().map(locale => (
+            <li key={locale}>
+              <Link
+                to={locale}
+                onClick={() => LanguagePage.storeLocale(locale)}
+              >
+                <div className="card">
+                  <div className="card-content">
+                    <div className="content">{getLanguageName(locale)}</div>
+                  </div>
                 </div>
-              </div>
-            </Link>
-          </li>
-        ))}
+              </Link>
+            </li>
+          ))}
+        </ul>
       </Layout>
     );
   }

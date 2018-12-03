@@ -3,7 +3,7 @@
  *
  * @param {string} lang Language code for currently active language.
  */
-function getHomePath(lang: string) {
+function getHomePath(lang) {
   return `${lang}`;
 }
 
@@ -13,8 +13,8 @@ function getHomePath(lang: string) {
  * @param {string} lang Language code for currently active language.
  * @param {string} category Slug identifying category.
  */
-function getCategoryPath(lang: string, category: string) {
-  return `${getHomePath(lang)}/projects/${category}`;
+function getCategoryPath(lang, category) {
+  return `${getHomePath(lang)}/p/${category}`;
 }
 
 /**
@@ -24,7 +24,7 @@ function getCategoryPath(lang: string, category: string) {
  * @param {string} category Slug identifying category.
  * @param {string} project Slug identifying project.
  */
-function getProjectPath(lang: string, category: string, project: string) {
+function getProjectPath(lang, category, project) {
   return `${getCategoryPath(lang, category)}/${project}`;
 }
 

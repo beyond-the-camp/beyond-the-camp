@@ -1,6 +1,7 @@
 const path = require(`path`);
 const { createFilePath } = require(`gatsby-source-filesystem`);
 const routes = require('./src/utils/routes');
+const { getLocaleList } = require('./src/utils/languages');
 
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions;
@@ -35,7 +36,7 @@ exports.createPages = ({ graphql, actions }) => {
     const categoryListPageTemplate = path.resolve(
       './src/templates/categories.tsx'
     );
-    ['en_GB', 'af'].map(language => {
+    getLocaleList().map(language => {
       createPage({
         path: routes.getHomePath(language),
         component: categoryListPageTemplate,
@@ -63,7 +64,8 @@ exports.createPages = ({ graphql, actions }) => {
 
     const projectPageTemplate = path.resolve('./src/templates/project.tsx');
     result.data.projects.edges.map(({ node: project }) => {
-      project.categories.map(category => {
+      const categories = project.categories || [];
+      categories.map(category => {
         createPage({
           path: routes.getProjectPath(
             project.polylang_current_lang,

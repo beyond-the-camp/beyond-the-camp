@@ -22,7 +22,7 @@ interface Props {
 }
 
 export default ({ data, pageContext }: Props) => (
-  <Layout>
+  <Layout currentLocale={data.project.polylang_current_lang}>
     <nav className="breadcrumb">
       <ul>
         <li>
@@ -47,13 +47,12 @@ export default ({ data, pageContext }: Props) => (
     </nav>
 
     <h1 className="title">{data.project.title}</h1>
-    <div className="content">
-      <section
-        dangerouslySetInnerHTML={{
-          __html: data.project.content
-        }}
-      />
-    </div>
+    <article
+      className="content"
+      dangerouslySetInnerHTML={{
+        __html: data.project.content
+      }}
+    />
   </Layout>
 );
 

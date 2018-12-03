@@ -38,7 +38,7 @@ interface Props {
 }
 
 export default ({ data }: Props) => (
-  <Layout>
+  <Layout currentLocale={data.category.polylang_current_lang}>
     <nav className="breadcrumb">
       <ul>
         <li>
