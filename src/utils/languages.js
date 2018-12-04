@@ -19,7 +19,15 @@ function getLanguageName(locale) {
   return languages[locale];
 }
 
+/**
+ * Get the primary locale that will be used for default values for incomplete locales.
+ */
+function getPrimaryLocale() {
+  return 'en_GB';
+}
+
 module.exports = {
   getLocaleList,
-  getLanguageName
+  getLanguageName,
+  getPrimaryLocale
 };
