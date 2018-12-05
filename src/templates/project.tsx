@@ -20,8 +20,7 @@ interface Props {
         };
       };
     };
-  };
-  pageContext: {
+
     category: {
       name: string;
       slug: string;
@@ -29,7 +28,7 @@ interface Props {
   };
 }
 
-export default ({ data, pageContext }: Props) => {
+export default ({ data }: Props) => {
   const featureMedia = data.project.featured_media;
   return (
     <Layout currentLocale={data.project.polylang_current_lang}>
@@ -44,10 +43,10 @@ export default ({ data, pageContext }: Props) => {
             <Link
               to={routes.getCategoryPath(
                 data.project.polylang_current_lang,
-                pageContext.category.slug
+                data.category.slug
               )}
             >
-              {pageContext.category.name}
+              {data.category.name}
             </Link>
           </li>
           <li className="is-active">
@@ -81,7 +80,7 @@ export default ({ data, pageContext }: Props) => {
 };
 
 export const query = graphql`
-  query ProjectPageQuery($id: String!) {
+  query ProjectPageQuery($id: String!, $categoryId: String!) {
     project: wordpressWpProject(id: { eq: $id }) {
       title
       content
@@ -95,6 +94,11 @@ export const query = graphql`
           }
         }
       }
+    }
+
+    category: wordpressCategory(id: { eq: $categoryId }) {
+      name
+      slug
     }
   }
 `;

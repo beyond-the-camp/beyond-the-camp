@@ -25,7 +25,7 @@ const createProjectPage = (createPage, project, category) => {
     component: projectPageTemplate,
     context: {
       id: project.id,
-      category: category
+      categoryId: category.id
     }
   });
 };
@@ -53,6 +53,7 @@ exports.createPages = async ({ graphql, actions }) => {
         slug
         polylang_current_lang
         categories {
+          id
           slug
           name
         }
