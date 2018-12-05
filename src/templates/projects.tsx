@@ -21,8 +21,8 @@ interface ProjectNode {
 const getProjectPath = (category: CategoryNode, project: ProjectNode): string =>
   routes.getProjectPath(
     project.polylang_current_lang,
-    category.slug,
-    project.slug
+    encodeURIComponent(category.slug),
+    encodeURIComponent(project.slug)
   );
 
 interface Props {

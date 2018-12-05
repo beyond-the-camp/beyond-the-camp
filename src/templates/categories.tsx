@@ -13,7 +13,10 @@ interface CategoryNode {
 }
 
 const getCategoryPath = (category: CategoryNode): string =>
-  routes.getCategoryPath(category.polylang_current_lang, category.slug);
+  routes.getCategoryPath(
+    category.polylang_current_lang,
+    encodeURIComponent(category.slug)
+  );
 
 interface Props {
   data: {

@@ -1,6 +1,8 @@
 const languages = {
-  en_GB: 'English',
-  af: 'Afrikaans'
+  en_GB: { name: 'English', direction: 'ltr' },
+  af: { name: 'Afrikaans', direction: 'ltr' },
+  fa_IR: { name: 'فارسی', direction: 'rtl' },
+  ar: { name: 'العربية', direction: 'rtl' }
 };
 
 /**
@@ -16,7 +18,16 @@ function getLocaleList() {
  * @param {string} locale Locale code to lookup
  */
 function getLanguageName(locale) {
-  return languages[locale];
+  return languages[locale].name;
+}
+
+/**
+ * Get the text direction ('ltr' or 'rtl') for the given locale.
+ *
+ * @param {string} locale Locale code
+ */
+function getTextDirection(locale) {
+  return locale ? languages[locale].direction : 'ltr';
 }
 
 /**
@@ -29,5 +40,6 @@ function getPrimaryLocale() {
 module.exports = {
   getLocaleList,
   getLanguageName,
-  getPrimaryLocale
+  getPrimaryLocale,
+  getTextDirection
 };
