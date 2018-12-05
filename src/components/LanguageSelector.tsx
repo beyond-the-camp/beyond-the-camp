@@ -10,7 +10,9 @@ interface Props {
 
 const LanguageSelector = ({ currentLocale }: Props) => (
   <div className="navbar-item has-dropdown is-hoverable">
-    <a className="navbar-link">{getLanguageName(currentLocale)}</a>
+    <a className="navbar-link has-text-white">
+      {getLanguageName(currentLocale)}
+    </a>
 
     <div className="navbar-dropdown">
       {getLocaleList().map(locale => (

@@ -21,7 +21,7 @@ const Layout = ({ children, currentLocale }: Props) => {
         aria-label="main navigation"
       >
         <div className="navbar-brand">
-          <div className="navbar-item">BeyondMoria</div>
+          <div className="navbar-item has-text-white">BeyondMoria</div>
 
           <a
             role="button"

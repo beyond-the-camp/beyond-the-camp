@@ -2,23 +2,27 @@ const languages = {
   en_GB: { name: 'English', direction: 'ltr' },
   af: { name: 'Afrikaans', direction: 'ltr' },
   fa_IR: { name: 'فارسی', direction: 'rtl' },
-  ar: { name: 'العربية', direction: 'rtl' }
+  ar: { name: 'العربية', direction: 'rtl' },
+  nl_BE: { name: 'Nederlands', direction: 'ltr' }
 };
 
 /**
- * Get a list of available locale codes
+ * Get a list of available locale codes.
  */
 function getLocaleList() {
   return Object.keys(languages);
 }
 
 /**
- * Get the display name of the given locale code
+ * Get the display name of the given locale code.
  *
  * @param {string} locale Locale code to lookup
  */
 function getLanguageName(locale) {
-  return languages[locale].name;
+  if (locale && languages[locale]) {
+    return languages[locale].name;
+  }
+  return locale;
 }
 
 /**
@@ -27,7 +31,7 @@ function getLanguageName(locale) {
  * @param {string} locale Locale code
  */
 function getTextDirection(locale) {
-  return locale ? languages[locale].direction : 'ltr';
+  return locale && languages[locale] ? languages[locale].direction : 'ltr';
 }
 
 /**
