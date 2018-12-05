@@ -3,11 +3,11 @@ const { createFilePath } = require(`gatsby-source-filesystem`);
 const routes = require('./src/utils/routes');
 const { getLocaleList, getPrimaryLocale } = require('./src/utils/languages');
 
-const createProjectListPage = (createPage, category) => {
-  const projectListPageTemplate = path.resolve('./src/templates/projects.tsx');
+const createCategoryPage = (createPage, category) => {
+  const categoryPageTemplate = path.resolve('./src/templates/category.tsx');
   createPage({
     path: routes.getCategoryPath(category.polylang_current_lang, category.slug),
-    component: projectListPageTemplate,
+    component: categoryPageTemplate,
     context: {
       id: category.id
     }
@@ -33,15 +33,13 @@ const createProjectPage = (createPage, project, category) => {
 exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions;
 
-  const categoryListPageTemplate = path.resolve(
-    './src/templates/categories.tsx'
-  );
+  const homePageTemplate = path.resolve('./src/templates/home.tsx');
   getLocaleList().map(language => {
     createPage({
       path: routes.getHomePath(language),
-      component: categoryListPageTemplate,
+      component: homePageTemplate,
       context: {
-        language: language
+        language
       }
     });
   });
@@ -99,11 +97,11 @@ exports.createPages = async ({ graphql, actions }) => {
   );
 
   graphQLresult.data.categories.edges.map(({ node: category }) => {
-    createProjectListPage(createPage, category);
+    createCategoryPage(createPage, category);
 
     const translations = category.polylang_translations || [];
     translations.map(translation => {
-      createProjectListPage(createPage, translation);
+      createCategoryPage(createPage, translation);
     });
   });
 
