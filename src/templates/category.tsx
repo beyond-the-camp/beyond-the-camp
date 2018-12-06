@@ -21,8 +21,8 @@ interface ProjectNode {
 const getProjectPath = (category: CategoryNode, project: ProjectNode): string =>
   routes.getProjectPath(
     project.polylang_current_lang,
-    encodeURIComponent(category.slug),
-    encodeURIComponent(project.slug)
+    category.slug,
+    project.slug
   );
 
 interface Props {
@@ -39,7 +39,7 @@ interface Props {
 
 export default ({ data }: Props) => (
   <Layout currentLocale={data.category.polylang_current_lang}>
-    <nav className="breadcrumb">
+    <nav className="breadcrumb container">
       <ul>
         <li>
           <Link to={routes.getHomePath(data.category.polylang_current_lang)}>
@@ -51,17 +51,22 @@ export default ({ data }: Props) => (
         </li>
       </ul>
     </nav>
-    <h1 className="title">{data.category.name}</h1>
-    {data.projects &&
-      data.projects.edges.map(({ node }) => (
-        <Link to={getProjectPath(data.category, node)}>
-          <div className="card">
-            <div className="card-content">
-              <div className="content">{node.title}</div>
+    <section className="container">
+      <h1 className="title">{data.category.name}</h1>
+      {data.projects &&
+        data.projects.edges.map(({ node }) => (
+          <Link
+            to={getProjectPath(data.category, node)}
+            key={node.wordpress_id}
+          >
+            <div className="card">
+              <div className="card-content">
+                <div className="content">{node.title}</div>
+              </div>
             </div>
-          </div>
-        </Link>
-      ))}
+          </Link>
+        ))}
+    </section>
   </Layout>
 );
 

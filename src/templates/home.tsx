@@ -13,10 +13,7 @@ interface CategoryNode {
 }
 
 const getCategoryPath = (category: CategoryNode): string =>
-  routes.getCategoryPath(
-    category.polylang_current_lang,
-    encodeURIComponent(category.slug)
-  );
+  routes.getCategoryPath(category.polylang_current_lang, category.slug);
 
 interface Props {
   data: {
@@ -33,22 +30,24 @@ interface Props {
 
 export default ({ data, pageContext }: Props) => (
   <Layout currentLocale={pageContext.language}>
-    <nav className="breadcrumb">
+    <nav className="breadcrumb container">
       <ul>
         <li className="is-active">
           <Link to="">Home</Link>
         </li>
       </ul>
     </nav>
-    {data.categories.edges.map(({ node }) => (
-      <Link to={getCategoryPath(node)}>
-        <div className="card">
-          <div className="card-content">
-            <div className="content">{node.name}</div>
+    <section className="container">
+      {data.categories.edges.map(({ node }) => (
+        <Link to={getCategoryPath(node)} key={node.id}>
+          <div className="card">
+            <div className="card-content">
+              <div className="content">{node.name}</div>
+            </div>
           </div>
-        </div>
-      </Link>
-    ))}
+        </Link>
+      ))}
+    </section>
   </Layout>
 );
 

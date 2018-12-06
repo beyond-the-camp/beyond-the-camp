@@ -6,7 +6,10 @@ const { getLocaleList, getPrimaryLocale } = require('./src/utils/languages');
 const createCategoryPage = (createPage, category) => {
   const categoryPageTemplate = path.resolve('./src/templates/category.tsx');
   createPage({
-    path: routes.getCategoryPath(category.polylang_current_lang, category.slug),
+    path: routes.getCategoryPath(
+      category.polylang_current_lang,
+      decodeURIComponent(category.slug)
+    ),
     component: categoryPageTemplate,
     context: {
       id: category.id
@@ -19,8 +22,8 @@ const createProjectPage = (createPage, project, category) => {
   createPage({
     path: routes.getProjectPath(
       project.polylang_current_lang,
-      category.slug,
-      project.slug
+      decodeURIComponent(category.slug),
+      decodeURIComponent(project.slug)
     ),
     component: projectPageTemplate,
     context: {

@@ -4,11 +4,23 @@ import { Link } from 'gatsby';
 
 import { getLanguageName, getLocaleList } from '../utils/languages';
 
-interface Props {
-  currentLocale: string;
+export interface LinksData {
+  [locale: string]: string;
 }
 
-const LanguageSelector = ({ currentLocale }: Props) => (
+const getLink = (locale: string, links?: LinksData): string => {
+  if (links && links[locale]) {
+    return links[locale];
+  }
+  return `/${locale}`;
+};
+
+interface Props {
+  currentLocale: string;
+  links?: LinksData;
+}
+
+const LanguageSelector = ({ currentLocale, links }: Props) => (
   <div className="navbar-item has-dropdown is-hoverable">
     <a className="navbar-link has-text-white">
       {getLanguageName(currentLocale)}
@@ -16,7 +28,7 @@ const LanguageSelector = ({ currentLocale }: Props) => (
 
     <div className="navbar-dropdown">
       {getLocaleList().map(locale => (
-        <Link className="navbar-item" to={`/${locale}`}>
+        <Link key={locale} className="navbar-item" to={getLink(locale, links)}>
           {getLanguageName(locale)}
         </Link>
       ))}

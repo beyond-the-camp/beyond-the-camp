@@ -2,14 +2,15 @@ import * as React from 'react';
 
 import '../styles/all.scss';
 import { getTextDirection } from '../utils/languages';
-import LanguageSelector from './LanguageSelector';
+import LanguageSelector, { LinksData } from './LanguageSelector';
 
 interface Props {
   currentLocale?: string;
   children?: React.ReactNode;
+  links?: LinksData;
 }
 
-const Layout = ({ children, currentLocale }: Props) => {
+const Layout = ({ children, currentLocale, links }: Props) => {
   const directionClass =
     getTextDirection(currentLocale) === 'rtl' ? 'translated_rtl' : '';
 
@@ -36,14 +37,14 @@ const Layout = ({ children, currentLocale }: Props) => {
           </a>
         </div>
         <div id="burgerMenu" className="navbar-menu">
-          <div className="navbar-start">
+          <div className="navbar-end">
             {currentLocale && (
-              <LanguageSelector currentLocale={currentLocale} />
+              <LanguageSelector currentLocale={currentLocale} links={links} />
             )}
           </div>
         </div>
       </nav>
-      <main className="container">{children}</main>
+      <main>{children}</main>
     </div>
   );
 };
