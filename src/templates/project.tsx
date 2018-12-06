@@ -31,6 +31,47 @@ const getLinks = (props: Props): LinksData => {
   return links;
 };
 
+const getDayElement = (day: string, times?: OpeningTimes) => {
+  return {
+    day,
+    times: times
+      ? {
+          open: times.open,
+          close: times.close
+        }
+      : { open: '', close: '' }
+  };
+};
+
+const getOpeningTimeData = (
+  days: OpeningDays
+): Array<{ day: string; times: OpeningTimes }> => {
+  return [
+    getDayElement('Monday', days.monday),
+    getDayElement('Tuesday', days.tuesday),
+    getDayElement('Wednesday', days.wednesday),
+    getDayElement('Thursday', days.thursday),
+    getDayElement('Friday', days.friday),
+    getDayElement('Saturday', days.saturday),
+    getDayElement('Sunday', days.sunday)
+  ];
+};
+
+interface OpeningTimes {
+  open: string;
+  close: string;
+}
+
+interface OpeningDays {
+  monday?: OpeningTimes;
+  tuesday?: OpeningTimes;
+  wednesday?: OpeningTimes;
+  thursday?: OpeningTimes;
+  friday?: OpeningTimes;
+  saturday?: OpeningTimes;
+  sunday?: OpeningTimes;
+}
+
 interface Props {
   data: {
     project: {
@@ -49,6 +90,7 @@ interface Props {
           };
         };
       };
+      acf: OpeningDays;
     };
 
     category: {
@@ -64,6 +106,7 @@ interface Props {
 
 export default (props: Props) => {
   const { data } = props;
+  const { acf } = data.project;
   const featuredMedia = data.project.featured_media;
   return (
     <Layout
@@ -109,12 +152,33 @@ export default (props: Props) => {
           )}
         </div>
       </section>
-      <article
-        className="container content"
-        dangerouslySetInnerHTML={{
-          __html: data.project.content
-        }}
-      />
+
+      <div className="container">
+        <div className="tile is-ancestor">
+          <div className="tile is-parent is-8">
+            <div className="tile is-child">
+              <article
+                className="content"
+                dangerouslySetInnerHTML={{
+                  __html: data.project.content
+                }}
+              />
+            </div>
+          </div>
+          <aside className="tile is-parent is-vertical">
+            <section className="tile is-child box">
+              <p className="title is-5">Opening Times</p>
+              {getOpeningTimeData(acf).map(day => (
+                <p>{`${day.day}: ${day.times.open} - ${day.times.close}`}</p>
+              ))}
+            </section>
+            <section className="tile is-child box">
+              <p className="title is-5">Location</p>
+              <p>Find us here</p>
+            </section>
+          </aside>
+        </div>
+      </div>
     </Layout>
   );
 };
@@ -137,6 +201,36 @@ export const query = graphql`
               ...GatsbyImageSharpFluid
             }
           }
+        }
+      }
+      acf {
+        monday {
+          open: open_0
+          close: open_0
+        }
+        tuesday {
+          open: open_1
+          close: open_1
+        }
+        wednesday {
+          open: open_2
+          close: open_2
+        }
+        thursday {
+          open: open_3
+          close: open_3
+        }
+        friday {
+          open: open_4
+          close: open_4
+        }
+        saturday {
+          open: open_5
+          close: open_5
+        }
+        sunday {
+          open: open_6
+          close: open_6
         }
       }
     }
