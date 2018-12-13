@@ -9,13 +9,23 @@ $primary: $color1;
 
 @import '~bulma';
 
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body,
+.background {
+  background: $light;
+}
+
 .translated_rtl {
   direction: rtl;
 }
 
-.feature_container {
-  position: relative;
-  background: rgba(0, 0, 0, 0.5);
+.feature_text {
+  z-index: 1;
 }
 
 .feature_image {
@@ -24,5 +34,15 @@ $primary: $color1;
   height: 100%;
   top: 0;
   left: 0;
-  z-index: -1;
+  z-index: 0;
+}
+
+.overlay_dim {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
 }

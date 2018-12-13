@@ -2,6 +2,7 @@ import * as React from 'react';
 
 import { graphql, Link } from 'gatsby';
 
+import BreadCrumbs from '../components/BreadCrumbs';
 import Layout from '../components/Layout';
 import * as routes from '../utils/routes';
 
@@ -30,14 +31,9 @@ interface Props {
 
 export default ({ data, pageContext }: Props) => (
   <Layout currentLocale={pageContext.language}>
-    <nav className="breadcrumb container">
-      <ul>
-        <li className="is-active">
-          <Link to="">Home</Link>
-        </li>
-      </ul>
-    </nav>
-    <section className="container">
+    <BreadCrumbs crumbs={[{ name: 'Home' }]} />
+
+    <div className="container">
       {data.categories.edges.map(({ node }) => (
         <Link to={getCategoryPath(node)} key={node.id}>
           <div className="card">
@@ -47,7 +43,7 @@ export default ({ data, pageContext }: Props) => (
           </div>
         </Link>
       ))}
-    </section>
+    </div>
   </Layout>
 );
 

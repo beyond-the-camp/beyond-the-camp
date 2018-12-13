@@ -3,6 +3,7 @@ import * as React from 'react';
 import { graphql, Link } from 'gatsby';
 import Img from 'gatsby-image';
 
+import BreadCrumbs from '../components/BreadCrumbs';
 import { LinksData } from '../components/LanguageSelector';
 import Layout from '../components/Layout';
 import * as routes from '../utils/routes';
@@ -113,36 +114,28 @@ export default (props: Props) => {
       currentLocale={data.project.polylang_current_lang}
       links={getLinks(props)}
     >
-      <div className="container">
-        <nav className="breadcrumb">
-          <ul>
-            <li>
-              <Link to={routes.getHomePath(data.project.polylang_current_lang)}>
-                Home
-              </Link>
-            </li>
-            <li>
-              <Link
-                to={routes.getCategoryPath(
-                  data.project.polylang_current_lang,
-                  data.category.slug
-                )}
-              >
-                {data.category.name}
-              </Link>
-            </li>
-            <li className="is-active">
-              <Link to="">{data.project.title}</Link>
-            </li>
-          </ul>
-        </nav>
-      </div>
+      <BreadCrumbs
+        crumbs={[
+          {
+            name: 'Home',
+            link: routes.getHomePath(data.project.polylang_current_lang)
+          },
+          {
+            name: data.category.name,
+            link: routes.getCategoryPath(
+              data.project.polylang_current_lang,
+              data.category.slug
+            )
+          },
+          {
+            name: data.project.title
+          }
+        ]}
+      />
 
       <section className="hero is-medium">
-        <div className="hero-body feature_container">
-          <div className="container">
-            <h1 className="title has-text-white">{data.project.title}</h1>
-          </div>
+        <div className="hero-body" style={{ position: 'relative' }}>
+          <div className="overlay_dim" />
           {featuredMedia && (
             <Img
               fluid={featuredMedia.localFile.childImageSharp.fluid}
@@ -150,35 +143,42 @@ export default (props: Props) => {
               style={{ position: 'absolute' }}
             />
           )}
+          <div className="container feature_text">
+            <h1 className="title has-text-white">{data.project.title}</h1>
+          </div>
         </div>
       </section>
 
-      <div className="container">
-        <div className="tile is-ancestor">
-          <div className="tile is-parent is-8">
-            <div className="tile is-child">
-              <article
-                className="content"
-                dangerouslySetInnerHTML={{
-                  __html: data.project.content
-                }}
-              />
+      <section className="section">
+        <div className="container">
+          <div className="tile is-ancestor">
+            <div className="tile is-parent is-8">
+              <div className="tile is-child box">
+                <article
+                  className="content"
+                  dangerouslySetInnerHTML={{
+                    __html: data.project.content
+                  }}
+                />
+              </div>
             </div>
+            <aside className="tile is-parent is-vertical">
+              <section className="tile is-child box">
+                <p className="title is-5">Opening Times</p>
+                {getOpeningTimeData(acf).map(day => (
+                  <p key={day.day}>{`${day.day}: ${day.times.open} - ${
+                    day.times.close
+                  }`}</p>
+                ))}
+              </section>
+              <section className="tile is-child box">
+                <p className="title is-5">Location</p>
+                <p>Find us here</p>
+              </section>
+            </aside>
           </div>
-          <aside className="tile is-parent is-vertical">
-            <section className="tile is-child box">
-              <p className="title is-5">Opening Times</p>
-              {getOpeningTimeData(acf).map(day => (
-                <p>{`${day.day}: ${day.times.open} - ${day.times.close}`}</p>
-              ))}
-            </section>
-            <section className="tile is-child box">
-              <p className="title is-5">Location</p>
-              <p>Find us here</p>
-            </section>
-          </aside>
         </div>
-      </div>
+      </section>
     </Layout>
   );
 };

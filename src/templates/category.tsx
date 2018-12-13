@@ -2,6 +2,7 @@ import * as React from 'react';
 
 import { graphql, Link } from 'gatsby';
 
+import BreadCrumbs from '../components/BreadCrumbs';
 import { LinksData } from '../components/LanguageSelector';
 import Layout from '../components/Layout';
 import * as routes from '../utils/routes';
@@ -66,19 +67,19 @@ export default (props: Props) => {
       currentLocale={data.category.polylang_current_lang}
       links={getLinks(props)}
     >
-      <nav className="breadcrumb container">
-        <ul>
-          <li>
-            <Link to={routes.getHomePath(data.category.polylang_current_lang)}>
-              Home
-            </Link>
-          </li>
-          <li className="is-active">
-            <Link to="">{data.category.name}</Link>
-          </li>
-        </ul>
-      </nav>
-      <section className="container">
+      <BreadCrumbs
+        crumbs={[
+          {
+            name: 'Home',
+            link: routes.getHomePath(data.category.polylang_current_lang)
+          },
+          {
+            name: data.category.name
+          }
+        ]}
+      />
+
+      <div className="container">
         <h1 className="title">{data.category.name}</h1>
         {data.projects &&
           data.projects.edges.map(({ node }) => (
@@ -93,7 +94,7 @@ export default (props: Props) => {
               </div>
             </Link>
           ))}
-      </section>
+      </div>
     </Layout>
   );
 };
