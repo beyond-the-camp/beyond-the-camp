@@ -1,16 +1,14 @@
 # Beyond the camp
 
-This is the repo for the Beyond the Camp website.
+This is the repo for the Beyond the Camp website, built using [GatsbyJS](https://www.gatsbyjs.org/).
 
 ## Prerequisites
 
-To run or build this project locally, you'll need a locally running Wordpress installation.
-
-**_TODO: Add Wordpress instructions_**
+Local development requires [yarn](https://yarnpkg.com/) to install dependencies.
 
 ## Usage
 
-Install dependencies using [yarn](https://yarnpkg.com/):
+Install dependencies:
 
 ```
 yarn install
