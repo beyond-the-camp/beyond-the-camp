@@ -17,7 +17,10 @@ const BreadCrumbs = ({ crumbs }: Props) => (
           const activeClass = crumb.link ? '' : 'is-active';
           return (
             <li key={crumb.name} className={activeClass}>
-              <Link to={crumb.link || ''}>{crumb.name}</Link>
+              <Link
+                to={crumb.link || ''}
+                dangerouslySetInnerHTML={{ __html: crumb.name }}
+              />
             </li>
           );
         })}

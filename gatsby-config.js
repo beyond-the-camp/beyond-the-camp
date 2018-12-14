@@ -13,16 +13,17 @@ module.exports = {
       resolve: 'gatsby-source-wordpress',
       options: {
         // The base url to your WP site.
-        baseUrl: 'localhost:8080',
+        baseUrl: 'beyondthecamp.club/wp',
         // WP.com sites set to true, WP.org set to false
         hostingWPCOM: false,
         // The protocol. This can be http or https.
-        protocol: 'http',
+        protocol: 'https',
         // Use 'Advanced Custom Fields' Wordpress plugin
         useACF: true
       }
     },
     `gatsby-plugin-sharp`,
-    `gatsby-transformer-sharp`
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-react-leaflet`
   ]
 };

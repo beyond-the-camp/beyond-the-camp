@@ -2,6 +2,7 @@ import * as React from 'react';
 
 import { graphql, Link } from 'gatsby';
 import Img from 'gatsby-image';
+import { Map, Marker, Popup, TileLayer } from 'react-leaflet';
 
 import BreadCrumbs from '../components/BreadCrumbs';
 import { LinksData } from '../components/LanguageSelector';
@@ -47,16 +48,27 @@ const getDayElement = (day: string, times?: OpeningTimes) => {
 const getOpeningTimeData = (
   days: OpeningDays
 ): Array<{ day: string; times: OpeningTimes }> => {
-  return [
-    getDayElement('Monday', days.monday),
-    getDayElement('Tuesday', days.tuesday),
-    getDayElement('Wednesday', days.wednesday),
-    getDayElement('Thursday', days.thursday),
-    getDayElement('Friday', days.friday),
-    getDayElement('Saturday', days.saturday),
-    getDayElement('Sunday', days.sunday)
-  ];
+  // return [
+  //   getDayElement('Monday', days.monday),
+  //   getDayElement('Tuesday', days.tuesday),
+  //   getDayElement('Wednesday', days.wednesday),
+  //   getDayElement('Thursday', days.thursday),
+  //   getDayElement('Friday', days.friday),
+  //   getDayElement('Saturday', days.saturday),
+  //   getDayElement('Sunday', days.sunday)
+  // ];
+  return sampleDays;
 };
+
+const sampleDays: Array<{ day: string; times: OpeningTimes }> = [
+  { day: 'Monday', times: { open: '', close: '' } },
+  { day: 'Tuesday', times: { open: '', close: '' } },
+  { day: 'Wednesday', times: { open: '', close: '' } },
+  { day: 'Thursday', times: { open: '', close: '' } },
+  { day: 'Friday', times: { open: '', close: '' } },
+  { day: 'Saturday', times: { open: '', close: '' } },
+  { day: 'Sunday', times: { open: '', close: '' } }
+];
 
 interface OpeningTimes {
   open: string;
@@ -105,6 +117,25 @@ interface Props {
   };
 }
 
+const ProjectMap = () => {
+  if (typeof window !== 'undefined') {
+    return (
+      <Map center={[51.505, -0.09]} zoom={13}>
+        <TileLayer
+          attribution='&amp;copy <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+          url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+        />
+        <Marker position={[51.505, -0.09]}>
+          <Popup>
+            A pretty CSS3 popup. <br /> Easily customizable.
+          </Popup>
+        </Marker>
+      </Map>
+    );
+  }
+  return null;
+};
+
 export default (props: Props) => {
   const { data } = props;
   const { acf } = data.project;
@@ -144,7 +175,10 @@ export default (props: Props) => {
             />
           )}
           <div className="container feature_text">
-            <h1 className="title has-text-white">{data.project.title}</h1>
+            <h1
+              className="title has-text-white"
+              dangerouslySetInnerHTML={{ __html: data.project.title }}
+            />
           </div>
         </div>
       </section>
@@ -174,6 +208,7 @@ export default (props: Props) => {
               <section className="tile is-child box">
                 <p className="title is-5">Location</p>
                 <p>Find us here</p>
+                <ProjectMap />
               </section>
             </aside>
           </div>
@@ -201,36 +236,6 @@ export const query = graphql`
               ...GatsbyImageSharpFluid
             }
           }
-        }
-      }
-      acf {
-        monday {
-          open: open_0
-          close: open_0
-        }
-        tuesday {
-          open: open_1
-          close: open_1
-        }
-        wednesday {
-          open: open_2
-          close: open_2
-        }
-        thursday {
-          open: open_3
-          close: open_3
-        }
-        friday {
-          open: open_4
-          close: open_4
-        }
-        saturday {
-          open: open_5
-          close: open_5
-        }
-        sunday {
-          open: open_6
-          close: open_6
         }
       }
     }

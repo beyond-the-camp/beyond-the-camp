@@ -89,7 +89,10 @@ export default (props: Props) => {
             >
               <div className="card">
                 <div className="card-content">
-                  <div className="content">{node.title}</div>
+                  <div
+                    className="content"
+                    dangerouslySetInnerHTML={{ __html: node.title }}
+                  />
                 </div>
               </div>
             </Link>

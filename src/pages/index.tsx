@@ -29,22 +29,21 @@ export default class LanguagePage extends React.Component {
   public render() {
     return (
       <Layout>
-        <ul>
+        <div className="container">
           {getLocaleList().map(locale => (
-            <li key={locale}>
-              <Link
-                to={locale}
-                onClick={() => LanguagePage.storeLocale(locale)}
-              >
-                <div className="card">
-                  <div className="card-content">
-                    <div className="content">{getLanguageName(locale)}</div>
-                  </div>
+            <Link
+              key={locale}
+              to={locale}
+              onClick={() => LanguagePage.storeLocale(locale)}
+            >
+              <div className="card">
+                <div className="card-content">
+                  <div className="content">{getLanguageName(locale)}</div>
                 </div>
-              </Link>
-            </li>
+              </div>
+            </Link>
           ))}
-        </ul>
+        </div>
       </Layout>
     );
   }

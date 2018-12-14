@@ -1,9 +1,8 @@
 const languages = {
   en_GB: { name: 'English', direction: 'ltr' },
-  af: { name: 'Afrikaans', direction: 'ltr' },
   fa_IR: { name: 'فارسی', direction: 'rtl' },
   ar: { name: 'العربية', direction: 'rtl' },
-  nl_BE: { name: 'Nederlands', direction: 'ltr' }
+  fr_FR: { name: 'Français', direction: 'ltr' }
 };
 
 /**
