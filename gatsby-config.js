@@ -19,7 +19,15 @@ module.exports = {
         // The protocol. This can be http or https.
         protocol: 'https',
         // Use 'Advanced Custom Fields' Wordpress plugin
-        useACF: true
+        useACF: true,
+        // Limit included endpoints to improve build speed and avoid auth errors
+        includedRoutes: [
+          '/*/*/project',
+          '/*/*/media',
+          '/*/*/categories',
+          '/*/*/tags',
+          '/*/*/taxonomies'
+        ]
       }
     },
     `gatsby-plugin-sharp`,
