@@ -33,9 +33,15 @@ const createProjectPage = (createPage, project, category) => {
   });
 };
 
+/**
+ * Create static site pages using page templates and data from a GraphQL queries.
+ */
 exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions;
 
+  /**
+   * Create Home pages - one for each supported language.
+   */
   const homePageTemplate = path.resolve('./src/templates/home.tsx');
   getLocaleList().map(language => {
     createPage({
@@ -47,39 +53,19 @@ exports.createPages = async ({ graphql, actions }) => {
     });
   });
 
-  const graphQLresult = await graphql(
+  /**
+   * Create category pages - for each category create one page for
+   * primary language and one for each translation.
+   */
+  const categoriesResult = await graphql(
     `
-      fragment ProjectFieldsFragment on wordpress__wp_project {
-        id
-        slug
-        polylang_current_lang
-        categories {
-          id
-          slug
-          name
-        }
-      }
-
       fragment CategoryFieldsFragment on wordpress__CATEGORY {
         id
         slug
         polylang_current_lang
       }
 
-      query MasterQuery($primaryLocale: String!) {
-        projects: allWordpressWpProject(
-          filter: { polylang_current_lang: { eq: $primaryLocale } }
-        ) {
-          edges {
-            node {
-              ...ProjectFieldsFragment
-              polylang_translations {
-                ...ProjectFieldsFragment
-              }
-            }
-          }
-        }
-
+      query CategoryPagesQuery($primaryLocale: String!) {
         categories: allWordpressCategory(
           filter: { polylang_current_lang: { eq: $primaryLocale } }
         ) {
@@ -99,7 +85,7 @@ exports.createPages = async ({ graphql, actions }) => {
     }
   );
 
-  graphQLresult.data.categories.edges.map(({ node: category }) => {
+  categoriesResult.data.categories.edges.map(({ node: category }) => {
     createCategoryPage(createPage, category);
 
     const translations = category.polylang_translations || [];
@@ -108,7 +94,45 @@ exports.createPages = async ({ graphql, actions }) => {
     });
   });
 
-  graphQLresult.data.projects.edges.map(({ node: project }) => {
+  /**
+   * Create project pages - for each project create one page for
+   * primary language, one for each translation, and one copy for each category
+   * it belongs to.
+   */
+  const projectsResult = await graphql(
+    `
+      fragment ProjectFieldsFragment on wordpress__wp_project {
+        id
+        slug
+        polylang_current_lang
+        categories {
+          id
+          slug
+          name
+        }
+      }
+
+      query ProjectPagesQuery($primaryLocale: String!) {
+        projects: allWordpressWpProject(
+          filter: { polylang_current_lang: { eq: $primaryLocale } }
+        ) {
+          edges {
+            node {
+              ...ProjectFieldsFragment
+              polylang_translations {
+                ...ProjectFieldsFragment
+              }
+            }
+          }
+        }
+      }
+    `,
+    {
+      primaryLocale: getPrimaryLocale()
+    }
+  );
+
+  projectsResult.data.projects.edges.map(({ node: project }) => {
     const categories = project.categories || [];
     categories.map(category => {
       createProjectPage(createPage, project, category);
