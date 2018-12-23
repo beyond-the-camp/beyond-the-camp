@@ -4,11 +4,11 @@ import { Link } from 'gatsby';
 
 import { getLanguageName, getLocaleList } from '../utils/languages';
 
-export interface LinksData {
+export interface LocaleLinks {
   [locale: string]: string;
 }
 
-const getLink = (locale: string, links?: LinksData): string => {
+const getLink = (locale: string, links?: LocaleLinks): string => {
   if (links && links[locale]) {
     return links[locale];
   }
@@ -17,7 +17,7 @@ const getLink = (locale: string, links?: LinksData): string => {
 
 interface Props {
   currentLocale: string;
-  links?: LinksData;
+  links?: LocaleLinks;
 }
 
 const LanguageSelector = ({ currentLocale, links }: Props) => (

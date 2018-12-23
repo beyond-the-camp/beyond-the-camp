@@ -3,7 +3,7 @@ import * as React from 'react';
 import { graphql, Link } from 'gatsby';
 
 import BreadCrumbs from '../components/BreadCrumbs';
-import { LinksData } from '../components/LanguageSelector';
+import { LocaleLinks } from '../components/LanguageSelector';
 import Layout from '../components/Layout';
 import * as routes from '../utils/routes';
 
@@ -31,7 +31,7 @@ const getProjectPath = (category: CategoryNode, project: ProjectNode): string =>
     project.slug
   );
 
-const getLinks = ({ data }: Props): LinksData => {
+const getLocaleLinks = ({ data }: Props): LocaleLinks => {
   const links: { [locale: string]: string } = {
     [data.category.polylang_current_lang]: routes.getCategoryPath(
       data.category.polylang_current_lang,
@@ -65,7 +65,7 @@ export default (props: Props) => {
   return (
     <Layout
       currentLocale={data.category.polylang_current_lang}
-      links={getLinks(props)}
+      localeLinks={getLocaleLinks(props)}
     >
       <BreadCrumbs
         crumbs={[

@@ -1,15 +1,15 @@
 import * as React from 'react';
 
 import { graphql, Link } from 'gatsby';
-import Img from 'gatsby-image';
+import Img, { FluidObject } from 'gatsby-image';
 import { Map, Marker, Popup, TileLayer } from 'react-leaflet';
 
 import BreadCrumbs from '../components/BreadCrumbs';
-import { LinksData } from '../components/LanguageSelector';
+import { LocaleLinks } from '../components/LanguageSelector';
 import Layout from '../components/Layout';
 import * as routes from '../utils/routes';
 
-const getLinks = (props: Props): LinksData => {
+const getLocaleLinks = (props: Props): LocaleLinks => {
   const links: { [locale: string]: string } = {
     [props.data.project.polylang_current_lang]: routes.getProjectPath(
       props.data.project.polylang_current_lang,
@@ -85,39 +85,7 @@ interface OpeningDays {
   sunday?: OpeningTimes;
 }
 
-interface Props {
-  data: {
-    project: {
-      slug: string;
-      title: string;
-      content: string;
-      polylang_current_lang: string;
-      polylang_translations: Array<{
-        polylang_current_lang: string;
-        slug: string;
-      }>;
-      featured_media: {
-        localFile: {
-          childImageSharp: {
-            fluid: object;
-          };
-        };
-      };
-      acf: OpeningDays;
-    };
-
-    category: {
-      name: string;
-      slug: string;
-      polylang_translations: Array<{
-        polylang_current_lang: string;
-        slug: string;
-      }>;
-    };
-  };
-}
-
-const ProjectMap = () => {
+const LocationMap = () => {
   if (typeof window !== 'undefined') {
     return (
       <Map center={[51.505, -0.09]} zoom={13}>
@@ -136,6 +104,38 @@ const ProjectMap = () => {
   return null;
 };
 
+interface Props {
+  data: {
+    project: {
+      slug: string;
+      title: string;
+      content: string;
+      polylang_current_lang: string;
+      polylang_translations: Array<{
+        polylang_current_lang: string;
+        slug: string;
+      }>;
+      featured_media: {
+        localFile: {
+          childImageSharp: {
+            fluid: FluidObject;
+          };
+        };
+      };
+      acf: OpeningDays;
+    };
+
+    category: {
+      name: string;
+      slug: string;
+      polylang_translations: Array<{
+        polylang_current_lang: string;
+        slug: string;
+      }>;
+    };
+  };
+}
+
 export default (props: Props) => {
   const { data } = props;
   const { acf } = data.project;
@@ -143,7 +143,7 @@ export default (props: Props) => {
   return (
     <Layout
       currentLocale={data.project.polylang_current_lang}
-      links={getLinks(props)}
+      localeLinks={getLocaleLinks(props)}
     >
       <BreadCrumbs
         crumbs={[
@@ -208,7 +208,7 @@ export default (props: Props) => {
               <section className="tile is-child box">
                 <p className="title is-5">Location</p>
                 <p>Find us here</p>
-                <ProjectMap />
+                <LocationMap />
               </section>
             </aside>
           </div>
