@@ -33,6 +33,21 @@ const getLocaleLinks = (props: Props): LocaleLinks => {
   return links;
 };
 
+interface OpeningTimes {
+  open: string;
+  close: string;
+}
+
+interface OpeningDays {
+  monday?: OpeningTimes;
+  tuesday?: OpeningTimes;
+  wednesday?: OpeningTimes;
+  thursday?: OpeningTimes;
+  friday?: OpeningTimes;
+  saturday?: OpeningTimes;
+  sunday?: OpeningTimes;
+}
+
 const getDayElement = (day: string, times?: OpeningTimes) => {
   return {
     day,
@@ -44,6 +59,16 @@ const getDayElement = (day: string, times?: OpeningTimes) => {
       : { open: '', close: '' }
   };
 };
+
+const sampleDays: Array<{ day: string; times: OpeningTimes }> = [
+  { day: 'Monday', times: { open: '', close: '' } },
+  { day: 'Tuesday', times: { open: '', close: '' } },
+  { day: 'Wednesday', times: { open: '', close: '' } },
+  { day: 'Thursday', times: { open: '', close: '' } },
+  { day: 'Friday', times: { open: '', close: '' } },
+  { day: 'Saturday', times: { open: '', close: '' } },
+  { day: 'Sunday', times: { open: '', close: '' } }
+];
 
 const getOpeningTimeData = (
   days: OpeningDays
@@ -59,31 +84,6 @@ const getOpeningTimeData = (
   // ];
   return sampleDays;
 };
-
-const sampleDays: Array<{ day: string; times: OpeningTimes }> = [
-  { day: 'Monday', times: { open: '', close: '' } },
-  { day: 'Tuesday', times: { open: '', close: '' } },
-  { day: 'Wednesday', times: { open: '', close: '' } },
-  { day: 'Thursday', times: { open: '', close: '' } },
-  { day: 'Friday', times: { open: '', close: '' } },
-  { day: 'Saturday', times: { open: '', close: '' } },
-  { day: 'Sunday', times: { open: '', close: '' } }
-];
-
-interface OpeningTimes {
-  open: string;
-  close: string;
-}
-
-interface OpeningDays {
-  monday?: OpeningTimes;
-  tuesday?: OpeningTimes;
-  wednesday?: OpeningTimes;
-  thursday?: OpeningTimes;
-  friday?: OpeningTimes;
-  saturday?: OpeningTimes;
-  sunday?: OpeningTimes;
-}
 
 const LocationMap = () => {
   if (typeof window !== 'undefined') {
