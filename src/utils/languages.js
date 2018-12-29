@@ -7,6 +7,8 @@ const languages = {
 
 /**
  * Get a list of available locale codes.
+ *
+ * @returns {(keyof languages)[]} A list
  */
 function getLocaleList() {
   return Object.keys(languages);
@@ -15,7 +17,7 @@ function getLocaleList() {
 /**
  * Get the display name of the given locale code.
  *
- * @param {string} locale Locale code to lookup
+ * @param {keyof languages} locale Locale code to lookup
  */
 function getLanguageName(locale) {
   if (locale && languages[locale]) {
@@ -27,7 +29,7 @@ function getLanguageName(locale) {
 /**
  * Get the text direction ('ltr' or 'rtl') for the given locale.
  *
- * @param {string} locale Locale code
+ * @param {keyof languages} locale Locale code
  */
 function getTextDirection(locale) {
   return locale && languages[locale] ? languages[locale].direction : 'ltr';
@@ -35,6 +37,8 @@ function getTextDirection(locale) {
 
 /**
  * Get the primary locale that will be used for default values for incomplete locales.
+ *
+ * @returns {keyof languages}
  */
 function getPrimaryLocale() {
   return 'en_GB';

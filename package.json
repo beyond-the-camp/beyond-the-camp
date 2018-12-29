@@ -8,6 +8,9 @@
   ],
   "license": "MIT",
   "main": "n/a",
+  "engines": {
+    "node": ">=8"
+  },
   "scripts": {
     "clean": "rimraf .cache public",
     "develop": "yarn run clean && gatsby develop",
@@ -20,7 +23,7 @@
   },
   "dependencies": {
     "bulma": "^0.7.2",
-    "gatsby": "^2.0.75",
+    "gatsby": "^2.0.78",
     "gatsby-image": "^2.0.25",
     "gatsby-plugin-react-helmet": "^3.0.5",
     "gatsby-plugin-react-leaflet": "2.0.3",
@@ -36,6 +39,7 @@
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
     "react-helmet": "^5.2.0",
+    "react-intl": "^2.7.2",
     "react-leaflet": "^2.1.4",
     "typescript": "^3.2.2"
   },
@@ -44,6 +48,7 @@
     "@types/jest": "^23.3.10",
     "@types/react": "^16.7.18",
     "@types/react-helmet": "^5.0.7",
+    "@types/react-intl": "^2.3.14",
     "@types/react-leaflet": "^1.1.6",
     "husky": "^1.2.1",
     "jest": "^23.6.0",

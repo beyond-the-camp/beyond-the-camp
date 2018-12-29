@@ -2,15 +2,17 @@ import * as React from 'react';
 
 import { graphql, Link } from 'gatsby';
 import Img, { FluidObject } from 'gatsby-image';
+import { FormattedMessage } from 'react-intl';
 import { Map, Marker, Popup, TileLayer } from 'react-leaflet';
 
 import BreadCrumbs from '../components/BreadCrumbs';
 import { LocaleLinks } from '../components/LanguageSelector';
 import Layout from '../components/Layout';
 import * as routes from '../utils/routes';
+import { LocaleType } from '../utils/types';
 
 const getLocaleLinks = (props: Props): LocaleLinks => {
-  const links: { [locale: string]: string } = {
+  const links: Partial<LocaleLinks> = {
     [props.data.project.polylang_current_lang]: routes.getProjectPath(
       props.data.project.polylang_current_lang,
       props.data.category.slug,
@@ -30,7 +32,7 @@ const getLocaleLinks = (props: Props): LocaleLinks => {
     }
   });
 
-  return links;
+  return links as LocaleLinks;
 };
 
 const getDayElement = (day: string, times?: OpeningTimes) => {
@@ -110,9 +112,9 @@ interface Props {
       slug: string;
       title: string;
       content: string;
-      polylang_current_lang: string;
+      polylang_current_lang: LocaleType;
       polylang_translations: Array<{
-        polylang_current_lang: string;
+        polylang_current_lang: LocaleType;
         slug: string;
       }>;
       featured_media: {
@@ -198,7 +200,9 @@ export default (props: Props) => {
             </div>
             <aside className="tile is-parent is-vertical">
               <section className="tile is-child box">
-                <p className="title is-5">Opening Times</p>
+                <p className="title is-5">
+                  <FormattedMessage id="OPENING_TIMES" />
+                </p>
                 {getOpeningTimeData(acf).map(day => (
                   <p key={day.day}>{`${day.day}: ${day.times.open} - ${
                     day.times.close

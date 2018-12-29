@@ -5,6 +5,7 @@ import { graphql, Link } from 'gatsby';
 import BreadCrumbs from '../components/BreadCrumbs';
 import Layout from '../components/Layout';
 import * as routes from '../utils/routes';
+import { LocaleType } from '../utils/types';
 
 interface CategoryNode {
   id: string;
@@ -25,7 +26,7 @@ interface Props {
     };
   };
   pageContext: {
-    language: string;
+    language: LocaleType;
   };
 }
 

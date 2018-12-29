@@ -5,7 +5,8 @@
   "rules": {
     "interface-name": [true, "never-prefix"],
     "no-implicit-dependencies": [true, "dev"],
-    "object-literal-sort-keys": false
+    "object-literal-sort-keys": false,
+    "no-submodule-imports": [true, "react-intl/locale-data"]
   },
   "rulesDirectory": []
 }
