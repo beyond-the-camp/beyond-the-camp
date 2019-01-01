@@ -3,12 +3,11 @@ import * as React from 'react';
 import { Link } from 'gatsby';
 
 import { getLanguageName, getLocaleList } from '../utils/languages';
+import { LocaleType } from '../utils/types';
 
-export interface LocaleLinks {
-  [locale: string]: string;
-}
+export type LocaleLinks = Record<LocaleType, string>;
 
-const getLink = (locale: string, links?: LocaleLinks): string => {
+const getLink = (locale: LocaleType, links?: LocaleLinks): string => {
   if (links && links[locale]) {
     return links[locale];
   }
@@ -16,7 +15,7 @@ const getLink = (locale: string, links?: LocaleLinks): string => {
 };
 
 interface Props {
-  currentLocale: string;
+  currentLocale: LocaleType;
   links?: LocaleLinks;
 }
 

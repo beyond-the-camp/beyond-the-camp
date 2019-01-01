@@ -2,9 +2,11 @@ import * as React from 'react';
 
 import { graphql, Link } from 'gatsby';
 
+import { FormattedMessage } from 'react-intl';
 import BreadCrumbs from '../components/BreadCrumbs';
 import Layout from '../components/Layout';
 import * as routes from '../utils/routes';
+import { LocaleType } from '../utils/types';
 
 interface CategoryNode {
   id: string;
@@ -25,13 +27,13 @@ interface Props {
     };
   };
   pageContext: {
-    language: string;
+    language: LocaleType;
   };
 }
 
 export default ({ data, pageContext }: Props) => (
   <Layout currentLocale={pageContext.language}>
-    <BreadCrumbs crumbs={[{ name: 'Home' }]} />
+    <BreadCrumbs crumbs={[{ text: <FormattedMessage id="HOME" /> }]} />
 
     <div className="container">
       {data.categories.edges.map(({ node }) => (

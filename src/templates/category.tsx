@@ -2,17 +2,19 @@ import * as React from 'react';
 
 import { graphql, Link } from 'gatsby';
 
+import { FormattedMessage } from 'react-intl';
 import BreadCrumbs from '../components/BreadCrumbs';
 import { LocaleLinks } from '../components/LanguageSelector';
 import Layout from '../components/Layout';
 import * as routes from '../utils/routes';
+import { LocaleType } from '../utils/types';
 
 interface CategoryNode {
   name: string;
   slug: string;
-  polylang_current_lang: string;
+  polylang_current_lang: LocaleType;
   polylang_translations: Array<{
-    polylang_current_lang: string;
+    polylang_current_lang: LocaleType;
     slug: string;
   }>;
 }
@@ -32,7 +34,7 @@ const getProjectPath = (category: CategoryNode, project: ProjectNode): string =>
   );
 
 const getLocaleLinks = ({ data }: Props): LocaleLinks => {
-  const links: { [locale: string]: string } = {
+  const links: Partial<LocaleLinks> = {
     [data.category.polylang_current_lang]: routes.getCategoryPath(
       data.category.polylang_current_lang,
       data.category.slug
@@ -45,7 +47,7 @@ const getLocaleLinks = ({ data }: Props): LocaleLinks => {
     links[lang] = routes.getCategoryPath(lang, category);
   });
 
-  return links;
+  return links as LocaleLinks;
 };
 
 interface Props {
@@ -70,11 +72,11 @@ export default (props: Props) => {
       <BreadCrumbs
         crumbs={[
           {
-            name: 'Home',
+            text: <FormattedMessage id="HOME" />,
             link: routes.getHomePath(data.category.polylang_current_lang)
           },
           {
-            name: data.category.name
+            text: data.category.name
           }
         ]}
       />
