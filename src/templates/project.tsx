@@ -8,6 +8,7 @@ import { Map, Marker, Popup, TileLayer } from 'react-leaflet';
 import BreadCrumbs from '../components/BreadCrumbs';
 import { LocaleLinks } from '../components/LanguageSelector';
 import Layout from '../components/Layout';
+import { getPrimaryLocale } from '../utils/languages';
 import * as routes from '../utils/routes';
 import { LocaleType } from '../utils/types';
 
@@ -116,6 +117,13 @@ interface Props {
       polylang_translations: Array<{
         polylang_current_lang: LocaleType;
         slug: string;
+        featured_media: {
+          localFile: {
+            childImageSharp: {
+              fluid: FluidObject;
+            };
+          };
+        };
       }>;
       featured_media: {
         localFile: {
@@ -138,10 +146,22 @@ interface Props {
   };
 }
 
+const getFeaturedMedia = (props: Props) => {
+  const featuredMedia = props.data.project.featured_media;
+  if (featuredMedia) {
+    return featuredMedia;
+  } else {
+    const projectEnglish = props.data.project.polylang_translations.find(
+      translation => translation.polylang_current_lang === getPrimaryLocale()
+    );
+    return projectEnglish.featured_media;
+  }
+};
+
 export default (props: Props) => {
   const { data } = props;
   const { acf } = data.project;
-  const featuredMedia = data.project.featured_media;
+  const featuredMedia = getFeaturedMedia(props);
   return (
     <Layout
       currentLocale={data.project.polylang_current_lang}
@@ -221,7 +241,6 @@ export default (props: Props) => {
     </Layout>
   );
 };
-
 export const query = graphql`
   query ProjectPageQuery($id: String!, $categoryId: String!) {
     project: wordpressWpProject(id: { eq: $id }) {
@@ -232,6 +251,15 @@ export const query = graphql`
       polylang_translations {
         polylang_current_lang
         slug
+        featured_media {
+          localFile {
+            childImageSharp {
+              fluid(maxWidth: 1000) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+        }
       }
       featured_media {
         localFile {
