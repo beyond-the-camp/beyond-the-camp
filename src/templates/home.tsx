@@ -39,7 +39,10 @@ export default ({ data, pageContext }: Props) => (
         <Link to={getCategoryPath(node)} key={node.id}>
           <div className="card">
             <div className="card-content">
-              <div className="content">{node.name}</div>
+              <div
+                className="content"
+                dangerouslySetInnerHTML={{ __html: node.name }}
+              />
             </div>
           </div>
         </Link>
