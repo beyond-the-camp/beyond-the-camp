@@ -2,6 +2,7 @@ import * as React from 'react';
 
 import { graphql, Link } from 'gatsby';
 
+import { FormattedMessage } from 'react-intl';
 import BreadCrumbs from '../components/BreadCrumbs';
 import { LocaleLinks } from '../components/LanguageSelector';
 import Layout from '../components/Layout';
@@ -71,11 +72,11 @@ export default (props: Props) => {
       <BreadCrumbs
         crumbs={[
           {
-            name: 'Home',
+            text: <FormattedMessage id="HOME" />,
             link: routes.getHomePath(data.category.polylang_current_lang)
           },
           {
-            name: data.category.name
+            text: data.category.name
           }
         ]}
       />

@@ -1,13 +1,14 @@
 import * as React from 'react';
 
-import { graphql, Link } from 'gatsby';
+import { graphql } from 'gatsby';
 import Img, { FluidObject } from 'gatsby-image';
-import { FormattedMessage } from 'react-intl';
-import { Map, Marker, Popup, TileLayer } from 'react-leaflet';
 
+import { FormattedMessage } from 'react-intl';
 import BreadCrumbs from '../components/BreadCrumbs';
 import { LocaleLinks } from '../components/LanguageSelector';
 import Layout from '../components/Layout';
+import LocationInfo from '../components/LocationInfo';
+import OpeningTimes, { OpeningDays } from '../components/OpeningTimes';
 import { getPrimaryLocale } from '../utils/languages';
 import * as routes from '../utils/routes';
 import { LocaleType } from '../utils/types';
@@ -36,76 +37,13 @@ const getLocaleLinks = (props: Props): LocaleLinks => {
   return links as LocaleLinks;
 };
 
-interface OpeningTimes {
-  open: string;
-  close: string;
-}
-
-interface OpeningDays {
-  monday?: OpeningTimes;
-  tuesday?: OpeningTimes;
-  wednesday?: OpeningTimes;
-  thursday?: OpeningTimes;
-  friday?: OpeningTimes;
-  saturday?: OpeningTimes;
-  sunday?: OpeningTimes;
-}
-
-const getDayElement = (day: string, times?: OpeningTimes) => {
-  return {
-    day,
-    times: times
-      ? {
-          open: times.open,
-          close: times.close
-        }
-      : { open: '', close: '' }
+interface FeaturedMedia {
+  localFile: {
+    childImageSharp: {
+      fluid: FluidObject;
+    };
   };
-};
-
-const sampleDays: Array<{ day: string; times: OpeningTimes }> = [
-  { day: 'Monday', times: { open: '', close: '' } },
-  { day: 'Tuesday', times: { open: '', close: '' } },
-  { day: 'Wednesday', times: { open: '', close: '' } },
-  { day: 'Thursday', times: { open: '', close: '' } },
-  { day: 'Friday', times: { open: '', close: '' } },
-  { day: 'Saturday', times: { open: '', close: '' } },
-  { day: 'Sunday', times: { open: '', close: '' } }
-];
-
-const getOpeningTimeData = (
-  days: OpeningDays
-): Array<{ day: string; times: OpeningTimes }> => {
-  // return [
-  //   getDayElement('Monday', days.monday),
-  //   getDayElement('Tuesday', days.tuesday),
-  //   getDayElement('Wednesday', days.wednesday),
-  //   getDayElement('Thursday', days.thursday),
-  //   getDayElement('Friday', days.friday),
-  //   getDayElement('Saturday', days.saturday),
-  //   getDayElement('Sunday', days.sunday)
-  // ];
-  return sampleDays;
-};
-
-const LocationMap = () => {
-  if (typeof window !== 'undefined') {
-    return (
-      <Map center={[51.505, -0.09]} zoom={13}>
-        <TileLayer
-          attribution='&amp;copy <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-          url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-        />
-        <Marker position={[51.505, -0.09]}>
-          <Popup>
-            A pretty CSS3 popup. <br /> Easily customizable.
-          </Popup>
-        </Marker>
-      </Map>
-    );
-  }
-  return null;
-};
+}
 
 interface Props {
   data: {
@@ -117,22 +55,10 @@ interface Props {
       polylang_translations: Array<{
         polylang_current_lang: LocaleType;
         slug: string;
-        featured_media: {
-          localFile: {
-            childImageSharp: {
-              fluid: FluidObject;
-            };
-          };
-        };
+        featured_media: FeaturedMedia | null;
       }>;
-      featured_media: {
-        localFile: {
-          childImageSharp: {
-            fluid: FluidObject;
-          };
-        };
-      };
       acf: OpeningDays;
+      featured_media: FeaturedMedia | null;
     };
 
     category: {
@@ -146,7 +72,7 @@ interface Props {
   };
 }
 
-const getFeaturedMedia = (props: Props) => {
+const getFeaturedMedia = (props: Props): FeaturedMedia => {
   const featuredMedia = props.data.project.featured_media;
   if (featuredMedia) {
     return featuredMedia;
@@ -162,6 +88,7 @@ export default (props: Props) => {
   const { data } = props;
   const { acf } = data.project;
   const featuredMedia = getFeaturedMedia(props);
+
   return (
     <Layout
       currentLocale={data.project.polylang_current_lang}
@@ -170,18 +97,18 @@ export default (props: Props) => {
       <BreadCrumbs
         crumbs={[
           {
-            name: 'Home',
+            text: <FormattedMessage id="HOME" />,
             link: routes.getHomePath(data.project.polylang_current_lang)
           },
           {
-            name: data.category.name,
+            text: data.category.name,
             link: routes.getCategoryPath(
               data.project.polylang_current_lang,
               data.category.slug
             )
           },
           {
-            name: data.project.title
+            text: data.project.title
           }
         ]}
       />
@@ -220,19 +147,10 @@ export default (props: Props) => {
             </div>
             <aside className="tile is-parent is-vertical">
               <section className="tile is-child box">
-                <p className="title is-5">
-                  <FormattedMessage id="OPENING_TIMES" />
-                </p>
-                {getOpeningTimeData(acf).map(day => (
-                  <p key={day.day}>{`${day.day}: ${day.times.open} - ${
-                    day.times.close
-                  }`}</p>
-                ))}
+                <OpeningTimes days={acf} />
               </section>
               <section className="tile is-child box">
-                <p className="title is-5">Location</p>
-                <p>Find us here</p>
-                <LocationMap />
+                <LocationInfo />
               </section>
             </aside>
           </div>
@@ -241,6 +159,7 @@ export default (props: Props) => {
     </Layout>
   );
 };
+
 export const query = graphql`
   query ProjectPageQuery($id: String!, $categoryId: String!) {
     project: wordpressWpProject(id: { eq: $id }) {

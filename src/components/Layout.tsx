@@ -1,5 +1,6 @@
 import * as React from 'react';
 
+import { LocaleMessages } from '../i18n/types';
 import { getTextDirection } from '../utils/languages';
 import { LocaleType } from '../utils/types';
 import { LocaleLinks } from './LanguageSelector';
@@ -14,12 +15,12 @@ import * as faData from 'react-intl/locale-data/fa';
 import * as frData from 'react-intl/locale-data/fr';
 
 // Messages
-import * as ar from '../i18n/ar.json';
-import * as en_GB from '../i18n/en_GB.json';
-import * as fa_IR from '../i18n/fa_IR.json';
-import * as fr_FR from '../i18n/fr_FR.json';
+import ar from '../i18n/ar';
+import en_GB from '../i18n/en_GB';
+import fa_IR from '../i18n/fa_IR';
+import fr_FR from '../i18n/fr_FR';
 
-const messages: Record<LocaleType, any> = {
+const messages: Record<LocaleType, LocaleMessages> = {
   en_GB,
   fr_FR,
   ar,
@@ -34,12 +35,18 @@ interface Props {
   localeLinks?: LocaleLinks;
 }
 
+const defaultProps: Partial<Props> = {
+  currentLocale: 'en_GB'
+};
+
 const Layout = ({ children, currentLocale, localeLinks }: Props) => {
   const directionClass =
     getTextDirection(currentLocale) === 'rtl' ? 'layout-rtl' : '';
 
+  const jsLocale = currentLocale.replace('_', '-');
+
   return (
-    <IntlProvider locale="en" messages={messages[currentLocale].default}>
+    <IntlProvider locale={jsLocale} messages={messages[currentLocale]}>
       <div className={`${directionClass} background`}>
         <NavBar currentLocale={currentLocale} localeLinks={localeLinks} />
         <main>{children}</main>
@@ -47,5 +54,7 @@ const Layout = ({ children, currentLocale, localeLinks }: Props) => {
     </IntlProvider>
   );
 };
+
+Layout.defaultProps = defaultProps;
 
 export default Layout;
