@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import { FormattedMessage } from 'react-intl';
+import { FormattedMessage, FormattedTime } from 'react-intl';
 
 interface OpeningTimes {
   open: string;
@@ -17,41 +17,25 @@ export interface OpeningDays {
   sunday?: OpeningTimes;
 }
 
-const sampleDays: Array<{ day: string; times: OpeningTimes }> = [
-  { day: 'Monday', times: { open: '', close: '' } },
-  { day: 'Tuesday', times: { open: '', close: '' } },
-  { day: 'Wednesday', times: { open: '', close: '' } },
-  { day: 'Thursday', times: { open: '', close: '' } },
-  { day: 'Friday', times: { open: '', close: '' } },
-  { day: 'Saturday', times: { open: '', close: '' } },
-  { day: 'Sunday', times: { open: '', close: '' } }
-];
-
 const getDayElement = (day: string, times?: OpeningTimes) => {
   return {
     day,
-    times: times
-      ? {
-          open: times.open,
-          close: times.close
-        }
-      : { open: '', close: '' }
+    times
   };
 };
 
 const getOpeningTimeData = (
   days: OpeningDays
-): Array<{ day: string; times: OpeningTimes }> => {
-  // return [
-  //   getDayElement('Monday', days.monday),
-  //   getDayElement('Tuesday', days.tuesday),
-  //   getDayElement('Wednesday', days.wednesday),
-  //   getDayElement('Thursday', days.thursday),
-  //   getDayElement('Friday', days.friday),
-  //   getDayElement('Saturday', days.saturday),
-  //   getDayElement('Sunday', days.sunday)
-  // ];
-  return sampleDays;
+): Array<{ day: string; times?: OpeningTimes }> => {
+  return [
+    getDayElement('MONDAY', days.monday),
+    getDayElement('TUESDAY', days.tuesday),
+    getDayElement('WEDNESDAY', days.wednesday),
+    getDayElement('THURSDAY', days.thursday),
+    getDayElement('FRIDAY', days.friday),
+    getDayElement('SATURDAY', days.saturday),
+    getDayElement('SUNDAY', days.sunday)
+  ];
 };
 
 interface Props {
@@ -60,14 +44,21 @@ interface Props {
 
 const OpeningTimes = ({ days }: Props) => (
   <div>
-    {' '}
     <p className="title is-5">
       <FormattedMessage id="OPENING_TIMES" />
     </p>
     {getOpeningTimeData(days).map(day => (
-      <p key={day.day}>{`${day.day}: ${day.times.open} - ${
-        day.times.close
-      }`}</p>
+      <p key={day.day}>
+        <FormattedMessage id={day.day} />
+        {': '}
+        {day.times && day.times.open && (
+          <FormattedTime value={`2018-01-01 ${day.times.open}`} />
+        )}
+        {' - '}
+        {day.times && day.times.close && (
+          <FormattedTime value={`2018-01-01 ${day.times.close}`} />
+        )}
+      </p>
     ))}
   </div>
 );

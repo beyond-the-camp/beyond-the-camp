@@ -57,7 +57,7 @@ interface Props {
         slug: string;
         featured_media: FeaturedMedia | null;
       }>;
-      acf: OpeningDays;
+      opening_times: OpeningDays;
       featured_media: FeaturedMedia | null;
     };
 
@@ -86,7 +86,7 @@ const getFeaturedMedia = (props: Props): FeaturedMedia => {
 
 export default (props: Props) => {
   const { data } = props;
-  const { acf } = data.project;
+  const { opening_times } = data.project;
   const featuredMedia = getFeaturedMedia(props);
 
   return (
@@ -147,7 +147,7 @@ export default (props: Props) => {
             </div>
             <aside className="tile is-parent is-vertical">
               <section className="tile is-child box">
-                <OpeningTimes days={acf} />
+                <OpeningTimes days={opening_times} />
               </section>
               <section className="tile is-child box">
                 <LocationInfo />
@@ -161,6 +161,37 @@ export default (props: Props) => {
 };
 
 export const query = graphql`
+  fragment OpeningTimesFragment on acf_4 {
+    monday {
+      open
+      close
+    }
+    tuesday {
+      open
+      close
+    }
+    wednesday {
+      open
+      close
+    }
+    thursday {
+      open
+      close
+    }
+    friday {
+      open
+      close
+    }
+    saturday {
+      open
+      close
+    }
+    sunday {
+      open
+      close
+    }
+  }
+
   query ProjectPageQuery($id: String!, $categoryId: String!) {
     project: wordpressWpProject(id: { eq: $id }) {
       slug
@@ -179,6 +210,9 @@ export const query = graphql`
             }
           }
         }
+        opening_times: acf {
+          ...OpeningTimesFragment
+        }
       }
       featured_media {
         localFile {
@@ -188,6 +222,9 @@ export const query = graphql`
             }
           }
         }
+      }
+      opening_times: acf {
+        ...OpeningTimesFragment
       }
     }
 
