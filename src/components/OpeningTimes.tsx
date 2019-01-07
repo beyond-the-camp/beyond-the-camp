@@ -44,7 +44,7 @@ interface Props {
 
 const OpeningTimes = ({ days }: Props) => (
   <div>
-    <p className="title is-5">
+    <p>
       <FormattedMessage id="OPENING_TIMES" />
     </p>
     {getOpeningTimeData(days).map(day => (

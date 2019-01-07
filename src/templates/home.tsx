@@ -35,18 +35,16 @@ export default ({ data, pageContext }: Props) => (
   <Layout currentLocale={pageContext.language}>
     <BreadCrumbs crumbs={[{ text: <FormattedMessage id="HOME" /> }]} />
 
-    <div className="container">
+    <div className="flex flex-wrap -mx-2">
       {data.categories.edges.map(({ node }) => (
-        <Link to={getCategoryPath(node)} key={node.id}>
-          <div className="card">
-            <div className="card-content">
-              <div
-                className="content"
-                dangerouslySetInnerHTML={{ __html: node.name }}
-              />
-            </div>
-          </div>
-        </Link>
+        <div key={node.id} className="w-full max-w-sm md:w-1/2 px-2 mb-2">
+          <Link to={getCategoryPath(node)} className="no-underline">
+            <div
+              className="px-6 py-4 border rounded overflow-hidden hover:shadow"
+              dangerouslySetInnerHTML={{ __html: node.name }}
+            />
+          </Link>
+        </div>
       ))}
     </div>
   </Layout>

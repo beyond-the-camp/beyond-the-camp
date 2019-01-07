@@ -19,20 +19,48 @@ interface Props {
   links?: LocaleLinks;
 }
 
-const LanguageSelector = ({ currentLocale, links }: Props) => (
-  <div className="navbar-item has-dropdown is-hoverable">
-    <a className="navbar-link has-text-white">
-      {getLanguageName(currentLocale)}
-    </a>
+interface State {
+  showMenu: boolean;
+}
 
-    <div className="navbar-dropdown">
-      {getLocaleList().map(locale => (
-        <Link key={locale} className="navbar-item" to={getLink(locale, links)}>
-          {getLanguageName(locale)}
-        </Link>
-      ))}
-    </div>
-  </div>
-);
+class LanguageSelector extends React.Component<Props, State> {
+  public state = {
+    showMenu: false
+  };
+
+  constructor(props: Props) {
+    super(props);
+    this.toggleMenu = this.toggleMenu.bind(this);
+  }
+
+  public render() {
+    const { currentLocale, links } = this.props;
+    return (
+      <div className="relative inline-block">
+        <button
+          onClick={this.toggleMenu}
+          className="hover:bg-teal-dark px-6 h-16"
+        >
+          {getLanguageName(currentLocale)}
+        </button>
+        {this.state.showMenu && (
+          <div className="absolute block pin-r bg-white p-3 border-black shadow-md">
+            {getLocaleList().map(locale => (
+              <p key={locale}>
+                <Link to={getLink(locale, links)}>
+                  {getLanguageName(locale)}
+                </Link>
+              </p>
+            ))}
+          </div>
+        )}
+      </div>
+    );
+  }
+
+  private toggleMenu() {
+    this.setState(state => ({ showMenu: !state.showMenu }));
+  }
+}
 
 export default LanguageSelector;

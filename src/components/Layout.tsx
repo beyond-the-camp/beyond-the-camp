@@ -47,9 +47,9 @@ const Layout = ({ children, currentLocale, localeLinks }: Props) => {
 
   return (
     <IntlProvider locale={jsLocale} messages={messages[currentLocale]}>
-      <div className={`${directionClass} background`}>
+      <div className={`${directionClass}`}>
         <NavBar currentLocale={currentLocale} localeLinks={localeLinks} />
-        <main>{children}</main>
+        <main className="container mx-auto">{children}</main>
       </div>
     </IntlProvider>
   );

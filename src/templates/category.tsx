@@ -81,25 +81,20 @@ export default (props: Props) => {
         ]}
       />
 
-      <div className="container">
-        <h1 className="title">{data.category.name}</h1>
+      <h1>{data.category.name}</h1>
+      <ul>
         {data.projects &&
           data.projects.edges.map(({ node }) => (
-            <Link
-              to={getProjectPath(data.category, node)}
-              key={node.wordpress_id}
-            >
-              <div className="card">
-                <div className="card-content">
-                  <div
-                    className="content"
-                    dangerouslySetInnerHTML={{ __html: node.title }}
-                  />
-                </div>
-              </div>
-            </Link>
+            <li>
+              <Link
+                to={getProjectPath(data.category, node)}
+                key={node.wordpress_id}
+              >
+                <div dangerouslySetInnerHTML={{ __html: node.title }} />
+              </Link>
+            </li>
           ))}
-      </div>
+      </ul>
     </Layout>
   );
 };

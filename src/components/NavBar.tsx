@@ -9,35 +9,19 @@ interface Props {
 }
 
 const NavBar = ({ currentLocale, localeLinks }: Props) => (
-  <nav className="navbar" role="navigation" aria-label="main navigation">
-    <div className="container">
-      <div className="navbar-brand">
-        <div className="navbar-item">
-          <p className="has-text-white title is-size-5">BeyondMoria</p>
-        </div>
+  <nav
+    className="flex items-center justify-between flex-wrap bg-teal h-16 px-6"
+    role="navigation"
+    aria-label="main navigation"
+  >
+    <div className="flex items-center flex-no-shrink text-white mr-6">
+      <p className="font-semibold text-xl tracking-tight">BeyondMoria</p>
+    </div>
 
-        <a
-          role="button"
-          className="navbar-burger burger"
-          aria-label="menu"
-          aria-expanded="false"
-          data-target="burgerMenu"
-        >
-          <span aria-hidden="true" />
-          <span aria-hidden="true" />
-          <span aria-hidden="true" />
-        </a>
-      </div>
-      <div id="burgerMenu" className="navbar-menu">
-        <div className="navbar-end">
-          {currentLocale && (
-            <LanguageSelector
-              currentLocale={currentLocale}
-              links={localeLinks}
-            />
-          )}
-        </div>
-      </div>
+    <div>
+      {currentLocale && (
+        <LanguageSelector currentLocale={currentLocale} links={localeLinks} />
+      )}
     </div>
   </nav>
 );

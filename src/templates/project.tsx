@@ -113,48 +113,27 @@ export default (props: Props) => {
         ]}
       />
 
-      <section className="hero is-medium">
-        <div className="hero-body" style={{ position: 'relative' }}>
-          <div className="overlay_dim" />
-          {featuredMedia && (
-            <Img
-              fluid={featuredMedia.localFile.childImageSharp.fluid}
-              className="feature_image"
-              style={{ position: 'absolute' }}
-            />
-          )}
-          <div className="container feature_text">
-            <h1
-              className="title has-text-white"
-              dangerouslySetInnerHTML={{ __html: data.project.title }}
-            />
-          </div>
-        </div>
+      <section>
+        {featuredMedia && (
+          <Img fluid={featuredMedia.localFile.childImageSharp.fluid} />
+        )}
+        <h1 dangerouslySetInnerHTML={{ __html: data.project.title }} />
       </section>
 
-      <section className="section">
-        <div className="container">
-          <div className="tile is-ancestor">
-            <div className="tile is-parent is-8">
-              <div className="tile is-child box">
-                <article
-                  className="content"
-                  dangerouslySetInnerHTML={{
-                    __html: data.project.content
-                  }}
-                />
-              </div>
-            </div>
-            <aside className="tile is-parent is-vertical">
-              <section className="tile is-child box">
-                <OpeningTimes days={opening_times} />
-              </section>
-              <section className="tile is-child box">
-                <LocationInfo />
-              </section>
-            </aside>
-          </div>
-        </div>
+      <section>
+        <article
+          dangerouslySetInnerHTML={{
+            __html: data.project.content
+          }}
+        />
+        <aside>
+          <section>
+            <OpeningTimes days={opening_times} />
+          </section>
+          <section>
+            <LocationInfo />
+          </section>
+        </aside>
       </section>
     </Layout>
   );
