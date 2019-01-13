@@ -36,24 +36,22 @@ export default ({ data, pageContext }: Props) => (
   <Layout currentLocale={pageContext.language}>
     <BreadCrumbs crumbs={[{ text: <FormattedMessage id="HOME" /> }]} />
     <div className="container">
-      {data.categories.edges.map(({ node }) => {
-        if (node.count > 0) {
-          return (
-            <Link to={getCategoryPath(node)} key={node.id}>
-              <div className="card">
-                <div className="card-content">
-                  <div
-                    className="content"
-                    dangerouslySetInnerHTML={{
-                      __html: node.name + ' (' + node.count + ')'
-                    }}
-                  />
-                </div>
+      {data.categories.edges
+        .filter(({ node }) => node.count > 0)
+        .map(({ node }) => (
+          <Link to={getCategoryPath(node)} key={node.id}>
+            <div className="card">
+              <div className="card-content">
+                <div
+                  className="content"
+                  dangerouslySetInnerHTML={{
+                    __html: node.name + ' (' + node.count + ')'
+                  }}
+                />
               </div>
-            </Link>
-          );
-        }
-      })}
+            </div>
+          </Link>
+        ))}
     </div>
   </Layout>
 );
