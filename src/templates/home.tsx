@@ -5,6 +5,7 @@ import { graphql, Link } from 'gatsby';
 import { FormattedMessage } from 'react-intl';
 import BreadCrumbs from '../components/BreadCrumbs';
 import Layout from '../components/Layout';
+import ListCard from '../components/ListCard';
 import * as routes from '../utils/routes';
 import { LocaleType } from '../utils/types';
 
@@ -39,10 +40,9 @@ export default ({ data, pageContext }: Props) => (
       {data.categories.edges.map(({ node }) => (
         <div key={node.id} className="w-full max-w-sm md:w-1/2 px-2 mb-2">
           <Link to={getCategoryPath(node)} className="no-underline">
-            <div
-              className="px-6 py-4 border rounded overflow-hidden hover:shadow"
-              dangerouslySetInnerHTML={{ __html: node.name }}
-            />
+            <ListCard>
+              <div dangerouslySetInnerHTML={{ __html: node.name }} />
+            </ListCard>
           </Link>
         </div>
       ))}

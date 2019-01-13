@@ -35,10 +35,7 @@
   * @import "components/buttons";
   * @import "components/forms";
   */
-
-.layout-rtl {
-  direction: rtl;
-}
+@import './components.css';
 
 /**
   * This injects all of Tailwind's utility classes, generated based on your
@@ -64,3 +61,5 @@
   * @import "utilities/background-patterns";
   * @import "utilities/skew-transforms";
   */
+
+@import './utilities.css';

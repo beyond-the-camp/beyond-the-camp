@@ -24,7 +24,7 @@ interface State {
 }
 
 class LanguageSelector extends React.Component<Props, State> {
-  public state = {
+  public state: State = {
     showMenu: false
   };
 
@@ -39,7 +39,7 @@ class LanguageSelector extends React.Component<Props, State> {
       <div className="relative inline-block">
         <button
           onClick={this.toggleMenu}
-          className="hover:bg-teal-dark px-6 h-16"
+          className="hover:bg-primary-dark text-white px-6 h-12"
         >
           {getLanguageName(currentLocale)}
         </button>

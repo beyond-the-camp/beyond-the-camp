@@ -40,16 +40,17 @@ const defaultProps: Partial<Props> = {
 };
 
 const Layout = ({ children, currentLocale, localeLinks }: Props) => {
-  const directionClass =
-    getTextDirection(currentLocale) === 'rtl' ? 'layout-rtl' : '';
+  const directionClass = getTextDirection(currentLocale) === 'rtl' ? 'rtl' : '';
 
   const jsLocale = currentLocale.replace('_', '-');
 
   return (
     <IntlProvider locale={jsLocale} messages={messages[currentLocale]}>
-      <div className={`${directionClass}`}>
+      <div
+        className={`${directionClass} bg-grey-lighter min-h-screen font-sans`}
+      >
         <NavBar currentLocale={currentLocale} localeLinks={localeLinks} />
-        <main className="container mx-auto">{children}</main>
+        <main className="px-2 mx-auto">{children}</main>
       </div>
     </IntlProvider>
   );

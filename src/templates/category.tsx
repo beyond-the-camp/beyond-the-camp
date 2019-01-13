@@ -85,11 +85,8 @@ export default (props: Props) => {
       <ul>
         {data.projects &&
           data.projects.edges.map(({ node }) => (
-            <li>
-              <Link
-                to={getProjectPath(data.category, node)}
-                key={node.wordpress_id}
-              >
+            <li key={node.wordpress_id}>
+              <Link to={getProjectPath(data.category, node)}>
                 <div dangerouslySetInnerHTML={{ __html: node.title }} />
               </Link>
             </li>

@@ -1,5 +1,8 @@
 import * as React from 'react';
 
+import { Link } from 'gatsby';
+
+import { getHomePath } from '../utils/routes';
 import { LocaleType } from '../utils/types';
 import LanguageSelector, { LocaleLinks } from './LanguageSelector';
 
@@ -10,12 +13,17 @@ interface Props {
 
 const NavBar = ({ currentLocale, localeLinks }: Props) => (
   <nav
-    className="flex items-center justify-between flex-wrap bg-teal h-16 px-6"
+    className="flex items-center justify-between flex-wrap bg-primary h-12 px-6"
     role="navigation"
     aria-label="main navigation"
   >
-    <div className="flex items-center flex-no-shrink text-white mr-6">
-      <p className="font-semibold text-xl tracking-tight">BeyondMoria</p>
+    <div className="flex items-center flex-no-shrink mr-6">
+      <Link
+        to={getHomePath(currentLocale)}
+        className="font-semibold no-underline text-xl text-white hover:text-grey-lightest tracking-wide"
+      >
+        BeyondMoria
+      </Link>
     </div>
 
     <div>
