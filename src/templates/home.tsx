@@ -13,6 +13,7 @@ interface CategoryNode {
   polylang_current_lang: string;
   slug: string;
   name: string;
+  count: number;
 }
 
 const getCategoryPath = (category: CategoryNode): string =>
@@ -34,20 +35,23 @@ interface Props {
 export default ({ data, pageContext }: Props) => (
   <Layout currentLocale={pageContext.language}>
     <BreadCrumbs crumbs={[{ text: <FormattedMessage id="HOME" /> }]} />
-
     <div className="container">
-      {data.categories.edges.map(({ node }) => (
-        <Link to={getCategoryPath(node)} key={node.id}>
-          <div className="card">
-            <div className="card-content">
-              <div
-                className="content"
-                dangerouslySetInnerHTML={{ __html: node.name }}
-              />
+      {data.categories.edges
+        .filter(({ node }) => node.count > 0)
+        .map(({ node }) => (
+          <Link to={getCategoryPath(node)} key={node.id}>
+            <div className="card">
+              <div className="card-content">
+                <div
+                  className="content"
+                  dangerouslySetInnerHTML={{
+                    __html: node.name + ' (' + node.count + ')'
+                  }}
+                />
+              </div>
             </div>
-          </div>
-        </Link>
-      ))}
+          </Link>
+        ))}
     </div>
   </Layout>
 );
@@ -63,6 +67,7 @@ export const query = graphql`
           slug
           name
           polylang_current_lang
+          count
         }
       }
     }
