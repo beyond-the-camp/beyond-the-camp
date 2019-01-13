@@ -39,6 +39,7 @@ module.exports = {
         printRejected: true, // Print removed selectors and processed file names
         tailwind: true // Enable tailwindcss support
       }
-    }
+    },
+    `gatsby-plugin-netlify`
   ]
 };
