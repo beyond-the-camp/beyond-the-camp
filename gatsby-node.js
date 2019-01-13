@@ -63,6 +63,7 @@ exports.createPages = async ({ graphql, actions }) => {
         id
         slug
         polylang_current_lang
+        count
       }
 
       query CategoryPagesQuery($primaryLocale: String!) {
@@ -85,14 +86,18 @@ exports.createPages = async ({ graphql, actions }) => {
     }
   );
 
-  categoriesResult.data.categories.edges.map(({ node: category }) => {
-    createCategoryPage(createPage, category);
+  categoriesResult.data.categories.edges
+    .filter(({ node }) => node.count > 0)
+    .forEach(({ node }) => {
+      createCategoryPage(createPage, node);
 
-    const translations = category.polylang_translations || [];
-    translations.map(translation => {
-      createCategoryPage(createPage, translation);
+      const translations = node.polylang_translations || [];
+      translations
+        .filter(translation => translation.count > 0)
+        .map(translation => {
+          createCategoryPage(createPage, translation);
+        });
     });
-  });
 
   /**
    * Create project pages - for each project create one page for
