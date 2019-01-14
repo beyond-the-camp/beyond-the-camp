@@ -44,7 +44,11 @@ export default ({ data, pageContext }: Props) => (
           <div key={node.id} className="w-full max-w-sm md:w-1/2 px-2 mb-2">
             <Link to={getCategoryPath(node)} className="no-underline">
               <ListCard>
-                <div dangerouslySetInnerHTML={{ __html: node.name }} />
+                <div
+                  dangerouslySetInnerHTML={{
+                    __html: node.name + ' (' + node.count + ')'
+                  }}
+                />
               </ListCard>
             </Link>
           </div>

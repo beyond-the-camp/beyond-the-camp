@@ -1,11 +1,12 @@
 import * as React from 'react';
 
 import { graphql, Link } from 'gatsby';
-
 import { FormattedMessage } from 'react-intl';
+
 import BreadCrumbs from '../components/BreadCrumbs';
 import { LocaleLinks } from '../components/LanguageSelector';
 import Layout from '../components/Layout';
+import ListCard from '../components/ListCard';
 import * as routes from '../utils/routes';
 import { LocaleType } from '../utils/types';
 
@@ -82,16 +83,24 @@ export default (props: Props) => {
       />
 
       <h1>{data.category.name}</h1>
-      <ul>
+      <ol className="list-reset flex flex-wrap -mx-2 mt-4">
         {data.projects &&
           data.projects.edges.map(({ node }) => (
-            <li key={node.wordpress_id}>
-              <Link to={getProjectPath(data.category, node)}>
-                <div dangerouslySetInnerHTML={{ __html: node.title }} />
+            <li
+              key={node.wordpress_id}
+              className="w-full max-w-sm md:w-1/2 px-2 mb-2"
+            >
+              <Link
+                to={getProjectPath(data.category, node)}
+                className="no-underline"
+              >
+                <ListCard>
+                  <div dangerouslySetInnerHTML={{ __html: node.title }} />
+                </ListCard>
               </Link>
             </li>
           ))}
-      </ul>
+      </ol>
     </Layout>
   );
 };
