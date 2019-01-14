@@ -14,6 +14,7 @@ interface CategoryNode {
   polylang_current_lang: string;
   slug: string;
   name: string;
+  count: number;
 }
 
 const getCategoryPath = (category: CategoryNode): string =>
@@ -37,15 +38,17 @@ export default ({ data, pageContext }: Props) => (
     <BreadCrumbs crumbs={[{ text: <FormattedMessage id="HOME" /> }]} />
 
     <div className="flex flex-wrap -mx-2">
-      {data.categories.edges.map(({ node }) => (
-        <div key={node.id} className="w-full max-w-sm md:w-1/2 px-2 mb-2">
-          <Link to={getCategoryPath(node)} className="no-underline">
-            <ListCard>
-              <div dangerouslySetInnerHTML={{ __html: node.name }} />
-            </ListCard>
-          </Link>
-        </div>
-      ))}
+      {data.categories.edges
+        .filter(({ node }) => node.count > 0)
+        .map(({ node }) => (
+          <div key={node.id} className="w-full max-w-sm md:w-1/2 px-2 mb-2">
+            <Link to={getCategoryPath(node)} className="no-underline">
+              <ListCard>
+                <div dangerouslySetInnerHTML={{ __html: node.name }} />
+              </ListCard>
+            </Link>
+          </div>
+        ))}
     </div>
   </Layout>
 );
@@ -61,6 +64,7 @@ export const query = graphql`
           slug
           name
           polylang_current_lang
+          count
         }
       }
     }
