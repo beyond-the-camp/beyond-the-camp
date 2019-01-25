@@ -76,12 +76,16 @@ const getFeaturedMedia = (props: Props): FeaturedMedia => {
   const featuredMedia = props.data.project.featured_media;
   if (featuredMedia) {
     return featuredMedia;
-  } else {
-    const projectEnglish = props.data.project.polylang_translations.find(
-      translation => translation.polylang_current_lang === getPrimaryLocale()
-    );
+  }
+
+  const projectEnglish = props.data.project.polylang_translations.find(
+    translation => translation.polylang_current_lang === getPrimaryLocale()
+  );
+  if (projectEnglish) {
     return projectEnglish.featured_media;
   }
+
+  return null;
 };
 
 export default (props: Props) => {
