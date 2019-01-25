@@ -2,6 +2,7 @@
   content: '/';
   @apply px-2;
 }
+
 .crumb:last-child:after {
   content: none;
 }

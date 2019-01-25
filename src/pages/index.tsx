@@ -3,12 +3,8 @@ import * as React from 'react';
 import { Link, navigate } from 'gatsby';
 
 import Layout from '../components/Layout';
+import ListCard from '../components/ListCard';
 import { getLanguageName, getLocaleList } from '../utils/languages';
-
-interface LanguageNode {
-  name: string;
-  locale: string;
-}
 
 export default class LanguagePage extends React.Component {
   private static loadLocale(): string {
@@ -29,17 +25,19 @@ export default class LanguagePage extends React.Component {
   public render() {
     return (
       <Layout>
-        <ul>
+        <ul className="list-reset flex flex-wrap -mx-2 mt-4">
           {getLocaleList().map(locale => (
-            <Link
-              key={locale}
-              to={locale}
-              onClick={() => LanguagePage.storeLocale(locale)}
-            >
-              <li>
-                <div>{getLanguageName(locale)}</div>
-              </li>
-            </Link>
+            <li key={locale} className="w-full max-w-sm md:w-1/2 px-2 mb-2">
+              <Link
+                to={locale}
+                onClick={() => LanguagePage.storeLocale(locale)}
+                className="no-underline"
+              >
+                <ListCard>
+                  <div>{getLanguageName(locale)}</div>
+                </ListCard>
+              </Link>
+            </li>
           ))}
         </ul>
       </Layout>

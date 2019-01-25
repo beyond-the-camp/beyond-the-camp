@@ -37,11 +37,11 @@ export default ({ data, pageContext }: Props) => (
   <Layout currentLocale={pageContext.language}>
     <BreadCrumbs crumbs={[{ text: <FormattedMessage id="HOME" /> }]} />
 
-    <div className="flex flex-wrap -mx-2">
+    <ul className="list-reset flex flex-wrap -mx-2">
       {data.categories.edges
         .filter(({ node }) => node.count > 0)
         .map(({ node }) => (
-          <div key={node.id} className="w-full max-w-sm md:w-1/2 px-2 mb-2">
+          <li key={node.id} className="w-full max-w-sm md:w-1/2 px-2 mb-2">
             <Link to={getCategoryPath(node)} className="no-underline">
               <ListCard>
                 <div
@@ -51,9 +51,9 @@ export default ({ data, pageContext }: Props) => (
                 />
               </ListCard>
             </Link>
-          </div>
+          </li>
         ))}
-    </div>
+    </ul>
   </Layout>
 );
 

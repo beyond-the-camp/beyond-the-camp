@@ -83,7 +83,7 @@ export default (props: Props) => {
       />
 
       <h1>{data.category.name}</h1>
-      <ol className="list-reset flex flex-wrap -mx-2 mt-4">
+      <ul className="list-reset flex flex-wrap -mx-2 mt-4">
         {data.projects &&
           data.projects.edges.map(({ node }) => (
             <li
@@ -100,7 +100,7 @@ export default (props: Props) => {
               </Link>
             </li>
           ))}
-      </ol>
+      </ul>
     </Layout>
   );
 };
