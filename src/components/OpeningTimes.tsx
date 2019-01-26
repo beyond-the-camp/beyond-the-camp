@@ -1,5 +1,6 @@
 import * as React from 'react';
 
+import { graphql } from 'gatsby';
 import { FormattedMessage, FormattedTime } from 'react-intl';
 
 interface OpeningTimes {
@@ -44,9 +45,9 @@ interface Props {
 
 const OpeningTimes = ({ days }: Props) => (
   <div>
-    <p>
+    <h4>
       <FormattedMessage id="OPENING_TIMES" />
-    </p>
+    </h4>
     {getOpeningTimeData(days).map(day => (
       <p key={day.day}>
         <FormattedMessage id={day.day} />
@@ -64,3 +65,36 @@ const OpeningTimes = ({ days }: Props) => (
 );
 
 export default OpeningTimes;
+
+export const query = graphql`
+  fragment OpeningTimesFragment on acf_4 {
+    monday {
+      open
+      close
+    }
+    tuesday {
+      open
+      close
+    }
+    wednesday {
+      open
+      close
+    }
+    thursday {
+      open
+      close
+    }
+    friday {
+      open
+      close
+    }
+    saturday {
+      open
+      close
+    }
+    sunday {
+      open
+      close
+    }
+  }
+`;

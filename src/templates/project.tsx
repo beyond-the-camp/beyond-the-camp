@@ -5,6 +5,7 @@ import Img, { FluidObject } from 'gatsby-image';
 
 import { FormattedMessage } from 'react-intl';
 import BreadCrumbs from '../components/BreadCrumbs';
+import HeroTitle from '../components/HeroTitle';
 import { LocaleLinks } from '../components/LanguageSelector';
 import Layout from '../components/Layout';
 import LocationInfo from '../components/LocationInfo';
@@ -117,26 +118,24 @@ export default (props: Props) => {
         ]}
       />
 
-      <section>
-        {featuredMedia && (
-          <Img fluid={featuredMedia.localFile.childImageSharp.fluid} />
-        )}
-        <h1 dangerouslySetInnerHTML={{ __html: data.project.title }} />
-      </section>
+      <HeroTitle media={featuredMedia} title={data.project.title} />
 
-      <section>
+      <section className="mt-3 flex flex-row flex-wrap justify-between">
         <article
+          className="w-full md:w-1/2 flex-grow bg-white border rounded p-4 mx-2 mb-4"
           dangerouslySetInnerHTML={{
             __html: data.project.content
           }}
         />
-        <aside>
-          <section>
-            <OpeningTimes days={opening_times} />
-          </section>
-          <section>
-            <LocationInfo />
-          </section>
+        <aside className="w-full md:w-1/3 mx-2">
+          <div className="flex flex-col">
+            <section className="bg-white border rounded p-4 mb-4">
+              <OpeningTimes days={opening_times} />
+            </section>
+            <section className="bg-white border rounded p-4">
+              <LocationInfo />
+            </section>
+          </div>
         </aside>
       </section>
     </Layout>
@@ -144,37 +143,6 @@ export default (props: Props) => {
 };
 
 export const query = graphql`
-  fragment OpeningTimesFragment on acf_4 {
-    monday {
-      open
-      close
-    }
-    tuesday {
-      open
-      close
-    }
-    wednesday {
-      open
-      close
-    }
-    thursday {
-      open
-      close
-    }
-    friday {
-      open
-      close
-    }
-    saturday {
-      open
-      close
-    }
-    sunday {
-      open
-      close
-    }
-  }
-
   query ProjectPageQuery($id: String!, $categoryId: String!) {
     project: wordpressWpProject(id: { eq: $id }) {
       slug
@@ -185,26 +153,14 @@ export const query = graphql`
         polylang_current_lang
         slug
         featured_media {
-          localFile {
-            childImageSharp {
-              fluid(maxWidth: 1000) {
-                ...GatsbyImageSharpFluid
-              }
-            }
-          }
+          ...HeroMediaFragment
         }
         opening_times: acf {
           ...OpeningTimesFragment
         }
       }
       featured_media {
-        localFile {
-          childImageSharp {
-            fluid(maxWidth: 1000) {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
+        ...HeroMediaFragment
       }
       opening_times: acf {
         ...OpeningTimesFragment

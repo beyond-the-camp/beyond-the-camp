@@ -23,7 +23,7 @@ const LocationMap = () => {
 
 const LocationInfo = () => (
   <div>
-    <p>Location</p>
+    <h4>Location</h4>
     <p>Find us here</p>
     <LocationMap />
   </div>
