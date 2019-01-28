@@ -10,6 +10,12 @@ module.exports = {
     `gatsby-transformer-remark`,
     `gatsby-plugin-postcss`,
     {
+      resolve: `gatsby-plugin-typography`,
+      options: {
+        pathToConfigModule: `src/utils/typography`
+      }
+    },
+    {
       resolve: 'gatsby-source-wordpress',
       options: {
         // The base url to your WP site.
