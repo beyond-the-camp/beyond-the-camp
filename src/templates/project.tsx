@@ -122,12 +122,12 @@ export default (props: Props) => {
 
       <section className="mt-3 flex flex-row flex-wrap justify-between">
         <article
-          className="w-full md:w-1/2 flex-grow bg-white border rounded p-4 mx-2 mb-4"
+          className="w-full md:w-1/2 flex-grow bg-white border rounded p-4 mx-2 my-2"
           dangerouslySetInnerHTML={{
             __html: data.project.content
           }}
         />
-        <aside className="w-full md:w-1/3 mx-2">
+        <aside className="w-full md:w-1/3 mx-2 my-2">
           <div className="flex flex-col">
             <section className="bg-white border rounded p-4 mb-4">
               <OpeningTimes days={opening_times} />

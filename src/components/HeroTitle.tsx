@@ -15,7 +15,7 @@ interface Props {
 }
 
 const HeroTitle = ({ media, title }: Props) => (
-  <section className="flex items-stretch flex-col content-between relative py-32">
+  <section className="relative flex items-stretch flex-col content-between px-4 py-12 md:py-32">
     <div className="absolute pin">
       {media && (
         <Img
@@ -24,9 +24,9 @@ const HeroTitle = ({ media, title }: Props) => (
         />
       )}
     </div>
-    <div className="bg-black opacity-50 w-full h-full absolute pin" />
+    <div className="absolute pin bg-black opacity-50 w-full h-full" />
     <h1
-      className="z-10 text-white"
+      className="z-10 text-white mb-0"
       dangerouslySetInnerHTML={{ __html: title }}
     />
   </section>

@@ -20,7 +20,7 @@ const NavBar = ({ currentLocale, localeLinks }: Props) => (
     <div className="flex items-center flex-no-shrink mr-6">
       <Link
         to={getHomePath(currentLocale)}
-        className="font-semibold no-underline text-xl text-white hover:text-grey-lightest tracking-wide"
+        className="font-semibold no-underline text-xl text-white hover:opacity-50 tracking-wide"
       >
         BeyondMoria
       </Link>

@@ -50,7 +50,7 @@ const Layout = ({ children, currentLocale, localeLinks }: Props) => {
         className={`${directionClass} bg-grey-lighter min-h-screen font-sans`}
       >
         <NavBar currentLocale={currentLocale} localeLinks={localeLinks} />
-        <main className="mx-auto pb-4">{children}</main>
+        <main className="mx-auto pb-4 container">{children}</main>
       </div>
     </IntlProvider>
   );

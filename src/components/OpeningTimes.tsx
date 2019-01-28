@@ -45,21 +45,25 @@ interface Props {
 
 const OpeningTimes = ({ days }: Props) => (
   <div>
-    <h4>
+    <h3>
       <FormattedMessage id="OPENING_TIMES" />
-    </h4>
+    </h3>
     {getOpeningTimeData(days).map(day => (
-      <p key={day.day}>
-        <FormattedMessage id={day.day} />
-        {': '}
-        {day.times && day.times.open && (
-          <FormattedTime value={`2018-01-01 ${day.times.open}`} />
-        )}
-        {' - '}
-        {day.times && day.times.close && (
-          <FormattedTime value={`2018-01-01 ${day.times.close}`} />
-        )}
-      </p>
+      <div key={day.day} className="flex justify-start">
+        <div className="flex-1">
+          <FormattedMessage id={day.day} />
+          {': '}
+        </div>
+        <div className="flex-1">
+          {day.times && day.times.open && (
+            <FormattedTime value={`2018-01-01 ${day.times.open}`} />
+          )}
+          {' - '}
+          {day.times && day.times.close && (
+            <FormattedTime value={`2018-01-01 ${day.times.close}`} />
+          )}
+        </div>
+      </div>
     ))}
   </div>
 );
