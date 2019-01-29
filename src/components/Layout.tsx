@@ -47,7 +47,7 @@ const Layout = ({ children, currentLocale, localeLinks }: Props) => {
   return (
     <IntlProvider locale={jsLocale} messages={messages[currentLocale]}>
       <div
-        className={`${directionClass} bg-grey-lighter min-h-screen font-sans`}
+        className={`${directionClass} bg-grey-lighter min-h-screen overflow-x-hidden`}
       >
         <NavBar currentLocale={currentLocale} localeLinks={localeLinks} />
         <main className="pb-4">{children}</main>

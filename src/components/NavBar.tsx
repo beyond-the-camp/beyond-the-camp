@@ -13,17 +13,14 @@ interface Props {
 
 const NavBar = ({ currentLocale, localeLinks }: Props) => (
   <nav
-    className="bg-primary h-12 px-6"
+    className="bg-primary py-3"
     role="navigation"
     aria-label="main navigation"
   >
     <div className="container mx-auto flex items-center justify-between flex-wrap ">
       <div className="flex items-center flex-no-shrink mr-6">
-        <Link
-          to={getHomePath(currentLocale)}
-          className="font-semibold no-underline text-xl text-white hover:opacity-50 tracking-wide"
-        >
-          BeyondMoria
+        <Link to={getHomePath(currentLocale)} className="no-underline ">
+          <h3 className="m-0 text-white hover:opacity-50">BeyondMoria</h3>
         </Link>
       </div>
 

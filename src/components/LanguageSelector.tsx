@@ -30,6 +30,7 @@ class LanguageSelector extends React.Component<Props, State> {
 
   constructor(props: Props) {
     super(props);
+    this.hideMenu = this.hideMenu.bind(this);
     this.toggleMenu = this.toggleMenu.bind(this);
   }
 
@@ -39,7 +40,7 @@ class LanguageSelector extends React.Component<Props, State> {
       <div className="relative inline-block">
         <button
           onClick={this.toggleMenu}
-          className="hover:opacity-50 text-white px-6 h-12"
+          className="hover:opacity-50 text-white"
         >
           {getLanguageName(currentLocale)}
         </button>
@@ -56,6 +57,10 @@ class LanguageSelector extends React.Component<Props, State> {
         )}
       </div>
     );
+  }
+
+  private hideMenu() {
+    this.setState({ showMenu: false });
   }
 
   private toggleMenu() {

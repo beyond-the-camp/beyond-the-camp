@@ -44,7 +44,8 @@
     "react-leaflet": "^2.1.4",
     "react-typography": "^0.16.18",
     "typescript": "^3.2.2",
-    "typography": "^0.16.18"
+    "typography": "^0.16.18",
+    "typography-theme-noriega": "^0.16.18"
   },
   "devDependencies": {
     "@babel/core": "7.2.2",

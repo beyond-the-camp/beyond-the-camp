@@ -1,17 +1,6 @@
 import Typography from 'typography';
+import noriegaTheme from 'typography-theme-noriega';
 
-const typography = new Typography({
-  baseFontSize: '16px',
-  baseLineHeight: 1.6,
-  headerFontFamily: [
-    'Avenir Next',
-    'Helvetica Neue',
-    'Segoe UI',
-    'Helvetica',
-    'Arial',
-    'sans-serif'
-  ],
-  bodyFontFamily: ['Georgia', 'serif']
-});
+const typography = new Typography(noriegaTheme);
 
 export default typography;
