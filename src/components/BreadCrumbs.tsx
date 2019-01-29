@@ -10,28 +10,33 @@ interface Props {
 }
 
 const BreadCrumbs = ({ crumbs }: Props) => (
-  <div className="container">
-    <nav className="breadcrumb">
-      <ul>
-        {crumbs.map((crumb, index) => {
-          const activeClass = crumb.link ? '' : 'is-active';
-
-          const linkComponent =
-            typeof crumb.text === 'string' ? (
-              <div dangerouslySetInnerHTML={{ __html: crumb.text }} />
-            ) : (
-              crumb.text
-            );
-
-          return (
-            <li key={`crumb_${index}`} className={activeClass}>
-              <Link to={crumb.link || ''}>{linkComponent}</Link>
-            </li>
+  <nav className="my-4">
+    <ul className="container mx-auto my-0 list-reset flex items-start justify-start flex-wrap">
+      {crumbs.map((crumb, index) => {
+        const linkComponent =
+          typeof crumb.text === 'string' ? (
+            <div dangerouslySetInnerHTML={{ __html: crumb.text }} />
+          ) : (
+            crumb.text
           );
-        })}
-      </ul>
-    </nav>
-  </div>
+
+        return (
+          <li key={`crumb_${index}`} className="flex items-center crumb m-0">
+            {crumb.link ? (
+              <Link
+                to={crumb.link}
+                className="text-blue hover:text-blue-darker no-underline"
+              >
+                {linkComponent}
+              </Link>
+            ) : (
+              linkComponent
+            )}
+          </li>
+        );
+      })}
+    </ul>
+  </nav>
 );
 
 export default BreadCrumbs;

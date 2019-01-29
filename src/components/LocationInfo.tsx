@@ -5,7 +5,7 @@ import { Map, Marker, Popup, TileLayer } from 'react-leaflet';
 const LocationMap = () => {
   if (typeof window !== 'undefined') {
     return (
-      <Map center={[51.505, -0.09]} zoom={13}>
+      <Map className="h-48 w-full" center={[51.505, -0.09]} zoom={13}>
         <TileLayer
           attribution='&amp;copy <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
@@ -23,7 +23,7 @@ const LocationMap = () => {
 
 const LocationInfo = () => (
   <div>
-    <p className="title is-5">Location</p>
+    <h3>Location</h3>
     <p>Find us here</p>
     <LocationMap />
   </div>

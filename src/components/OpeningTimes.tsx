@@ -1,5 +1,6 @@
 import * as React from 'react';
 
+import { graphql } from 'gatsby';
 import { FormattedMessage, FormattedTime } from 'react-intl';
 
 interface OpeningTimes {
@@ -44,23 +45,60 @@ interface Props {
 
 const OpeningTimes = ({ days }: Props) => (
   <div>
-    <p className="title is-5">
+    <h3>
       <FormattedMessage id="OPENING_TIMES" />
-    </p>
+    </h3>
     {getOpeningTimeData(days).map(day => (
-      <p key={day.day}>
-        <FormattedMessage id={day.day} />
-        {': '}
-        {day.times && day.times.open && (
-          <FormattedTime value={`2018-01-01 ${day.times.open}`} />
-        )}
-        {' - '}
-        {day.times && day.times.close && (
-          <FormattedTime value={`2018-01-01 ${day.times.close}`} />
-        )}
-      </p>
+      <div key={day.day} className="flex justify-start">
+        <div className="flex-1">
+          <FormattedMessage id={day.day} />
+          {': '}
+        </div>
+        <div className="flex-1">
+          {day.times && day.times.open && (
+            <FormattedTime value={`2018-01-01 ${day.times.open}`} />
+          )}
+          {' - '}
+          {day.times && day.times.close && (
+            <FormattedTime value={`2018-01-01 ${day.times.close}`} />
+          )}
+        </div>
+      </div>
     ))}
   </div>
 );
 
 export default OpeningTimes;
+
+export const query = graphql`
+  fragment OpeningTimesFragment on acf_4 {
+    monday {
+      open
+      close
+    }
+    tuesday {
+      open
+      close
+    }
+    wednesday {
+      open
+      close
+    }
+    thursday {
+      open
+      close
+    }
+    friday {
+      open
+      close
+    }
+    saturday {
+      open
+      close
+    }
+    sunday {
+      open
+      close
+    }
+  }
+`;

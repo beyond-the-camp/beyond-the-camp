@@ -5,6 +5,7 @@ import Img, { FluidObject } from 'gatsby-image';
 
 import { FormattedMessage } from 'react-intl';
 import BreadCrumbs from '../components/BreadCrumbs';
+import HeroTitle from '../components/HeroTitle';
 import { LocaleLinks } from '../components/LanguageSelector';
 import Layout from '../components/Layout';
 import LocationInfo from '../components/LocationInfo';
@@ -76,12 +77,16 @@ const getFeaturedMedia = (props: Props): FeaturedMedia => {
   const featuredMedia = props.data.project.featured_media;
   if (featuredMedia) {
     return featuredMedia;
-  } else {
-    const projectEnglish = props.data.project.polylang_translations.find(
-      translation => translation.polylang_current_lang === getPrimaryLocale()
-    );
+  }
+
+  const projectEnglish = props.data.project.polylang_translations.find(
+    translation => translation.polylang_current_lang === getPrimaryLocale()
+  );
+  if (projectEnglish) {
     return projectEnglish.featured_media;
   }
+
+  return null;
 };
 
 export default (props: Props) => {
@@ -113,85 +118,33 @@ export default (props: Props) => {
         ]}
       />
 
-      <section className="hero is-medium">
-        <div className="hero-body" style={{ position: 'relative' }}>
-          <div className="overlay_dim" />
-          {featuredMedia && (
-            <Img
-              fluid={featuredMedia.localFile.childImageSharp.fluid}
-              className="feature_image"
-              style={{ position: 'absolute' }}
-            />
-          )}
-          <div className="container feature_text">
-            <h1
-              className="title has-text-white"
-              dangerouslySetInnerHTML={{ __html: data.project.title }}
-            />
-          </div>
-        </div>
-      </section>
+      <HeroTitle media={featuredMedia} title={data.project.title} />
 
-      <section className="section">
-        <div className="container">
-          <div className="tile is-ancestor">
-            <div className="tile is-parent is-8">
-              <div className="tile is-child box">
-                <article
-                  className="content"
-                  dangerouslySetInnerHTML={{
-                    __html: data.project.content
-                  }}
-                />
-              </div>
-            </div>
-            <aside className="tile is-parent is-vertical">
-              <section className="tile is-child box">
+      <div className="mx-auto container mt-3">
+        <section className="-mx-2 flex flex-row flex-wrap justify-between">
+          <article
+            className="w-full md:w-1/2 flex-grow bg-white border rounded p-4 mx-2 my-2"
+            dangerouslySetInnerHTML={{
+              __html: data.project.content
+            }}
+          />
+          <aside className="w-full md:w-1/3 mx-2 my-2">
+            <div className="flex flex-col">
+              <section className="bg-white border rounded p-4 mb-4">
                 <OpeningTimes days={opening_times} />
               </section>
-              <section className="tile is-child box">
+              <section className="bg-white border rounded p-4">
                 <LocationInfo />
               </section>
-            </aside>
-          </div>
-        </div>
-      </section>
+            </div>
+          </aside>
+        </section>
+      </div>
     </Layout>
   );
 };
 
 export const query = graphql`
-  fragment OpeningTimesFragment on acf_4 {
-    monday {
-      open
-      close
-    }
-    tuesday {
-      open
-      close
-    }
-    wednesday {
-      open
-      close
-    }
-    thursday {
-      open
-      close
-    }
-    friday {
-      open
-      close
-    }
-    saturday {
-      open
-      close
-    }
-    sunday {
-      open
-      close
-    }
-  }
-
   query ProjectPageQuery($id: String!, $categoryId: String!) {
     project: wordpressWpProject(id: { eq: $id }) {
       slug
@@ -202,26 +155,14 @@ export const query = graphql`
         polylang_current_lang
         slug
         featured_media {
-          localFile {
-            childImageSharp {
-              fluid(maxWidth: 1000) {
-                ...GatsbyImageSharpFluid
-              }
-            }
-          }
+          ...HeroMediaFragment
         }
         opening_times: acf {
           ...OpeningTimesFragment
         }
       }
       featured_media {
-        localFile {
-          childImageSharp {
-            fluid(maxWidth: 1000) {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
+        ...HeroMediaFragment
       }
       opening_times: acf {
         ...OpeningTimesFragment
