@@ -1,5 +1,7 @@
 import * as React from 'react';
 
+import { Helmet } from 'react-helmet';
+
 import { LocaleMessages } from '../i18n/types';
 import { getTextDirection } from '../utils/languages';
 import { LocaleType } from '../utils/types';
@@ -49,6 +51,9 @@ const Layout = ({ children, currentLocale, localeLinks }: Props) => {
       <div
         className={`${directionClass} bg-grey-lighter min-h-screen overflow-x-hidden`}
       >
+        <Helmet>
+          <title>BeyondMoria</title>
+        </Helmet>
         <NavBar currentLocale={currentLocale} localeLinks={localeLinks} />
         <main className="pb-4">{children}</main>
       </div>
