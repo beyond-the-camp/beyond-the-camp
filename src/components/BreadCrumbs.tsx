@@ -10,8 +10,8 @@ interface Props {
 }
 
 const BreadCrumbs = ({ crumbs }: Props) => (
-  <nav className="m-4">
-    <ul className="list-reset flex items-start justify-start flex-wrap m-0">
+  <nav className="my-4">
+    <ul className="container mx-auto my-0 list-reset flex items-start justify-start flex-wrap">
       {crumbs.map((crumb, index) => {
         const linkComponent =
           typeof crumb.text === 'string' ? (
@@ -23,7 +23,12 @@ const BreadCrumbs = ({ crumbs }: Props) => (
         return (
           <li key={`crumb_${index}`} className="flex items-center crumb m-0">
             {crumb.link ? (
-              <Link to={crumb.link}>{linkComponent}</Link>
+              <Link
+                to={crumb.link}
+                className="text-blue hover:text-blue-darker no-underline"
+              >
+                {linkComponent}
+              </Link>
             ) : (
               linkComponent
             )}

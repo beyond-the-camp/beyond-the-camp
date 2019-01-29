@@ -82,25 +82,27 @@ export default (props: Props) => {
         ]}
       />
 
-      <h1>{data.category.name}</h1>
-      <ul className="list-reset flex flex-wrap -mx-2 mt-4">
-        {data.projects &&
-          data.projects.edges.map(({ node }) => (
-            <li
-              key={node.wordpress_id}
-              className="w-full max-w-sm md:w-1/2 px-2 mb-2"
-            >
-              <Link
-                to={getProjectPath(data.category, node)}
-                className="no-underline"
+      <div className="container mx-auto">
+        <h1>{data.category.name}</h1>
+        <ul className="list-reset flex flex-wrap -mx-2 mt-4">
+          {data.projects &&
+            data.projects.edges.map(({ node }) => (
+              <li
+                key={node.wordpress_id}
+                className="w-full max-w-sm md:w-1/2 px-2 mb-2"
               >
-                <ListCard>
-                  <div dangerouslySetInnerHTML={{ __html: node.title }} />
-                </ListCard>
-              </Link>
-            </li>
-          ))}
-      </ul>
+                <Link
+                  to={getProjectPath(data.category, node)}
+                  className="no-underline"
+                >
+                  <ListCard>
+                    <div dangerouslySetInnerHTML={{ __html: node.title }} />
+                  </ListCard>
+                </Link>
+              </li>
+            ))}
+        </ul>
+      </div>
     </Layout>
   );
 };

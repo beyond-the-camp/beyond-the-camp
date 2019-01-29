@@ -13,23 +13,25 @@ interface Props {
 
 const NavBar = ({ currentLocale, localeLinks }: Props) => (
   <nav
-    className="flex items-center justify-between flex-wrap bg-primary h-12 px-6"
+    className="bg-primary h-12 px-6"
     role="navigation"
     aria-label="main navigation"
   >
-    <div className="flex items-center flex-no-shrink mr-6">
-      <Link
-        to={getHomePath(currentLocale)}
-        className="font-semibold no-underline text-xl text-white hover:opacity-50 tracking-wide"
-      >
-        BeyondMoria
-      </Link>
-    </div>
+    <div className="container mx-auto flex items-center justify-between flex-wrap ">
+      <div className="flex items-center flex-no-shrink mr-6">
+        <Link
+          to={getHomePath(currentLocale)}
+          className="font-semibold no-underline text-xl text-white hover:opacity-50 tracking-wide"
+        >
+          BeyondMoria
+        </Link>
+      </div>
 
-    <div>
-      {currentLocale && (
-        <LanguageSelector currentLocale={currentLocale} links={localeLinks} />
-      )}
+      <div>
+        {currentLocale && (
+          <LanguageSelector currentLocale={currentLocale} links={localeLinks} />
+        )}
+      </div>
     </div>
   </nav>
 );

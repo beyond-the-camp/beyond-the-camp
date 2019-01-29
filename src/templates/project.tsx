@@ -120,24 +120,26 @@ export default (props: Props) => {
 
       <HeroTitle media={featuredMedia} title={data.project.title} />
 
-      <section className="mt-3 flex flex-row flex-wrap justify-between">
-        <article
-          className="w-full md:w-1/2 flex-grow bg-white border rounded p-4 mx-2 my-2"
-          dangerouslySetInnerHTML={{
-            __html: data.project.content
-          }}
-        />
-        <aside className="w-full md:w-1/3 mx-2 my-2">
-          <div className="flex flex-col">
-            <section className="bg-white border rounded p-4 mb-4">
-              <OpeningTimes days={opening_times} />
-            </section>
-            <section className="bg-white border rounded p-4">
-              <LocationInfo />
-            </section>
-          </div>
-        </aside>
-      </section>
+      <div className="mx-auto container mt-3">
+        <section className="-mx-2 flex flex-row flex-wrap justify-between">
+          <article
+            className="w-full md:w-1/2 flex-grow bg-white border rounded p-4 mx-2 my-2"
+            dangerouslySetInnerHTML={{
+              __html: data.project.content
+            }}
+          />
+          <aside className="w-full md:w-1/3 mx-2 my-2">
+            <div className="flex flex-col">
+              <section className="bg-white border rounded p-4 mb-4">
+                <OpeningTimes days={opening_times} />
+              </section>
+              <section className="bg-white border rounded p-4">
+                <LocationInfo />
+              </section>
+            </div>
+          </aside>
+        </section>
+      </div>
     </Layout>
   );
 };

@@ -37,23 +37,25 @@ export default ({ data, pageContext }: Props) => (
   <Layout currentLocale={pageContext.language}>
     <BreadCrumbs crumbs={[{ text: <FormattedMessage id="HOME" /> }]} />
 
-    <ul className="list-reset flex flex-wrap -mx-2">
-      {data.categories.edges
-        .filter(({ node }) => node.count > 0)
-        .map(({ node }) => (
-          <li key={node.id} className="w-full max-w-sm md:w-1/2 px-2 mb-2">
-            <Link to={getCategoryPath(node)} className="no-underline">
-              <ListCard>
-                <div
-                  dangerouslySetInnerHTML={{
-                    __html: node.name + ' (' + node.count + ')'
-                  }}
-                />
-              </ListCard>
-            </Link>
-          </li>
-        ))}
-    </ul>
+    <div className="container mx-auto">
+      <ul className="list-reset flex flex-wrap -mx-2">
+        {data.categories.edges
+          .filter(({ node }) => node.count > 0)
+          .map(({ node }) => (
+            <li key={node.id} className="w-full max-w-sm md:w-1/2 px-2 mb-2">
+              <Link to={getCategoryPath(node)} className="no-underline">
+                <ListCard>
+                  <div
+                    dangerouslySetInnerHTML={{
+                      __html: node.name + ' (' + node.count + ')'
+                    }}
+                  />
+                </ListCard>
+              </Link>
+            </li>
+          ))}
+      </ul>
+    </div>
   </Layout>
 );
 

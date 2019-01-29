@@ -25,21 +25,23 @@ export default class LanguagePage extends React.Component {
   public render() {
     return (
       <Layout>
-        <ul className="list-reset flex flex-wrap -mx-2 mt-4">
-          {getLocaleList().map(locale => (
-            <li key={locale} className="w-full max-w-sm md:w-1/2 px-2 mb-2">
-              <Link
-                to={locale}
-                onClick={() => LanguagePage.storeLocale(locale)}
-                className="no-underline"
-              >
-                <ListCard>
-                  <div>{getLanguageName(locale)}</div>
-                </ListCard>
-              </Link>
-            </li>
-          ))}
-        </ul>
+        <div className="container mx-auto">
+          <ul className="list-reset flex flex-wrap -mx-2 mt-4">
+            {getLocaleList().map(locale => (
+              <li key={locale} className="w-full max-w-sm md:w-1/2 px-2 mb-2">
+                <Link
+                  to={locale}
+                  onClick={() => LanguagePage.storeLocale(locale)}
+                  className="no-underline"
+                >
+                  <ListCard>
+                    <div>{getLanguageName(locale)}</div>
+                  </ListCard>
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
       </Layout>
     );
   }
