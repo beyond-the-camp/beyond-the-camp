@@ -1,5 +1,6 @@
+/*eslint-env node*/
+
 const path = require(`path`);
-const { createFilePath } = require(`gatsby-source-filesystem`);
 const routes = require('./src/utils/routes');
 const { getLocaleList, getPrimaryLocale } = require('./src/utils/languages');
 

@@ -28,7 +28,7 @@ class LanguageSelector extends React.Component<Props, State> {
     showMenu: false
   };
 
-  constructor(props: Props) {
+  public constructor(props: Props) {
     super(props);
     this.hideMenu = this.hideMenu.bind(this);
     this.toggleMenu = this.toggleMenu.bind(this);

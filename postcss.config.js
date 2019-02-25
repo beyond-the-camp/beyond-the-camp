@@ -1,3 +1,5 @@
+/*eslint-env node*/
+
 const postcssPresetEnv = require(`postcss-preset-env`);
 const postcssImport = require('postcss-import');
 const tailwindcss = require('tailwindcss');

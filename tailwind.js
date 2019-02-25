@@ -1,3 +1,5 @@
+/*eslint-env node*/
+
 /*
 
 Tailwind - The Utility-First CSS Framework
@@ -24,6 +26,7 @@ View the full documentation at https://tailwindcss.com.
 |
 */
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 let defaultConfig = require('tailwindcss/defaultConfig')();
 
 /*

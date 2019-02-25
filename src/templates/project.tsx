@@ -1,7 +1,7 @@
 import * as React from 'react';
 
 import { graphql } from 'gatsby';
-import Img, { FluidObject } from 'gatsby-image';
+import { FluidObject } from 'gatsby-image';
 
 import { FormattedMessage } from 'react-intl';
 import BreadCrumbs from '../components/BreadCrumbs';
@@ -89,9 +89,8 @@ const getFeaturedMedia = (props: Props): FeaturedMedia => {
   return null;
 };
 
-export default (props: Props) => {
+const Project = (props: Props) => {
   const { data } = props;
-  const { opening_times } = data.project;
   const featuredMedia = getFeaturedMedia(props);
 
   return (
@@ -131,7 +130,7 @@ export default (props: Props) => {
           <aside className="w-full md:w-1/3 mx-2 my-2">
             <div className="flex flex-col">
               <section className="bg-white border rounded p-4 mb-4">
-                <OpeningTimes days={opening_times} />
+                <OpeningTimes days={data.project.opening_times} />
               </section>
               <section className="bg-white border rounded p-4">
                 <LocationInfo />
@@ -143,6 +142,8 @@ export default (props: Props) => {
     </Layout>
   );
 };
+
+export default Project;
 
 export const query = graphql`
   query ProjectPageQuery($id: String!, $categoryId: String!) {

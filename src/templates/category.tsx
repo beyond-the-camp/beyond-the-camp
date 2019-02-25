@@ -63,8 +63,9 @@ interface Props {
   };
 }
 
-export default (props: Props) => {
+const Category = (props: Props) => {
   const { data } = props;
+
   return (
     <Layout
       currentLocale={data.category.polylang_current_lang}
@@ -106,6 +107,8 @@ export default (props: Props) => {
     </Layout>
   );
 };
+
+export default Category;
 
 export const query = graphql`
   query CategoryPageQuery($id: String!) {

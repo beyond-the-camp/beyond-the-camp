@@ -1,4 +1,4 @@
-require('dotenv').config();
+/*eslint-env node*/
 
 module.exports = {
   siteMetadata: {
@@ -6,6 +6,12 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-typescript`,
+    {
+      resolve: 'gatsby-plugin-eslint',
+      options: {
+        test: /\.js$|\.jsx$|\.ts$|\.tsx$/
+      }
+    },
     `gatsby-plugin-react-helmet`,
     `gatsby-transformer-remark`,
     `gatsby-plugin-postcss`,

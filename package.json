@@ -13,15 +13,16 @@
   },
   "scripts": {
     "clean": "rimraf .cache public",
-    "develop": "yarn run clean && gatsby develop",
-    "build": "yarn run clean && gatsby build",
+    "start": "gatsby develop",
+    "build": "gatsby build",
     "serve": "gatsby serve",
     "test": "jest",
     "test:watch": "jest --watch",
+    "lint": "eslint --ignore-path .gitignore . --ext js --ext jsx --ext ts --ext tsx",
     "format": "prettier --write \"src/**/*.{ts,tsx}\""
   },
   "dependencies": {
-    "gatsby": "2.0.78",
+    "gatsby": "^2.1.17",
     "gatsby-image": "^2.0.25",
     "gatsby-plugin-netlify": "^2.0.6",
     "gatsby-plugin-postcss": "^2.0.2",
@@ -53,7 +54,16 @@
     "@types/react-helmet": "^5.0.7",
     "@types/react-intl": "^2.3.14",
     "@types/react-leaflet": "^1.1.6",
+    "@typescript-eslint/eslint-plugin": "^1.4.1",
+    "@typescript-eslint/parser": "^1.4.1",
     "autoprefixer": "^9.4.4",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.14.1",
+    "eslint-config-prettier": "^4.0.0",
+    "eslint-loader": "^2.1.2",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-react": "^7.12.4",
+    "gatsby-plugin-eslint": "^2.0.4",
     "husky": "^1.2.1",
     "jest": "^23.6.0",
     "lint-staged": "^8.1.0",
@@ -75,6 +85,10 @@
     "linters": {
       "src/**/*.{ts,tsx,js,json}": [
         "prettier --write",
+        "git add"
+      ],
+      "src/**/*.{ts,tsx,js,jsx}": [
+        "eslint --ignore-path .gitignore --ext ts --ext tsx --ext js --ext jsx --fix",
         "git add"
       ]
     }

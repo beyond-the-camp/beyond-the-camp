@@ -1,3 +1,5 @@
+/*eslint-env node*/
+
 /**
  * Get path for language-specific home page.
  *

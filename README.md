@@ -17,7 +17,7 @@ yarn install
 Start a development server that reloads as you make changes:
 
 ```
-yarn develop
+yarn start
 ```
 
 Build the final production version of the project:

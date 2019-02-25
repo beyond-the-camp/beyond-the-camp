@@ -1,15 +1,17 @@
+/* eslint-env browser */
+
 import * as React from 'react';
 
-import { Link, navigate } from 'gatsby';
+import { Link } from 'gatsby';
 
 import Layout from '../components/Layout';
 import ListCard from '../components/ListCard';
 import { getLanguageName, getLocaleList } from '../utils/languages';
 
 export default class LanguagePage extends React.Component {
-  private static loadLocale(): string {
-    return localStorage.getItem('locale');
-  }
+  // private static loadLocale(): string {
+  //   return localStorage.getItem('locale');
+  // }
 
   private static storeLocale(locale: string) {
     localStorage.setItem('locale', locale);

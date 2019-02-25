@@ -1,7 +1,12 @@
+/*eslint-env node*/
+
 const languages = {
+  // eslint-disable-next-line @typescript-eslint/camelcase
   en_GB: { name: 'English', direction: 'ltr' },
+  // eslint-disable-next-line @typescript-eslint/camelcase
   fa_IR: { name: 'فارسی', direction: 'rtl' },
   ar: { name: 'العربية', direction: 'rtl' },
+  // eslint-disable-next-line @typescript-eslint/camelcase
   fr_FR: { name: 'Français', direction: 'ltr' }
 };
 

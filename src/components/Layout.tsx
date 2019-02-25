@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/camelcase */
+
 import * as React from 'react';
 
 import { Helmet } from 'react-helmet';

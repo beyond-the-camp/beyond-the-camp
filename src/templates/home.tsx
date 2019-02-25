@@ -33,7 +33,7 @@ interface Props {
   };
 }
 
-export default ({ data, pageContext }: Props) => (
+const Home = ({ data, pageContext }: Props) => (
   <Layout currentLocale={pageContext.language}>
     <BreadCrumbs crumbs={[{ text: <FormattedMessage id="HOME" /> }]} />
 
@@ -58,6 +58,8 @@ export default ({ data, pageContext }: Props) => (
     </div>
   </Layout>
 );
+
+export default Home;
 
 export const query = graphql`
   query CategoryListPageQuery($language: String!) {
