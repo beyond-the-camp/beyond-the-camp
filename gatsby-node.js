@@ -7,10 +7,12 @@ const { getLocaleList, getPrimaryLocale } = require('./src/utils/languages');
 const createCategoryPage = (createPage, category) => {
   const categoryPageTemplate = path.resolve('./src/templates/category.tsx');
   createPage({
-    path: routes.getCategoryPath(
-      category.polylang_current_lang,
-      decodeURIComponent(category.slug)
-    ),
+    path: routes
+      .getCategoryPath(
+        category.polylang_current_lang,
+        decodeURIComponent(category.slug)
+      )
+      .slice(1),
     component: categoryPageTemplate,
     context: {
       id: category.id
@@ -21,11 +23,13 @@ const createCategoryPage = (createPage, category) => {
 const createProjectPage = (createPage, project, category) => {
   const projectPageTemplate = path.resolve('./src/templates/project.tsx');
   createPage({
-    path: routes.getProjectPath(
-      project.polylang_current_lang,
-      decodeURIComponent(category.slug),
-      decodeURIComponent(project.slug)
-    ),
+    path: routes
+      .getProjectPath(
+        project.polylang_current_lang,
+        decodeURIComponent(category.slug),
+        decodeURIComponent(project.slug)
+      )
+      .slice(1),
     component: projectPageTemplate,
     context: {
       id: project.id,
@@ -46,7 +50,7 @@ exports.createPages = async ({ graphql, actions }) => {
   const homePageTemplate = path.resolve('./src/templates/home.tsx');
   getLocaleList().map(language => {
     createPage({
-      path: routes.getHomePath(language),
+      path: routes.getHomePath(language).slice(1),
       component: homePageTemplate,
       context: {
         language

@@ -6,7 +6,7 @@
  * @param {string} lang Language code for currently active language.
  */
 function getHomePath(lang) {
-  return `${lang}`;
+  return `/${lang}`;
 }
 
 /**
