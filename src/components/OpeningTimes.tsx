@@ -43,7 +43,7 @@ interface Props {
   days: OpeningDays;
 }
 
-const OpeningTimes = ({ days }: Props) => (
+export const OpeningTimes = ({ days }: Props) => (
   <div>
     <h3>
       <FormattedMessage id="OPENING_TIMES" />
@@ -67,8 +67,6 @@ const OpeningTimes = ({ days }: Props) => (
     ))}
   </div>
 );
-
-export default OpeningTimes;
 
 export const query = graphql`
   fragment OpeningTimesFragment on acf_4 {

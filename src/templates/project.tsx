@@ -4,12 +4,12 @@ import { graphql } from 'gatsby';
 import { FluidObject } from 'gatsby-image';
 
 import { FormattedMessage } from 'react-intl';
-import BreadCrumbs from '../components/BreadCrumbs';
-import HeroTitle from '../components/HeroTitle';
+import { BreadCrumbs } from '../components/BreadCrumbs';
+import { HeroTitle } from '../components/HeroTitle';
 import { LocaleLinks } from '../components/LanguageSelector';
-import Layout from '../components/Layout';
-import LocationInfo from '../components/LocationInfo';
-import OpeningTimes, { OpeningDays } from '../components/OpeningTimes';
+import { Layout } from '../components/Layout';
+import { LocationInfo } from '../components/LocationInfo';
+import { OpeningTimes, OpeningDays } from '../components/OpeningTimes';
 import { getPrimaryLocale } from '../utils/languages';
 import * as routes from '../utils/routes';
 import { LocaleType } from '../utils/types';

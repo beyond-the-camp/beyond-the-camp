@@ -9,7 +9,7 @@ interface Props {
   }>;
 }
 
-const BreadCrumbs = ({ crumbs }: Props) => (
+export const BreadCrumbs = ({ crumbs }: Props) => (
   <nav className="my-4">
     <ul className="container mx-auto my-0 list-reset flex items-start justify-start flex-wrap">
       {crumbs.map((crumb, index) => {
@@ -38,5 +38,3 @@ const BreadCrumbs = ({ crumbs }: Props) => (
     </ul>
   </nav>
 );
-
-export default BreadCrumbs;

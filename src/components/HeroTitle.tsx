@@ -14,7 +14,7 @@ interface Props {
   title: string;
 }
 
-const HeroTitle = ({ media, title }: Props) => (
+export const HeroTitle = ({ media, title }: Props) => (
   <section className="relative flex items-stretch flex-col content-between py-12 md:py-32">
     <div className="absolute pin">
       {media && (
@@ -33,8 +33,6 @@ const HeroTitle = ({ media, title }: Props) => (
     </div>
   </section>
 );
-
-export default HeroTitle;
 
 export const query = graphql`
   fragment HeroMediaFragment on wordpress__wp_media {

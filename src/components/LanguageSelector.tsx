@@ -23,7 +23,7 @@ interface State {
   showMenu: boolean;
 }
 
-class LanguageSelector extends React.Component<Props, State> {
+export class LanguageSelector extends React.Component<Props, State> {
   public state: State = {
     showMenu: false
   };
@@ -67,5 +67,3 @@ class LanguageSelector extends React.Component<Props, State> {
     this.setState(state => ({ showMenu: !state.showMenu }));
   }
 }
-
-export default LanguageSelector;

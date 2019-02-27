@@ -4,14 +4,14 @@ import { Link } from 'gatsby';
 
 import { getHomePath } from '../utils/routes';
 import { LocaleType } from '../utils/types';
-import LanguageSelector, { LocaleLinks } from './LanguageSelector';
+import { LanguageSelector, LocaleLinks } from './LanguageSelector';
 
 interface Props {
   currentLocale?: LocaleType;
   localeLinks?: LocaleLinks;
 }
 
-const NavBar = ({ currentLocale, localeLinks }: Props) => (
+export const NavBar = ({ currentLocale, localeLinks }: Props) => (
   <nav
     className="bg-primary py-3"
     role="navigation"
@@ -32,5 +32,3 @@ const NavBar = ({ currentLocale, localeLinks }: Props) => (
     </div>
   </nav>
 );
-
-export default NavBar;

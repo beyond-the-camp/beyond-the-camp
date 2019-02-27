@@ -3,10 +3,10 @@ import * as React from 'react';
 import { graphql, Link } from 'gatsby';
 import { FormattedMessage } from 'react-intl';
 
-import BreadCrumbs from '../components/BreadCrumbs';
+import { BreadCrumbs } from '../components/BreadCrumbs';
 import { LocaleLinks } from '../components/LanguageSelector';
-import Layout from '../components/Layout';
-import ListCard from '../components/ListCard';
+import { Layout } from '../components/Layout';
+import { ListCard } from '../components/ListCard';
 import * as routes from '../utils/routes';
 import { LocaleType } from '../utils/types';
 

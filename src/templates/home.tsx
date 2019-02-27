@@ -3,9 +3,9 @@ import * as React from 'react';
 import { graphql, Link } from 'gatsby';
 
 import { FormattedMessage } from 'react-intl';
-import BreadCrumbs from '../components/BreadCrumbs';
-import Layout from '../components/Layout';
-import ListCard from '../components/ListCard';
+import { BreadCrumbs } from '../components/BreadCrumbs';
+import { Layout } from '../components/Layout';
+import { ListCard } from '../components/ListCard';
 import * as routes from '../utils/routes';
 import { LocaleType } from '../utils/types';
 

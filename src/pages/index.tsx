@@ -4,8 +4,8 @@ import * as React from 'react';
 
 import { Link } from 'gatsby';
 
-import Layout from '../components/Layout';
-import ListCard from '../components/ListCard';
+import { Layout } from '../components/Layout';
+import { ListCard } from '../components/ListCard';
 import { getLanguageName, getLocaleList } from '../utils/languages';
 
 export default class LanguagePage extends React.Component {

@@ -8,7 +8,7 @@ import { LocaleMessages } from '../i18n/types';
 import { getTextDirection } from '../utils/languages';
 import { LocaleType } from '../utils/types';
 import { LocaleLinks } from './LanguageSelector';
-import NavBar from './NavBar';
+import { NavBar } from './NavBar';
 
 import { addLocaleData, IntlProvider } from 'react-intl';
 
@@ -43,18 +43,18 @@ const defaultProps: Partial<Props> = {
   currentLocale: 'en_GB'
 };
 
-const Layout = ({ children, currentLocale, localeLinks }: Props) => {
-  const directionClass = getTextDirection(currentLocale) === 'rtl' ? 'rtl' : '';
-
+export const Layout = ({ children, currentLocale, localeLinks }: Props) => {
   const jsLocale = currentLocale.replace('_', '-');
 
   return (
     <IntlProvider locale={jsLocale} messages={messages[currentLocale]}>
-      <div
-        className={`${directionClass} bg-grey-lighter min-h-screen overflow-x-hidden`}
-      >
+      <div className="bg-grey-lighter min-h-screen overflow-x-hidden">
         <Helmet>
           <title>BeyondMoria</title>
+          <html
+            lang={jsLocale.split('-')[0]}
+            dir={getTextDirection(currentLocale)}
+          />
         </Helmet>
         <NavBar currentLocale={currentLocale} localeLinks={localeLinks} />
         <main className="pb-4">{children}</main>
@@ -64,5 +64,3 @@ const Layout = ({ children, currentLocale, localeLinks }: Props) => {
 };
 
 Layout.defaultProps = defaultProps;
-
-export default Layout;

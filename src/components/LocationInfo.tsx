@@ -21,12 +21,10 @@ const LocationMap = () => {
   return null;
 };
 
-const LocationInfo = () => (
+export const LocationInfo = () => (
   <div>
     <h3>Location</h3>
     <p>Find us here</p>
     <LocationMap />
   </div>
 );
-
-export default LocationInfo;
