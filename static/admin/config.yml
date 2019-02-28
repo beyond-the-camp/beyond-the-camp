@@ -19,7 +19,7 @@ collections:
           name: 'categories',
           widget: 'relation',
           collection: 'categories',
-          displayFields: ['name'],
+          displayFields: ['category'],
           multiple: true,
         }
       - { label: 'Body', name: 'body', widget: 'markdown' }
@@ -29,4 +29,4 @@ collections:
     folder: 'src/cms/categories'
     create: true
     fields:
-      - { label: 'Name', name: 'name', widget: 'string' }
+      - { label: 'Category', name: 'category', widget: 'string' }
