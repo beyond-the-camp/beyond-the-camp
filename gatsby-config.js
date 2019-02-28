@@ -52,6 +52,7 @@ module.exports = {
         tailwind: true // Enable tailwindcss support
       }
     },
+    `gatsby-plugin-netlify-cms`,
     `gatsby-plugin-netlify`
   ]
 };
