@@ -42,6 +42,13 @@ module.exports = {
         ]
       }
     },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        path: `${__dirname}/src/cms`,
+        name: 'cms'
+      }
+    },
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-react-leaflet`,
