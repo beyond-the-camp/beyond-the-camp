@@ -6,11 +6,11 @@ media_folder: static/img
 public_folder: /img
 
 collections:
-  - name: 'projects' # Used in routes, e.g., /admin/collections/blog
-    label: 'Projects' # Used in the UI
-    folder: 'src/cms/projects' # The path to the folder where the documents are stored
+  - name: projects
+    label: Projects
+    folder: 'src/cms/projects'
     create: true
-    fields: # The fields for each document, usually in front matter
+    fields:
       - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'blog' }
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Featured Image', name: 'thumbnail', widget: 'image' }
@@ -24,8 +24,9 @@ collections:
         }
       - { label: 'Body', name: 'body', widget: 'markdown' }
 
-  - name: 'categories'
-    label: 'Categories'
+  - name: categories
+    identifier_field: name
+    label: Categories
     folder: 'src/cms/categories'
     create: true
     fields:
