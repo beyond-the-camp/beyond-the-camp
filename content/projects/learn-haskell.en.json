@@ -1,9 +1,7 @@
 {
   "layout": "blog",
-  "title": "Lean Haskell",
+  "title": "Learn Haskell",
   "thumbnail": "https://raw.githubusercontent.com/hlouw/beyond-the-camp/netlifycms/static/img/library_square.jpg",
-  "categories": [
-    "Computers"
-  ],
+  "categories": ["Computers"],
   "body": "Learn some functional programming."
 }
