@@ -21,7 +21,7 @@ collections:
           widget: 'relation',
           collection: 'categories',
           searchFields: ['title'],
-          valueFields: ['title'],
+          valueField: 'title',
           multiple: true,
         }
       - { label: 'Body', name: 'body', widget: 'markdown' }
