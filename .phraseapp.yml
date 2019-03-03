@@ -1,0 +1,13 @@
+phraseapp:
+  access_token: f7d73b94688faa51284a2b78ff73acb904e51b4b68152d9fa8bf1fe27b422951
+  project_id: d6dd0ced6de70e2bcd4f33f63e8704b3
+  push:
+    sources:
+      - file: ./content/projects/*.json
+        params:
+          file_format: simple_json
+  pull:
+    targets:
+      - file: ./content/projects/*.<locale_name>.json
+        params:
+          file_format: simple_json
