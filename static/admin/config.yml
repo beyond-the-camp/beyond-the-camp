@@ -2,13 +2,14 @@ backend:
   name: git-gateway
   branch: netlifycms # Branch to update (optional; defaults to master)
 
+publish_mode: editorial_workflow
 media_folder: static/img
 public_folder: /img
 
 collections:
   - name: projects
     label: Projects
-    folder: 'src/cms/projects'
+    folder: 'content/projects'
     create: true
     fields:
       - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'blog' }
@@ -19,15 +20,15 @@ collections:
           name: 'categories',
           widget: 'relation',
           collection: 'categories',
-          displayFields: ['category'],
+          searchFields: ['title'],
+          valueFields: ['title'],
           multiple: true,
         }
       - { label: 'Body', name: 'body', widget: 'markdown' }
 
   - name: categories
-    identifier_field: name
     label: Categories
-    folder: 'src/cms/categories'
+    folder: 'content/categories'
     create: true
     fields:
-      - { label: 'Category', name: 'category', widget: 'string' }
+      - { label: 'Title', name: 'title', widget: 'string' }
