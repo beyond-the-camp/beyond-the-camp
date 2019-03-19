@@ -1,5 +1,6 @@
 backend:
   name: git-gateway
+  # name: test-repo
   branch: netlifycms # Branch to update (optional; defaults to master)
 
 publish_mode: editorial_workflow
@@ -10,8 +11,8 @@ collections:
   - name: projects
     label: Projects
     folder: 'content/projects'
+    extension: md
     create: true
-    format: json
     fields:
       - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'blog' }
       - { label: 'Title', name: 'title', widget: 'string' }
@@ -30,7 +31,7 @@ collections:
   - name: categories
     label: Categories
     folder: 'content/categories'
+    extension: md
     create: true
-    format: json
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
