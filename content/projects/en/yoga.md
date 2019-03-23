@@ -1,11 +1,11 @@
 ---
 layout: project
 language: en
-title: My title
+title: Yoga
 thumbnail: >-
   https://raw.githubusercontent.com/hlouw/beyond-the-camp/netlifycms/static/img/library_square.jpg
 categories:
-  - Computers
+  - Sport
 ---
 
-Computers at a library is a good idea.
+Come do some yoga.

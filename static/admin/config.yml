@@ -14,7 +14,13 @@ collections:
     extension: md
     create: true
     fields:
-      - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'blog' }
+      - {
+          label: 'Layout',
+          name: 'layout',
+          widget: 'hidden',
+          default: 'project',
+        }
+      - { label: 'Language', name: 'language', widget: 'hidden', default: 'en' }
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Featured Image', name: 'featureImage', widget: 'image' }
       - {
@@ -34,5 +40,11 @@ collections:
     extension: md
     create: true
     fields:
-      - { label: 'ID', name: 'id', widget: 'number' }
+      - {
+          label: 'Layout',
+          name: 'layout',
+          widget: 'hidden',
+          default: 'category',
+        }
+      - { label: 'Language', name: 'language', widget: 'hidden', default: 'en' }
       - { label: 'Title', name: 'title', widget: 'string' }
