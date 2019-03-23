@@ -1,5 +1,6 @@
 ---
-layout: blog
+layout: project
+language: fr
 title: Mon titre
 thumbnail: >-
   https://raw.githubusercontent.com/hlouw/beyond-the-camp/netlifycms/static/img/library_square.jpg
