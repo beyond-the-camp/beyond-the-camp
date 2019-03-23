@@ -17,7 +17,7 @@
 #
 files: [
  {
-  "source" : "/projects/*.md",
+  "source" : "/projects/en/*.md",
   "translation" : "/projects/%two_letters_code%/%original_file_name%",
  }
 ]

@@ -10,13 +10,13 @@ public_folder: /img
 collections:
   - name: projects
     label: Projects
-    folder: 'content/projects'
+    folder: 'content/projects/en'
     extension: md
     create: true
     fields:
       - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'blog' }
       - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Featured Image', name: 'thumbnail', widget: 'image' }
+      - { label: 'Featured Image', name: 'featureImage', widget: 'image' }
       - {
           label: 'Categories',
           name: 'categories',
@@ -30,8 +30,9 @@ collections:
 
   - name: categories
     label: Categories
-    folder: 'content/categories'
+    folder: 'content/categories/en'
     extension: md
     create: true
     fields:
+      - { label: 'ID', name: 'id', widget: 'number' }
       - { label: 'Title', name: 'title', widget: 'string' }
