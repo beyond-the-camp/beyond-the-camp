@@ -7,4 +7,4 @@ thumbnail: >-
 categories:
   - Sport
 ---
-Come do some yoga.
+Venez faire quelques yoga.
