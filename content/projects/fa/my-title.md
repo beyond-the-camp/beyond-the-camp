@@ -1,9 +1,9 @@
 ---
 layout: blog
-title: My title
+title: عنوان
 thumbnail: >-
   https://raw.githubusercontent.com/hlouw/beyond-the-camp/netlifycms/static/img/library_square.jpg
 categories:
   - Computers
 ---
-Computers at a library is a good idea.
+کامپیوترهای موجود در یک کتابخانه یک ایده خوب است.
