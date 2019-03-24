@@ -1,10 +1,10 @@
 ---
 layout: project
 language: fr
-title: Mon titre
+title: Yoga
 thumbnail: >-
   https://raw.githubusercontent.com/hlouw/beyond-the-camp/netlifycms/static/img/library_square.jpg
 categories:
-  - Computers
+  - Sport
 ---
-Les ordinateurs à une bibliothèque est une bonne idée.
+Venez faire quelques yoga.
