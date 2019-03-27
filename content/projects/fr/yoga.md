@@ -2,7 +2,7 @@
 layout: project
 language: fr
 title: Yoga
-thumbnail: >-
+featuredImage: >-
   https://raw.githubusercontent.com/hlouw/beyond-the-camp/netlifycms/static/img/library_square.jpg
 categories:
   - Sport
