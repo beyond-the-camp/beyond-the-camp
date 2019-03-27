@@ -60,21 +60,3 @@ const Home = ({ data, pageContext }: Props) => (
 );
 
 export default Home;
-
-export const query = graphql`
-  query CategoryListPageQuery($language: String!) {
-    categories: allWordpressCategory(
-      filter: { polylang_current_lang: { eq: $language } }
-    ) {
-      edges {
-        node {
-          id
-          slug
-          name
-          polylang_current_lang
-          count
-        }
-      }
-    }
-  }
-`;

@@ -22,24 +22,17 @@ module.exports = {
       }
     },
     {
-      resolve: 'gatsby-source-wordpress',
+      resolve: 'gatsby-source-filesystem',
       options: {
-        // The base url to your WP site.
-        baseUrl: 'beyondthecamp.club/wp',
-        // WP.com sites set to true, WP.org set to false
-        hostingWPCOM: false,
-        // The protocol. This can be http or https.
-        protocol: 'https',
-        // Use 'Advanced Custom Fields' Wordpress plugin
-        useACF: true,
-        // Limit included endpoints to improve build speed and avoid auth errors
-        includedRoutes: [
-          '/*/*/project',
-          '/*/*/media',
-          '/*/*/categories',
-          '/*/*/tags',
-          '/*/*/taxonomies'
-        ]
+        path: `${__dirname}/content/projects`,
+        name: 'projects'
+      }
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        path: `${__dirname}/content/categories`,
+        name: 'categories'
       }
     },
     `gatsby-plugin-sharp`,
@@ -48,7 +41,6 @@ module.exports = {
     {
       resolve: `gatsby-plugin-purgecss`,
       options: {
-        printRejected: true, // Print removed selectors and processed file names
         tailwind: true // Enable tailwindcss support
       }
     },

@@ -33,15 +33,3 @@ export const HeroTitle = ({ media, title }: Props) => (
     </div>
   </section>
 );
-
-export const query = graphql`
-  fragment HeroMediaFragment on wordpress__wp_media {
-    localFile {
-      childImageSharp {
-        fluid(maxWidth: 1000) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-  }
-`;

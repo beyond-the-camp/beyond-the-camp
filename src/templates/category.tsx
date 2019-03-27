@@ -109,34 +109,3 @@ const Category = (props: Props) => {
 };
 
 export default Category;
-
-export const query = graphql`
-  query CategoryPageQuery($id: String!) {
-    category: wordpressCategory(id: { eq: $id }) {
-      name
-      slug
-      polylang_current_lang
-      polylang_translations {
-        polylang_current_lang
-        slug
-      }
-    }
-
-    projects: allWordpressWpProject(
-      filter: { categories: { elemMatch: { id: { eq: $id } } } }
-    ) {
-      edges {
-        node {
-          wordpress_id
-          slug
-          polylang_current_lang
-          title
-          categories {
-            id
-            name
-          }
-        }
-      }
-    }
-  }
-`;

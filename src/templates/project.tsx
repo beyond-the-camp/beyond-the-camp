@@ -144,39 +144,3 @@ const Project = (props: Props) => {
 };
 
 export default Project;
-
-export const query = graphql`
-  query ProjectPageQuery($id: String!, $categoryId: String!) {
-    project: wordpressWpProject(id: { eq: $id }) {
-      slug
-      title
-      content
-      polylang_current_lang
-      polylang_translations {
-        polylang_current_lang
-        slug
-        featured_media {
-          ...HeroMediaFragment
-        }
-        opening_times: acf {
-          ...OpeningTimesFragment
-        }
-      }
-      featured_media {
-        ...HeroMediaFragment
-      }
-      opening_times: acf {
-        ...OpeningTimesFragment
-      }
-    }
-
-    category: wordpressCategory(id: { eq: $categoryId }) {
-      name
-      slug
-      polylang_translations {
-        polylang_current_lang
-        slug
-      }
-    }
-  }
-`;

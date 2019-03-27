@@ -67,36 +67,3 @@ export const OpeningTimes = ({ days }: Props) => (
     ))}
   </div>
 );
-
-export const query = graphql`
-  fragment OpeningTimesFragment on acf_4 {
-    monday {
-      open
-      close
-    }
-    tuesday {
-      open
-      close
-    }
-    wednesday {
-      open
-      close
-    }
-    thursday {
-      open
-      close
-    }
-    friday {
-      open
-      close
-    }
-    saturday {
-      open
-      close
-    }
-    sunday {
-      open
-      close
-    }
-  }
-`;

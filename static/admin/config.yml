@@ -1,9 +1,9 @@
 backend:
-  name: git-gateway
-  # name: test-repo
-  branch: netlifycms # Branch to update (optional; defaults to master)
+  # name: git-gateway
+  name: test-repo
+  # branch: netlifycms # Branch to update (optional; defaults to master)
 
-publish_mode: editorial_workflow
+# publish_mode: editorial_workflow
 media_folder: static/img
 public_folder: /img
 
@@ -14,15 +14,8 @@ collections:
     extension: md
     create: true
     fields:
-      - {
-          label: 'Layout',
-          name: 'layout',
-          widget: 'hidden',
-          default: 'project',
-        }
-      - { label: 'Language', name: 'language', widget: 'hidden', default: 'en' }
       - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Featured Image', name: 'featureImage', widget: 'image' }
+      - { label: 'Featured Image', name: 'featuredImage', widget: 'image' }
       - {
           label: 'Categories',
           name: 'categories',
@@ -40,11 +33,4 @@ collections:
     extension: md
     create: true
     fields:
-      - {
-          label: 'Layout',
-          name: 'layout',
-          widget: 'hidden',
-          default: 'category',
-        }
-      - { label: 'Language', name: 'language', widget: 'hidden', default: 'en' }
       - { label: 'Title', name: 'title', widget: 'string' }
