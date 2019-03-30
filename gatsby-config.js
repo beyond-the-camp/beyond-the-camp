@@ -35,8 +35,6 @@ module.exports = {
         name: 'categories'
       }
     },
-    `gatsby-plugin-sharp`,
-    `gatsby-transformer-sharp`,
     `gatsby-plugin-react-leaflet`,
     {
       resolve: `gatsby-plugin-purgecss`,
