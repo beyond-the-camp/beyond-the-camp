@@ -7,5 +7,4 @@ featuredImage: >-
 categories:
   - Sport
 ---
-
 Venez faire quelques yoga.
