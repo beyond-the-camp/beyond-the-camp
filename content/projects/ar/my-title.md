@@ -1,9 +1,6 @@
 ---
-layout: project
-language: en
-title: لقبي
-featuredImage: >-
-  /img/library_square.jpg
+title: My title
+featuredImage: /img/library_square.jpg
 categories:
   - Computers
 ---
