@@ -7,5 +7,4 @@ featuredImage: >-
 categories:
   - Computers
 ---
-
 أجهزة الكمبيوتر في مكتبة فكرة جيدة.

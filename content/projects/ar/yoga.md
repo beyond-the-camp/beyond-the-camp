@@ -7,5 +7,4 @@ featuredImage: >-
 categories:
   - Sport
 ---
-
 Come do some yoga.
