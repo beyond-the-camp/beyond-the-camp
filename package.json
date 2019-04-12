@@ -40,7 +40,7 @@
     "gatsby-transformer-remark": "^2.3.8",
     "gatsby-transformer-sharp": "^2.1.18",
     "leaflet": "^1.4.0",
-    "netlify-cms": "^2.8.0",
+    "netlify-cms": "^2.9.1",
     "react": "^16.8.5",
     "react-dom": "^16.8.5",
     "react-helmet": "^5.2.0",
