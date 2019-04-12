@@ -1,6 +1,6 @@
 ---
 title: My title
-featuredImage: /img/library_square.jpg
+cover: /img/library_square.jpg
 categories:
   - Computers
 ---
