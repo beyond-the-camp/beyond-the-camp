@@ -1,9 +1,6 @@
 ---
-layout: project
-language: en
 title: My title
-featuredImage: >-
-  /img/library_square.jpg
+featuredImage: /img/library_square.jpg
 categories:
   - Computers
 ---
