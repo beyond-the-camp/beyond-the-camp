@@ -3,8 +3,8 @@
 const { createFilePath } = require(`gatsby-source-filesystem`);
 const path = require(`path`);
 const { fmImagesToRelative } = require('gatsby-remark-relative-images');
+const { getLocaleList } = require('./src/utils/languages');
 // const routes = require('./src/utils/routes');
-// const { getLocaleList, getPrimaryLocale } = require('./src/utils/languages');
 
 exports.onCreateNode = ({ node, getNode, actions }) => {
   const { createNodeField } = actions;
@@ -22,9 +22,10 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
     });
 
     const pathSegments = node.fileAbsolutePath.split(path.sep);
-    const contentIndex = pathSegments.indexOf('cms');
-    if (contentIndex !== -1) {
-      const [language, contentType] = pathSegments.slice(contentIndex + 1);
+    const indexOfCms = pathSegments.indexOf('cms');
+    if (indexOfCms !== -1) {
+      // E.g. "/cms/en/projects" -> [ "en", "projects" ]
+      const [language, contentType] = pathSegments.slice(indexOfCms + 1);
       createNodeField({
         node,
         name: `language`,
@@ -42,6 +43,7 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
 exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions;
 
+  // Create project pages
   const projectResult = await graphql(`
     {
       projects: allMarkdownRemark(
@@ -60,7 +62,7 @@ exports.createPages = async ({ graphql, actions }) => {
   `);
 
   const projectEdges = projectResult.data.projects.edges;
-  const component = path.resolve('./src/templates/project.tsx');
+  const projectComponent = path.resolve('./src/templates/project.tsx');
 
   projectEdges.forEach(edge => {
     const id = edge.node.id;
@@ -68,9 +70,62 @@ exports.createPages = async ({ graphql, actions }) => {
 
     createPage({
       path,
-      component,
+      component: projectComponent,
       context: {
         id
+      }
+    });
+  });
+
+  // Create Categories page
+  const categoriesComponent = path.resolve('./src/templates/categories.tsx');
+  getLocaleList().forEach(language => {
+    const path = `/${language}`;
+
+    createPage({
+      path,
+      component: categoriesComponent,
+      context: {
+        language
+      }
+    });
+  });
+
+  // Create individual category pages
+  const categoriesResult = await graphql(`
+    {
+      categories: allMarkdownRemark(
+        filter: { fields: { contentType: { eq: "categories" } } }
+      ) {
+        edges {
+          node {
+            fields {
+              slug
+              language
+            }
+            frontmatter {
+              title
+            }
+          }
+        }
+      }
+    }
+  `);
+
+  const categoryEdges = categoriesResult.data.categories.edges;
+  const categoryComponent = path.resolve('./src/templates/category.tsx');
+
+  categoryEdges.forEach(edge => {
+    const path = edge.node.fields.slug;
+    const language = edge.node.fields.language;
+    const category = edge.node.frontmatter.title;
+
+    createPage({
+      path,
+      component: categoryComponent,
+      context: {
+        language,
+        category
       }
     });
   });
