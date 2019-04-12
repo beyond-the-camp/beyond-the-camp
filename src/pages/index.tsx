@@ -8,15 +8,19 @@ import { Layout } from '../components/Layout';
 import { ListCard } from '../components/ListCard';
 import { getLanguageName, getLocaleList } from '../utils/languages';
 
+const storeLocale = (locale: string) => {
+  localStorage.setItem('locale', locale);
+};
+
 const LanguagePage = () => (
-  <Layout>
+  <Layout language="en">
     <div className="container mx-auto">
       <ul className="list-reset flex flex-wrap -mx-2 mt-4">
         {getLocaleList().map(locale => (
           <li key={locale} className="w-full max-w-sm md:w-1/2 px-2 mb-2">
             <Link
               to={locale}
-              onClick={() => LanguagePage.storeLocale(locale)}
+              onClick={() => storeLocale(locale)}
               className="no-underline"
             >
               <ListCard>

@@ -4,7 +4,6 @@ import { graphql, Link } from 'gatsby';
 import { FormattedMessage } from 'react-intl';
 
 import { BreadCrumbs } from '../components/BreadCrumbs';
-import { LocaleLinks } from '../components/LanguageSelector';
 import { Layout } from '../components/Layout';
 import { ListCard } from '../components/ListCard';
 import * as routes from '../utils/routes';
@@ -34,23 +33,6 @@ const getProjectPath = (category: CategoryNode, project: ProjectNode): string =>
     project.slug
   );
 
-const getLocaleLinks = ({ data }: Props): LocaleLinks => {
-  const links: Partial<LocaleLinks> = {
-    [data.category.polylang_current_lang]: routes.getCategoryPath(
-      data.category.polylang_current_lang,
-      data.category.slug
-    )
-  };
-
-  data.category.polylang_translations.forEach(translation => {
-    const lang = translation.polylang_current_lang;
-    const category = translation.slug;
-    links[lang] = routes.getCategoryPath(lang, category);
-  });
-
-  return links as LocaleLinks;
-};
-
 interface Props {
   data: {
     category: CategoryNode;
@@ -67,10 +49,7 @@ const Category = (props: Props) => {
   const { data } = props;
 
   return (
-    <Layout
-      currentLocale={data.category.polylang_current_lang}
-      localeLinks={getLocaleLinks(props)}
-    >
+    <Layout language={data.category.polylang_current_lang}>
       <BreadCrumbs
         crumbs={[
           {

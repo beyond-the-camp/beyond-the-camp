@@ -34,7 +34,7 @@ interface Props {
 }
 
 const Home = ({ data, pageContext }: Props) => (
-  <Layout currentLocale={pageContext.language}>
+  <Layout language={pageContext.language}>
     <BreadCrumbs crumbs={[{ text: <FormattedMessage id="HOME" /> }]} />
 
     <div className="container mx-auto">
