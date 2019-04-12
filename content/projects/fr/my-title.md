@@ -2,7 +2,7 @@
 layout: project
 language: fr
 title: Mon titre
-featuredImage: >-
+cover: >-
   /img/library_square.jpg
 categories:
   - Computers

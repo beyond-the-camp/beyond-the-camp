@@ -2,7 +2,7 @@
 layout: project
 language: fr
 title: Yoga
-featuredImage: >-
+cover: >-
   /img/library_square.jpg
 categories:
   - Sport

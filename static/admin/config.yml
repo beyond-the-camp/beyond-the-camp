@@ -15,7 +15,7 @@ collections:
     create: true
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Featured image', name: 'featuredImage', widget: 'image' }
+      - { label: 'Cover image', name: 'cover', widget: 'image' }
       - {
           label: 'Categories',
           name: 'categories',

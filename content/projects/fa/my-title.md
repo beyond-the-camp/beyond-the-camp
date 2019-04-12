@@ -2,7 +2,7 @@
 layout: project
 language: en
 title: عنوان
-featuredImage: >-
+cover: >-
   /img/library_square.jpg
 categories:
   - Computers

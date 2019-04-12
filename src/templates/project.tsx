@@ -9,7 +9,7 @@ import { LocationInfo } from '../components/LocationInfo';
 import { OpeningTimes } from '../components/OpeningTimes';
 import { LocaleType } from '../utils/types';
 
-interface FeaturedImage {
+interface CoverImage {
   childImageSharp: {
     fluid: FluidObject;
   };
@@ -24,7 +24,7 @@ interface Props {
       };
       frontmatter: {
         title: string;
-        featuredImage: FeaturedImage;
+        cover: CoverImage;
         categories: string[];
       };
       html: string;
@@ -38,7 +38,7 @@ const Project = (props: Props) => {
   return (
     <Layout language={data.project.fields.language}>
       <HeroTitle
-        media={data.project.frontmatter.featuredImage}
+        media={data.project.frontmatter.cover}
         title={data.project.frontmatter.title}
       />
 
@@ -77,7 +77,7 @@ export const projectQuery = graphql`
       }
       frontmatter {
         title
-        featuredImage {
+        cover {
           ...HeroMediaFragment
         }
         categories
