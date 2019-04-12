@@ -22,9 +22,9 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
     });
 
     const pathSegments = node.fileAbsolutePath.split(path.sep);
-    const contentIndex = pathSegments.indexOf('content');
+    const contentIndex = pathSegments.indexOf('cms');
     if (contentIndex !== -1) {
-      const [contentType, language] = pathSegments.slice(contentIndex + 1);
+      const [language, contentType] = pathSegments.slice(contentIndex + 1);
       createNodeField({
         node,
         name: `language`,

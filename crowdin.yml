@@ -1,23 +1,14 @@
-#
-# Your crowdin's credentials
-#
 "project_identifier" : "beyond-the-camp"
-#"api_key" : ""
-"base_path" : "/content"
-#"base_url" : ""
-
-#
-# Choose file structure in crowdin
-# e.g. true or false
-#
+"base_path" : "/cms"
 "preserve_hierarchy": true
 
-#
-# Files configuration
-#
 files: [
  {
-  "source" : "/projects/en/*.md",
-  "translation" : "/projects/%two_letters_code%/%original_file_name%",
+  "source" : "/en/projects/*.md",
+  "translation" : "/%two_letters_code%/projects/%original_file_name%",
+ },
+ {
+  "source" : "/en/categories/*.md",
+  "translation" : "/%two_letters_code%/categories/%original_file_name%",
  }
 ]

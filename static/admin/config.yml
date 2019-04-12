@@ -10,7 +10,7 @@ public_folder: /img
 collections:
   - name: projects
     label: Projects
-    folder: 'content/projects/en'
+    folder: 'cms/en/projects'
     extension: md
     create: true
     editor:
@@ -31,7 +31,7 @@ collections:
 
   - name: categories
     label: Categories
-    folder: 'content/categories/en'
+    folder: 'cms/en/categories'
     extension: md
     create: true
     editor:
