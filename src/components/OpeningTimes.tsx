@@ -1,6 +1,5 @@
 import * as React from 'react';
 
-import { graphql } from 'gatsby';
 import { FormattedMessage, FormattedTime } from 'react-intl';
 
 interface OpeningTimes {
