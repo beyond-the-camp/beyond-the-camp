@@ -1,6 +1,5 @@
 backend:
   name: git-gateway
-  branch: netlifycms # Branch to update (optional; defaults to master)
   # name: test-repo
 
 publish_mode: editorial_workflow
