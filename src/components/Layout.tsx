@@ -19,9 +19,9 @@ import * as frData from 'react-intl/locale-data/fr';
 
 // Messages
 import ar from '../i18n/ar';
-import en from '../i18n/en_GB';
-import fa from '../i18n/fa_IR';
-import fr from '../i18n/fr_FR';
+import en from '../i18n/en';
+import fa from '../i18n/fa';
+import fr from '../i18n/fr';
 
 const messages: Record<LocaleType, LocaleMessages> = {
   en,
