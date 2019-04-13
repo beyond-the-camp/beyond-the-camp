@@ -7,7 +7,6 @@ import { Helmet } from 'react-helmet';
 import { LocaleMessages } from '../i18n/types';
 import { getTextDirection } from '../utils/languages';
 import { LocaleType } from '../utils/types';
-import { LocaleLinks } from './LanguageSelector';
 import { NavBar } from './NavBar';
 
 import { addLocaleData, IntlProvider } from 'react-intl';
@@ -20,47 +19,35 @@ import * as frData from 'react-intl/locale-data/fr';
 
 // Messages
 import ar from '../i18n/ar';
-import en_GB from '../i18n/en_GB';
-import fa_IR from '../i18n/fa_IR';
-import fr_FR from '../i18n/fr_FR';
+import en from '../i18n/en_GB';
+import fa from '../i18n/fa_IR';
+import fr from '../i18n/fr_FR';
 
 const messages: Record<LocaleType, LocaleMessages> = {
-  en_GB,
-  fr_FR,
+  en,
+  fr,
   ar,
-  fa_IR
+  fa
 };
 
 addLocaleData([...enData, ...frData, ...arData, ...faData]);
 
 interface Props {
-  currentLocale?: LocaleType;
+  language: LocaleType;
   children?: React.ReactNode;
-  localeLinks?: LocaleLinks;
 }
 
-const defaultProps: Partial<Props> = {
-  currentLocale: 'en_GB'
-};
-
-export const Layout = ({ children, currentLocale, localeLinks }: Props) => {
-  const jsLocale = currentLocale.replace('_', '-');
-
+export const Layout = ({ language, children }: Props) => {
   return (
-    <IntlProvider locale={jsLocale} messages={messages[currentLocale]}>
+    <IntlProvider locale={language} messages={messages[language]}>
       <div className="bg-grey-lighter min-h-screen overflow-x-hidden">
         <Helmet>
           <title>BeyondMoria</title>
-          <html
-            lang={jsLocale.split('-')[0]}
-            dir={getTextDirection(currentLocale)}
-          />
+          <html lang={language} dir={getTextDirection(language)} />
         </Helmet>
-        <NavBar currentLocale={currentLocale} localeLinks={localeLinks} />
+        <NavBar language={language} />
         <main className="pb-4">{children}</main>
       </div>
     </IntlProvider>
   );
 };
-
-Layout.defaultProps = defaultProps;

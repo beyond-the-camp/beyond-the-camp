@@ -13,7 +13,6 @@ module.exports = {
       }
     },
     `gatsby-plugin-react-helmet`,
-    `gatsby-transformer-remark`,
     `gatsby-plugin-postcss`,
     {
       resolve: `gatsby-plugin-typography`,
@@ -22,36 +21,54 @@ module.exports = {
       }
     },
     {
-      resolve: 'gatsby-source-wordpress',
+      resolve: 'gatsby-source-filesystem',
       options: {
-        // The base url to your WP site.
-        baseUrl: 'beyondthecamp.club/wp',
-        // WP.com sites set to true, WP.org set to false
-        hostingWPCOM: false,
-        // The protocol. This can be http or https.
-        protocol: 'https',
-        // Use 'Advanced Custom Fields' Wordpress plugin
-        useACF: true,
-        // Limit included endpoints to improve build speed and avoid auth errors
-        includedRoutes: [
-          '/*/*/project',
-          '/*/*/media',
-          '/*/*/categories',
-          '/*/*/tags',
-          '/*/*/taxonomies'
+        path: `${__dirname}/static/img`,
+        name: 'uploads'
+      }
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        path: `${__dirname}/cms`,
+        name: 'cms'
+      }
+    },
+    'gatsby-plugin-sharp',
+    'gatsby-transformer-sharp',
+    {
+      resolve: 'gatsby-transformer-remark',
+      options: {
+        plugins: [
+          {
+            resolve: 'gatsby-remark-relative-images',
+            options: {
+              name: 'uploads'
+            }
+          },
+          {
+            resolve: 'gatsby-remark-images',
+            options: {
+              maxWidth: 2048
+            }
+          },
+          {
+            resolve: 'gatsby-remark-copy-linked-files',
+            options: {
+              destinationDir: 'static'
+            }
+          }
         ]
       }
     },
-    `gatsby-plugin-sharp`,
-    `gatsby-transformer-sharp`,
     `gatsby-plugin-react-leaflet`,
     {
       resolve: `gatsby-plugin-purgecss`,
       options: {
-        printRejected: true, // Print removed selectors and processed file names
         tailwind: true // Enable tailwindcss support
       }
     },
+    `gatsby-plugin-netlify-cms`,
     `gatsby-plugin-netlify`
   ]
 };
