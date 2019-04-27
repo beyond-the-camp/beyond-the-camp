@@ -22,10 +22,10 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
     });
 
     const pathSegments = node.fileAbsolutePath.split(path.sep);
-    const indexOfCms = pathSegments.indexOf('cms');
-    if (indexOfCms !== -1) {
-      // E.g. "/cms/en/projects" -> [ "en", "projects" ]
-      const [language, contentType] = pathSegments.slice(indexOfCms + 1);
+    const indexOfPrefix = pathSegments.indexOf('pages');
+    if (indexOfPrefix !== -1) {
+      // E.g. "/pages/en/projects" -> [ "en", "projects" ]
+      const [language, contentType] = pathSegments.slice(indexOfPrefix + 1);
       createNodeField({
         node,
         name: `language`,

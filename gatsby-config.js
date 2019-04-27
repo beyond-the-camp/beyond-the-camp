@@ -30,8 +30,8 @@ module.exports = {
     {
       resolve: 'gatsby-source-filesystem',
       options: {
-        path: `${__dirname}/cms`,
-        name: 'cms'
+        path: `${__dirname}/src/pages`,
+        name: 'pages'
       }
     },
     'gatsby-plugin-sharp',
