@@ -1,6 +1,6 @@
 backend:
-  name: git-gateway
-  # name: test-repo
+  # name: git-gateway
+  name: test-repo
 
 publish_mode: editorial_workflow
 media_folder: static/img
@@ -26,7 +26,47 @@ collections:
           valueField: 'title',
           multiple: true,
         }
+      - label: 'Opening times'
+        name: 'openingTimes'
+        widget: 'list'
+        fields:
+          - label: 'Day'
+            name: day
+            widget: 'select'
+            options:
+              [
+                'Monday',
+                'Tuesday',
+                'Wednesday',
+                'Thursday',
+                'Friday',
+                'Saturday',
+                'Sunday',
+              ]
+          - label: 'Open'
+            name: 'open'
+            widget: 'datetime'
+            dateFormat: false
+          - label: 'Close'
+            name: 'close'
+            widget: 'datetime'
+            dateFormat: false
+
       - { label: 'Body', name: 'body', widget: 'markdown' }
+      - {
+          label: 'Location description',
+          name: 'locationText',
+          widget: 'string',
+          required: false,
+          hint: 'Text description of the location',
+        }
+      - {
+          label: 'Map Location',
+          name: 'locationMap',
+          widget: 'map',
+          required: false,
+          default: '{ "type": "Point", "coordinates": [26.5172195, 39.1297939] }',
+        }
 
   - name: categories
     label: Categories
