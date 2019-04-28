@@ -8,14 +8,15 @@ interface Props {
 }
 
 const LocationMap = ({ position }: { position: [number, number] }) => {
+  const [lat, long] = position;
   if (typeof window !== 'undefined') {
     return (
-      <Map className="h-48 w-full" center={position} zoom={13}>
+      <Map className="h-48 w-full" center={[long, lat]} zoom={13}>
         <TileLayer
           attribution='&amp;copy <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         />
-        <Marker position={position}>
+        <Marker position={[long, lat]}>
           <Popup>
             A pretty CSS3 popup. <br /> Easily customizable.
           </Popup>
