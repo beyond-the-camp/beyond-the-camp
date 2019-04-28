@@ -15,6 +15,12 @@ interface CoverImage {
   };
 }
 
+interface OpeningTime {
+  day: string;
+  open: string;
+  close: string;
+}
+
 interface Props {
   data: {
     project: {
@@ -26,6 +32,9 @@ interface Props {
         title: string;
         cover: CoverImage;
         categories: string[];
+        openingTimes: OpeningTime[];
+        locationText: string;
+        locationMap: string;
       };
       html: string;
     };
@@ -34,6 +43,12 @@ interface Props {
 
 const Project = (props: Props) => {
   const { data } = props;
+
+  const mapText = data.project.frontmatter.locationText;
+  const mapGeo: { coordinates: [number, number] } = JSON.parse(
+    data.project.frontmatter.locationMap
+  );
+  const mapCoordinates = mapGeo ? mapGeo.coordinates : null;
 
   return (
     <Layout language={data.project.fields.language}>
@@ -53,10 +68,10 @@ const Project = (props: Props) => {
           <aside className="w-full md:w-1/3 mx-2 my-2">
             <div className="flex flex-col">
               <section className="bg-white border rounded p-4 mb-4">
-                <OpeningTimes days={{}} />
+                <OpeningTimes days={data.project.frontmatter.openingTimes} />
               </section>
               <section className="bg-white border rounded p-4">
-                <LocationInfo />
+                <LocationInfo text={mapText} position={mapCoordinates} />
               </section>
             </div>
           </aside>
@@ -81,6 +96,13 @@ export const projectQuery = graphql`
           ...HeroMediaFragment
         }
         categories
+        openingTimes {
+          day
+          open
+          close
+        }
+        locationText
+        locationMap
       }
       html
     }

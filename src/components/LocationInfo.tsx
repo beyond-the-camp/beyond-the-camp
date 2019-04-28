@@ -2,15 +2,20 @@ import * as React from 'react';
 
 import { Map, Marker, Popup, TileLayer } from 'react-leaflet';
 
-const LocationMap = () => {
+interface Props {
+  text: string;
+  position: [number, number];
+}
+
+const LocationMap = ({ position }: { position: [number, number] }) => {
   if (typeof window !== 'undefined') {
     return (
-      <Map className="h-48 w-full" center={[51.505, -0.09]} zoom={13}>
+      <Map className="h-48 w-full" center={position} zoom={13}>
         <TileLayer
           attribution='&amp;copy <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         />
-        <Marker position={[51.505, -0.09]}>
+        <Marker position={position}>
           <Popup>
             A pretty CSS3 popup. <br /> Easily customizable.
           </Popup>
@@ -21,10 +26,10 @@ const LocationMap = () => {
   return null;
 };
 
-export const LocationInfo = () => (
+export const LocationInfo = ({ text, position }: Props) => (
   <div>
     <h3>Location</h3>
-    <p>Find us here</p>
-    <LocationMap />
+    {text ? <p>{text}</p> : null}
+    {position ? <LocationMap position={position} /> : null}
   </div>
 );
