@@ -12,7 +12,7 @@ openingTimes:
     day: Wednesday
     open: 2019-04-27T08:00:54.531Z
 locationText: Not for from the cafe
-locationMap: '{"type":"Point","coordinates":[23.5068369,37.7476773]}'
+locationMap: '{"type":"Point","coordinates":[23.5068723,37.7476837]}'
 ---
 
 A wide range of games, from silly to serious.
