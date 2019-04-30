@@ -52,7 +52,7 @@ const Project = (props: Props) => {
     data.project.frontmatter.location.showMap;
   const mapText =
     data.project.frontmatter.location &&
-    `${data.project.frontmatter.location.description} ${showMap}`;
+    data.project.frontmatter.location.description;
   const mapGeo: { coordinates: [number, number] } =
     data.project.frontmatter.location &&
     JSON.parse(data.project.frontmatter.location.geo);
