@@ -33,8 +33,11 @@ interface Props {
         cover: CoverImage;
         categories: string[];
         openingTimes: OpeningTime[];
-        locationText: string;
-        locationMap: string;
+        location: {
+          description: string;
+          showMap: boolean;
+          geo: string;
+        };
       };
       html: string;
     };
@@ -44,11 +47,16 @@ interface Props {
 const Project = (props: Props) => {
   const { data } = props;
 
-  const mapText = data.project.frontmatter.locationText;
-  const mapGeo: { coordinates: [number, number] } = JSON.parse(
-    data.project.frontmatter.locationMap
-  );
-  const mapCoordinates = mapGeo ? mapGeo.coordinates : null;
+  const showMap =
+    data.project.frontmatter.location &&
+    data.project.frontmatter.location.showMap;
+  const mapText =
+    data.project.frontmatter.location &&
+    `${data.project.frontmatter.location.description} ${showMap}`;
+  const mapGeo: { coordinates: [number, number] } =
+    data.project.frontmatter.location &&
+    JSON.parse(data.project.frontmatter.location.geo);
+  const mapCoordinates = showMap && mapGeo ? mapGeo.coordinates : null;
 
   return (
     <Layout language={data.project.fields.language}>
@@ -101,8 +109,11 @@ export const projectQuery = graphql`
           open
           close
         }
-        locationText
-        locationMap
+        location {
+          description
+          showMap
+          geo
+        }
       }
       html
     }

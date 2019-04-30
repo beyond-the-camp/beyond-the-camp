@@ -22,10 +22,7 @@ export const OpeningTimes = ({ days }: Props) => (
     {days &&
       days.map(day => (
         <div key={day.day} className="flex justify-start">
-          <div className="flex-1">
-            <FormattedMessage id={day.day} />
-            {': '}
-          </div>
+          <div className="flex-1">{day.day}:</div>
           <div className="flex-1">
             <FormattedTime value={day.open} />
             {' - '}

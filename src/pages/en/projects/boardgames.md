@@ -5,14 +5,16 @@ categories:
   - Kids
   - Sport
 openingTimes:
-  - close: 2019-04-27T16:00:06.008Z
+  - close: 2018-01-01T16:00:00.000Z
     day: Monday
-    open: 2019-04-27T08:00:05.993Z
-  - close: 2019-04-27T14:30:54.544Z
+    open: 2018-01-01T08:00:00.000Z
+  - close: 2018-01-01T14:30:00.000Z
     day: Wednesday
-    open: 2019-04-27T08:00:54.531Z
-locationText: Not for from the cafe
-locationMap: '{"type":"Point","coordinates":[23.5068723,37.7476837]}'
+    open: 2018-01-01T08:00:00.000Z
+location:
+  description: Not far from the cafe
+  showMap: true
+  geo: '{"type":"Point","coordinates":[23.5068723,37.7476837]}'
 ---
 
 A wide range of games, from silly to serious.
