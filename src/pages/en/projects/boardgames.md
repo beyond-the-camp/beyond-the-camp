@@ -14,7 +14,7 @@ openingTimes:
 location:
   description: Not far from the cafe
   geo: '{"type":"Point","coordinates":[23.5068723,37.7476837]}'
-  showMap: true
+  showMap: false
 ---
 
 A wide range of games, from silly to serious.
