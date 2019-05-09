@@ -12,11 +12,14 @@ collections:
     folder: 'src/pages/en/projects'
     extension: md
     create: true
-    editor:
-      preview: false
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Cover image', name: 'cover', widget: 'image' }
+      - {
+          label: 'Cover image',
+          name: 'cover',
+          widget: 'image',
+          required: false,
+        }
       - {
           label: 'Categories',
           name: 'categories',
@@ -26,6 +29,8 @@ collections:
           valueField: 'title',
           multiple: true,
         }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
+
       - label: 'Opening times'
         name: 'openingTimes'
         widget: 'list'
@@ -53,8 +58,6 @@ collections:
             widget: 'datetime'
             dateFormat: false
             default: 2018-01-01T17:00:00.000Z
-
-      - { label: 'Body', name: 'body', widget: 'markdown' }
 
       - label: 'Location'
         name: location

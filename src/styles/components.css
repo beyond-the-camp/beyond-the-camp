@@ -1,8 +1,11 @@
-.crumb:after {
-  content: '/';
-  @apply px-2;
-}
-
-.crumb:last-child:after {
-  content: none;
-}
+/**
+  * Here you would add any of your custom component classes; stuff that you'd
+  * want loaded *before* the utilities so that the utilities could still
+  * override them.
+  *
+  * Example:
+  *
+  * .btn { ... }
+  * .form-input { ... }
+  *
+  */

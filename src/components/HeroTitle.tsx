@@ -15,7 +15,7 @@ interface Props {
 export const HeroTitle = ({ media, title }: Props) => (
   <section className="relative flex items-stretch flex-col content-between py-12 md:py-32">
     <div className="absolute pin">
-      {media && (
+      {media && media.childImageSharp && (
         <Img className="w-full h-full" fluid={media.childImageSharp.fluid} />
       )}
     </div>
