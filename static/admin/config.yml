@@ -12,6 +12,7 @@ collections:
     folder: 'src/pages/en/projects'
     extension: md
     create: true
+    preview_path: 'en/projects/{{slug}}'
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
       - {
