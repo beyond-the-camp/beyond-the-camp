@@ -1,4 +1,4 @@
 ---
-title: Food/ drink
+title: Cafe
 ---
 
