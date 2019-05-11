@@ -1,8 +1,7 @@
 ---
-title: Football
-cover: /img/boardgames.jpg
+title: Barber
+cover: /img/barber-400x400.jpg
 categories:
-  - Sport
   - Kids
 openingTimes:
   - close: 2018-01-01T17:00:00.000Z
