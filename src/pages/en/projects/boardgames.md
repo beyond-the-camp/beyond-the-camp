@@ -3,6 +3,7 @@ title: Video games
 cover: /img/cinema_square.jpg
 categories:
   - Kids
+  - Computers
 openingTimes:
   - close: 2018-01-01T19:00:00.000Z
     day: Monday
