@@ -1,8 +1,9 @@
 ---
-title: My title
-cover: /img/library_square.jpg
+title: Cafe at One Happy Family
+cover: /img/cafe_square.jpg
 categories:
-  - Computers
+  - Cafe
+  - Community centre
 openingTimes:
   - close: 2019-05-09T14:00:00.000Z
     day: Wednesday
