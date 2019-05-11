@@ -1,5 +1,5 @@
 ---
-title: Video games
+title: Video games at One Happy Family
 cover: /img/cinema_square.jpg
 categories:
   - Kids
