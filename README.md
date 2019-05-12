@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/7092dcb9-f917-4dcf-a90b-2445a1602424/deploy-status)](https://app.netlify.com/sites/beyondthecamp/deploys)
+
 # Beyond the camp
 
 This is the repo for the Beyond the Camp website, built using [GatsbyJS](https://www.gatsbyjs.org/).
