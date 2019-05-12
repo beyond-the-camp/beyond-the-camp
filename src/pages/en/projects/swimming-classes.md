@@ -4,6 +4,7 @@ cover: /img/swimming-classes.jpg
 categories:
   - Sport
   - Community centre
+  - Volunteering
 openingTimes:
   - close: 2019-05-12T15:00:00.000Z
     day: Monday
