@@ -14,15 +14,15 @@ interface Props {
 
 export const HeroTitle = ({ media, title }: Props) => (
   <section className="relative flex items-stretch flex-col content-between py-12 md:py-32">
-    <div className="absolute pin">
+    <div className="absolute inset-0">
       {media && media.childImageSharp && (
         <Img className="w-full h-full" fluid={media.childImageSharp.fluid} />
       )}
     </div>
-    <div className="absolute pin bg-black opacity-50 w-full h-full" />
+    <div className="absolute inset-0 bg-black opacity-50 w-full h-full" />
     <div className="container mx-auto z-10">
       <h1
-        className="text-white mb-0"
+        className="text-3xl font-semibold text-white mb-0"
         dangerouslySetInnerHTML={{ __html: title }}
       />
     </div>

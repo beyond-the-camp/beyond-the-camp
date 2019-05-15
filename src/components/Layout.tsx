@@ -40,7 +40,7 @@ interface Props {
 export const Layout = ({ language, children }: Props) => {
   return (
     <IntlProvider locale={language} messages={messages[language]}>
-      <div className="bg-grey-lighter min-h-screen overflow-x-hidden">
+      <div className="bg-gray-200 min-h-screen overflow-x-hidden">
         <Helmet>
           <title>BeyondMoria</title>
           <html lang={language} dir={getTextDirection(language)} />

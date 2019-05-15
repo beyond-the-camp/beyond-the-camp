@@ -32,7 +32,7 @@ interface Props {
 const Categories = ({ data, pageContext }: Props) => (
   <Layout language={pageContext.language}>
     <div className="container mx-auto">
-      <ul className="list-reset flex flex-wrap -mx-2">
+      <ul className="flex flex-wrap -mx-2">
         {data.categories.edges.map(({ node }) => (
           <li key={node.id} className="w-full max-w-sm md:w-1/2 px-2 mb-2">
             <Link to={node.fields.slug} className="no-underline">

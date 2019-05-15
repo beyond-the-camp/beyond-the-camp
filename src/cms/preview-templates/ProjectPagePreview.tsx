@@ -24,7 +24,7 @@ const ProjectPagePreview = ({ entry, getAsset }: Props) => {
 
   return (
     <IntlProvider locale="en" messages={en}>
-      <div className="bg-grey-lighter min-h-screen overflow-x-hidden">
+      <div className="bg-gray-200 min-h-screen overflow-x-hidden">
         <NavBar language="en" />
         <main className="pb-4">
           <ProjectTemplate
