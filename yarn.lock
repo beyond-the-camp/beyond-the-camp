@@ -6048,10 +6048,10 @@ g-status@^2.0.2:
     matcher "^1.0.0"
     simple-git "^1.85.0"
 
-gatsby-cli@^2.5.12:
-  version "2.5.12"
-  resolved "https://registry.yarnpkg.com/gatsby-cli/-/gatsby-cli-2.5.12.tgz#c1c92af0dd12ffbad76da05c136d926d3c66854d"
-  integrity sha512-MhcHfYoiBcccX17KnaivaDZQb7j9ZhrAb90PO0ULrln7BsV93pmzz/t9iT1+0Sill0ST6vf/GbtD2kaiOWbNSg==
+gatsby-cli@^2.5.14:
+  version "2.5.14"
+  resolved "https://registry.yarnpkg.com/gatsby-cli/-/gatsby-cli-2.5.14.tgz#1bcf6fd98e2bf6272d76d6a3dc681d687b971bc0"
+  integrity sha512-g05QENiBqeBFmELyII2+Kbqu5y4IwlPmZx4lGiKUh31lY+7S+rXkwsefwVQk+hwGRvmpkqoR4fSeGOEfiHR2lQ==
   dependencies:
     "@babel/code-frame" "^7.0.0"
     "@babel/runtime" "^7.0.0"
@@ -6146,10 +6146,10 @@ gatsby-plugin-eslint@2.0.5:
   resolved "https://registry.yarnpkg.com/gatsby-plugin-eslint/-/gatsby-plugin-eslint-2.0.5.tgz#be02f5aff9b7f4a37927f3f917e82ad9f3d67f09"
   integrity sha512-7dgcNtFOGgPLseDA55DDjqqnSW+2Pe91erL6nFjLFs/vlFlT9+GbR/4zkQH9WjWOHSfCtgrUzi59cxM1rBm4kw==
 
-gatsby-plugin-netlify-cms@^4.0.0:
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-netlify-cms/-/gatsby-plugin-netlify-cms-4.0.0.tgz#71a614db1f96e8387e986f3b84fc843a6ec9d9d5"
-  integrity sha512-A5BGcgbdH0Cf4AokxLi4Ul9FdoJ+QT7ASBJt/51j54Wu7Swu3x0NWRP32efmR5bkET9b0lEu0YYg0ZbUZdXuaw==
+gatsby-plugin-netlify-cms@^4.0.1:
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-netlify-cms/-/gatsby-plugin-netlify-cms-4.0.1.tgz#66b4eceda6655041c6b9aa4759109f2d8e7e1295"
+  integrity sha512-57KKPcocoRdvpbytQvpxeeNC+EhH6Y20ogl9knTfOujniXvxoNkKT844XhCRSP86wtYFq3QmpZuj0XwUE1tVcw==
   dependencies:
     "@pieh/friendly-errors-webpack-plugin" "1.7.0-chalk-2"
     html-webpack-exclude-assets-plugin "^0.0.7"
@@ -6159,10 +6159,10 @@ gatsby-plugin-netlify-cms@^4.0.0:
     netlify-identity-widget "^1.4.11"
     webpack "^4.16.0"
 
-gatsby-plugin-netlify@^2.0.16:
-  version "2.0.16"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-netlify/-/gatsby-plugin-netlify-2.0.16.tgz#542849448c495c9feb68e5051de39dfb4b0d10b9"
-  integrity sha512-zvaE1GIz0gjHMwNIp9QAVob2UVQY6szXxkyxrHsoE8gR6Wumw4TV8oZwSDPZQI+GV22zMuCb7Ii3riKRstwIpg==
+gatsby-plugin-netlify@^2.0.17:
+  version "2.0.17"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-netlify/-/gatsby-plugin-netlify-2.0.17.tgz#05954942041f55d1e37af2c064bbcdb61d143821"
+  integrity sha512-eMh4SKBImqbMK3jlkETYKhkVjCfaSfQtcbYFAloomnBfq9CJxW/Hne0a33uErU+cm4b03M7ngl6D8UinrOJnLA==
   dependencies:
     "@babel/runtime" "^7.0.0"
     fs-extra "^4.0.2"
@@ -6183,6 +6183,20 @@ gatsby-plugin-page-creator@^2.0.12:
     lodash "^4.17.10"
     micromatch "^3.1.10"
     parse-filepath "^1.0.1"
+    slash "^1.0.0"
+
+gatsby-plugin-page-creator@^2.0.13:
+  version "2.0.13"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-page-creator/-/gatsby-plugin-page-creator-2.0.13.tgz#ba5d1af97b6fce9e41ae3e617699eed9c3682bde"
+  integrity sha512-wlIkpgFr0Oltlk8TTBRGaGOZZIzDY99iIIZ20mSl5HNMyU9IXe11IQDoF4JYXH2lMIEfp6OBGreCGCTOHHcc3g==
+  dependencies:
+    "@babel/runtime" "^7.0.0"
+    bluebird "^3.5.0"
+    chokidar "2.1.2"
+    fs-exists-cached "^1.0.0"
+    glob "^7.1.1"
+    lodash "^4.17.10"
+    micromatch "^3.1.10"
     slash "^1.0.0"
 
 gatsby-plugin-postcss@^2.0.7:
@@ -6538,10 +6552,10 @@ gatsby@^2.0.0:
     xstate "^4.3.2"
     yaml-loader "^0.5.0"
 
-gatsby@^2.4.2:
-  version "2.4.2"
-  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-2.4.2.tgz#4df378568e487a6f580d2cc8ddbc81dc2b85851a"
-  integrity sha512-iBAY78Kaa74DqPUuDEd9JVcfS3U0SBIwARKL5Dd9B1ejE1lEPcA7hyzLrl0trCWDWYqzaUL8/+obkOMOmWuIfg==
+gatsby@^2.4.6:
+  version "2.4.6"
+  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-2.4.6.tgz#90c0b36ed330454b3aa80b3451ffccb5da060f3d"
+  integrity sha512-Gki9dtIYMT7UOe3d8Z78TGMaQP1Govooi1vNjcgJ4dpC+YPCEMcgU3Nx1Xx/Ey3IDzOlCyBwvqtxlkuy/zPHvA==
   dependencies:
     "@babel/code-frame" "^7.0.0"
     "@babel/core" "^7.0.0"
@@ -6598,9 +6612,9 @@ gatsby@^2.4.2:
     flat "^4.0.0"
     fs-exists-cached "1.0.0"
     fs-extra "^5.0.0"
-    gatsby-cli "^2.5.12"
+    gatsby-cli "^2.5.14"
     gatsby-link "^2.1.1"
-    gatsby-plugin-page-creator "^2.0.12"
+    gatsby-plugin-page-creator "^2.0.13"
     gatsby-react-router-scroll "^2.0.7"
     gatsby-telemetry "^1.0.9"
     glob "^7.1.1"
@@ -6642,6 +6656,7 @@ gatsby@^2.4.2:
     react-error-overlay "^3.0.0"
     react-hot-loader "^4.6.2"
     redux "^4.0.0"
+    redux-thunk "^2.3.0"
     semver "^5.6.0"
     shallow-compare "^1.2.2"
     sift "^5.1.0"
