@@ -1,10 +1,6 @@
 backend:
   # name: test-repo
   name: git-gateway
-  repo: beyond-the-camp/beyond-the-camp
-  accept_roles:
-    - author
-    - admin
 
 publish_mode: editorial_workflow
 media_folder: static/img
