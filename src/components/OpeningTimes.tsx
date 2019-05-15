@@ -16,7 +16,7 @@ interface Props {
 
 export const OpeningTimes = ({ days }: Props) => (
   <div>
-    <h3>
+    <h3 className="text-xl font-semibold">
       <FormattedMessage id="OPENING_TIMES" />
     </h3>
     {days &&

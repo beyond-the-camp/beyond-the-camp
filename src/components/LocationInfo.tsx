@@ -29,7 +29,7 @@ const LocationMap = ({ position }: { position: [number, number] }) => {
 
 export const LocationInfo = ({ text, position }: Props) => (
   <div>
-    <h3>Location</h3>
+    <h3 className="text-xl font-semibold">Location</h3>
     {text ? <p>{text}</p> : null}
     {position ? <LocationMap position={position} /> : null}
   </div>

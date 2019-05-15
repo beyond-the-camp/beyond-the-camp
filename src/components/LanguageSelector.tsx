@@ -33,7 +33,7 @@ export const LanguageSelector = (props: Props) => {
         {getLanguageName(currentLocale)}
       </button>
       {showMenu && (
-        <div className="absolute block pin-r bg-white p-3 z-50 border-black shadow-md">
+        <div className="absolute block right-0 bg-white p-3 z-50 border-black shadow-md">
           {getLocaleList().map(locale => (
             <p key={locale} className="m-0">
               <Link to={getLink(locale, links)}>{getLanguageName(locale)}</Link>
