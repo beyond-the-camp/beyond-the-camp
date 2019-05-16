@@ -1,6 +1,6 @@
 ---
 title: Media skills training
-cover: /img/focusmedia.jpg
+cover: /img/media-class.jpg
 categories:
   - Community centre
   - 'Photography, video and audio projects'
