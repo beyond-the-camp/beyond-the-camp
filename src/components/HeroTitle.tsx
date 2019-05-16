@@ -3,20 +3,32 @@ import * as React from 'react';
 import { graphql } from 'gatsby';
 import Img, { FluidObject } from 'gatsby-image';
 
-interface Props {
-  media?: {
-    childImageSharp: {
-      fluid: FluidObject;
-    };
+export interface HeroMedia {
+  childImageSharp: {
+    fluid: FluidObject;
   };
+}
+
+interface Props {
+  media?: HeroMedia | string;
   title: string;
+}
+
+function isFluidMedia(media: HeroMedia | string): media is HeroMedia {
+  return (media as HeroMedia).childImageSharp !== undefined;
 }
 
 export const HeroTitle = ({ media, title }: Props) => (
   <section className="relative flex items-stretch flex-col content-between py-12 md:py-32">
     <div className="absolute inset-0">
-      {media && media.childImageSharp && (
+      {media && isFluidMedia(media) && (
         <Img className="w-full h-full" fluid={media.childImageSharp.fluid} />
+      )}
+      {media && !isFluidMedia(media) && (
+        <img
+          className="absolute top-0 left-0 object-cover object-center w-full h-full"
+          src={media}
+        />
       )}
     </div>
     <div className="absolute inset-0 bg-black opacity-50 w-full h-full" />
