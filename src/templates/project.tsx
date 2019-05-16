@@ -1,19 +1,12 @@
 import * as React from 'react';
 
 import { graphql } from 'gatsby';
-import { FluidObject } from 'gatsby-image';
 
-import { HeroTitle } from '../components/HeroTitle';
+import { HeroTitle, HeroMedia } from '../components/HeroTitle';
 import { Layout } from '../components/Layout';
 import { LocationInfo } from '../components/LocationInfo';
 import { OpeningTimes } from '../components/OpeningTimes';
 import { LocaleType } from '../utils/types';
-
-interface CoverImage {
-  childImageSharp: {
-    fluid: FluidObject;
-  };
-}
 
 interface OpeningTime {
   day: string;
@@ -23,7 +16,7 @@ interface OpeningTime {
 
 interface TemplateProps {
   title: string;
-  cover: CoverImage;
+  cover: HeroMedia;
   openingTimes: OpeningTime[];
   location?: {
     description: string;
@@ -79,7 +72,7 @@ interface PageProps {
       };
       frontmatter: {
         title: string;
-        cover: CoverImage;
+        cover: HeroMedia;
         categories: string[];
         openingTimes: OpeningTime[];
         location?: {
@@ -97,15 +90,17 @@ const Project = (props: PageProps) => {
   const {
     data: { project }
   } = props;
+  const { html, frontmatter, fields } = project;
+  const { title, cover, openingTimes, location } = frontmatter;
 
   return (
-    <Layout language={project.fields.language}>
+    <Layout language={fields.language}>
       <ProjectTemplate
-        title={project.frontmatter.title}
-        cover={project.frontmatter.cover}
-        html={project.html}
-        openingTimes={project.frontmatter.openingTimes}
-        location={project.frontmatter.location}
+        title={title}
+        cover={cover}
+        html={html}
+        openingTimes={openingTimes}
+        location={location}
       />
     </Layout>
   );
