@@ -28,18 +28,23 @@ export const LanguageSelector = (props: Props) => {
     <div className="relative inline-block">
       <button
         onClick={() => setShowMenu(prevShowMenu => !prevShowMenu)}
-        className="hover:opacity-50 text-white"
+        className="font-bold c-language-selector"
       >
         {getLanguageName(currentLocale)}
       </button>
       {showMenu && (
-        <div className="absolute block right-0 bg-white p-3 z-50 border-black shadow-md">
+        <ul className="c-language-menu absolute block bg-primary z-50 shadow-md">
           {getLocaleList().map(locale => (
-            <p key={locale} className="m-0">
-              <Link to={getLink(locale, links)}>{getLanguageName(locale)}</Link>
-            </p>
+            <li key={locale} className="text-center text-bold">
+              <Link
+                className="block py-2 px-5 hover:bg-secondary"
+                to={getLink(locale, links)}
+              >
+                {getLanguageName(locale)}
+              </Link>
+            </li>
           ))}
-        </div>
+        </ul>
       )}
     </div>
   );

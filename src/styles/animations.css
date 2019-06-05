@@ -1,0 +1,5 @@
+@keyframes full-height-500 {
+    100% {
+        max-height: 500px;
+    }
+}

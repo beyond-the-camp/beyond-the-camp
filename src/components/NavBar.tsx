@@ -16,16 +16,11 @@ export const NavBar = ({ language }: Props) => (
     role="navigation"
     aria-label="main navigation"
   >
-    <div className="container mx-auto flex items-center justify-between flex-wrap ">
-      <div className="flex items-center flex-shrink-0 mr-6">
-        <Link to={getHomePath(language)} className="no-underline ">
-          <h3 className="m-0 text-xl font-semibold text-white hover:opacity-50">
-            BeyondMoria
-          </h3>
-        </Link>
-      </div>
-
-      <div>{language && <LanguageSelector currentLocale={language} />}</div>
+    <div className="flex justify-between flex-wrap container">
+      <Link to={getHomePath(language)} className="font-bold">
+        BeyondMoria
+      </Link>
+      {language && <LanguageSelector currentLocale={language} />}
     </div>
   </nav>
 );

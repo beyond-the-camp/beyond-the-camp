@@ -2,6 +2,8 @@
 
 @import 'tailwindcss/components';
 
-@import 'components.css';
+@import 'general.css';
+@import 'animations.css';
+@import 'custom.css';
 
 @import 'tailwindcss/utilities';

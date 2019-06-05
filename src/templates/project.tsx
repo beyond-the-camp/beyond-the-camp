@@ -42,7 +42,7 @@ export const ProjectTemplate = (props: TemplateProps) => {
       <div className="mx-auto container mt-3">
         <section className="-mx-2 flex flex-row flex-wrap justify-between">
           <article
-            className="w-full md:w-1/2 flex-grow bg-white border rounded p-4 mx-2 my-2"
+            className="w-full md:w-1/2 bg-white border rounded p-4 mx-2 my-2"
             dangerouslySetInnerHTML={{
               __html: html
             }}
