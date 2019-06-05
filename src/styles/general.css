@@ -34,3 +34,8 @@ button,
 .c-list-card  {
     transition: 0.4s ease-out all;   
 }
+
+.c-container-sm {
+    @apply mx-auto px-4;
+    max-width: 700px;
+}

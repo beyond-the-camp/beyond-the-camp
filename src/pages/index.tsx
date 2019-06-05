@@ -14,7 +14,7 @@ const storeLocale = (locale: string) => {
 
 const LanguagePage = () => (
   <Layout language="en">
-    <div className="container mx-auto text-center">
+    <div className="container text-center">
       <h1>Welcome to Beyond Moria</h1>
       <p>Please select a language</p>
       <ul className="flex flex-wrap">

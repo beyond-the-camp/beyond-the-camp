@@ -35,7 +35,7 @@ const Category = (props: Props) => {
 
   return (
     <Layout language={pageContext.language}>
-      <div className="container mx-auto text-center">
+      <div className="container text-center">
         <h1>{pageContext.category}</h1>
         <ul className="flex flex-wrap">
           {data.projects &&

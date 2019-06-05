@@ -19,7 +19,7 @@ function isFluidMedia(media: HeroMedia | string): media is HeroMedia {
 }
 
 export const HeroTitle = ({ media, title }: Props) => (
-  <section className="relative flex items-stretch flex-col content-between py-12 md:py-32">
+  <section className="relative flex items-stretch flex-col content-between py-12 md:py-32 mb-6 text-center">
     <div className="absolute inset-0">
       {media && isFluidMedia(media) && (
         <Img className="w-full h-full" fluid={media.childImageSharp.fluid} />
@@ -32,9 +32,9 @@ export const HeroTitle = ({ media, title }: Props) => (
       )}
     </div>
     <div className="absolute inset-0 bg-black opacity-50 w-full h-full" />
-    <div className="container mx-auto z-10">
+    <div className="container z-10">
       <h1
-        className="text-3xl font-semibold text-white mb-0"
+        className="text-5xl text-white mb-0"
         dangerouslySetInnerHTML={{ __html: title }}
       />
     </div>

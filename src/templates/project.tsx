@@ -36,30 +36,28 @@ export const ProjectTemplate = (props: TemplateProps) => {
   const mapCoordinates = showMap && mapGeo ? mapGeo.coordinates : null;
 
   return (
-    <>
+    <div className="-mt-8">
       <HeroTitle media={cover} title={title} />
 
-      <div className="mx-auto container mt-3">
-        <section className="-mx-2 flex flex-row flex-wrap justify-between">
-          <article
-            className="w-full md:w-1/2 bg-white border rounded p-4 mx-2 my-2"
+      <div className="c-container-sm text-center">
+        <article className="bg-white border p-4 mb-4">
+          <h3 className="text-center">Information</h3>
+          <div
             dangerouslySetInnerHTML={{
               __html: html
             }}
           />
-          <aside className="w-full md:w-1/3 mx-2 my-2">
-            <div className="flex flex-col">
-              <section className="bg-white border rounded p-4 mb-4">
-                <OpeningTimes days={openingTimes} />
-              </section>
-              <section className="bg-white border rounded p-4">
-                <LocationInfo text={mapText} position={mapCoordinates} />
-              </section>
-            </div>
-          </aside>
-        </section>
+        </article>
+        <aside className="md:flex flex-row flex-wrap justify-between">
+          <div className="bg-white border p-4 mb-4 md:w-2/5 h-full md:mr-4 flex-grow">
+            <OpeningTimes days={openingTimes} />
+          </div>
+          <div className="bg-white border p-4 md:w-2/5 h-full flex-grow text-center">
+            <LocationInfo text={mapText} position={mapCoordinates} />
+          </div>
+        </aside>
       </div>
-    </>
+    </div>
   );
 };
 

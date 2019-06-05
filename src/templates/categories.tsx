@@ -31,7 +31,7 @@ interface Props {
 
 const Categories = ({ data, pageContext }: Props) => (
   <Layout language={pageContext.language}>
-    <div className="container mx-auto text-center">
+    <div className="container text-center">
       <p>Please select a category</p>
 
       <ul className="flex flex-wrap">
