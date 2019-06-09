@@ -21,7 +21,7 @@ openingTimes:
     day: Friday
     open: 2019-05-11T11:00:08.526Z
 location:
-  description: at One Happy Family
+  description: at the One Happy Family cinema
   geo: '{"type":"Point","coordinates":[23.5068723,37.7476837]}'
   showMap: false
 ---
