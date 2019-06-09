@@ -1,5 +1,6 @@
 ---
 title: Language school for adults at One Happy Family
+cover: /img/school-adults.jpg
 categories:
   - School for adults or children
   - Community centre
