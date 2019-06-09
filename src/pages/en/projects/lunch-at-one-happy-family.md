@@ -25,4 +25,4 @@ location:
   geo: '{ "type": "Point", "coordinates": [26.5172195, 39.1297939] }'
   showMap: false
 ---
-Lunch is served in the dining room at One Happy family every day at 4pm. You may sit in the dining area or in one of the many other seating options at the centre.
+Delicious lunch is served in the dining room at One Happy family every day at 4pm. You may sit in the dining area or in one of the many other seating options at the centre.
