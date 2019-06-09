@@ -1,4 +1,4 @@
 ---
-title: School for adults and children
+title: School for adults or children
 ---
 
