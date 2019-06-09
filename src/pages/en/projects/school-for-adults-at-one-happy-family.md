@@ -3,6 +3,7 @@ title: Language school for adults at One Happy Family
 categories:
   - School for adults or children
   - Community centre
+  - 'Language classes '
 openingTimes:
   - close: 2019-06-09T14:00:00.000Z
     day: Monday
