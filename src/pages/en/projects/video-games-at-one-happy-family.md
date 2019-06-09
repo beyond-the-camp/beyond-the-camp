@@ -1,5 +1,5 @@
 ---
-title: Playstation at One Happy Family
+title: PlayStation at One Happy Family
 cover: /img/cinema_square.jpg
 categories:
   - Kids
