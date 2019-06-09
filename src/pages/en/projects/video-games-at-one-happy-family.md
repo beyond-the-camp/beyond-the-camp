@@ -1,5 +1,5 @@
 ---
-title: Video games at One Happy Family
+title: PlayStation at One Happy Family
 cover: /img/cinema_square.jpg
 categories:
   - Kids
@@ -21,8 +21,8 @@ openingTimes:
     day: Friday
     open: 2019-05-11T11:00:08.526Z
 location:
-  description: Not far from the cafe
+  description: at the One Happy Family cinema
   geo: '{"type":"Point","coordinates":[23.5068723,37.7476837]}'
   showMap: false
 ---
-Video games available to play, like FIFA! Located at one happy family community centre, same place as the cinema.
+Play a game of FIFA with your friends for a few drachmas (get them from the bank at One Happy Family)
