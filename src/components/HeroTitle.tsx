@@ -21,15 +21,15 @@ function isFluidMedia(media: HeroMedia | string): media is HeroMedia {
 export const HeroTitle = ({ media, title }: Props) => (
   <section className="relative flex items-stretch flex-col content-between py-12 md:py-32 mb-6 text-center">
     <div className="absolute inset-0">
-      {media && isFluidMedia(media) && (
-        <Img className="w-full h-full" fluid={media.childImageSharp.fluid} />
-      )}
-      {media && !isFluidMedia(media) && (
-        <img
-          className="absolute top-0 left-0 object-cover object-center w-full h-full"
-          src={media}
-        />
-      )}
+      {media &&
+        (isFluidMedia(media) ? (
+          <Img className="w-full h-full" fluid={media.childImageSharp.fluid} />
+        ) : (
+          <img
+            className="absolute top-0 left-0 object-cover object-center w-full h-full"
+            src={media}
+          />
+        ))}
     </div>
     <div className="absolute inset-0 bg-black opacity-50 w-full h-full" />
     <div className="container z-10">
