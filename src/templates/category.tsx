@@ -35,16 +35,17 @@ const Category = (props: Props) => {
 
   return (
     <Layout language={pageContext.language}>
-      <div className="container mx-auto">
-        <h1 className="text-3xl font-semibold">{pageContext.category}</h1>
-        <ul className="flex flex-wrap -mx-2 mt-4">
+      <div className="container text-center">
+        <h1>{pageContext.category}</h1>
+        <ul className="flex flex-wrap">
           {data.projects &&
             data.projects.edges.map(({ node }) => (
-              <li key={node.id} className="w-full max-w-sm md:w-1/2 px-2 mb-2">
-                <Link to={node.fields.slug} className="no-underline">
-                  <ListCard>
-                    <div>{node.frontmatter.title}</div>
-                  </ListCard>
+              <li key={node.id} className="w-full sm:w-1/2">
+                <Link
+                  to={node.fields.slug}
+                  className="no-underline p-1 block md:p-3 h-full"
+                >
+                  <ListCard>{node.frontmatter.title}</ListCard>
                 </Link>
               </li>
             ))}

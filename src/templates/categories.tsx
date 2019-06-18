@@ -31,14 +31,17 @@ interface Props {
 
 const Categories = ({ data, pageContext }: Props) => (
   <Layout language={pageContext.language}>
-    <div className="container mx-auto">
-      <ul className="flex flex-wrap -mx-2">
+    <div className="container text-center">
+      <p>Please select a category</p>
+
+      <ul className="flex flex-wrap">
         {data.categories.edges.map(({ node }) => (
-          <li key={node.id} className="w-full max-w-sm md:w-1/2 px-2 mb-2">
-            <Link to={node.fields.slug} className="no-underline">
-              <ListCard>
-                <div>{node.frontmatter.title}</div>
-              </ListCard>
+          <li key={node.id} className="w-full sm:w-1/2">
+            <Link
+              to={node.fields.slug}
+              className="no-underline p-1 block md:p-3 h-full"
+            >
+              <ListCard>{node.frontmatter.title}</ListCard>
             </Link>
           </li>
         ))}

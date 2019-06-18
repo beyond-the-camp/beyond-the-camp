@@ -1,0 +1,41 @@
+body {
+    @apply bg-tertiary overflow-x-hidden;
+    font-family: 'Quicksand', sans-serif; 
+}
+
+h1,
+h2, 
+h3,
+h4,
+h5,
+h6 {
+    @apply mb-4;
+    font-family: 'Shadows Into Light', cursive;
+}
+
+h1 {
+    @apply text-4xl;
+}
+
+h2 {
+    @apply text-3xl;
+}
+
+h3 {
+    @apply text-2xl;
+}
+
+p {
+    @apply mb-4;
+}
+
+a,
+button,
+.c-list-card  {
+    transition: 0.4s ease-out all;   
+}
+
+.c-container-sm {
+    @apply mx-auto px-4;
+    max-width: 700px;
+}
