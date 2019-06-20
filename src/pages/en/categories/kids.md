@@ -1,4 +1,4 @@
 ---
-title: Kids
+title: Children
 ---
 
