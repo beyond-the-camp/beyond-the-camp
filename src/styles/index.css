@@ -4,6 +4,7 @@
 
 @import 'general.css';
 @import 'animations.css';
+@import 'utilities.css';
 @import 'custom.css';
 
 @import 'tailwindcss/utilities';

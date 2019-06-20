@@ -37,21 +37,19 @@ interface Props {
   children?: React.ReactNode;
 }
 
-export const Layout = ({ language, children }: Props) => {
-  return (
-    <IntlProvider locale={language} messages={messages[language]}>
-      <>
-        <Helmet>
-          <title>BeyondMoria</title>
-          <html lang={language} dir={getTextDirection(language)} />
-          <link
-            href="https://fonts.googleapis.com/css?family=Quicksand:400,700|Shadows+Into+Light&display=swap"
-            rel="stylesheet"
-          />
-        </Helmet>
-        <NavBar language={language} />
-        <main className="py-8">{children}</main>
-      </>
-    </IntlProvider>
-  );
-};
+export const Layout = ({ language, children }: Props) => (
+  <IntlProvider locale={language} messages={messages[language]}>
+    <>
+      <Helmet>
+        <title>BeyondMoria</title>
+        <html lang={language} dir={getTextDirection(language)} />
+        <link
+          href="https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap"
+          rel="stylesheet"
+        />
+      </Helmet>
+      <NavBar language={language} />
+      <main className="py-8">{children}</main>
+    </>
+  </IntlProvider>
+);

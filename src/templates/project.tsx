@@ -39,7 +39,7 @@ export const ProjectTemplate = (props: TemplateProps) => {
     <div className="-mt-8">
       <HeroTitle media={cover} title={title} />
 
-      <div className="c-container-sm text-center">
+      <div className="max-w-3xl mx-auto px-4 text-center">
         <article className="bg-white border p-4 mb-4">
           <h3 className="text-center">Information</h3>
           <div

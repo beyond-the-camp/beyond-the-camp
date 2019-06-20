@@ -5,7 +5,7 @@ interface Props {
 }
 
 export const ListCard = ({ children }: Props) => (
-  <div className="c-list-card px-6 py-10 border bg-white text-grey-darkest flex items-center justify-center h-full">
+  <div className="px-6 py-10 border bg-white text-grey-darkest flex items-center justify-center h-full lg:hover:c-elevate">
     {children}
   </div>
 );
