@@ -1,6 +1,6 @@
 ---
 title: Yoga for all
-cover: /img/yoga-women.jpeg
+cover: /img/yoga-all.jpg
 categories:
   - Sports/ Gym
   - Yoga
