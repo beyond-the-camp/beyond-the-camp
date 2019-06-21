@@ -1,5 +1,5 @@
 ---
-title: Martial arts classes
+title: Martial Arts classes
 cover: /img/kung-fu.jpg
 categories:
   - Sports/ Gym
