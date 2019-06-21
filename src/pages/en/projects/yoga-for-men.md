@@ -1,6 +1,6 @@
 ---
 title: 'Yoga for men '
-cover: /img/yoga-women.jpeg
+cover: /img/yoga-men.jpg
 categories:
   - Sports/ Gym
   - Yoga
