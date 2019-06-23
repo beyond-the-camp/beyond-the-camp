@@ -20,4 +20,4 @@ location:
   geo: '{ "type": "Point", "coordinates": [26.5172195, 39.1297939] }'
   showMap: false
 ---
-Running is a great way to exercise and meet new friends. Join the Yoga and Sport for Refugees (YSFR) running group on Monday, Wednesday and Fridays.
+Running is a great way to exercise and meet new friends. Join the Yoga and Sport for Refugees (YSFR) running group on Mondays, Wednesdays and Fridays.
