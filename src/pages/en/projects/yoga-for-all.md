@@ -4,6 +4,7 @@ cover: /img/yoga-all.jpg
 categories:
   - Sports/ Gym
   - Yoga
+  - For women
 openingTimes:
   - close: 2019-06-20T17:30:00.000Z
     day: Monday
