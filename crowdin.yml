@@ -1,5 +1,5 @@
 "project_identifier" : "beyond-the-camp"
-"base_path" : "/cms"
+"base_path" : "/src/pages"
 "preserve_hierarchy": true
 
 files: [
