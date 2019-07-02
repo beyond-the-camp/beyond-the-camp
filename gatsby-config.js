@@ -12,6 +12,14 @@ module.exports = {
         test: /\.js$|\.jsx$|\.ts$|\.tsx$/
       }
     },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: 'UA-143158979-1',
+        anonymize: true,
+        respectDNT: true
+      }
+    },
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-postcss`,
     {
