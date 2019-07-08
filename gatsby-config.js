@@ -63,7 +63,6 @@ module.exports = {
         ]
       }
     },
-    `gatsby-plugin-react-leaflet`,
     {
       resolve: `gatsby-plugin-purgecss`,
       options: {
