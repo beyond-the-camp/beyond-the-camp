@@ -68,15 +68,6 @@ collections:
             name: 'description'
             hint: 'Text description of the location'
             widget: 'string'
-          - label: 'Show map'
-            name: 'showMap'
-            hint: 'Show a map of the location?'
-            widget: 'boolean'
-            default: false
-          - label: 'Map'
-            name: 'geo'
-            widget: 'map'
-            default: '{ "type": "Point", "coordinates": [26.5172195, 39.1297939] }'
 
   - name: categories
     label: Categories
