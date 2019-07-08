@@ -4,7 +4,6 @@ import { graphql } from 'gatsby';
 
 import { HeroTitle, HeroMedia } from '../components/HeroTitle';
 import { Layout } from '../components/Layout';
-import { LocationInfo } from '../components/LocationInfo';
 import { OpeningTimes } from '../components/OpeningTimes';
 import { LocaleType } from '../utils/types';
 
@@ -20,8 +19,6 @@ interface TemplateProps {
   openingTimes: OpeningTime[];
   location?: {
     description: string;
-    showMap: boolean;
-    geo: string;
   };
   html: string;
 }
@@ -29,11 +26,7 @@ interface TemplateProps {
 export const ProjectTemplate = (props: TemplateProps) => {
   const { title, cover, openingTimes, location, html } = props;
 
-  const showMap = location && location.showMap;
-  const mapText = location && location.description;
-  const mapGeo: { coordinates: [number, number] } =
-    location && location.geo && JSON.parse(location.geo);
-  const mapCoordinates = showMap && mapGeo ? mapGeo.coordinates : null;
+  const locationText = location && location.description;
 
   return (
     <div className="-mt-8">
@@ -53,7 +46,8 @@ export const ProjectTemplate = (props: TemplateProps) => {
             <OpeningTimes days={openingTimes} />
           </div>
           <div className="bg-white border p-4 md:w-2/5 h-full flex-grow text-center">
-            <LocationInfo text={mapText} position={mapCoordinates} />
+            <h3>Location</h3>
+            {locationText ? <p>{locationText}</p> : null}
           </div>
         </aside>
       </div>
@@ -75,8 +69,6 @@ interface PageProps {
         openingTimes: OpeningTime[];
         location?: {
           description: string;
-          showMap: boolean;
-          geo: string;
         };
       };
       html: string;
@@ -126,8 +118,6 @@ export const projectQuery = graphql`
         }
         location {
           description
-          showMap
-          geo
         }
       }
       html
