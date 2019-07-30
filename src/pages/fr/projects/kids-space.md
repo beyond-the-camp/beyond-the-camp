@@ -1,51 +1,51 @@
 ---
-title: Kids space
+title: Espace enfant
 cover: /img/kids-space.jpg
 categories:
-  - Children
+  - Enfants
 openingTimes:
   - 
     close: 2019-07-25T14:30:00.000Z
-    day: Monday
+    day: Lundi
     open: 2019-07-25T11:30:00.000Z
   - 
     close: 2019-07-25T16:45:00.000Z
-    day: Monday
+    day: Lundi
     open: 2019-07-25T16:00:00.000Z
   - 
     close: 2019-07-25T14:30:00.000Z
-    day: Tuesday
+    day: Mardi
     open: 2019-07-25T11:30:00.000Z
   - 
     close: 2019-07-25T16:45:00.000Z
-    day: Tuesday
+    day: Mardi
     open: 2019-07-25T16:00:00.000Z
   - 
     close: 2019-07-25T14:30:00.000Z
-    day: Wednesday
+    day: Mercredi
     open: 2019-07-25T11:30:00.000Z
   - 
     close: 2019-07-25T16:45:00.000Z
-    day: Wednesday
+    day: Mercredi
     open: 2019-07-25T16:00:00.000Z
   - 
     close: 2019-07-25T14:30:00.000Z
-    day: Thursday
+    day: Jeudi
     open: 2019-07-25T11:30:00.000Z
   - 
     close: 2019-07-25T16:45:00.000Z
-    day: Thursday
+    day: Jeudi
     open: 2019-07-25T16:00:00.000Z
   - 
     close: 2019-07-25T14:30:00.000Z
-    day: Friday
+    day: Vendredi
     open: 2019-07-25T11:30:00.000Z
   - 
     close: 2019-07-25T16:45:00.000Z
-    day: Friday
+    day: Vendredi
     open: 2019-07-25T16:00:00.000Z
 location:
-  description: At One Happy Family
+  description: Chez une famille heureuse
 ---
 
-This is a safe space for all children up to the age of 4 to play, read books, make friends. Please make eye contact with the responsible volunteer when you bring your child.
+Il s'agit d'un espace sûr pour tous les enfants de 4 ans à jouer, lire des livres, faire des amis. Veuillez contacter le bénévole responsable lorsque vous apportez votre enfant .
