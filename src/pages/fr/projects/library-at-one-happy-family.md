@@ -1,34 +1,34 @@
 ---
-title: Library at One Happy Family
+title: Bibliothèque d'une famille Happy
 cover: /img/library_square.jpg
 categories:
-  - Community centre
-  - Library
+  - Centre communautaire
+  - Bibliothèque
 openingTimes:
   - 
     close: 2019-06-09T17:00:00.000Z
-    day: Monday
+    day: Lundi
     open: 2019-06-09T11:30:00.000Z
   - 
     close: 2019-06-09T17:00:00.000Z
-    day: Tuesday
+    day: Mardi
     open: 2019-06-09T11:30:00.000Z
   - 
     close: 2019-06-09T17:00:00.000Z
-    day: Wednesday
+    day: Mercredi
     open: 2019-06-09T11:30:00.000Z
   - 
     close: 2019-06-09T17:00:00.000Z
-    day: Thursday
+    day: Jeudi
     open: 2019-06-09T11:30:00.000Z
   - 
     close: 2019-06-09T17:00:00.000Z
-    day: Friday
+    day: Vendredi
     open: 2019-06-09T11:30:00.000Z
 location:
-  description: Near the School of Peace at One Happy Family
-  geo: '{ "type": "Point", "coordinates": [26.5172195, 39.1297939] }'
-  showMap: false
+  description: Près de l'école de Paix à une famille heureuse
+  geo: '{ "type": "Point", "coordonnées": [26.5172195, 39.1297939] }'
+  showMap: faux
 ---
 
-The library is a converted green VW bus next to the school at One Happy Family. Books are arranged by language, age, and type so you can find the perfect book for you or your child. There are also storytelling activities here - come and visit us to find out more.
+La bibliothèque est un bus vert converti VW à côté de l'école de la Famille Joyeux. Les livres sont arrangés par langue, âge et type, afin de trouver le livre parfait pour vous ou votre enfant. Il y a aussi des activités de conte de conte ici - venez nous visiter pour en savoir plus.
