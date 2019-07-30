@@ -1,4 +1,4 @@
 ---
-title: clothes/ hygiene items
+title: Clothes/ hygiene items
 ---
 
