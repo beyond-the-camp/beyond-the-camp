@@ -1,33 +1,33 @@
 ---
-title: Bodybuilding/weights
+title: Composition/poids
 cover: /img/ysfr.jpg
 categories:
-  - Sports/ Gym
+  - Sports / Gym
 openingTimes:
   - 
     close: 2019-06-20T09:30:00.000Z
-    day: Monday
+    day: Lundi
     open: 2018-01-01T09:00:00.000Z
   - 
     close: 2019-06-20T09:30:00.000Z
-    day: Tuesday
+    day: Mardi
     open: 2019-06-20T08:00:00.000Z
   - 
     close: 2019-06-20T09:30:00.000Z
-    day: Wednesday
+    day: Mercredi
     open: 2019-06-20T08:00:00.000Z
   - 
     close: 2019-06-20T09:30:00.000Z
-    day: Thursday
+    day: Jeudi
     open: 2019-06-20T08:00:00.000Z
   - 
     close: 2019-06-20T09:30:00.000Z
-    day: Friday
+    day: Vendredi
     open: 2019-06-20T08:00:00.000Z
 location:
-  description: YSFR gym
-  geo: '{ "type": "Point", "coordinates": [26.5172195, 39.1297939] }'
-  showMap: false
+  description: gymnase YSFR
+  geo: '{ "type": "Point", "coordonnées": [26.5172195, 39.1297939] }'
+  showMap: faux
 ---
 
-Bodybuilding and weights class every day at the Yoga and Sport for Refugees (YSFR) gym
+Classe de carrosserie et de poids chaque jour au Yoga et Sport pour les réfugiés (YSFR) salle de gym
