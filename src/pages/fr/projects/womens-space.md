@@ -1,52 +1,52 @@
 ---
-title: Women's space
+title: Espace des femmes
 cover: /img/womens-space-2.jpg
 categories:
-  - For women
-  - Community centre
+  - Pour les femmes
+  - Centre communautaire
 openingTimes:
   - 
     close: 2019-07-25T15:00:00.000Z
-    day: Monday
+    day: Lundi
     open: 2019-07-25T11:30:00.000Z
   - 
     close: 2019-07-25T16:45:00.000Z
-    day: Monday
+    day: Lundi
     open: 2019-07-25T16:00:00.000Z
   - 
     close: 2019-07-25T15:00:00.000Z
-    day: Tuesday
+    day: Mardi
     open: 2019-07-25T11:30:00.000Z
   - 
     close: 2019-07-25T16:45:00.000Z
-    day: Tuesday
+    day: Mardi
     open: 2019-07-25T16:00:00.000Z
   - 
     close: 2019-07-25T15:00:00.000Z
-    day: Wednesday
+    day: Mercredi
     open: 2019-07-25T11:30:00.000Z
   - 
     close: 2019-07-25T16:45:00.000Z
-    day: Wednesday
+    day: Mercredi
     open: 2019-07-25T16:00:00.000Z
   - 
     close: 2019-07-25T15:00:00.000Z
-    day: Thursday
+    day: Jeudi
     open: 2019-07-25T11:30:00.000Z
   - 
     close: 2019-07-25T16:45:00.000Z
-    day: Thursday
+    day: Jeudi
     open: 2019-07-25T16:00:00.000Z
   - 
     close: 2019-07-25T15:00:00.000Z
-    day: Friday
+    day: Vendredi
     open: 2019-07-25T11:30:00.000Z
   - 
     close: 2019-07-25T16:45:00.000Z
-    day: Friday
+    day: Vendredi
     open: 2019-07-25T16:00:00.000Z
 location:
-  description: At One Happy Family
+  description: Chez une famille heureuse
 ---
 
-The women's space is a safe space for woman from the refugee community. There are various activities including discussions, sports classes, creative writing, sewing and knitting groups and hairdressing. There are also opportunities here to access counselling and help is available to learn and practice English.
+L'espace des femmes est un espace sûr pour les femmes de la communauté des réfugiés. Il y a diverses activités, notamment des discussions, des cours de sport, des écrits créatifs, des groupes de couture et de tricot et des coiffures. Il y a aussi des possibilités d'accès au counseling et l'aide est disponible pour apprendre et pratiquer l'anglais.
