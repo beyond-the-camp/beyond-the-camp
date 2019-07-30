@@ -1,37 +1,37 @@
 ---
-title: Gym at One Happy Family
+title: Gym chez une famille heureuse
 cover: /img/gym_square.png
 categories:
-  - Sports/ Gym
-  - Community centre
+  - Sports / Gym
+  - Centre communautaire
 openingTimes:
   - 
     close: 2019-06-09T18:00:00.000Z
-    day: Monday
+    day: Lundi
     open: 2019-06-09T11:30:00.000Z
   - 
     close: 2019-06-09T18:00:00.000Z
-    day: Tuesday
+    day: Mardi
     open: 2019-06-09T11:30:00.000Z
   - 
     close: 2019-06-09T18:00:00.000Z
-    day: Wednesday
+    day: Mercredi
     open: 2019-06-09T11:30:00.000Z
   - 
     close: 2019-06-09T18:00:00.000Z
-    day: Thursday
+    day: Jeudi
     open: 2019-06-09T11:30:00.000Z
   - 
     close: 2019-06-09T18:00:00.000Z
-    day: Friday
+    day: Vendredi
     open: 2019-06-09T11:30:00.000Z
 location:
-  description: At One Happy Family
-  geo: '{ "type": "Point", "coordinates": [26.5172195, 39.1297939] }'
-  showMap: false
+  description: Chez une famille heureuse
+  geo: '{ "type": "Point", "coordonnées": [26.5172195, 39.1297939] }'
+  showMap: faux
 ---
 
 
-The Gym is equipped with various weights and other training material, so visitors can engage in sports activities. It is operated entirely by people from the refugee camps. They write training plans, offer Taekwando and kick-box sessions and organize running groups.
+Le Gym est équipé de différents poids et autres matériaux de formation, afin que les visiteurs puissent s'engager dans des activités sportives. Elle est entièrement exploitée par des personnes des camps de réfugiés. Ils rédigent des plans de formation, offrent des sessions Taekwando et des séances de kick-box et organisent des groupes de course.
 
-Classes are available on a regular basis, visit us at One Happy Family to find out more.
+Les cours sont disponibles régulièrement, visitez-nous à une famille Happy pour en savoir plus.
