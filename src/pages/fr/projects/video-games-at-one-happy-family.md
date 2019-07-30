@@ -1,34 +1,34 @@
 ---
-title: PlayStation at One Happy Family
+title: PlayStation chez une famille Happy
 cover: /img/cinema_square.jpg
 categories:
-  - Kids
-  - Computers
+  - Enfants
+  - Ordinateurs
 openingTimes:
   - 
     close: 2018-01-01T19:00:00.000Z
-    day: Monday
+    day: Lundi
     open: 2018-01-01T12:00:00.000Z
   - 
     close: 2019-05-11T18:00:00.000Z
-    day: Tuesday
+    day: Mardi
     open: 2018-01-01T12:00:00.000Z
   - 
     close: 2019-05-11T18:00:49.734Z
-    day: Wednesday
+    day: Mercredi
     open: 2019-05-11T11:00:00.000Z
   - 
     close: 2019-05-11T18:00:52.574Z
-    day: Thursday
+    day: Jeudi
     open: 2019-05-11T11:00:52.558Z
   - 
     close: 2019-05-11T18:00:08.538Z
-    day: Friday
+    day: Vendredi
     open: 2019-05-11T11:00:08.526Z
 location:
-  description: at the One Happy Family cinema
-  geo: '{"type":"Point","coordinates":[23.5068723,37.7476837]}'
-  showMap: false
+  description: au cinéma One Happy Family
+  geo: '{"type":"Point","coordonnées":[23.5068723,37.7476837]}'
+  showMap: faux
 ---
 
-Play a game of FIFA with your friends for a few drachmas (get them from the bank at One Happy Family)
+Jouez à un jeu de FIFA avec vos amis pour quelques drachmas (obtenez-les de la banque à une famille joyeuse)
