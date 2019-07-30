@@ -1,35 +1,35 @@
 ---
-title: Yoga for all
+title: Yoga pour tous
 cover: /img/yoga-all.jpg
 categories:
-  - Sports/ Gym
+  - Sports / Gym
   - Yoga
-  - For women
+  - Pour les femmes
 openingTimes:
   - 
     close: 2019-06-20T17:30:00.000Z
-    day: Monday
+    day: Lundi
     open: 2019-06-20T16:30:00.000Z
   - 
     close: 2019-06-20T17:30:00.000Z
-    day: Tuesday
+    day: Mardi
     open: 2019-06-20T16:30:00.000Z
   - 
     close: 2019-06-20T17:30:00.000Z
-    day: Wednesday
+    day: Mercredi
     open: 2019-06-20T16:30:00.000Z
   - 
     close: 2019-06-20T17:30:00.000Z
-    day: Thursday
+    day: Jeudi
     open: 2019-06-20T16:30:00.000Z
   - 
     close: 2019-06-20T17:30:00.000Z
-    day: Friday
+    day: Vendredi
     open: 2019-06-20T16:30:00.000Z
 location:
-  description: 'At One Happy Family, YSFR Yoga Tent'
-  geo: '{ "type": "Point", "coordinates": [26.5172195, 39.1297939] }'
-  showMap: false
+  description: 'Chez une famille Happy, YSFR Yoga Tent'
+  geo: '{ "type": "Point", "coordonnées": [26.5172195, 39.1297939] }'
+  showMap: faux
 ---
 
-Yoga classes (mixed men and women) with Yoga and Sport for Refugees (YSFR) with friendly and professional teachers
+Cours de Yoga (hommes mixtes et femmes) avec Yoga et Sport pour les réfugiés (YSFR) avec des enseignants amicals et professionnels
