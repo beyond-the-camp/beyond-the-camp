@@ -3,7 +3,7 @@ title: Youth space
 cover: /img/youth-space.jpg
 categories:
   - Community centre
-  - Children
+  - Children/ teenagers
 openingTimes:
   - close: 2019-07-30T14:30:00.000Z
     day: Monday
