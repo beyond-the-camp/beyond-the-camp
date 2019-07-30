@@ -1,22 +1,22 @@
 ---
-title: Cinema at One Happy Family
+title: Cinéma chez une famille heureuse
 cover: /img/cinema_square.jpg
 categories:
-  - Cinema
-  - Community centre
+  - Cinéma
+  - Centre communautaire
 openingTimes:
   - 
     close: 2019-06-09T16:00:00.000Z
-    day: Monday
+    day: Lundi
     open: 2019-06-09T12:00:00.000Z
   - 
     close: 2019-06-09T16:00:00.000Z
-    day: Wednesday
+    day: Mercredi
     open: 2019-06-09T12:00:00.000Z
 location:
-  description: at One Happy Family
-  geo: '{"type":"Point","coordinates":[-65.2063423,-35.8209715]}'
-  showMap: false
+  description: à une famille heureuse
+  geo: '{"type":"Point","coordonnées":[-65.2063423,-35.8209715]}'
+  showMap: faux
 ---
 
-Movies every Monday and Wednesday at 1pm. Visit us to find out which films are going to be screened.
+Films tous les lundis et mercredis à 13h. Visitez-nous pour savoir quels films seront projetés.
