@@ -1,39 +1,39 @@
 ---
-title: Swimming classes
+title: Cours de natation
 cover: /img/swimming-classes.jpg
 categories:
   - Sport
-  - Community centre
-  - Volunteering
+  - Centre communautaire
+  - Volontaire
 openingTimes:
   - 
     close: 2019-06-20T14:30:00.000Z
-    day: Monday
+    day: Lundi
     open: 2019-05-12T12:15:00.000Z
   - 
     close: 2019-06-20T14:30:00.000Z
-    day: Tuesday
+    day: Mardi
     open: 2019-05-12T12:15:00.000Z
   - 
     close: 2019-06-20T14:30:00.000Z
-    day: Wednesday
+    day: Mercredi
     open: 2019-05-12T12:15:00.000Z
   - 
     close: 2019-06-20T14:30:00.000Z
-    day: Thursday
+    day: Jeudi
     open: 2019-05-12T12:15:00.000Z
   - 
     close: 2019-06-20T14:30:00.000Z
-    day: Friday
+    day: Vendredi
     open: 2019-05-12T12:15:00.000Z
 location:
-  description: meet at One Happy Family gate
-  geo: '{ "type": "Point", "coordinates": [26.5172195, 39.1297939] }'
-  showMap: false
+  description: se rencontrer à une porte familiale Happy
+  geo: '{ "type": "Point", "coordonnées": [26.5172195, 39.1297939] }'
+  showMap: faux
 ---
 
-Daily swimming classes with Yoga and Sport for Refugees. Register at the One Happy Family gate at 13.15 (they have limited capacity). They leave One Happy Family at 13.30 to go to the beach for the classes. Adults only.
+Cours de natation quotidiens avec Yoga et Sport pour les réfugiés. Inscrivez-vous à la porte Famille unique à 13.15 (ils ont une capacité limitée). Ils quittent une famille Happy à 13.30 pour aller à la plage pour les classes. Adultes seulement.
 
-They are also looking for volunteers to help!
+Ils recherchent également des bénévoles pour aider!
 
-Please note no classes when One Happy Family is closed
+Veuillez noter que aucune classe n'est fermée lorsqu'une famille Happy est fermée
