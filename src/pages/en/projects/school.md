@@ -1,6 +1,6 @@
 ---
 title: School
-cover: /img/school-of-peace-400x400-2-.jpg
+cover: /img/school-of-peace.jpg
 categories:
   - Community centre
   - Kids
