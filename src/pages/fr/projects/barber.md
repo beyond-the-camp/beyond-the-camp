@@ -1,40 +1,40 @@
 ---
-title: Barber
+title: Barbe
 cover: /img/barber-400x400.jpg
 categories:
-  - Barber / tailor
-  - Community centre
+  - Barbe / queue
+  - Centre communautaire
 openingTimes:
   - 
     close: 2019-06-09T15:00:00.000Z
-    day: Monday
+    day: Lundi
     open: 2019-06-09T11:30:00.000Z
   - 
     close: 2019-06-09T15:00:00.000Z
-    day: Tuesday
+    day: Mardi
     open: 2019-06-09T11:30:00.000Z
   - 
     close: 2019-06-09T15:00:00.000Z
-    day: Wednesday
+    day: Mercredi
     open: 2019-06-09T11:30:00.000Z
   - 
     close: 2019-06-09T15:00:00.000Z
-    day: Thursday
+    day: Jeudi
     open: 2019-06-09T11:30:00.000Z
   - 
     close: 2019-06-09T15:00:00.000Z
-    day: Friday
+    day: Vendredi
     open: 2019-06-09T11:30:00.000Z
 location:
-  description: At One Happy Family
-  geo: '{"type":"Point","coordinates":[26.5028149,39.1337207]}'
-  showMap: false
+  description: Chez une famille heureuse
+  geo: '{"type":"Point","coordonnées":[26.5028149,39.1337207]}'
+  showMap: faux
 ---
 
-Get a fresh new haircut! The barber shop is located right behind the cinema at One Happy Family.
+Obtenez une nouvelle coupe de cheveux! Le salon de coiffure est situé juste derrière le cinéma de One Happy Family.
 
-Bring some drachmas (get them from the bank at One Happy Family).
+Apportez des drachmas (obtenez-les de la banque à une famille Happy).
 
-Make an appointment in the morning at the gate.
+Prenez rendez-vous le matin à la porte.
 
-Wednesday is Women's day.
+Mercredi est la journée des femmes.
