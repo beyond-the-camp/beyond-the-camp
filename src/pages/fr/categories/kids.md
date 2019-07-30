@@ -1,4 +1,4 @@
 ---
-title: Children/ teenagers
+title: Enfants / adolescents
 ---
 
