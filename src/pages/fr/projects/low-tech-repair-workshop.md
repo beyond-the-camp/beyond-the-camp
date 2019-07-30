@@ -1,38 +1,38 @@
 ---
-title: Low tech/ repair workshop
+title: Atelier de réparation / technique
 cover: /img/low-tech.jpg
 categories:
-  - Community centre
-  - Fixing and building projects
+  - Centre communautaire
+  - Correction et construction de projets
 openingTimes:
   - 
     close: 2019-05-16T17:00:00.000Z
-    day: Monday
+    day: Lundi
     open: 2019-05-16T11:00:00.000Z
   - 
     close: 2019-05-16T17:00:00.000Z
-    day: Tuesday
+    day: Mardi
     open: 2019-05-16T11:00:00.000Z
   - 
     close: 2019-05-16T17:00:00.000Z
-    day: Wednesday
+    day: Mercredi
     open: 2019-05-16T11:00:00.000Z
   - 
     close: 2019-05-16T17:00:00.000Z
-    day: Thursday
+    day: Jeudi
     open: 2019-05-16T11:00:00.000Z
   - 
     close: 2019-05-16T17:00:00.000Z
-    day: Friday
+    day: Vendredi
     open: 2019-05-16T11:00:00.000Z
 location:
-  description: Low-tech Makerspace at One Happy Family
-  geo: '{ "type": "Point", "coordinates": [26.5172195, 39.1297939] }'
-  showMap: false
+  description: Makerspace de faible technologie chez une famille Happy
+  geo: '{ "type": "Point", "coordonnées": [26.5172195, 39.1297939] }'
+  showMap: faux
 ---
 
-The Low-tech Makerspace is open every day of the week. You can borrow tools or work on your manual skills, and learn to fix bikes, phones, headsets, speakers, sawing machines or anything else!
+Le Makerspace de faible technologie est ouvert tous les jours de la semaine. Vous pouvez emprunter des outils ou travailler sur vos compétences manuelles et apprendre à réparer des vélos, des téléphones, des casques, des haut-parleurs, des machines à sciage ou tout autre chose!
 
-On Tuesdays and Thursdays we will be there to offer advice and spare parts for your projects.
+Les mardis et jeudi, nous serons là pour vous offrir des conseils et des pièces de rechange pour vos projets.
 
-On Fridays we have a workshop where you can learn a new skill or create a new object!
+Le vendredi, nous avons un atelier où vous pouvez apprendre une nouvelle compétence ou créer un nouvel objet!
