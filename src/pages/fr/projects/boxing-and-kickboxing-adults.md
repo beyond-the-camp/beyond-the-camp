@@ -1,36 +1,36 @@
 ---
-title: Boxing and kickboxing (adults)
+title: Boxing et kickboxing (adultes)
 cover: /img/kickboxing.jpg
 categories:
-  - Sports/ Gym
-  - For women
+  - Sports / Gym
+  - Pour les femmes
 openingTimes:
   - 
     close: 2019-06-23T16:30:00.000Z
-    day: Monday
+    day: Lundi
     open: 2019-06-23T15:00:00.000Z
   - 
     close: 2019-06-23T17:00:00.000Z
-    day: Tuesday
+    day: Mardi
     open: 2019-06-23T13:00:00.000Z
   - 
     close: 2019-06-23T16:30:00.000Z
-    day: Wednesday
+    day: Mercredi
     open: 2019-06-23T15:00:00.000Z
   - 
     close: 2019-06-23T16:00:00.000Z
-    day: Thursday
+    day: Jeudi
     open: 2019-06-23T13:00:00.000Z
   - 
     close: 2019-06-23T16:30:00.000Z
-    day: Friday
+    day: Vendredi
     open: 2019-06-23T15:00:00.000Z
 location:
-  description: at Yoga and Sport for Refugees (YSFR) Gym
-  geo: '{ "type": "Point", "coordinates": [26.5172195, 39.1297939] }'
-  showMap: false
+  description: à Yoga et Sport pour les réfugiés (YSFR) Gym
+  geo: '{ "type": "Point", "coordonnées": [26.5172195, 39.1297939] }'
+  showMap: faux
 ---
 
-Join the boxing/ kickboxing class at the Yoga and Sport for Refugees (YSFR) gym. Improve your fitness and meet some new friends too! Boxing classes on Monday, Wednesday and Friday.
+Rejoignez la classe boxing/kickboxing au Yoga et Sport for Refugees (YSFR) gymnase. Améliorez votre forme physique et rencontrez de nouveaux amis ! Cours de Boxing le lundi, mercredi et vendredi.
 
-Kickboxing classes on Tuesday and Thursday. Women's kickboxing classes on Tuesday and Thursday at 4pm.
+Les cours de boxe à Kickboxing les mardi et jeudi. Les cours de boxe féminine les mardi et jeudi à 16h.
