@@ -1,22 +1,22 @@
 ---
-title: Kickboxing for kids
+title: Boîte à remous pour les enfants
 cover: /img/kickboxing-1.jpg
 categories:
-  - Sports/ Gym
-  - Children
+  - Sports / Gym
+  - Enfants
 openingTimes:
   - 
     close: 2019-06-20T11:00:00.000Z
-    day: Tuesday
+    day: Mardi
     open: 2019-06-20T09:30:00.000Z
   - 
     close: 2019-06-20T11:00:00.000Z
-    day: Thursday
+    day: Jeudi
     open: 2019-06-20T09:30:00.000Z
 location:
-  description: at YSFR Gym
-  geo: '{ "type": "Point", "coordinates": [26.5172195, 39.1297939] }'
-  showMap: false
+  description: à YSFR Gym
+  geo: '{ "type": "Point", "coordonnées": [26.5172195, 39.1297939] }'
+  showMap: faux
 ---
 
-Safe and fun kickboxing class for kids at the Yoga and Sport for Refugees (YSFR) Gym
+Classe de kickboxing pour les enfants au Yoga et Sport pour les réfugiés (YSFR) Gym
