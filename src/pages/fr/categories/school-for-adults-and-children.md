@@ -1,4 +1,4 @@
 ---
-title: School for adults or children
+title: Ecole pour adultes ou enfants
 ---
 
