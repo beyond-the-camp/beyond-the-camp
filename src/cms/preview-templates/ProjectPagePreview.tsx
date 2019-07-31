@@ -8,9 +8,11 @@ interface Props {
   entry: any;
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   getAsset: any;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  widgetFor: any;
 }
 
-const ProjectPagePreview = ({ entry, getAsset }: Props) => {
+const ProjectPagePreview = ({ entry, getAsset, widgetFor }: Props) => {
   const openingTimesData = entry.getIn(['data', 'openingTimes']);
   const openingTimes = openingTimesData ? openingTimesData.toJS() : [];
   const locationData = entry.getIn(['data', 'location']);
@@ -21,10 +23,11 @@ const ProjectPagePreview = ({ entry, getAsset }: Props) => {
       <ProjectTemplate
         title={entry.getIn(['data', 'title'])}
         cover={getAsset(entry.getIn(['data', 'cover']))}
-        html={entry.getIn(['data', 'body'])}
         openingTimes={openingTimes}
         location={location}
-      />
+      >
+        {widgetFor('body')}
+      </ProjectTemplate>
     </Layout>
   );
 };

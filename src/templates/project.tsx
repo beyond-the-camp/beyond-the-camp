@@ -15,12 +15,13 @@ interface OpeningTime {
 
 interface TemplateProps {
   title: string;
-  cover: HeroMedia;
+  cover: HeroMedia | string;
   openingTimes: OpeningTime[];
   location?: {
     description: string;
   };
-  html: string;
+  html?: string;
+  children?: React.ReactNode;
 }
 
 export const ProjectTemplate = (props: TemplateProps) => {
@@ -35,11 +36,15 @@ export const ProjectTemplate = (props: TemplateProps) => {
       <div className="max-w-3xl mx-auto px-4 text-center">
         <article className="bg-white border p-4 mb-4">
           <h3 className="text-center">Information</h3>
-          <div
-            dangerouslySetInnerHTML={{
-              __html: html
-            }}
-          />
+          {html ? (
+            <div
+              dangerouslySetInnerHTML={{
+                __html: html
+              }}
+            />
+          ) : (
+            props.children
+          )}
         </article>
         <aside className="md:flex flex-row flex-wrap justify-between">
           <div className="bg-white border p-4 mb-4 md:w-2/5 h-full md:mr-4 flex-grow">
