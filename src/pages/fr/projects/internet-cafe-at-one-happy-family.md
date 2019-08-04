@@ -47,8 +47,6 @@ openingTimes:
     open: 2019-06-21T16:00:00.000Z
 location:
   description: à une famille heureuse
-  geo: '{ "type": "Point", "coordonnées": [26.5172195, 39.1297939] }'
-  showMap: faux
 ---
 
 Accès Internet gratuit, impression, copie et cours d'ordinateur. Pour plus de détails, visitez-nous.
