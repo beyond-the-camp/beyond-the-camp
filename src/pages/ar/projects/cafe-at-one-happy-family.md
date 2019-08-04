@@ -1,55 +1,55 @@
 ---
-title: Cafe at One Happy Family
+title: مقهى في One Happy Family
 cover: /img/cafe_square.jpg
 categories:
-  - Cafe
-  - Community centre
-  - Food/ Drink
+  - كافيه
+  - مركز المجتمع
+  - طعام شراب
 openingTimes:
   - 
-    close: 2019-06-09T14:30:00.000Z
-    day: Monday
-    open: 2019-06-09T11:30:00.000Z
+    close: '2019-06-09T14: 30: 00.000Z'
+    day: الإثنين
+    open: '2019-06-09T11: 30: 00.000Z'
   - 
-    close: 2019-06-21T16:45:00.000Z
-    day: Monday
-    open: 2019-06-21T16:00:00.000Z
+    close: '2019-06-21T16: 45: 00.000Z'
+    day: الإثنين
+    open: '2019-06-21T16: 00: 00.000Z'
   - 
-    close: 2019-06-09T14:30:00.000Z
-    day: Tuesday
-    open: 2019-06-09T11:30:00.000Z
+    close: '2019-06-09T14: 30: 00.000Z'
+    day: الثلاثاء
+    open: '2019-06-09T11: 30: 00.000Z'
   - 
-    close: 2019-06-21T16:45:00.000Z
-    day: Tuesday
-    open: 2019-06-21T16:00:00.000Z
+    close: '2019-06-21T16: 45: 00.000Z'
+    day: الثلاثاء
+    open: '2019-06-21T16: 00: 00.000Z'
   - 
-    close: 2019-06-09T14:30:00.000Z
-    day: Wednesday
-    open: 2019-06-09T11:30:00.000Z
+    close: '2019-06-09T14: 30: 00.000Z'
+    day: الأربعاء
+    open: '2019-06-09T11: 30: 00.000Z'
   - 
-    close: 2019-06-21T16:45:00.000Z
-    day: Wednesday
-    open: 2019-06-21T16:00:00.000Z
+    close: '2019-06-21T16: 45: 00.000Z'
+    day: الأربعاء
+    open: '2019-06-21T16: 00: 00.000Z'
   - 
-    close: 2019-06-09T14:30:00.000Z
-    day: Thursday
-    open: 2019-06-09T11:30:00.000Z
+    close: '2019-06-09T14: 30: 00.000Z'
+    day: الخميس
+    open: '2019-06-09T11: 30: 00.000Z'
   - 
-    close: 2019-06-21T16:45:00.000Z
-    day: Thursday
-    open: 2019-06-21T16:00:00.000Z
+    close: '2019-06-21T16: 45: 00.000Z'
+    day: الخميس
+    open: '2019-06-21T16: 00: 00.000Z'
   - 
-    close: 2019-06-09T14:30:00.000Z
-    day: Friday
-    open: 2019-06-09T11:30:00.000Z
+    close: '2019-06-09T14: 30: 00.000Z'
+    day: يوم الجمعة
+    open: '2019-06-09T11: 30: 00.000Z'
   - 
-    close: 2019-06-21T16:45:00.000Z
-    day: Friday
-    open: 2019-06-21T16:00:00.000Z
+    close: '2019-06-21T16: 45: 00.000Z'
+    day: يوم الجمعة
+    open: '2019-06-21T16: 00: 00.000Z'
 location:
-  description: at One Happy Family
-  geo: '{"type":"Point","coordinates":[31.3022511,24.5015082]}'
-  showMap: false
+  description: في عائلة واحدة سعيدة
+  geo: '{ "نوع": "نقطة"، "إحداثيات": [31.3022511،24.5015082]}'
+  showMap: خاطئة
 ---
 
-A nice environment to socialise and relax. Coffee, tea and other drinks can be bought with drachmas (get these from the bank at One Happy Family)
+بيئة جميلة للتعارف والاسترخاء. يمكن شراء القهوة والشاي والمشروبات الأخرى مع الدراخماس (احصل عليها من البنك في One Happy Family)
