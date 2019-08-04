@@ -14,8 +14,6 @@ openingTimes:
     open: 2019-06-23T11:00:00.000Z
 location:
   description: à Yoga et Sport pour les réfugiés (YSFR) Gym
-  geo: '{ "type": "Point", "coordonnées": [26.5172195, 39.1297939] }'
-  showMap: faux
 ---
 
 Apprenez Parkour à la salle de sport Yoga et Sport pour les réfugiés (YSFR). Améliorez votre forme physique et rencontrez de nouveaux amis !
