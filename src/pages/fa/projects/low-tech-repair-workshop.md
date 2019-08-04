@@ -1,38 +1,38 @@
 ---
-title: Low tech/ repair workshop
+title: کارگاه تعمیر / فنی و مهندسی کم
 cover: /img/low-tech.jpg
 categories:
-  - Community centre
-  - Fixing and building projects
+  - مرکز جامعه
+  - تعمیر و ساخت پروژه ها
 openingTimes:
   - 
-    close: 2019-05-16T17:00:00.000Z
-    day: Monday
-    open: 2019-05-16T11:00:00.000Z
+    close: '2019-05-16T17: 00: 00.000Z'
+    day: دوشنبه
+    open: '2019-05-16T11: 00: 00.000Z'
   - 
-    close: 2019-05-16T17:00:00.000Z
-    day: Tuesday
-    open: 2019-05-16T11:00:00.000Z
+    close: '2019-05-16T17: 00: 00.000Z'
+    day: سهشنبه
+    open: '2019-05-16T11: 00: 00.000Z'
   - 
-    close: 2019-05-16T17:00:00.000Z
-    day: Wednesday
-    open: 2019-05-16T11:00:00.000Z
+    close: '2019-05-16T17: 00: 00.000Z'
+    day: چهار شنبه
+    open: '2019-05-16T11: 00: 00.000Z'
   - 
-    close: 2019-05-16T17:00:00.000Z
-    day: Thursday
-    open: 2019-05-16T11:00:00.000Z
+    close: '2019-05-16T17: 00: 00.000Z'
+    day: پنج شنبه
+    open: '2019-05-16T11: 00: 00.000Z'
   - 
-    close: 2019-05-16T17:00:00.000Z
-    day: Friday
-    open: 2019-05-16T11:00:00.000Z
+    close: '2019-05-16T17: 00: 00.000Z'
+    day: جمعه
+    open: '2019-05-16T11: 00: 00.000Z'
 location:
-  description: Low-tech Makerspace at One Happy Family
-  geo: '{ "type": "Point", "coordinates": [26.5172195, 39.1297939] }'
-  showMap: false
+  description: فضای کم تولید در One Family Happy
+  geo: '{"نوع": "نقطه" ، "مختصات": [26.5172195 ، 39.1297939]}'
+  showMap: نادرست
 ---
 
-The Low-tech Makerspace is open every day of the week. You can borrow tools or work on your manual skills, and learn to fix bikes, phones, headsets, speakers, sawing machines or anything else!
+فضای کم فناوری Makerspace هر روز هفته باز است. می توانید ابزار خود را قرض بگیرید یا روی مهارت های دستی خود کار کنید و یاد بگیرید که دوچرخه ، تلفن ، هدست ، بلندگو ، دستگاه اره یا هر چیز دیگری را برطرف کنید!
 
-On Tuesdays and Thursdays we will be there to offer advice and spare parts for your projects.
+روزهای سه شنبه و پنجشنبه ما در آنجا برای ارائه مشاوره و قطعات یدکی برای پروژه های شما خواهیم بود.
 
-On Fridays we have a workshop where you can learn a new skill or create a new object!
+جمعه ها ما یک کارگاه آموزشی داریم که می توانید مهارت جدیدی یاد بگیرید یا یک شی جدید ایجاد کنید!
