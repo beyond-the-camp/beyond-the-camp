@@ -1,22 +1,22 @@
 ---
-title: Cinema at One Happy Family
+title: سینما در یک خانواده مبارک
 cover: /img/cinema_square.jpg
 categories:
-  - Cinema
-  - Community centre
+  - سینما
+  - مرکز جامعه
 openingTimes:
   - 
-    close: 2019-06-09T16:00:00.000Z
-    day: Monday
-    open: 2019-06-09T12:00:00.000Z
+    close: '2019-06-09T16: 00: 00.000Z'
+    day: دوشنبه
+    open: '2019-06-09T12: 00: 00.000Z'
   - 
-    close: 2019-06-09T16:00:00.000Z
-    day: Wednesday
-    open: 2019-06-09T12:00:00.000Z
+    close: '2019-06-09T16: 00: 00.000Z'
+    day: چهار شنبه
+    open: '2019-06-09T12: 00: 00.000Z'
 location:
-  description: at One Happy Family
-  geo: '{"type":"Point","coordinates":[-65.2063423,-35.8209715]}'
-  showMap: false
+  description: در یک خانواده مبارک
+  geo: '{"نوع": "نقطه" ، "مختصات": [- 65.2063423 ، -35.8209715]}'
+  showMap: نادرست
 ---
 
-Movies every Monday and Wednesday at 1pm. Visit us to find out which films are going to be screened.
+فیلم ها هر دوشنبه و چهارشنبه ساعت 1 بعد از ظهر. برای اطلاع از اینکه کدام فیلم ها اکران می شوند ، از ما دیدن کنید.
