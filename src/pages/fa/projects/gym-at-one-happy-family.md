@@ -1,37 +1,37 @@
 ---
-title: Gym at One Happy Family
+title: بدنسازی در یک خانواده مبارک
 cover: /img/gym_square.png
 categories:
-  - Sports/ Gym
-  - Community centre
+  - ورزش / بدنسازی
+  - مرکز جامعه
 openingTimes:
   - 
-    close: 2019-06-09T18:00:00.000Z
-    day: Monday
-    open: 2019-06-09T11:30:00.000Z
+    close: '2019-06-09T18: 00: 00.000Z'
+    day: دوشنبه
+    open: '2019-06-09T11: 30: 00.000Z'
   - 
-    close: 2019-06-09T18:00:00.000Z
-    day: Tuesday
-    open: 2019-06-09T11:30:00.000Z
+    close: '2019-06-09T18: 00: 00.000Z'
+    day: سهشنبه
+    open: '2019-06-09T11: 30: 00.000Z'
   - 
-    close: 2019-06-09T18:00:00.000Z
-    day: Wednesday
-    open: 2019-06-09T11:30:00.000Z
+    close: '2019-06-09T18: 00: 00.000Z'
+    day: چهار شنبه
+    open: '2019-06-09T11: 30: 00.000Z'
   - 
-    close: 2019-06-09T18:00:00.000Z
-    day: Thursday
-    open: 2019-06-09T11:30:00.000Z
+    close: '2019-06-09T18: 00: 00.000Z'
+    day: پنج شنبه
+    open: '2019-06-09T11: 30: 00.000Z'
   - 
-    close: 2019-06-09T18:00:00.000Z
-    day: Friday
-    open: 2019-06-09T11:30:00.000Z
+    close: '2019-06-09T18: 00: 00.000Z'
+    day: جمعه
+    open: '2019-06-09T11: 30: 00.000Z'
 location:
-  description: At One Happy Family
-  geo: '{ "type": "Point", "coordinates": [26.5172195, 39.1297939] }'
-  showMap: false
+  description: در یک خانواده مبارک
+  geo: '{"نوع": "نقطه" ، "مختصات": [26.5172195 ، 39.1297939]}'
+  showMap: نادرست
 ---
 
 
-The Gym is equipped with various weights and other training material, so visitors can engage in sports activities. It is operated entirely by people from the refugee camps. They write training plans, offer Taekwando and kick-box sessions and organize running groups.
+بدنسازی مجهز به وزنه های مختلف و سایر مواد آموزشی است ، بنابراین بازدید کنندگان می توانند در فعالیت های ورزشی شرکت کنند. این اداره کاملاً توسط افراد اردوگاه های پناهندگان اداره می شود. آنها برنامه های آموزشی می نویسند ، جلسات تکواندو و کیک بوکس را ارائه می دهند و گروه های در حال اجرا را سازمان می دهند.
 
-Classes are available on a regular basis, visit us at One Happy Family to find out more.
+کلاس ها بطور منظم در دسترس هستند ، برای کسب اطلاعات بیشتر با ما در یک خانواده مبارک (یک خانواده مبارک) دیدار کنید.
