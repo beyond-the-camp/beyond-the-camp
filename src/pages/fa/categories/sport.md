@@ -1,4 +1,4 @@
 ---
-title: Sports/ Gym
+title: ورزش / بدنسازی
 ---
 
