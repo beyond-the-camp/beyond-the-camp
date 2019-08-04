@@ -1,34 +1,34 @@
 ---
-title: Lunch at One Happy Family
+title: ناهار را در یک خانواده مبارک
 cover: /img/eating_room_square.jpg
 categories:
-  - Community centre
-  - Food/ Drink
+  - مرکز جامعه
+  - غذا نوشیدنی
 openingTimes:
   - 
-    close: 2019-06-09T16:00:00.000Z
-    day: Monday
-    open: 2019-06-09T15:00:00.000Z
+    close: '2019-06-09T16: 00: 00.000Z'
+    day: دوشنبه
+    open: '2019-06-09T15: 00: 00.000Z'
   - 
-    close: 2019-06-09T16:00:00.000Z
-    day: Tuesday
-    open: 2019-06-09T15:00:00.000Z
+    close: '2019-06-09T16: 00: 00.000Z'
+    day: سهشنبه
+    open: '2019-06-09T15: 00: 00.000Z'
   - 
-    close: 2019-06-09T16:00:00.000Z
-    day: Wednesday
-    open: 2019-06-09T15:00:00.000Z
+    close: '2019-06-09T16: 00: 00.000Z'
+    day: چهار شنبه
+    open: '2019-06-09T15: 00: 00.000Z'
   - 
-    close: 2019-06-09T16:00:00.000Z
-    day: Thursday
-    open: 2019-06-09T15:00:00.000Z
+    close: '2019-06-09T16: 00: 00.000Z'
+    day: پنج شنبه
+    open: '2019-06-09T15: 00: 00.000Z'
   - 
-    close: 2019-06-09T16:00:00.000Z
-    day: Friday
-    open: 2019-06-09T15:00:00.000Z
+    close: '2019-06-09T16: 00: 00.000Z'
+    day: جمعه
+    open: '2019-06-09T15: 00: 00.000Z'
 location:
-  description: at One Happy Family
-  geo: '{ "type": "Point", "coordinates": [26.5172195, 39.1297939] }'
-  showMap: false
+  description: در یک خانواده مبارک
+  geo: '{"نوع": "نقطه" ، "مختصات": [26.5172195 ، 39.1297939]}'
+  showMap: نادرست
 ---
 
-Delicious lunch is served in the dining room at One Happy family every day at 4pm. You may sit in the dining area or in one of the many other seating options at the centre.
+ناهار خوشمزه هر روز ساعت 4 بعد از ظهر در اتاق ناهار خوری یک خانواده مبارک سرو می شود. ممکن است در محوطه ناهار خوری یا در یکی از بسیاری از گزینه های صندلی دیگر در مرکز بنشینید.
