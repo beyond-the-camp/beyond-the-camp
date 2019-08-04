@@ -1,54 +1,54 @@
 ---
-title: Computer space/ Cyber Cafe at One Happy Family
+title: مساحة الكمبيوتر / مقهى الإنترنت في One Happy Family
 cover: /img/cyber_cafe-400x400.jpg
 categories:
-  - Community centre
-  - Computers
+  - مركز المجتمع
+  - أجهزة الكمبيوتر
 openingTimes:
   - 
-    close: 2019-06-09T14:30:00.000Z
-    day: Monday
-    open: 2019-06-09T11:30:00.000Z
+    close: '2019-06-09T14: 30: 00.000Z'
+    day: الإثنين
+    open: '2019-06-09T11: 30: 00.000Z'
   - 
-    close: 2019-06-21T16:45:00.000Z
-    day: Monday
-    open: 2019-06-21T16:00:00.000Z
+    close: '2019-06-21T16: 45: 00.000Z'
+    day: الإثنين
+    open: '2019-06-21T16: 00: 00.000Z'
   - 
-    close: 2019-06-09T14:30:00.000Z
-    day: Tuesday
-    open: 2019-06-09T11:30:00.000Z
+    close: '2019-06-09T14: 30: 00.000Z'
+    day: الثلاثاء
+    open: '2019-06-09T11: 30: 00.000Z'
   - 
-    close: 2019-06-21T16:45:00.000Z
-    day: Tuesday
-    open: 2019-06-21T16:00:00.000Z
+    close: '2019-06-21T16: 45: 00.000Z'
+    day: الثلاثاء
+    open: '2019-06-21T16: 00: 00.000Z'
   - 
-    close: 2019-06-09T14:30:00.000Z
-    day: Wednesday
-    open: 2019-06-09T11:30:00.000Z
+    close: '2019-06-09T14: 30: 00.000Z'
+    day: الأربعاء
+    open: '2019-06-09T11: 30: 00.000Z'
   - 
-    close: 2019-06-21T16:45:00.000Z
-    day: Wednesday
-    open: 2019-06-21T16:00:00.000Z
+    close: '2019-06-21T16: 45: 00.000Z'
+    day: الأربعاء
+    open: '2019-06-21T16: 00: 00.000Z'
   - 
-    close: 2019-06-09T14:30:00.000Z
-    day: Thursday
-    open: 2019-06-09T11:30:00.000Z
+    close: '2019-06-09T14: 30: 00.000Z'
+    day: الخميس
+    open: '2019-06-09T11: 30: 00.000Z'
   - 
-    close: 2019-06-21T16:45:00.000Z
-    day: Thursday
-    open: 2019-06-21T16:00:00.000Z
+    close: '2019-06-21T16: 45: 00.000Z'
+    day: الخميس
+    open: '2019-06-21T16: 00: 00.000Z'
   - 
-    close: 2019-06-09T14:30:00.000Z
-    day: Friday
-    open: 2019-06-09T11:30:00.000Z
+    close: '2019-06-09T14: 30: 00.000Z'
+    day: يوم الجمعة
+    open: '2019-06-09T11: 30: 00.000Z'
   - 
-    close: 2019-06-21T16:45:00.000Z
-    day: Friday
-    open: 2019-06-21T16:00:00.000Z
+    close: '2019-06-21T16: 45: 00.000Z'
+    day: يوم الجمعة
+    open: '2019-06-21T16: 00: 00.000Z'
 location:
-  description: at One Happy Family
-  geo: '{ "type": "Point", "coordinates": [26.5172195, 39.1297939] }'
-  showMap: false
+  description: في عائلة واحدة سعيدة
+  geo: '{"النوع": "النقطة" ، "الإحداثيات": [26.5172195 ، 39.1297939]}'
+  showMap: خاطئة
 ---
 
-Free internet access, printing, making copies and computer classes. Visit us for more details.
+حرية الوصول إلى الإنترنت والطباعة وعمل نسخ وفصول الكمبيوتر. زيارتنا لمزيد من التفاصيل.
