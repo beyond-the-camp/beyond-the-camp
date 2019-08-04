@@ -1,38 +1,38 @@
 ---
-title: Low tech/ repair workshop
+title: ورشة عمل التكنولوجيا / الإصلاح منخفضة
 cover: /img/low-tech.jpg
 categories:
-  - Community centre
-  - Fixing and building projects
+  - مركز المجتمع
+  - تحديد وبناء المشاريع
 openingTimes:
   - 
-    close: 2019-05-16T17:00:00.000Z
-    day: Monday
-    open: 2019-05-16T11:00:00.000Z
+    close: '2019-05-16T17: 00: 00.000Z'
+    day: الإثنين
+    open: '2019-05-16T11: 00: 00.000Z'
   - 
-    close: 2019-05-16T17:00:00.000Z
-    day: Tuesday
-    open: 2019-05-16T11:00:00.000Z
+    close: '2019-05-16T17: 00: 00.000Z'
+    day: الثلاثاء
+    open: '2019-05-16T11: 00: 00.000Z'
   - 
-    close: 2019-05-16T17:00:00.000Z
-    day: Wednesday
-    open: 2019-05-16T11:00:00.000Z
+    close: '2019-05-16T17: 00: 00.000Z'
+    day: الأربعاء
+    open: '2019-05-16T11: 00: 00.000Z'
   - 
-    close: 2019-05-16T17:00:00.000Z
-    day: Thursday
-    open: 2019-05-16T11:00:00.000Z
+    close: '2019-05-16T17: 00: 00.000Z'
+    day: الخميس
+    open: '2019-05-16T11: 00: 00.000Z'
   - 
-    close: 2019-05-16T17:00:00.000Z
-    day: Friday
-    open: 2019-05-16T11:00:00.000Z
+    close: '2019-05-16T17: 00: 00.000Z'
+    day: يوم الجمعة
+    open: '2019-05-16T11: 00: 00.000Z'
 location:
-  description: Low-tech Makerspace at One Happy Family
-  geo: '{ "type": "Point", "coordinates": [26.5172195, 39.1297939] }'
-  showMap: false
+  description: صناع التكنولوجيا المنخفضة في One Happy Family
+  geo: '{"النوع": "النقطة" ، "الإحداثيات": [26.5172195 ، 39.1297939]}'
+  showMap: خاطئة
 ---
 
-The Low-tech Makerspace is open every day of the week. You can borrow tools or work on your manual skills, and learn to fix bikes, phones, headsets, speakers, sawing machines or anything else!
+The Makerspace منخفض التقنية مفتوح كل يوم من أيام الأسبوع. يمكنك استعارة أدوات أو العمل على مهاراتك اليدوية ، وتعلم كيفية إصلاح الدراجات أو الهواتف أو سماعات الرأس أو مكبرات الصوت أو آلات النشر أو أي شيء آخر!
 
-On Tuesdays and Thursdays we will be there to offer advice and spare parts for your projects.
+يومي الثلاثاء والخميس سنكون هناك لتقديم المشورة وقطع الغيار لمشاريعك.
 
-On Fridays we have a workshop where you can learn a new skill or create a new object!
+في أيام الجمعة لدينا ورشة عمل حيث يمكنك تعلم مهارة جديدة أو إنشاء كائن جديد!
