@@ -1,35 +1,35 @@
 ---
-title: Language school for adults at One Happy Family
+title: مدرسة لغة للكبار في One Happy Family
 cover: /img/school-adults.jpg
 categories:
-  - School for adults or children
-  - Community centre
-  - 'Language classes'
+  - مدرسة للبالغين أو الأطفال
+  - مركز المجتمع
+  - 'صفوف اللغة'
 openingTimes:
   - 
-    close: 2019-06-09T14:00:00.000Z
-    day: Monday
-    open: 2019-06-09T11:30:00.000Z
+    close: '2019-06-09T14: 00: 00.000Z'
+    day: الإثنين
+    open: '2019-06-09T11: 30: 00.000Z'
   - 
-    close: 2019-06-09T14:00:00.000Z
-    day: Tuesday
-    open: 2019-06-09T11:30:00.000Z
+    close: '2019-06-09T14: 00: 00.000Z'
+    day: الثلاثاء
+    open: '2019-06-09T11: 30: 00.000Z'
   - 
-    close: 2019-06-09T14:00:00.000Z
-    day: Wednesday
-    open: 2019-06-09T11:30:00.000Z
+    close: '2019-06-09T14: 00: 00.000Z'
+    day: الأربعاء
+    open: '2019-06-09T11: 30: 00.000Z'
   - 
-    close: 2019-06-09T14:00:00.000Z
-    day: Thursday
-    open: 2019-06-09T11:30:00.000Z
+    close: '2019-06-09T14: 00: 00.000Z'
+    day: الخميس
+    open: '2019-06-09T11: 30: 00.000Z'
   - 
-    close: 2019-06-09T14:00:00.000Z
-    day: Friday
-    open: 2019-06-09T11:30:00.000Z
+    close: '2019-06-09T14: 00: 00.000Z'
+    day: يوم الجمعة
+    open: '2019-06-09T11: 30: 00.000Z'
 location:
-  description: At One Happy Family
-  geo: '{ "type": "Point", "coordinates": [26.5172195, 39.1297939] }'
-  showMap: false
+  description: في عائلة واحدة سعيدة
+  geo: '{"النوع": "النقطة" ، "الإحداثيات": [26.5172195 ، 39.1297939]}'
+  showMap: خاطئة
 ---
 
-English and Greek classes available. You can register for classes during the last week of each month. For details please ask at the information desk at One Happy Family.
+فصول اللغة الإنجليزية واليونانية المتاحة. يمكنك التسجيل في الفصول خلال الأسبوع الأخير من كل شهر. للحصول على التفاصيل ، يرجى السؤال في مكتب المعلومات في One Happy Family.
