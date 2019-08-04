@@ -1,35 +1,35 @@
 ---
-title: Language school for adults at One Happy Family
+title: مدرسه زبان برای بزرگسالان در یک خانواده مبارک
 cover: /img/school-adults.jpg
 categories:
-  - School for adults or children
-  - Community centre
-  - 'Language classes'
+  - مدرسه برای بزرگسالان یا کودکان
+  - مرکز جامعه
+  - 'کلاسهای زبان'
 openingTimes:
   - 
-    close: 2019-06-09T14:00:00.000Z
-    day: Monday
-    open: 2019-06-09T11:30:00.000Z
+    close: '2019-06-09T14: 00: 00.000Z'
+    day: دوشنبه
+    open: '2019-06-09T11: 30: 00.000Z'
   - 
-    close: 2019-06-09T14:00:00.000Z
-    day: Tuesday
-    open: 2019-06-09T11:30:00.000Z
+    close: '2019-06-09T14: 00: 00.000Z'
+    day: سهشنبه
+    open: '2019-06-09T11: 30: 00.000Z'
   - 
-    close: 2019-06-09T14:00:00.000Z
-    day: Wednesday
-    open: 2019-06-09T11:30:00.000Z
+    close: '2019-06-09T14: 00: 00.000Z'
+    day: چهار شنبه
+    open: '2019-06-09T11: 30: 00.000Z'
   - 
-    close: 2019-06-09T14:00:00.000Z
-    day: Thursday
-    open: 2019-06-09T11:30:00.000Z
+    close: '2019-06-09T14: 00: 00.000Z'
+    day: پنج شنبه
+    open: '2019-06-09T11: 30: 00.000Z'
   - 
-    close: 2019-06-09T14:00:00.000Z
-    day: Friday
-    open: 2019-06-09T11:30:00.000Z
+    close: '2019-06-09T14: 00: 00.000Z'
+    day: جمعه
+    open: '2019-06-09T11: 30: 00.000Z'
 location:
-  description: At One Happy Family
-  geo: '{ "type": "Point", "coordinates": [26.5172195, 39.1297939] }'
-  showMap: false
+  description: در یک خانواده مبارک
+  geo: '{"نوع": "نقطه" ، "مختصات": [26.5172195 ، 39.1297939]}'
+  showMap: نادرست
 ---
 
-English and Greek classes available. You can register for classes during the last week of each month. For details please ask at the information desk at One Happy Family.
+کلاسهای انگلیسی و یونانی موجود است. شما می توانید در آخرین هفته هر ماه برای کلاس ها ثبت نام کنید. برای جزئیات بیشتر ، لطفاً از دفتر اطلاعات یکی از خانواده های مبارک سؤال کنید.
