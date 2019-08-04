@@ -1,37 +1,37 @@
 ---
-title: Gym at One Happy Family
+title: صالة الألعاب الرياضية في عائلة واحدة سعيدة
 cover: /img/gym_square.png
 categories:
-  - Sports/ Gym
-  - Community centre
+  - نادي رياضي
+  - مركز المجتمع
 openingTimes:
   - 
-    close: 2019-06-09T18:00:00.000Z
-    day: Monday
-    open: 2019-06-09T11:30:00.000Z
+    close: '2019-06-09T18: 00: 00.000Z'
+    day: الإثنين
+    open: '2019-06-09T11: 30: 00.000Z'
   - 
-    close: 2019-06-09T18:00:00.000Z
-    day: Tuesday
-    open: 2019-06-09T11:30:00.000Z
+    close: '2019-06-09T18: 00: 00.000Z'
+    day: الثلاثاء
+    open: '2019-06-09T11: 30: 00.000Z'
   - 
-    close: 2019-06-09T18:00:00.000Z
-    day: Wednesday
-    open: 2019-06-09T11:30:00.000Z
+    close: '2019-06-09T18: 00: 00.000Z'
+    day: الأربعاء
+    open: '2019-06-09T11: 30: 00.000Z'
   - 
-    close: 2019-06-09T18:00:00.000Z
-    day: Thursday
-    open: 2019-06-09T11:30:00.000Z
+    close: '2019-06-09T18: 00: 00.000Z'
+    day: الخميس
+    open: '2019-06-09T11: 30: 00.000Z'
   - 
-    close: 2019-06-09T18:00:00.000Z
-    day: Friday
-    open: 2019-06-09T11:30:00.000Z
+    close: '2019-06-09T18: 00: 00.000Z'
+    day: يوم الجمعة
+    open: '2019-06-09T11: 30: 00.000Z'
 location:
-  description: At One Happy Family
-  geo: '{ "type": "Point", "coordinates": [26.5172195, 39.1297939] }'
-  showMap: false
+  description: في عائلة واحدة سعيدة
+  geo: '{"النوع": "النقطة" ، "الإحداثيات": [26.5172195 ، 39.1297939]}'
+  showMap: خاطئة
 ---
 
 
-The Gym is equipped with various weights and other training material, so visitors can engage in sports activities. It is operated entirely by people from the refugee camps. They write training plans, offer Taekwando and kick-box sessions and organize running groups.
+الصالة الرياضية مجهزة بأوزان مختلفة ومواد تدريبية أخرى ، بحيث يمكن للزوار المشاركة في الأنشطة الرياضية. يتم تشغيله بالكامل من قبل أشخاص من مخيمات اللاجئين. يكتبون خطط التدريب ، ويقدمون جلسات التايكواندو والركلات وينظمون مجموعات الجري.
 
-Classes are available on a regular basis, visit us at One Happy Family to find out more.
+تتوفر الفصول الدراسية بشكل منتظم ، تفضل بزيارتنا في One Happy Family لمعرفة المزيد.
