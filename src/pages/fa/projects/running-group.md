@@ -1,27 +1,27 @@
 ---
-title: Running group
+title: گروه در حال اجرا
 cover: /img/running-1.jpg
 categories:
-  - Sports/ Gym
-  - For women
-  - Community centre
+  - ورزش / بدنسازی
+  - برای خانم ها
+  - مرکز جامعه
 openingTimes:
   - 
-    close: 2019-06-23T18:00:00.000Z
-    day: Monday
-    open: 2019-06-23T16:30:00.000Z
+    close: '2019-06-23T18: 00: 00.000Z'
+    day: دوشنبه
+    open: '2019-06-23T16: 30: 00.000Z'
   - 
-    close: 2019-06-23T18:00:00.000Z
-    day: Wednesday
-    open: 2019-06-23T16:30:00.000Z
+    close: '2019-06-23T18: 00: 00.000Z'
+    day: چهار شنبه
+    open: '2019-06-23T16: 30: 00.000Z'
   - 
-    close: 2019-06-23T18:00:00.000Z
-    day: Friday
-    open: 2019-06-23T16:30:00.000Z
+    close: '2019-06-23T18: 00: 00.000Z'
+    day: جمعه
+    open: '2019-06-23T16: 30: 00.000Z'
 location:
-  description: Meet the group at Yoga and Sport for Refugees (YSFR) Gym
-  geo: '{ "type": "Point", "coordinates": [26.5172195, 39.1297939] }'
-  showMap: false
+  description: با این گروه در سالن بدنسازی یوگا و ورزش برای پناهندگان (YSFR) ملاقات کنید
+  geo: '{"نوع": "نقطه" ، "مختصات": [26.5172195 ، 39.1297939]}'
+  showMap: نادرست
 ---
 
-Running is a great way to exercise and meet new friends. Join the Yoga and Sport for Refugees (YSFR) running group on Mondays, Wednesdays and Fridays.
+دویدن یک راه عالی برای ورزش و دیدار با دوستان جدید است. روزهای دوشنبه ، چهارشنبه و جمعه به گروه در حال اجرا یوگا و ورزش برای پناهندگان (YSFR) بپیوندید.
