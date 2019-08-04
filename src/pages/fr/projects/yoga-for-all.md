@@ -28,8 +28,6 @@ openingTimes:
     open: 2019-06-20T16:30:00.000Z
 location:
   description: 'Chez une famille Happy, YSFR Yoga Tent'
-  geo: '{ "type": "Point", "coordonnées": [26.5172195, 39.1297939] }'
-  showMap: faux
 ---
 
 Cours de Yoga (hommes mixtes et femmes) avec Yoga et Sport pour les réfugiés (YSFR) avec des enseignants amicals et professionnels
