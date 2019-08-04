@@ -18,8 +18,6 @@ openingTimes:
     open: 2019-06-20T09:30:00.000Z
 location:
   description: gymnase YSFR
-  geo: '{ "type": "Point", "coordonnées": [26.5172195, 39.1297939] }'
-  showMap: faux
 ---
 
 Cours de lutte sûrs et amusants tous les jours à la salle de sport Yoga et Sport pour les réfugiés (YSFR)
