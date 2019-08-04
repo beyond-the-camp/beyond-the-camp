@@ -1,34 +1,34 @@
 ---
-title: PlayStation at One Happy Family
+title: پلی استیشن در یک خانواده مبارک
 cover: /img/cinema_square.jpg
 categories:
-  - Kids
-  - Computers
+  - بچه ها
+  - کامپیوترها
 openingTimes:
   - 
-    close: 2018-01-01T19:00:00.000Z
-    day: Monday
-    open: 2018-01-01T12:00:00.000Z
+    close: '2018-01-01T19: 00: 00.000Z'
+    day: دوشنبه
+    open: '2018-01-01T12: 00: 00.000Z'
   - 
-    close: 2019-05-11T18:00:00.000Z
-    day: Tuesday
-    open: 2018-01-01T12:00:00.000Z
+    close: '2019-05-11T18: 00: 00.000Z'
+    day: سهشنبه
+    open: '2018-01-01T12: 00: 00.000Z'
   - 
-    close: 2019-05-11T18:00:49.734Z
-    day: Wednesday
-    open: 2019-05-11T11:00:00.000Z
+    close: '2019-05-11T18: 00: 49.734Z'
+    day: چهار شنبه
+    open: '2019-05-11T11: 00: 00.000Z'
   - 
-    close: 2019-05-11T18:00:52.574Z
-    day: Thursday
-    open: 2019-05-11T11:00:52.558Z
+    close: '2019-05-11T18: 00: 52.574Z'
+    day: پنج شنبه
+    open: '2019-05-11T11: 00: 52.558Z'
   - 
-    close: 2019-05-11T18:00:08.538Z
-    day: Friday
-    open: 2019-05-11T11:00:08.526Z
+    close: '2019-05-11T18: 00: 08.538Z'
+    day: جمعه
+    open: '2019-05-11T11: 00: 08.526Z'
 location:
-  description: at the One Happy Family cinema
-  geo: '{"type":"Point","coordinates":[23.5068723,37.7476837]}'
-  showMap: false
+  description: در سینما One Family Family
+  geo: '{"نوع": "نقطه" ، "مختصات": [23.5068723،37.7476837]}'
+  showMap: نادرست
 ---
 
-Play a game of FIFA with your friends for a few drachmas (get them from the bank at One Happy Family)
+برای چند دراچام بازی FIFA را با دوستان خود انجام دهید (آنها را در یکی از خانواده های خوشحال از بانک دریافت کنید)
