@@ -1,32 +1,32 @@
 ---
-title: Shop at One Happy Family
+title: خرید در یک خانواده مبارک
 cover: /img/shop2.png
 categories:
-  - Community centre
-  - Clothes/ hygiene items
+  - مرکز جامعه
+  - لباس / وسایل بهداشتی
 openingTimes:
   - 
-    close: 2019-07-30T16:30:00.000Z
-    day: Monday
-    open: 2019-07-30T16:00:00.000Z
+    close: '2019-07-30T16: 30: 00.000Z'
+    day: دوشنبه
+    open: '2019-07-30T16: 00: 00.000Z'
   - 
-    close: 2019-07-30T16:30:00.000Z
-    day: Tuesday
-    open: 2019-07-30T16:00:00.000Z
+    close: '2019-07-30T16: 30: 00.000Z'
+    day: سهشنبه
+    open: '2019-07-30T16: 00: 00.000Z'
   - 
-    close: 2019-07-30T16:30:00.000Z
-    day: Wednesday
-    open: 2019-07-30T16:00:00.000Z
+    close: '2019-07-30T16: 30: 00.000Z'
+    day: چهار شنبه
+    open: '2019-07-30T16: 00: 00.000Z'
   - 
-    close: 2019-07-30T16:30:00.000Z
-    day: Thursday
-    open: 2019-07-30T16:00:00.000Z
+    close: '2019-07-30T16: 30: 00.000Z'
+    day: پنج شنبه
+    open: '2019-07-30T16: 00: 00.000Z'
   - 
-    close: 2019-07-30T16:30:00.000Z
-    day: Friday
-    open: 2019-07-30T16:00:00.000Z
+    close: '2019-07-30T16: 30: 00.000Z'
+    day: جمعه
+    open: '2019-07-30T16: 00: 00.000Z'
 location:
-  description: At One Happy Family
+  description: در یک خانواده مبارک
 ---
 
-Here you can buy hygiene and sanitary items using drachmas (visit the One Happy Family Bank to get your drachmas)
+در اینجا می توانید وسایل بهداشتی و بهداشتی را با استفاده از درچماس خریداری کنید (برای دریافت دراچام خود به یک بانک خانواده شاد مراجعه کنید)
