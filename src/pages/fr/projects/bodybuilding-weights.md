@@ -26,8 +26,6 @@ openingTimes:
     open: 2019-06-20T08:00:00.000Z
 location:
   description: gymnase YSFR
-  geo: '{ "type": "Point", "coordonnées": [26.5172195, 39.1297939] }'
-  showMap: faux
 ---
 
 Classe de carrosserie et de poids chaque jour au Yoga et Sport pour les réfugiés (YSFR) salle de gym
