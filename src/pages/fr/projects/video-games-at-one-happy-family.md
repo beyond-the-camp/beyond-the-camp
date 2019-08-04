@@ -27,8 +27,6 @@ openingTimes:
     open: 2019-05-11T11:00:08.526Z
 location:
   description: au cinéma One Happy Family
-  geo: '{"type":"Point","coordonnées":[23.5068723,37.7476837]}'
-  showMap: faux
 ---
 
 Jouez à un jeu de FIFA avec vos amis pour quelques drachmas (obtenez-les de la banque à une famille joyeuse)
