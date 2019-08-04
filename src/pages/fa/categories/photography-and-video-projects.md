@@ -1,4 +1,4 @@
 ---
-title: 'Photography, video and audio projects'
+title: 'پروژه های عکاسی ، ویدئویی و صوتی'
 ---
 
