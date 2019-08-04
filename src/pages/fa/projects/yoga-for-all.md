@@ -1,35 +1,35 @@
 ---
-title: Yoga for all
+title: یوگا برای همه
 cover: /img/yoga-all.jpg
 categories:
-  - Sports/ Gym
-  - Yoga
-  - For women
+  - ورزش / بدنسازی
+  - یوگا
+  - برای خانم ها
 openingTimes:
   - 
-    close: 2019-06-20T17:30:00.000Z
-    day: Monday
-    open: 2019-06-20T16:30:00.000Z
+    close: '2019-06-20T17: 30: 00.000Z'
+    day: دوشنبه
+    open: '2019-06-20T16: 30: 00.000Z'
   - 
-    close: 2019-06-20T17:30:00.000Z
-    day: Tuesday
-    open: 2019-06-20T16:30:00.000Z
+    close: '2019-06-20T17: 30: 00.000Z'
+    day: سهشنبه
+    open: '2019-06-20T16: 30: 00.000Z'
   - 
-    close: 2019-06-20T17:30:00.000Z
-    day: Wednesday
-    open: 2019-06-20T16:30:00.000Z
+    close: '2019-06-20T17: 30: 00.000Z'
+    day: چهار شنبه
+    open: '2019-06-20T16: 30: 00.000Z'
   - 
-    close: 2019-06-20T17:30:00.000Z
-    day: Thursday
-    open: 2019-06-20T16:30:00.000Z
+    close: '2019-06-20T17: 30: 00.000Z'
+    day: پنج شنبه
+    open: '2019-06-20T16: 30: 00.000Z'
   - 
-    close: 2019-06-20T17:30:00.000Z
-    day: Friday
-    open: 2019-06-20T16:30:00.000Z
+    close: '2019-06-20T17: 30: 00.000Z'
+    day: جمعه
+    open: '2019-06-20T16: 30: 00.000Z'
 location:
-  description: 'At One Happy Family, YSFR Yoga Tent'
-  geo: '{ "type": "Point", "coordinates": [26.5172195, 39.1297939] }'
-  showMap: false
+  description: 'در یك خانواده مبارك ، چادر یوگا YSFR'
+  geo: '{"نوع": "نقطه" ، "مختصات": [26.5172195 ، 39.1297939]}'
+  showMap: نادرست
 ---
 
-Yoga classes (mixed men and women) with Yoga and Sport for Refugees (YSFR) with friendly and professional teachers
+کلاس های یوگا (زن و مرد مختلط) با یوگا و ورزش برای پناهندگان (YSFR) با معلمان دوستانه و حرفه ای
