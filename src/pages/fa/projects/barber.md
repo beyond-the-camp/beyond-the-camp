@@ -1,40 +1,40 @@
 ---
-title: Barber
+title: سلمانی
 cover: /img/barber-400x400.jpg
 categories:
-  - Barber / tailor
-  - Community centre
+  - آرایشگر / خیاط
+  - مرکز جامعه
 openingTimes:
   - 
-    close: 2019-06-09T15:00:00.000Z
-    day: Monday
-    open: 2019-06-09T11:30:00.000Z
+    close: '2019-06-09T15: 00: 00.000Z'
+    day: دوشنبه
+    open: '2019-06-09T11: 30: 00.000Z'
   - 
-    close: 2019-06-09T15:00:00.000Z
-    day: Tuesday
-    open: 2019-06-09T11:30:00.000Z
+    close: '2019-06-09T15: 00: 00.000Z'
+    day: سهشنبه
+    open: '2019-06-09T11: 30: 00.000Z'
   - 
-    close: 2019-06-09T15:00:00.000Z
-    day: Wednesday
-    open: 2019-06-09T11:30:00.000Z
+    close: '2019-06-09T15: 00: 00.000Z'
+    day: چهار شنبه
+    open: '2019-06-09T11: 30: 00.000Z'
   - 
-    close: 2019-06-09T15:00:00.000Z
-    day: Thursday
-    open: 2019-06-09T11:30:00.000Z
+    close: '2019-06-09T15: 00: 00.000Z'
+    day: پنج شنبه
+    open: '2019-06-09T11: 30: 00.000Z'
   - 
-    close: 2019-06-09T15:00:00.000Z
-    day: Friday
-    open: 2019-06-09T11:30:00.000Z
+    close: '2019-06-09T15: 00: 00.000Z'
+    day: جمعه
+    open: '2019-06-09T11: 30: 00.000Z'
 location:
-  description: At One Happy Family
-  geo: '{"type":"Point","coordinates":[26.5028149,39.1337207]}'
-  showMap: false
+  description: در یک خانواده مبارک
+  geo: '{"نوع": "نقطه" ، "مختصات": [26.5028149،39.1337207]}'
+  showMap: نادرست
 ---
 
-Get a fresh new haircut! The barber shop is located right behind the cinema at One Happy Family.
+یک مدل موی جدید جدید بگیرید! آرایشگاه در پشت سینما در One Family Family واقع شده است.
 
-Bring some drachmas (get them from the bank at One Happy Family).
+مقداری دراچام بیاورید (آنها را در یک خانواده مبارک از بانک دریافت کنید).
 
-Make an appointment in the morning at the gate.
+قرار ملاقات در صبح در دروازه.
 
-Wednesday is Women's day.
+چهارشنبه روز زن است.
