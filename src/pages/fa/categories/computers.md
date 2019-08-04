@@ -1,4 +1,4 @@
 ---
-title: Computers
+title: کامپیوترها
 ---
 
