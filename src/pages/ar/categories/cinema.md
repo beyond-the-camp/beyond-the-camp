@@ -1,4 +1,4 @@
 ---
-title: Cinema
+title: سينما
 ---
 
