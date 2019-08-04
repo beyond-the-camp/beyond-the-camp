@@ -1,21 +1,21 @@
 ---
-title: Parkour
+title: باركور
 cover: /img/ysfr.jpg
 categories:
-  - Sports/ Gym
+  - نادي رياضي
 openingTimes:
   - 
-    close: 2019-06-23T13:00:00.000Z
-    day: Tuesday
-    open: 2019-06-21T11:00:00.000Z
+    close: '2019-06-23T13: 00: 00.000Z'
+    day: الثلاثاء
+    open: '2019-06-21T11: 00: 00.000Z'
   - 
-    close: 2019-06-23T13:00:00.000Z
-    day: Thursday
-    open: 2019-06-23T11:00:00.000Z
+    close: '2019-06-23T13: 00: 00.000Z'
+    day: الخميس
+    open: '2019-06-23T11: 00: 00.000Z'
 location:
-  description: at Yoga and Sport for Refugees (YSFR) Gym
-  geo: '{ "type": "Point", "coordinates": [26.5172195, 39.1297939] }'
-  showMap: false
+  description: في اليوغا والرياضة للاجئين (YSFR) الصالة الرياضية
+  geo: '{"النوع": "النقطة" ، "الإحداثيات": [26.5172195 ، 39.1297939]}'
+  showMap: خاطئة
 ---
 
-Learn Parkour at the Yoga and Sport for Refugees (YSFR) gym. Improve your fitness and meet some new friends too!
+تعلم Parkour في صالة اليوغا والرياضة للاجئين (YSFR). تحسين لياقتك والتعرف على بعض الأصدقاء الجدد أيضا!
