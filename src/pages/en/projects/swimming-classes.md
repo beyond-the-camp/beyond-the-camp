@@ -23,11 +23,10 @@ openingTimes:
     open: 2019-05-12T12:15:00.000Z
 location:
   description: meet at One Happy Family gate
-  geo: '{ "type": "Point", "coordinates": [26.5172195, 39.1297939] }'
-  showMap: false
 ---
+
 Daily swimming classes with Yoga and Sport for Refugees. Register at the One Happy Family gate at 13.15 (they have limited capacity). They leave One Happy Family at 13.30 to go to the beach for the classes. Adults only.
 
-They are also looking for volunteers to help! 
+They are also looking for volunteers to help!
 
 Please note no classes when One Happy Family is closed

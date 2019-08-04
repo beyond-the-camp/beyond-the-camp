@@ -13,7 +13,6 @@ openingTimes:
     open: 2019-06-20T09:30:00.000Z
 location:
   description: at YSFR Gym
-  geo: '{ "type": "Point", "coordinates": [26.5172195, 39.1297939] }'
-  showMap: false
 ---
+
 Safe and fun kickboxing class for kids at the Yoga and Sport for Refugees (YSFR) Gym

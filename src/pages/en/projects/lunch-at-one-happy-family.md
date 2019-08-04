@@ -22,7 +22,6 @@ openingTimes:
     open: 2019-06-09T15:00:00.000Z
 location:
   description: at One Happy Family
-  geo: '{ "type": "Point", "coordinates": [26.5172195, 39.1297939] }'
-  showMap: false
 ---
+
 Delicious lunch is served in the dining room at One Happy family every day at 4pm. You may sit in the dining area or in one of the many other seating options at the centre.

@@ -22,9 +22,8 @@ openingTimes:
     open: 2019-05-11T11:00:00.000Z
 location:
   description: at One Happy Family
-  geo: '{ "type": "Point", "coordinates": [26.5172195, 39.1297939] }'
-  showMap: false
 ---
+
 School of Peace
 
 Info on signing up your child...

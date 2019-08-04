@@ -22,7 +22,6 @@ openingTimes:
     open: 2019-06-09T11:30:00.000Z
 location:
   description: Near the School of Peace at One Happy Family
-  geo: '{ "type": "Point", "coordinates": [26.5172195, 39.1297939] }'
-  showMap: false
 ---
+
 The library is a converted green VW bus next to the school at One Happy Family. Books are arranged by language, age, and type so you can find the perfect book for you or your child. There are also storytelling activities here - come and visit us to find out more.

@@ -15,7 +15,6 @@ openingTimes:
     open: 2019-06-20T09:30:00.000Z
 location:
   description: YSFR gym
-  geo: '{ "type": "Point", "coordinates": [26.5172195, 39.1297939] }'
-  showMap: false
 ---
+
 Safe and fun wrestling classes every day at the Yoga and Sport for Refugees (YSFR) gym

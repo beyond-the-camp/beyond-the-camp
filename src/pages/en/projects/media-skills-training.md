@@ -22,9 +22,8 @@ openingTimes:
     open: 2019-05-16T13:30:00.000Z
 location:
   description: Refugee Media Production studio at One Happy Family
-  geo: '{ "type": "Point", "coordinates": [26.5172195, 39.1297939] }'
-  showMap: false
 ---
-Come and learn photography, video production, sound recording and graphic design, working with a team of professional and dedicated teachers. 
+
+Come and learn photography, video production, sound recording and graphic design, working with a team of professional and dedicated teachers.
 
 Together here we have created short films, documentaries, photography exhibitions, recorded live music at One Happy Family and produced a magazine which was written, researched and designed by refugees living in Lesvos.
