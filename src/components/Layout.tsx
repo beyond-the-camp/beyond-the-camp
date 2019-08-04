@@ -4,7 +4,6 @@ import * as React from 'react';
 
 import { Helmet } from 'react-helmet';
 
-import { LocaleMessages } from '../i18n/types';
 import { getTextDirection } from '../utils/languages';
 import { LocaleType } from '../utils/types';
 import { NavBar } from './NavBar';
@@ -18,17 +17,12 @@ import * as faData from 'react-intl/locale-data/fa';
 import * as frData from 'react-intl/locale-data/fr';
 
 // Messages
-import ar from '../i18n/ar';
-import en from '../i18n/en';
-import fa from '../i18n/fa';
-import fr from '../i18n/fr';
+import * as ar from '../i18n/ar.json';
+import * as en from '../i18n/en.json';
+import * as fa from '../i18n/fa.json';
+import * as fr from '../i18n/fr.json';
 
-const messages: Record<LocaleType, LocaleMessages> = {
-  en,
-  fr,
-  ar,
-  fa
-};
+const messages = { en, fr, ar, fa };
 
 addLocaleData([...enData, ...frData, ...arData, ...faData]);
 

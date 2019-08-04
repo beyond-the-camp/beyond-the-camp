@@ -1,14 +1,18 @@
 "project_identifier" : "beyond-the-camp"
-"base_path" : "/src/pages"
+"base_path" : "/src"
 "preserve_hierarchy": true
 
 files: [
  {
-  "source" : "/en/projects/*.md",
-  "translation" : "/%two_letters_code%/projects/%original_file_name%",
+  "source" : "/i18n/en.json",
+  "translation" : "/i18n/%two_letters_code%.json",
  },
  {
-  "source" : "/en/categories/*.md",
-  "translation" : "/%two_letters_code%/categories/%original_file_name%",
+  "source" : "/pages/en/projects/*.md",
+  "translation" : "/pages/%two_letters_code%/projects/%original_file_name%",
+ },
+ {
+  "source" : "/pages/en/categories/*.md",
+  "translation" : "/pages/%two_letters_code%/categories/%original_file_name%",
  }
 ]
