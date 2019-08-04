@@ -1,39 +1,39 @@
 ---
-title: Swimming classes
+title: دروس السباحة
 cover: /img/swimming-classes.jpg
 categories:
-  - Sport
-  - Community centre
-  - Volunteering
+  - رياضة
+  - مركز المجتمع
+  - تطوع
 openingTimes:
   - 
-    close: 2019-06-20T14:30:00.000Z
-    day: Monday
-    open: 2019-05-12T12:15:00.000Z
+    close: '2019-06-20T14: 30: 00.000Z'
+    day: الإثنين
+    open: '2019-05-12T12: 15: 00.000Z'
   - 
-    close: 2019-06-20T14:30:00.000Z
-    day: Tuesday
-    open: 2019-05-12T12:15:00.000Z
+    close: '2019-06-20T14: 30: 00.000Z'
+    day: الثلاثاء
+    open: '2019-05-12T12: 15: 00.000Z'
   - 
-    close: 2019-06-20T14:30:00.000Z
-    day: Wednesday
-    open: 2019-05-12T12:15:00.000Z
+    close: '2019-06-20T14: 30: 00.000Z'
+    day: الأربعاء
+    open: '2019-05-12T12: 15: 00.000Z'
   - 
-    close: 2019-06-20T14:30:00.000Z
-    day: Thursday
-    open: 2019-05-12T12:15:00.000Z
+    close: '2019-06-20T14: 30: 00.000Z'
+    day: الخميس
+    open: '2019-05-12T12: 15: 00.000Z'
   - 
-    close: 2019-06-20T14:30:00.000Z
-    day: Friday
-    open: 2019-05-12T12:15:00.000Z
+    close: '2019-06-20T14: 30: 00.000Z'
+    day: يوم الجمعة
+    open: '2019-05-12T12: 15: 00.000Z'
 location:
-  description: meet at One Happy Family gate
-  geo: '{ "type": "Point", "coordinates": [26.5172195, 39.1297939] }'
-  showMap: false
+  description: يجتمع في بوابة عائلة واحدة سعيدة
+  geo: '{"النوع": "النقطة" ، "الإحداثيات": [26.5172195 ، 39.1297939]}'
+  showMap: خاطئة
 ---
 
-Daily swimming classes with Yoga and Sport for Refugees. Register at the One Happy Family gate at 13.15 (they have limited capacity). They leave One Happy Family at 13.30 to go to the beach for the classes. Adults only.
+دروس السباحة اليومية مع اليوغا والرياضة للاجئين. سجل في بوابة One Happy Family على 13.15 (لديهم سعة محدودة). يغادرون One Happy Family في الساعة 13.30 للذهاب إلى الشاطئ لحضور الدروس. للبالغين فقط.
 
-They are also looking for volunteers to help!
+انهم يبحثون أيضا عن متطوعين للمساعدة!
 
-Please note no classes when One Happy Family is closed
+يرجى ملاحظة عدم وجود دروس عند إغلاق One Happy Family
