@@ -1,39 +1,39 @@
 ---
-title: Swimming classes
+title: کلاسهای شنا
 cover: /img/swimming-classes.jpg
 categories:
-  - Sport
-  - Community centre
-  - Volunteering
+  - ورزش
+  - مرکز جامعه
+  - داوطلبانه
 openingTimes:
   - 
-    close: 2019-06-20T14:30:00.000Z
-    day: Monday
-    open: 2019-05-12T12:15:00.000Z
+    close: '2019-06-20T14: 30: 00.000Z'
+    day: دوشنبه
+    open: '2019-05-12T12: 15: 00.000Z'
   - 
-    close: 2019-06-20T14:30:00.000Z
-    day: Tuesday
-    open: 2019-05-12T12:15:00.000Z
+    close: '2019-06-20T14: 30: 00.000Z'
+    day: سهشنبه
+    open: '2019-05-12T12: 15: 00.000Z'
   - 
-    close: 2019-06-20T14:30:00.000Z
-    day: Wednesday
-    open: 2019-05-12T12:15:00.000Z
+    close: '2019-06-20T14: 30: 00.000Z'
+    day: چهار شنبه
+    open: '2019-05-12T12: 15: 00.000Z'
   - 
-    close: 2019-06-20T14:30:00.000Z
-    day: Thursday
-    open: 2019-05-12T12:15:00.000Z
+    close: '2019-06-20T14: 30: 00.000Z'
+    day: پنج شنبه
+    open: '2019-05-12T12: 15: 00.000Z'
   - 
-    close: 2019-06-20T14:30:00.000Z
-    day: Friday
-    open: 2019-05-12T12:15:00.000Z
+    close: '2019-06-20T14: 30: 00.000Z'
+    day: جمعه
+    open: '2019-05-12T12: 15: 00.000Z'
 location:
-  description: meet at One Happy Family gate
-  geo: '{ "type": "Point", "coordinates": [26.5172195, 39.1297939] }'
-  showMap: false
+  description: در دروازه One Family Family ملاقات کنید
+  geo: '{"نوع": "نقطه" ، "مختصات": [26.5172195 ، 39.1297939]}'
+  showMap: نادرست
 ---
 
-Daily swimming classes with Yoga and Sport for Refugees. Register at the One Happy Family gate at 13.15 (they have limited capacity). They leave One Happy Family at 13.30 to go to the beach for the classes. Adults only.
+کلاس های شنا روزانه با یوگا و ورزش برای پناهندگان. در دروازه One Family Family ساعت 13.15 ثبت نام کنید (ظرفیت آنها محدود است). آنها ساعت 13.30 یک خانواده شاد را ترک می کنند تا برای کلاس ها به ساحل بروند. فقط بزرگسالان.
 
-They are also looking for volunteers to help!
+آنها همچنین به دنبال داوطلبان برای کمک به هستند!
 
-Please note no classes when One Happy Family is closed
+لطفاً وقتی یک خانواده مبارک بسته است ، هیچ کلاس را یادداشت نکنید
