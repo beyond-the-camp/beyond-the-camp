@@ -1,33 +1,33 @@
 ---
-title: Garden at One Happy Family
+title: حديقة في عائلة واحدة سعيدة
 cover: /img/garden.jpg
 categories:
-  - For women
-  - Community centre
-  - Children
+  - للنساء
+  - مركز المجتمع
+  - الأطفال
 openingTimes:
   - 
-    close: 2019-07-30T18:00:00.000Z
-    day: Monday
-    open: 2019-07-30T11:00:00.000Z
+    close: '2019-07-30T18: 00: 00.000Z'
+    day: الإثنين
+    open: '2019-07-30T11: 00: 00.000Z'
   - 
-    close: 2019-07-30T18:00:00.000Z
-    day: Tuesday
-    open: 2019-07-30T11:00:00.000Z
+    close: '2019-07-30T18: 00: 00.000Z'
+    day: الثلاثاء
+    open: '2019-07-30T11: 00: 00.000Z'
   - 
-    close: 2019-07-30T18:00:00.000Z
-    day: Wednesday
-    open: 2019-07-30T11:00:00.000Z
+    close: '2019-07-30T18: 00: 00.000Z'
+    day: الأربعاء
+    open: '2019-07-30T11: 00: 00.000Z'
   - 
-    close: 2019-07-30T18:00:00.000Z
-    day: Thursday
-    open: 2019-07-30T11:00:00.000Z
+    close: '2019-07-30T18: 00: 00.000Z'
+    day: الخميس
+    open: '2019-07-30T11: 00: 00.000Z'
   - 
-    close: 2019-07-30T18:00:00.000Z
-    day: Friday
-    open: 2019-07-30T11:00:00.000Z
+    close: '2019-07-30T18: 00: 00.000Z'
+    day: يوم الجمعة
+    open: '2019-07-30T11: 00: 00.000Z'
 location:
-  description: At One Happy Family
+  description: في عائلة واحدة سعيدة
 ---
 
-Within One Happy Family you'll find the garden, a peaceful and quiet place to relax and enjoy the plants and flowers. There are also regular activities here including science classes for children, as well as planting and gardening classes
+ستجد في One Happy Family الحديقة ، مكان هادئ وهادئ للاسترخاء والاستمتاع بالنباتات والزهور. توجد أيضًا أنشطة منتظمة هنا ، بما في ذلك دروس العلوم للأطفال ، وكذلك دروس الزراعة والبستنة
