@@ -1,33 +1,33 @@
 ---
-title: Garden at One Happy Family
+title: باغ در یک خانواده مبارک
 cover: /img/garden.jpg
 categories:
-  - For women
-  - Community centre
-  - Children
+  - برای خانم ها
+  - مرکز جامعه
+  - فرزندان
 openingTimes:
   - 
-    close: 2019-07-30T18:00:00.000Z
-    day: Monday
-    open: 2019-07-30T11:00:00.000Z
+    close: '2019-07-30T18: 00: 00.000Z'
+    day: دوشنبه
+    open: '2019-07-30T11: 00: 00.000Z'
   - 
-    close: 2019-07-30T18:00:00.000Z
-    day: Tuesday
-    open: 2019-07-30T11:00:00.000Z
+    close: '2019-07-30T18: 00: 00.000Z'
+    day: سهشنبه
+    open: '2019-07-30T11: 00: 00.000Z'
   - 
-    close: 2019-07-30T18:00:00.000Z
-    day: Wednesday
-    open: 2019-07-30T11:00:00.000Z
+    close: '2019-07-30T18: 00: 00.000Z'
+    day: چهار شنبه
+    open: '2019-07-30T11: 00: 00.000Z'
   - 
-    close: 2019-07-30T18:00:00.000Z
-    day: Thursday
-    open: 2019-07-30T11:00:00.000Z
+    close: '2019-07-30T18: 00: 00.000Z'
+    day: پنج شنبه
+    open: '2019-07-30T11: 00: 00.000Z'
   - 
-    close: 2019-07-30T18:00:00.000Z
-    day: Friday
-    open: 2019-07-30T11:00:00.000Z
+    close: '2019-07-30T18: 00: 00.000Z'
+    day: جمعه
+    open: '2019-07-30T11: 00: 00.000Z'
 location:
-  description: At One Happy Family
+  description: در یک خانواده مبارک
 ---
 
-Within One Happy Family you'll find the garden, a peaceful and quiet place to relax and enjoy the plants and flowers. There are also regular activities here including science classes for children, as well as planting and gardening classes
+در یک خانواده شاد ، باغ ، مکانی آرام و ساکت را برای استراحت و لذت بردن از گیاهان و گلها پیدا خواهید کرد. همچنین فعالیت های منظم در اینجا از جمله کلاس های علمی برای کودکان و همچنین کلاس های کاشت و باغبانی انجام می شود
