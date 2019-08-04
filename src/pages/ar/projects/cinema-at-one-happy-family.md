@@ -1,22 +1,22 @@
 ---
-title: Cinema at One Happy Family
+title: السينما في عائلة واحدة سعيدة
 cover: /img/cinema_square.jpg
 categories:
-  - Cinema
-  - Community centre
+  - سينما
+  - مركز المجتمع
 openingTimes:
   - 
-    close: 2019-06-09T16:00:00.000Z
-    day: Monday
-    open: 2019-06-09T12:00:00.000Z
+    close: '2019-06-09T16: 00: 00.000Z'
+    day: الإثنين
+    open: '2019-06-09T12: 00: 00.000Z'
   - 
-    close: 2019-06-09T16:00:00.000Z
-    day: Wednesday
-    open: 2019-06-09T12:00:00.000Z
+    close: '2019-06-09T16: 00: 00.000Z'
+    day: الأربعاء
+    open: '2019-06-09T12: 00: 00.000Z'
 location:
-  description: at One Happy Family
-  geo: '{"type":"Point","coordinates":[-65.2063423,-35.8209715]}'
-  showMap: false
+  description: في عائلة واحدة سعيدة
+  geo: '{ "نوع": "نقطة"، "إحداثيات": [- 65.2063423، -35،8209715]}'
+  showMap: خاطئة
 ---
 
-Movies every Monday and Wednesday at 1pm. Visit us to find out which films are going to be screened.
+أفلام كل يوم اثنين وأربعاء في 1:00. تفضل بزيارتنا لمعرفة الأفلام التي سيتم عرضها.
