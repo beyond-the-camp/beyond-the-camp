@@ -1,33 +1,33 @@
 ---
-title: Shisha lounge
+title: سالن شیشا
 cover: /img/sisha_square.jpg
 categories:
-  - Community centre
+  - مرکز جامعه
 openingTimes:
   - 
-    close: 2019-07-30T16:45:00.000Z
-    day: Monday
-    open: 2019-07-30T15:45:00.000Z
+    close: '2019-07-30T16: 45: 00.000Z'
+    day: دوشنبه
+    open: '2019-07-30T15: 45: 00.000Z'
   - 
-    close: 2019-07-30T16:45:00.000Z
-    day: Tuesday
-    open: 2019-07-30T15:45:00.000Z
+    close: '2019-07-30T16: 45: 00.000Z'
+    day: سهشنبه
+    open: '2019-07-30T15: 45: 00.000Z'
   - 
-    close: 2019-07-30T16:45:00.000Z
-    day: Wednesday
-    open: 2019-07-30T15:45:00.000Z
+    close: '2019-07-30T16: 45: 00.000Z'
+    day: چهار شنبه
+    open: '2019-07-30T15: 45: 00.000Z'
   - 
-    close: 2019-07-30T16:45:00.000Z
-    day: Thursday
-    open: 2019-07-30T15:45:00.000Z
+    close: '2019-07-30T16: 45: 00.000Z'
+    day: پنج شنبه
+    open: '2019-07-30T15: 45: 00.000Z'
   - 
-    close: 2019-07-30T16:45:00.000Z
-    day: Friday
-    open: 2019-07-30T15:45:00.000Z
+    close: '2019-07-30T16: 45: 00.000Z'
+    day: جمعه
+    open: '2019-07-30T15: 45: 00.000Z'
 location:
-  description: At One Happy Family
+  description: در یک خانواده مبارک
 ---
 
-Share a shisha together with your friends for some drachmas (get these from the One Happy Family Bank)
+برای برخی از دراچامها یک shisha را با دوستان خود به اشتراک بگذارید (اینها را از یک بانک خانواده یک مبارک دریافت کنید)
 
-Strictly over 18s only.
+صرفاً بالای 18 سال
