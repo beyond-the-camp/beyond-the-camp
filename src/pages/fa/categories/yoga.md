@@ -1,4 +1,4 @@
 ---
-title: Yoga
+title: یوگا
 ---
 
