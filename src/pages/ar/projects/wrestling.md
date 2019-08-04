@@ -1,25 +1,25 @@
 ---
-title: Wrestling
+title: مصارعة
 cover: /img/wrestling-2.jpg
 categories:
-  - Sports/ Gym
+  - نادي رياضي
 openingTimes:
   - 
-    close: 2019-06-20T11:00:00.000Z
-    day: Monday
-    open: 2019-06-20T09:30:00.000Z
+    close: '2019-06-20T11: 00: 00.000Z'
+    day: الإثنين
+    open: '2019-06-20T09: 30: 00.000Z'
   - 
-    close: 2019-06-20T11:00:00.000Z
-    day: Wednesday
-    open: 2019-06-20T09:30:00.000Z
+    close: '2019-06-20T11: 00: 00.000Z'
+    day: الأربعاء
+    open: '2019-06-20T09: 30: 00.000Z'
   - 
-    close: 2019-06-20T11:00:00.000Z
-    day: Friday
-    open: 2019-06-20T09:30:00.000Z
+    close: '2019-06-20T11: 00: 00.000Z'
+    day: يوم الجمعة
+    open: '2019-06-20T09: 30: 00.000Z'
 location:
-  description: YSFR gym
-  geo: '{ "type": "Point", "coordinates": [26.5172195, 39.1297939] }'
-  showMap: false
+  description: YSFR الصالة الرياضية
+  geo: '{"النوع": "النقطة" ، "الإحداثيات": [26.5172195 ، 39.1297939]}'
+  showMap: خاطئة
 ---
 
-Safe and fun wrestling classes every day at the Yoga and Sport for Refugees (YSFR) gym
+دروس مصارعة آمنة وممتعة كل يوم في صالة اليوغا والرياضة للاجئين (YSFR)
