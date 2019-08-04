@@ -27,8 +27,6 @@ openingTimes:
     open: 2019-06-09T11:30:00.000Z
 location:
   description: Près de l'école de Paix à une famille heureuse
-  geo: '{ "type": "Point", "coordonnées": [26.5172195, 39.1297939] }'
-  showMap: faux
 ---
 
 La bibliothèque est un bus vert converti VW à côté de l'école de la Famille Joyeux. Les livres sont arrangés par langue, âge et type, afin de trouver le livre parfait pour vous ou votre enfant. Il y a aussi des activités de conte de conte ici - venez nous visiter pour en savoir plus.
