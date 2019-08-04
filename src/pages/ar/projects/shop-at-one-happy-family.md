@@ -1,32 +1,32 @@
 ---
-title: Shop at One Happy Family
+title: تسوق في One Happy Family
 cover: /img/shop2.png
 categories:
-  - Community centre
-  - Clothes/ hygiene items
+  - مركز المجتمع
+  - الملابس / مستلزمات النظافة
 openingTimes:
   - 
-    close: 2019-07-30T16:30:00.000Z
-    day: Monday
-    open: 2019-07-30T16:00:00.000Z
+    close: '2019-07-30T16: 30: 00.000Z'
+    day: الإثنين
+    open: '2019-07-30T16: 00: 00.000Z'
   - 
-    close: 2019-07-30T16:30:00.000Z
-    day: Tuesday
-    open: 2019-07-30T16:00:00.000Z
+    close: '2019-07-30T16: 30: 00.000Z'
+    day: الثلاثاء
+    open: '2019-07-30T16: 00: 00.000Z'
   - 
-    close: 2019-07-30T16:30:00.000Z
-    day: Wednesday
-    open: 2019-07-30T16:00:00.000Z
+    close: '2019-07-30T16: 30: 00.000Z'
+    day: الأربعاء
+    open: '2019-07-30T16: 00: 00.000Z'
   - 
-    close: 2019-07-30T16:30:00.000Z
-    day: Thursday
-    open: 2019-07-30T16:00:00.000Z
+    close: '2019-07-30T16: 30: 00.000Z'
+    day: الخميس
+    open: '2019-07-30T16: 00: 00.000Z'
   - 
-    close: 2019-07-30T16:30:00.000Z
-    day: Friday
-    open: 2019-07-30T16:00:00.000Z
+    close: '2019-07-30T16: 30: 00.000Z'
+    day: يوم الجمعة
+    open: '2019-07-30T16: 00: 00.000Z'
 location:
-  description: At One Happy Family
+  description: في عائلة واحدة سعيدة
 ---
 
-Here you can buy hygiene and sanitary items using drachmas (visit the One Happy Family Bank to get your drachmas)
+هنا يمكنك شراء مستلزمات النظافة والأدوات الصحية باستخدام الدراخماس (تفضل بزيارة One Happy Family Bank للحصول على دراكماس)
