@@ -1,4 +1,4 @@
 ---
-title: Barber / tailor
+title: حلاق / خياط
 ---
 
