@@ -1,33 +1,33 @@
 ---
-title: Bodybuilding/weights
+title: بدنسازی / وزن
 cover: /img/ysfr.jpg
 categories:
-  - Sports/ Gym
+  - ورزش / بدنسازی
 openingTimes:
   - 
-    close: 2019-06-20T09:30:00.000Z
-    day: Monday
-    open: 2018-01-01T09:00:00.000Z
+    close: '2019-06-20T09: 30: 00.000Z'
+    day: دوشنبه
+    open: '2018-01-01T09: 00: 00.000Z'
   - 
-    close: 2019-06-20T09:30:00.000Z
-    day: Tuesday
-    open: 2019-06-20T08:00:00.000Z
+    close: '2019-06-20T09: 30: 00.000Z'
+    day: سهشنبه
+    open: '2019-06-20T08: 00: 00.000Z'
   - 
-    close: 2019-06-20T09:30:00.000Z
-    day: Wednesday
-    open: 2019-06-20T08:00:00.000Z
+    close: '2019-06-20T09: 30: 00.000Z'
+    day: چهار شنبه
+    open: '2019-06-20T08: 00: 00.000Z'
   - 
-    close: 2019-06-20T09:30:00.000Z
-    day: Thursday
-    open: 2019-06-20T08:00:00.000Z
+    close: '2019-06-20T09: 30: 00.000Z'
+    day: پنج شنبه
+    open: '2019-06-20T08: 00: 00.000Z'
   - 
-    close: 2019-06-20T09:30:00.000Z
-    day: Friday
-    open: 2019-06-20T08:00:00.000Z
+    close: '2019-06-20T09: 30: 00.000Z'
+    day: جمعه
+    open: '2019-06-20T08: 00: 00.000Z'
 location:
-  description: YSFR gym
-  geo: '{ "type": "Point", "coordinates": [26.5172195, 39.1297939] }'
-  showMap: false
+  description: سالن بدنسازی YSFR
+  geo: '{"نوع": "نقطه" ، "مختصات": [26.5172195 ، 39.1297939]}'
+  showMap: نادرست
 ---
 
-Bodybuilding and weights class every day at the Yoga and Sport for Refugees (YSFR) gym
+کلاس بدن سازی و وزن هر روز در سالن بدنسازی یوگا و ورزش برای پناهندگان (YSFR)
