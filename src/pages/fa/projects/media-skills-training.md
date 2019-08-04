@@ -1,36 +1,36 @@
 ---
-title: Media skills training
+title: آموزش مهارت های رسانه ای
 cover: /img/media-class.jpg
 categories:
-  - Community centre
-  - 'Photography, video and audio projects'
+  - مرکز جامعه
+  - 'پروژه های عکاسی ، ویدئویی و صوتی'
 openingTimes:
   - 
-    close: 2019-05-16T17:30:00.000Z
-    day: Monday
-    open: 2019-05-16T13:30:00.000Z
+    close: '2019-05-16T17: 30: 00.000Z'
+    day: دوشنبه
+    open: '2019-05-16T13: 30: 00.000Z'
   - 
-    close: 2019-05-16T17:30:00.000Z
-    day: Tuesday
-    open: 2019-05-16T13:30:00.000Z
+    close: '2019-05-16T17: 30: 00.000Z'
+    day: سهشنبه
+    open: '2019-05-16T13: 30: 00.000Z'
   - 
-    close: 2019-05-16T17:30:00.000Z
-    day: Wednesday
-    open: 2019-05-16T13:30:00.000Z
+    close: '2019-05-16T17: 30: 00.000Z'
+    day: چهار شنبه
+    open: '2019-05-16T13: 30: 00.000Z'
   - 
-    close: 2019-05-16T17:30:00.000Z
-    day: Thursday
-    open: 2019-05-16T13:30:00.000Z
+    close: '2019-05-16T17: 30: 00.000Z'
+    day: پنج شنبه
+    open: '2019-05-16T13: 30: 00.000Z'
   - 
-    close: 2019-05-16T17:30:00.000Z
-    day: Friday
-    open: 2019-05-16T13:30:00.000Z
+    close: '2019-05-16T17: 30: 00.000Z'
+    day: جمعه
+    open: '2019-05-16T13: 30: 00.000Z'
 location:
-  description: Refugee Media Production studio at One Happy Family
-  geo: '{ "type": "Point", "coordinates": [26.5172195, 39.1297939] }'
-  showMap: false
+  description: استودیوی تولید رسانه ای پناهندگان در یک خانواده مبارک
+  geo: '{"نوع": "نقطه" ، "مختصات": [26.5172195 ، 39.1297939]}'
+  showMap: نادرست
 ---
 
-Come and learn photography, video production, sound recording and graphic design, working with a team of professional and dedicated teachers.
+بیایید و عکاسی ، تولید فیلم ، ضبط صدا و طراحی گرافیک را بیاموزید ، با تیمی از معلمان حرفه ای و اختصاصی کار کنید.
 
-Together here we have created short films, documentaries, photography exhibitions, recorded live music at One Happy Family and produced a magazine which was written, researched and designed by refugees living in Lesvos.
+با هم در اینجا فیلم های کوتاه ، مستند ، نمایشگاه عکاسی ایجاد کرده ایم ، موسیقی زنده را در یک خانواده مبارک ضبط کرده ایم و مجله ای تولید کرده ایم که توسط پناهجویانی که در لسوس زندگی می کنند ، نوشته شده ، تحقیق و طراحی شده است.
