@@ -27,8 +27,6 @@ openingTimes:
     open: 2019-05-11T11:00:00.000Z
 location:
   description: à une famille heureuse
-  geo: '{ "type": "Point", "coordonnées": [26.5172195, 39.1297939] }'
-  showMap: faux
 ---
 
 École de Paix
