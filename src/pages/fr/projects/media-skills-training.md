@@ -27,8 +27,6 @@ openingTimes:
     open: 2019-05-16T13:30:00.000Z
 location:
   description: Studio de production de médias de réfugiés chez une famille heureuse
-  geo: '{ "type": "Point", "coordonnées": [26.5172195, 39.1297939] }'
-  showMap: faux
 ---
 
 Venez apprendre la photographie, la production vidéo, l'enregistrement sonore et le design graphique, en travaillant avec une équipe d'enseignants professionnels et dévoués.
