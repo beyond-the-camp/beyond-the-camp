@@ -1,37 +1,37 @@
 ---
-title: Martial Arts classes
+title: کلاس های هنرهای رزمی
 cover: /img/kung-fu.jpg
 categories:
-  - Sports/ Gym
+  - ورزش / بدنسازی
 openingTimes:
   - 
-    close: 2019-06-21T15:00:00.000Z
-    day: Monday
-    open: 2019-06-21T11:00:00.000Z
+    close: '2019-06-21T15: 00: 00.000Z'
+    day: دوشنبه
+    open: '2019-06-21T11: 00: 00.000Z'
   - 
-    close: 2019-06-21T19:00:00.000Z
-    day: Monday
-    open: 2019-06-21T16:00:00.000Z
+    close: '2019-06-21T19: 00: 00.000Z'
+    day: دوشنبه
+    open: '2019-06-21T16: 00: 00.000Z'
   - 
-    close: 2019-06-21T15:00:00.000Z
-    day: Wednesday
-    open: 2019-06-21T11:00:00.000Z
+    close: '2019-06-21T15: 00: 00.000Z'
+    day: چهار شنبه
+    open: '2019-06-21T11: 00: 00.000Z'
   - 
-    close: 2019-06-21T19:00:00.000Z
-    day: Wednesday
-    open: 2019-06-21T16:30:00.000Z
+    close: '2019-06-21T19: 00: 00.000Z'
+    day: چهار شنبه
+    open: '2019-06-21T16: 30: 00.000Z'
   - 
-    close: 2019-06-21T15:00:00.000Z
-    day: Friday
-    open: 2019-06-21T11:00:00.000Z
+    close: '2019-06-21T15: 00: 00.000Z'
+    day: جمعه
+    open: '2019-06-21T11: 00: 00.000Z'
   - 
-    close: 2019-06-21T19:00:00.000Z
-    day: Friday
-    open: 2019-06-21T16:30:00.000Z
+    close: '2019-06-21T19: 00: 00.000Z'
+    day: جمعه
+    open: '2019-06-21T16: 30: 00.000Z'
 location:
-  description: at Yoga and Sport for Refugees (YSFR) Gym
-  geo: '{ "type": "Point", "coordinates": [26.5172195, 39.1297939] }'
-  showMap: false
+  description: در سالن بدنسازی یوگا و ورزش برای پناهندگان (YSFR)
+  geo: '{"نوع": "نقطه" ، "مختصات": [26.5172195 ، 39.1297939]}'
+  showMap: نادرست
 ---
 
-Learn Taekwondo, Muay Thai, and Kung Fu in fun and safe classes at the Yoga and Sport for Refugees (YSFR) gym! Visit the gym for information on specific classes
+Taekwondo ، Muay Thai و Kung Fu را در کلاسهای سرگرم کننده و ایمن در سالن بدنسازی یوگا و ورزش برای پناهندگان (YSFR) بیاموزید! برای اطلاعات در مورد کلاسهای خاص به سالن ورزشی مراجعه کنید
