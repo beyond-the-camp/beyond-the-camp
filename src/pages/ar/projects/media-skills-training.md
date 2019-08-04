@@ -1,36 +1,36 @@
 ---
-title: Media skills training
+title: التدريب على المهارات الإعلامية
 cover: /img/media-class.jpg
 categories:
-  - Community centre
-  - 'Photography, video and audio projects'
+  - مركز المجتمع
+  - 'مشاريع التصوير الفوتوغرافي والفيديو والصوت'
 openingTimes:
   - 
-    close: 2019-05-16T17:30:00.000Z
-    day: Monday
-    open: 2019-05-16T13:30:00.000Z
+    close: '2019-05-16T17: 30: 00.000Z'
+    day: الإثنين
+    open: '2019-05-16T13: 30: 00.000Z'
   - 
-    close: 2019-05-16T17:30:00.000Z
-    day: Tuesday
-    open: 2019-05-16T13:30:00.000Z
+    close: '2019-05-16T17: 30: 00.000Z'
+    day: الثلاثاء
+    open: '2019-05-16T13: 30: 00.000Z'
   - 
-    close: 2019-05-16T17:30:00.000Z
-    day: Wednesday
-    open: 2019-05-16T13:30:00.000Z
+    close: '2019-05-16T17: 30: 00.000Z'
+    day: الأربعاء
+    open: '2019-05-16T13: 30: 00.000Z'
   - 
-    close: 2019-05-16T17:30:00.000Z
-    day: Thursday
-    open: 2019-05-16T13:30:00.000Z
+    close: '2019-05-16T17: 30: 00.000Z'
+    day: الخميس
+    open: '2019-05-16T13: 30: 00.000Z'
   - 
-    close: 2019-05-16T17:30:00.000Z
-    day: Friday
-    open: 2019-05-16T13:30:00.000Z
+    close: '2019-05-16T17: 30: 00.000Z'
+    day: يوم الجمعة
+    open: '2019-05-16T13: 30: 00.000Z'
 location:
-  description: Refugee Media Production studio at One Happy Family
-  geo: '{ "type": "Point", "coordinates": [26.5172195, 39.1297939] }'
-  showMap: false
+  description: استوديو الإنتاج الإعلامي للاجئين في عائلة واحدة سعيدة
+  geo: '{"النوع": "النقطة" ، "الإحداثيات": [26.5172195 ، 39.1297939]}'
+  showMap: خاطئة
 ---
 
-Come and learn photography, video production, sound recording and graphic design, working with a team of professional and dedicated teachers.
+تعال وتعلم التصوير الفوتوغرافي وإنتاج الفيديو وتسجيل الصوت وتصميم الرسوم ، والعمل مع فريق من المعلمين المحترفين والمتفانين.
 
-Together here we have created short films, documentaries, photography exhibitions, recorded live music at One Happy Family and produced a magazine which was written, researched and designed by refugees living in Lesvos.
+لقد أنشأنا معًا أفلامًا قصيرة وأفلام وثائقية ومعارض للتصوير الفوتوغرافي ، وسجلنا الموسيقى الحية في One Happy Family وأنتجنا مجلة كتبها وبحثها وصممها لاجئون يعيشون في ليسفوس.
