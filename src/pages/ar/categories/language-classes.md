@@ -1,4 +1,4 @@
 ---
-title: 'Language classes'
+title: 'صفوف اللغة'
 ---
 
