@@ -1,36 +1,36 @@
 ---
-title: Boxing and kickboxing (adults)
+title: بوکس و کیک بوکس (بزرگسالان)
 cover: /img/kickboxing.jpg
 categories:
-  - Sports/ Gym
-  - For women
+  - ورزش / بدنسازی
+  - برای خانم ها
 openingTimes:
   - 
-    close: 2019-06-23T16:30:00.000Z
-    day: Monday
-    open: 2019-06-23T15:00:00.000Z
+    close: '2019-06-23T16: 30: 00.000Z'
+    day: دوشنبه
+    open: '2019-06-23T15: 00: 00.000Z'
   - 
-    close: 2019-06-23T17:00:00.000Z
-    day: Tuesday
-    open: 2019-06-23T13:00:00.000Z
+    close: '2019-06-23T17: 00: 00.000Z'
+    day: سهشنبه
+    open: '2019-06-23T13: 00: 00.000Z'
   - 
-    close: 2019-06-23T16:30:00.000Z
-    day: Wednesday
-    open: 2019-06-23T15:00:00.000Z
+    close: '2019-06-23T16: 30: 00.000Z'
+    day: چهار شنبه
+    open: '2019-06-23T15: 00: 00.000Z'
   - 
-    close: 2019-06-23T16:00:00.000Z
-    day: Thursday
-    open: 2019-06-23T13:00:00.000Z
+    close: '2019-06-23T16: 00: 00.000Z'
+    day: پنج شنبه
+    open: '2019-06-23T13: 00: 00.000Z'
   - 
-    close: 2019-06-23T16:30:00.000Z
-    day: Friday
-    open: 2019-06-23T15:00:00.000Z
+    close: '2019-06-23T16: 30: 00.000Z'
+    day: جمعه
+    open: '2019-06-23T15: 00: 00.000Z'
 location:
-  description: at Yoga and Sport for Refugees (YSFR) Gym
-  geo: '{ "type": "Point", "coordinates": [26.5172195, 39.1297939] }'
-  showMap: false
+  description: در سالن بدنسازی یوگا و ورزش برای پناهندگان (YSFR)
+  geo: '{"نوع": "نقطه" ، "مختصات": [26.5172195 ، 39.1297939]}'
+  showMap: نادرست
 ---
 
-Join the boxing/ kickboxing class at the Yoga and Sport for Refugees (YSFR) gym. Improve your fitness and meet some new friends too! Boxing classes on Monday, Wednesday and Friday.
+به کلاس بوکس / کیک بوکسینگ در سالن ورزشی یوگا و ورزش برای پناهندگان (YSFR) بپیوندید. تناسب اندام خود را بهبود ببخشید و با برخی از دوستان جدید نیز دیدار کنید! کلاس های بوکس در روزهای دوشنبه ، چهارشنبه و جمعه.
 
-Kickboxing classes on Tuesday and Thursday. Women's kickboxing classes on Tuesday and Thursday at 4pm.
+کلاس های کیک بوکسینگ در سه شنبه و پنجشنبه. کلاس های کیک بوکسینگ بانوان روزهای سه شنبه و پنجشنبه ساعت 4 عصر.
