@@ -1,27 +1,27 @@
 ---
-title: Running group
+title: مجموعة الجري
 cover: /img/running-1.jpg
 categories:
-  - Sports/ Gym
-  - For women
-  - Community centre
+  - نادي رياضي
+  - للنساء
+  - مركز المجتمع
 openingTimes:
   - 
-    close: 2019-06-23T18:00:00.000Z
-    day: Monday
-    open: 2019-06-23T16:30:00.000Z
+    close: '2019-06-23T18: 00: 00.000Z'
+    day: الإثنين
+    open: '2019-06-23T16: 30: 00.000Z'
   - 
-    close: 2019-06-23T18:00:00.000Z
-    day: Wednesday
-    open: 2019-06-23T16:30:00.000Z
+    close: '2019-06-23T18: 00: 00.000Z'
+    day: الأربعاء
+    open: '2019-06-23T16: 30: 00.000Z'
   - 
-    close: 2019-06-23T18:00:00.000Z
-    day: Friday
-    open: 2019-06-23T16:30:00.000Z
+    close: '2019-06-23T18: 00: 00.000Z'
+    day: يوم الجمعة
+    open: '2019-06-23T16: 30: 00.000Z'
 location:
-  description: Meet the group at Yoga and Sport for Refugees (YSFR) Gym
-  geo: '{ "type": "Point", "coordinates": [26.5172195, 39.1297939] }'
-  showMap: false
+  description: قابل المجموعة في نادي اليوغا والرياضة للاجئين (YSFR)
+  geo: '{"النوع": "النقطة" ، "الإحداثيات": [26.5172195 ، 39.1297939]}'
+  showMap: خاطئة
 ---
 
-Running is a great way to exercise and meet new friends. Join the Yoga and Sport for Refugees (YSFR) running group on Mondays, Wednesdays and Fridays.
+الجري هو وسيلة رائعة لممارسة ومقابلة أصدقاء جدد. انضم إلى مجموعة الجري اليوغا والرياضة من أجل اللاجئين (YSFR) يومي الاثنين والأربعاء والجمعة.
