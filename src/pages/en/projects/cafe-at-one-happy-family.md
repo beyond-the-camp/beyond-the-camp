@@ -38,7 +38,6 @@ openingTimes:
     open: 2019-06-21T16:00:00.000Z
 location:
   description: at One Happy Family
-  geo: '{"type":"Point","coordinates":[31.3022511,24.5015082]}'
-  showMap: false
 ---
+
 A nice environment to socialise and relax. Coffee, tea and other drinks can be bought with drachmas (get these from the bank at One Happy Family)

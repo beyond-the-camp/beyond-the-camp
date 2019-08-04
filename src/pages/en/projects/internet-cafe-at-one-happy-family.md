@@ -37,7 +37,6 @@ openingTimes:
     open: 2019-06-21T16:00:00.000Z
 location:
   description: at One Happy Family
-  geo: '{ "type": "Point", "coordinates": [26.5172195, 39.1297939] }'
-  showMap: false
 ---
+
 Free internet access, printing, making copies and computer classes. Visit us for more details.

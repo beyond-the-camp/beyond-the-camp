@@ -22,10 +22,9 @@ openingTimes:
     open: 2019-05-16T11:00:00.000Z
 location:
   description: Low-tech Makerspace at One Happy Family
-  geo: '{ "type": "Point", "coordinates": [26.5172195, 39.1297939] }'
-  showMap: false
 ---
-The Low-tech Makerspace is open every day of the week. You can borrow tools or work on your manual skills, and learn to fix bikes, phones, headsets, speakers, sawing machines or anything else! 
+
+The Low-tech Makerspace is open every day of the week. You can borrow tools or work on your manual skills, and learn to fix bikes, phones, headsets, speakers, sawing machines or anything else!
 
 On Tuesdays and Thursdays we will be there to offer advice and spare parts for your projects.
 

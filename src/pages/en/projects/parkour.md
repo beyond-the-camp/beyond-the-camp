@@ -12,7 +12,6 @@ openingTimes:
     open: 2019-06-23T11:00:00.000Z
 location:
   description: at Yoga and Sport for Refugees (YSFR) Gym
-  geo: '{ "type": "Point", "coordinates": [26.5172195, 39.1297939] }'
-  showMap: false
 ---
+
 Learn Parkour at the Yoga and Sport for Refugees (YSFR) gym. Improve your fitness and meet some new friends too!

@@ -21,7 +21,6 @@ openingTimes:
     open: 2019-06-20T08:00:00.000Z
 location:
   description: YSFR gym
-  geo: '{ "type": "Point", "coordinates": [26.5172195, 39.1297939] }'
-  showMap: false
 ---
+
 Bodybuilding and weights class every day at the Yoga and Sport for Refugees (YSFR) gym

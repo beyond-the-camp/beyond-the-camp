@@ -22,7 +22,6 @@ openingTimes:
     open: 2019-06-20T12:00:00.000Z
 location:
   description: 'At One Happy Family, YSFR Yoga Tent'
-  geo: '{ "type": "Point", "coordinates": [26.5172195, 39.1297939] }'
-  showMap: false
 ---
+
 Yoga classes with Yoga and Sport for Refugees (YSFR) for men with friendly and professional teachers

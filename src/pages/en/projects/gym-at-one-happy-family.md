@@ -22,10 +22,7 @@ openingTimes:
     open: 2019-06-09T11:30:00.000Z
 location:
   description: At One Happy Family
-  geo: '{ "type": "Point", "coordinates": [26.5172195, 39.1297939] }'
-  showMap: false
 ---
-
 
 The Gym is equipped with various weights and other training material, so visitors can engage in sports activities. It is operated entirely by people from the refugee camps. They write training plans, offer Taekwando and kick-box sessions and organize running groups.
 

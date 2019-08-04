@@ -24,7 +24,6 @@ openingTimes:
     open: 2019-06-21T16:30:00.000Z
 location:
   description: at Yoga and Sport for Refugees (YSFR) Gym
-  geo: '{ "type": "Point", "coordinates": [26.5172195, 39.1297939] }'
-  showMap: false
 ---
+
 Learn Taekwondo, Muay Thai, and Kung Fu in fun and safe classes at the Yoga and Sport for Refugees (YSFR) gym! Visit the gym for information on specific classes

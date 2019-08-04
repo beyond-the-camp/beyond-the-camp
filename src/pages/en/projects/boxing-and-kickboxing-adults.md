@@ -22,9 +22,8 @@ openingTimes:
     open: 2019-06-23T15:00:00.000Z
 location:
   description: at Yoga and Sport for Refugees (YSFR) Gym
-  geo: '{ "type": "Point", "coordinates": [26.5172195, 39.1297939] }'
-  showMap: false
 ---
-Join the boxing/ kickboxing class at the Yoga and Sport for Refugees (YSFR) gym. Improve your fitness and meet some new friends too! Boxing classes on Monday, Wednesday and Friday. 
+
+Join the boxing/ kickboxing class at the Yoga and Sport for Refugees (YSFR) gym. Improve your fitness and meet some new friends too! Boxing classes on Monday, Wednesday and Friday.
 
 Kickboxing classes on Tuesday and Thursday. Women's kickboxing classes on Tuesday and Thursday at 4pm.

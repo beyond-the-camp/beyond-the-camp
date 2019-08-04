@@ -22,13 +22,12 @@ openingTimes:
     open: 2019-06-09T11:30:00.000Z
 location:
   description: At One Happy Family
-  geo: '{"type":"Point","coordinates":[26.5028149,39.1337207]}'
-  showMap: false
 ---
-Get a fresh new haircut! The barber shop is located right behind the cinema at One Happy Family.  
 
-Bring some drachmas (get them from the bank at One Happy Family).  
+Get a fresh new haircut! The barber shop is located right behind the cinema at One Happy Family.
 
-Make an appointment in the morning at the gate. 
+Bring some drachmas (get them from the bank at One Happy Family).
+
+Make an appointment in the morning at the gate.
 
 Wednesday is Women's day.
