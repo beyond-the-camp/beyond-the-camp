@@ -1,34 +1,34 @@
 ---
-title: Lunch at One Happy Family
+title: الغداء في عائلة واحدة سعيدة
 cover: /img/eating_room_square.jpg
 categories:
-  - Community centre
-  - Food/ Drink
+  - مركز المجتمع
+  - طعام شراب
 openingTimes:
   - 
-    close: 2019-06-09T16:00:00.000Z
-    day: Monday
-    open: 2019-06-09T15:00:00.000Z
+    close: '2019-06-09T16: 00: 00.000Z'
+    day: الإثنين
+    open: '2019-06-09T15: 00: 00.000Z'
   - 
-    close: 2019-06-09T16:00:00.000Z
-    day: Tuesday
-    open: 2019-06-09T15:00:00.000Z
+    close: '2019-06-09T16: 00: 00.000Z'
+    day: الثلاثاء
+    open: '2019-06-09T15: 00: 00.000Z'
   - 
-    close: 2019-06-09T16:00:00.000Z
-    day: Wednesday
-    open: 2019-06-09T15:00:00.000Z
+    close: '2019-06-09T16: 00: 00.000Z'
+    day: الأربعاء
+    open: '2019-06-09T15: 00: 00.000Z'
   - 
-    close: 2019-06-09T16:00:00.000Z
-    day: Thursday
-    open: 2019-06-09T15:00:00.000Z
+    close: '2019-06-09T16: 00: 00.000Z'
+    day: الخميس
+    open: '2019-06-09T15: 00: 00.000Z'
   - 
-    close: 2019-06-09T16:00:00.000Z
-    day: Friday
-    open: 2019-06-09T15:00:00.000Z
+    close: '2019-06-09T16: 00: 00.000Z'
+    day: يوم الجمعة
+    open: '2019-06-09T15: 00: 00.000Z'
 location:
-  description: at One Happy Family
-  geo: '{ "type": "Point", "coordinates": [26.5172195, 39.1297939] }'
-  showMap: false
+  description: في عائلة واحدة سعيدة
+  geo: '{"النوع": "النقطة" ، "الإحداثيات": [26.5172195 ، 39.1297939]}'
+  showMap: خاطئة
 ---
 
-Delicious lunch is served in the dining room at One Happy family every day at 4pm. You may sit in the dining area or in one of the many other seating options at the centre.
+يتم تقديم وجبة غداء لذيذة في غرفة الطعام في One Happy family كل يوم في الساعة 4 مساءً. يمكنك الجلوس في منطقة تناول الطعام أو في أحد خيارات الجلوس العديدة في المركز.
