@@ -1,36 +1,36 @@
 ---
-title: School
+title: مدرسه
 cover: /img/school-of-peace-400x400-2-.jpg
 categories:
-  - Community centre
-  - Kids
+  - مرکز جامعه
+  - بچه ها
 openingTimes:
   - 
-    close: 2019-05-11T18:00:00.000Z
-    day: Monday
-    open: 2019-05-11T11:00:00.000Z
+    close: '2019-05-11T18: 00: 00.000Z'
+    day: دوشنبه
+    open: '2019-05-11T11: 00: 00.000Z'
   - 
-    close: 2019-05-11T18:00:00.000Z
-    day: Tuesday
-    open: 2019-05-11T11:00:00.000Z
+    close: '2019-05-11T18: 00: 00.000Z'
+    day: سهشنبه
+    open: '2019-05-11T11: 00: 00.000Z'
   - 
-    close: 2019-05-11T18:00:00.000Z
-    day: Wednesday
-    open: 2019-05-11T11:00:00.000Z
+    close: '2019-05-11T18: 00: 00.000Z'
+    day: چهار شنبه
+    open: '2019-05-11T11: 00: 00.000Z'
   - 
-    close: 2019-05-11T18:00:00.000Z
-    day: Thursday
-    open: 2019-05-11T11:00:00.000Z
+    close: '2019-05-11T18: 00: 00.000Z'
+    day: پنج شنبه
+    open: '2019-05-11T11: 00: 00.000Z'
   - 
-    close: 2019-05-11T18:00:00.000Z
-    day: Friday
-    open: 2019-05-11T11:00:00.000Z
+    close: '2019-05-11T18: 00: 00.000Z'
+    day: جمعه
+    open: '2019-05-11T11: 00: 00.000Z'
 location:
-  description: at One Happy Family
-  geo: '{ "type": "Point", "coordinates": [26.5172195, 39.1297939] }'
-  showMap: false
+  description: در یک خانواده مبارک
+  geo: '{"نوع": "نقطه" ، "مختصات": [26.5172195 ، 39.1297939]}'
+  showMap: نادرست
 ---
 
-School of Peace
+مدرسه صلح
 
-Info on signing up your child...
+اطلاعات مربوط به ثبت نام فرزندتان ...
