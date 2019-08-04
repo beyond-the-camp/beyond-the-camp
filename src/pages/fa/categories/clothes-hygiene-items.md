@@ -1,4 +1,4 @@
 ---
-title: Clothes/ hygiene items
+title: لباس / وسایل بهداشتی
 ---
 
