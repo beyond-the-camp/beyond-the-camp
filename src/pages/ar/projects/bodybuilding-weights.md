@@ -1,33 +1,33 @@
 ---
-title: Bodybuilding/weights
+title: كمال الاجسام / الأوزان
 cover: /img/ysfr.jpg
 categories:
-  - Sports/ Gym
+  - نادي رياضي
 openingTimes:
   - 
-    close: 2019-06-20T09:30:00.000Z
-    day: Monday
-    open: 2018-01-01T09:00:00.000Z
+    close: '2019-06-20T09: 30: 00.000Z'
+    day: الإثنين
+    open: '2018-01-01T09: 00: 00.000Z'
   - 
-    close: 2019-06-20T09:30:00.000Z
-    day: Tuesday
-    open: 2019-06-20T08:00:00.000Z
+    close: '2019-06-20T09: 30: 00.000Z'
+    day: الثلاثاء
+    open: '2019-06-20T08: 00: 00.000Z'
   - 
-    close: 2019-06-20T09:30:00.000Z
-    day: Wednesday
-    open: 2019-06-20T08:00:00.000Z
+    close: '2019-06-20T09: 30: 00.000Z'
+    day: الأربعاء
+    open: '2019-06-20T08: 00: 00.000Z'
   - 
-    close: 2019-06-20T09:30:00.000Z
-    day: Thursday
-    open: 2019-06-20T08:00:00.000Z
+    close: '2019-06-20T09: 30: 00.000Z'
+    day: الخميس
+    open: '2019-06-20T08: 00: 00.000Z'
   - 
-    close: 2019-06-20T09:30:00.000Z
-    day: Friday
-    open: 2019-06-20T08:00:00.000Z
+    close: '2019-06-20T09: 30: 00.000Z'
+    day: يوم الجمعة
+    open: '2019-06-20T08: 00: 00.000Z'
 location:
-  description: YSFR gym
-  geo: '{ "type": "Point", "coordinates": [26.5172195, 39.1297939] }'
-  showMap: false
+  description: YSFR الصالة الرياضية
+  geo: '{"النوع": "النقطة" ، "الإحداثيات": [26.5172195 ، 39.1297939]}'
+  showMap: خاطئة
 ---
 
-Bodybuilding and weights class every day at the Yoga and Sport for Refugees (YSFR) gym
+تمارين كمال الأجسام والأوزان يوميًا في صالة اليوغا والرياضة للاجئين (YSFR)
