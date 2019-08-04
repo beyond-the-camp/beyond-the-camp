@@ -27,8 +27,6 @@ openingTimes:
     open: 2019-05-16T11:00:00.000Z
 location:
   description: Makerspace de faible technologie chez une famille Happy
-  geo: '{ "type": "Point", "coordonnées": [26.5172195, 39.1297939] }'
-  showMap: faux
 ---
 
 Le Makerspace de faible technologie est ouvert tous les jours de la semaine. Vous pouvez emprunter des outils ou travailler sur vos compétences manuelles et apprendre à réparer des vélos, des téléphones, des casques, des haut-parleurs, des machines à sciage ou tout autre chose!
