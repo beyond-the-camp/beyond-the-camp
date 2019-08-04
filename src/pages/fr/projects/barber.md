@@ -27,8 +27,6 @@ openingTimes:
     open: 2019-06-09T11:30:00.000Z
 location:
   description: Chez une famille heureuse
-  geo: '{"type":"Point","coordonnées":[26.5028149,39.1337207]}'
-  showMap: faux
 ---
 
 Obtenez une nouvelle coupe de cheveux! Le salon de coiffure est situé juste derrière le cinéma de One Happy Family.
