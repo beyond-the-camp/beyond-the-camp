@@ -1,34 +1,34 @@
 ---
-title: Library at One Happy Family
+title: کتابخانه در یک خانواده مبارک
 cover: /img/library_square.jpg
 categories:
-  - Community centre
-  - Library
+  - مرکز جامعه
+  - کتابخانه
 openingTimes:
   - 
-    close: 2019-06-09T17:00:00.000Z
-    day: Monday
-    open: 2019-06-09T11:30:00.000Z
+    close: '2019-06-09T17: 00: 00.000Z'
+    day: دوشنبه
+    open: '2019-06-09T11: 30: 00.000Z'
   - 
-    close: 2019-06-09T17:00:00.000Z
-    day: Tuesday
-    open: 2019-06-09T11:30:00.000Z
+    close: '2019-06-09T17: 00: 00.000Z'
+    day: سهشنبه
+    open: '2019-06-09T11: 30: 00.000Z'
   - 
-    close: 2019-06-09T17:00:00.000Z
-    day: Wednesday
-    open: 2019-06-09T11:30:00.000Z
+    close: '2019-06-09T17: 00: 00.000Z'
+    day: چهار شنبه
+    open: '2019-06-09T11: 30: 00.000Z'
   - 
-    close: 2019-06-09T17:00:00.000Z
-    day: Thursday
-    open: 2019-06-09T11:30:00.000Z
+    close: '2019-06-09T17: 00: 00.000Z'
+    day: پنج شنبه
+    open: '2019-06-09T11: 30: 00.000Z'
   - 
-    close: 2019-06-09T17:00:00.000Z
-    day: Friday
-    open: 2019-06-09T11:30:00.000Z
+    close: '2019-06-09T17: 00: 00.000Z'
+    day: جمعه
+    open: '2019-06-09T11: 30: 00.000Z'
 location:
-  description: Near the School of Peace at One Happy Family
-  geo: '{ "type": "Point", "coordinates": [26.5172195, 39.1297939] }'
-  showMap: false
+  description: در نزدیکی مدرسه صلح در یک خانواده مبارک
+  geo: '{"نوع": "نقطه" ، "مختصات": [26.5172195 ، 39.1297939]}'
+  showMap: نادرست
 ---
 
-The library is a converted green VW bus next to the school at One Happy Family. Books are arranged by language, age, and type so you can find the perfect book for you or your child. There are also storytelling activities here - come and visit us to find out more.
+این کتابخانه یک اتوبوس VW سبز تبدیل شده در کنار مدرسه در یک خانواده مبارک است. کتاب ها بر اساس زبان ، سن و نوع تنظیم شده اند تا بتوانید کتاب مناسب را برای شما یا فرزندتان پیدا کنید. در اینجا نیز فعالیت های داستان پردازی وجود دارد - بیایید و برای اطلاعات بیشتر به ما مراجعه کنید.
