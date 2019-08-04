@@ -1,34 +1,34 @@
 ---
-title: Library at One Happy Family
+title: مكتبة في عائلة واحدة سعيدة
 cover: /img/library_square.jpg
 categories:
-  - Community centre
-  - Library
+  - مركز المجتمع
+  - مكتبة
 openingTimes:
   - 
-    close: 2019-06-09T17:00:00.000Z
-    day: Monday
-    open: 2019-06-09T11:30:00.000Z
+    close: '2019-06-09T17: 00: 00.000Z'
+    day: الإثنين
+    open: '2019-06-09T11: 30: 00.000Z'
   - 
-    close: 2019-06-09T17:00:00.000Z
-    day: Tuesday
-    open: 2019-06-09T11:30:00.000Z
+    close: '2019-06-09T17: 00: 00.000Z'
+    day: الثلاثاء
+    open: '2019-06-09T11: 30: 00.000Z'
   - 
-    close: 2019-06-09T17:00:00.000Z
-    day: Wednesday
-    open: 2019-06-09T11:30:00.000Z
+    close: '2019-06-09T17: 00: 00.000Z'
+    day: الأربعاء
+    open: '2019-06-09T11: 30: 00.000Z'
   - 
-    close: 2019-06-09T17:00:00.000Z
-    day: Thursday
-    open: 2019-06-09T11:30:00.000Z
+    close: '2019-06-09T17: 00: 00.000Z'
+    day: الخميس
+    open: '2019-06-09T11: 30: 00.000Z'
   - 
-    close: 2019-06-09T17:00:00.000Z
-    day: Friday
-    open: 2019-06-09T11:30:00.000Z
+    close: '2019-06-09T17: 00: 00.000Z'
+    day: يوم الجمعة
+    open: '2019-06-09T11: 30: 00.000Z'
 location:
-  description: Near the School of Peace at One Happy Family
-  geo: '{ "type": "Point", "coordinates": [26.5172195, 39.1297939] }'
-  showMap: false
+  description: بالقرب من مدرسة السلام في عائلة واحدة سعيدة
+  geo: '{"النوع": "النقطة" ، "الإحداثيات": [26.5172195 ، 39.1297939]}'
+  showMap: خاطئة
 ---
 
-The library is a converted green VW bus next to the school at One Happy Family. Books are arranged by language, age, and type so you can find the perfect book for you or your child. There are also storytelling activities here - come and visit us to find out more.
+المكتبة عبارة عن حافلة VW خضراء محولة بجوار المدرسة في One Happy Family. يتم ترتيب الكتب حسب اللغة والعمر والنوع حتى تتمكن من العثور على الكتاب المثالي لك أو لطفلك. هناك أيضًا أنشطة لسرد القصص هنا - تعال لزيارتنا لمعرفة المزيد.
