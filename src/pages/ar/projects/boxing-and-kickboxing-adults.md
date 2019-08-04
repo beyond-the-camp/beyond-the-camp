@@ -1,36 +1,36 @@
 ---
-title: Boxing and kickboxing (adults)
+title: الملاكمة والكيك بوكسينغ (للبالغين)
 cover: /img/kickboxing.jpg
 categories:
-  - Sports/ Gym
-  - For women
+  - نادي رياضي
+  - للنساء
 openingTimes:
   - 
-    close: 2019-06-23T16:30:00.000Z
-    day: Monday
-    open: 2019-06-23T15:00:00.000Z
+    close: '2019-06-23T16: 30: 00.000Z'
+    day: الإثنين
+    open: '2019-06-23T15: 00: 00.000Z'
   - 
-    close: 2019-06-23T17:00:00.000Z
-    day: Tuesday
-    open: 2019-06-23T13:00:00.000Z
+    close: '2019-06-23T17: 00: 00.000Z'
+    day: الثلاثاء
+    open: '2019-06-23T13: 00: 00.000Z'
   - 
-    close: 2019-06-23T16:30:00.000Z
-    day: Wednesday
-    open: 2019-06-23T15:00:00.000Z
+    close: '2019-06-23T16: 30: 00.000Z'
+    day: الأربعاء
+    open: '2019-06-23T15: 00: 00.000Z'
   - 
-    close: 2019-06-23T16:00:00.000Z
-    day: Thursday
-    open: 2019-06-23T13:00:00.000Z
+    close: '2019-06-23T16: 00: 00.000Z'
+    day: الخميس
+    open: '2019-06-23T13: 00: 00.000Z'
   - 
-    close: 2019-06-23T16:30:00.000Z
-    day: Friday
-    open: 2019-06-23T15:00:00.000Z
+    close: '2019-06-23T16: 30: 00.000Z'
+    day: يوم الجمعة
+    open: '2019-06-23T15: 00: 00.000Z'
 location:
-  description: at Yoga and Sport for Refugees (YSFR) Gym
-  geo: '{ "type": "Point", "coordinates": [26.5172195, 39.1297939] }'
-  showMap: false
+  description: في اليوغا والرياضة للاجئين (YSFR) الصالة الرياضية
+  geo: '{"النوع": "النقطة" ، "الإحداثيات": [26.5172195 ، 39.1297939]}'
+  showMap: خاطئة
 ---
 
-Join the boxing/ kickboxing class at the Yoga and Sport for Refugees (YSFR) gym. Improve your fitness and meet some new friends too! Boxing classes on Monday, Wednesday and Friday.
+انضم إلى فصل الملاكمة / الكيك بوكسينغ في صالة اليوغا والرياضة للاجئين (YSFR). تحسين لياقتك والتعرف على بعض الأصدقاء الجدد أيضا! فصول الملاكمة يومي الاثنين والأربعاء والجمعة.
 
-Kickboxing classes on Tuesday and Thursday. Women's kickboxing classes on Tuesday and Thursday at 4pm.
+دروس الكيك بوكسينغ يومي الثلاثاء والخميس. دروس الكيك بوكسينغ للسيدات يومي الثلاثاء والخميس الساعة 4 مساءً.
