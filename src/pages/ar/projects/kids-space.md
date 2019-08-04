@@ -1,51 +1,51 @@
 ---
-title: Kids space
+title: مساحة الاطفال
 cover: /img/kids-space.jpg
 categories:
-  - Children
+  - الأطفال
 openingTimes:
   - 
-    close: 2019-07-25T14:30:00.000Z
-    day: Monday
-    open: 2019-07-25T11:30:00.000Z
+    close: '2019-07-25T14: 30: 00.000Z'
+    day: الإثنين
+    open: '2019-07-25T11: 30: 00.000Z'
   - 
-    close: 2019-07-25T16:45:00.000Z
-    day: Monday
-    open: 2019-07-25T16:00:00.000Z
+    close: '2019-07-25T16: 45: 00.000Z'
+    day: الإثنين
+    open: '2019-07-25T16: 00: 00.000Z'
   - 
-    close: 2019-07-25T14:30:00.000Z
-    day: Tuesday
-    open: 2019-07-25T11:30:00.000Z
+    close: '2019-07-25T14: 30: 00.000Z'
+    day: الثلاثاء
+    open: '2019-07-25T11: 30: 00.000Z'
   - 
-    close: 2019-07-25T16:45:00.000Z
-    day: Tuesday
-    open: 2019-07-25T16:00:00.000Z
+    close: '2019-07-25T16: 45: 00.000Z'
+    day: الثلاثاء
+    open: '2019-07-25T16: 00: 00.000Z'
   - 
-    close: 2019-07-25T14:30:00.000Z
-    day: Wednesday
-    open: 2019-07-25T11:30:00.000Z
+    close: '2019-07-25T14: 30: 00.000Z'
+    day: الأربعاء
+    open: '2019-07-25T11: 30: 00.000Z'
   - 
-    close: 2019-07-25T16:45:00.000Z
-    day: Wednesday
-    open: 2019-07-25T16:00:00.000Z
+    close: '2019-07-25T16: 45: 00.000Z'
+    day: الأربعاء
+    open: '2019-07-25T16: 00: 00.000Z'
   - 
-    close: 2019-07-25T14:30:00.000Z
-    day: Thursday
-    open: 2019-07-25T11:30:00.000Z
+    close: '2019-07-25T14: 30: 00.000Z'
+    day: الخميس
+    open: '2019-07-25T11: 30: 00.000Z'
   - 
-    close: 2019-07-25T16:45:00.000Z
-    day: Thursday
-    open: 2019-07-25T16:00:00.000Z
+    close: '2019-07-25T16: 45: 00.000Z'
+    day: الخميس
+    open: '2019-07-25T16: 00: 00.000Z'
   - 
-    close: 2019-07-25T14:30:00.000Z
-    day: Friday
-    open: 2019-07-25T11:30:00.000Z
+    close: '2019-07-25T14: 30: 00.000Z'
+    day: يوم الجمعة
+    open: '2019-07-25T11: 30: 00.000Z'
   - 
-    close: 2019-07-25T16:45:00.000Z
-    day: Friday
-    open: 2019-07-25T16:00:00.000Z
+    close: '2019-07-25T16: 45: 00.000Z'
+    day: يوم الجمعة
+    open: '2019-07-25T16: 00: 00.000Z'
 location:
-  description: At One Happy Family
+  description: في عائلة واحدة سعيدة
 ---
 
-This is a safe space for all children up to the age of 4 to play, read books, make friends. Please make eye contact with the responsible volunteer when you bring your child.
+هذه مساحة آمنة لجميع الأطفال حتى عمر 4 سنوات للعب وقراءة الكتب وتكوين صداقات. إرضاء جعل العين الاتصال مع المتطوع مسؤول عند اهتمامكم طفل.
