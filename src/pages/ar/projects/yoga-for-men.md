@@ -1,34 +1,34 @@
 ---
-title: 'Yoga for men'
+title: 'اليوغا للرجال'
 cover: /img/yoga-men.jpg
 categories:
-  - Sports/ Gym
-  - Yoga
+  - نادي رياضي
+  - اليوغا
 openingTimes:
   - 
-    close: 2019-06-20T13:00:00.000Z
-    day: Monday
-    open: 2019-06-20T12:00:00.000Z
+    close: '2019-06-20T13: 00: 00.000Z'
+    day: الإثنين
+    open: '2019-06-20T12: 00: 00.000Z'
   - 
-    close: 2019-06-20T13:00:00.000Z
-    day: Tuesday
-    open: 2019-06-20T12:00:00.000Z
+    close: '2019-06-20T13: 00: 00.000Z'
+    day: الثلاثاء
+    open: '2019-06-20T12: 00: 00.000Z'
   - 
-    close: 2019-06-20T13:00:00.000Z
-    day: Wednesday
-    open: 2019-06-20T12:00:00.000Z
+    close: '2019-06-20T13: 00: 00.000Z'
+    day: الأربعاء
+    open: '2019-06-20T12: 00: 00.000Z'
   - 
-    close: 2019-06-20T13:00:00.000Z
-    day: Thursday
-    open: 2019-06-20T12:00:00.000Z
+    close: '2019-06-20T13: 00: 00.000Z'
+    day: الخميس
+    open: '2019-06-20T12: 00: 00.000Z'
   - 
-    close: 2019-06-20T13:00:00.000Z
-    day: Friday
-    open: 2019-06-20T12:00:00.000Z
+    close: '2019-06-20T13: 00: 00.000Z'
+    day: يوم الجمعة
+    open: '2019-06-20T12: 00: 00.000Z'
 location:
-  description: 'At One Happy Family, YSFR Yoga Tent'
-  geo: '{ "type": "Point", "coordinates": [26.5172195, 39.1297939] }'
-  showMap: false
+  description: 'في One Happy Family ، YSFR Yoga Tent'
+  geo: '{"النوع": "النقطة" ، "الإحداثيات": [26.5172195 ، 39.1297939]}'
+  showMap: خاطئة
 ---
 
-Yoga classes with Yoga and Sport for Refugees (YSFR) for men with friendly and professional teachers
+دروس اليوغا مع اليوغا والرياضة من أجل اللاجئين (YSFR) للرجال مع المعلمين ودية ومهنية
