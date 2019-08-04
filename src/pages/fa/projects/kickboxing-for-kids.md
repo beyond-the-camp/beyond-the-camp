@@ -1,22 +1,22 @@
 ---
-title: Kickboxing for kids
+title: کیک بوکسینگ برای بچه ها
 cover: /img/kickboxing-1.jpg
 categories:
-  - Sports/ Gym
-  - Children
+  - ورزش / بدنسازی
+  - فرزندان
 openingTimes:
   - 
-    close: 2019-06-20T11:00:00.000Z
-    day: Tuesday
-    open: 2019-06-20T09:30:00.000Z
+    close: '2019-06-20T11: 00: 00.000Z'
+    day: سهشنبه
+    open: '2019-06-20T09: 30: 00.000Z'
   - 
-    close: 2019-06-20T11:00:00.000Z
-    day: Thursday
-    open: 2019-06-20T09:30:00.000Z
+    close: '2019-06-20T11: 00: 00.000Z'
+    day: پنج شنبه
+    open: '2019-06-20T09: 30: 00.000Z'
 location:
-  description: at YSFR Gym
-  geo: '{ "type": "Point", "coordinates": [26.5172195, 39.1297939] }'
-  showMap: false
+  description: در سالن بدنسازی YSFR
+  geo: '{"نوع": "نقطه" ، "مختصات": [26.5172195 ، 39.1297939]}'
+  showMap: نادرست
 ---
 
-Safe and fun kickboxing class for kids at the Yoga and Sport for Refugees (YSFR) Gym
+کلاس کیک بوکسینگ ایمن و سرگرم کننده برای بچه ها در سالن بدنسازی یوگا و ورزش برای پناهندگان (YSFR)
