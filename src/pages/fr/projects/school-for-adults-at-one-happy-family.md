@@ -28,8 +28,6 @@ openingTimes:
     open: 2019-06-09T11:30:00.000Z
 location:
   description: Chez une famille heureuse
-  geo: '{ "type": "Point", "coordonnées": [26.5172195, 39.1297939] }'
-  showMap: faux
 ---
 
 Cours anglais et grec disponibles. Vous pouvez vous inscrire pour les cours pendant la dernière semaine de chaque mois. Pour plus de détails, veuillez vous adresser à la réception de l'information à une famille Happy.
