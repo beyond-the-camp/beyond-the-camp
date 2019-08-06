@@ -2,7 +2,7 @@
 title: Espace enfant
 cover: /img/kids-space.jpg
 categories:
-  - Enfants
+  - Enfants / adolescents
 openingTimes:
   - 
     close: 2019-07-25T14:30:00.000Z
