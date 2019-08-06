@@ -4,6 +4,7 @@ cover: /img/library_square.jpg
 categories:
   - مركز المجتمع
   - مكتبة
+  - الأطفال / المراهقين
 openingTimes:
   - 
     close: '2019-06-09T17: 00: 00.000Z'
