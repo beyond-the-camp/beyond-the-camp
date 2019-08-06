@@ -2,7 +2,7 @@
 title: فضای بچه ها
 cover: /img/kids-space.jpg
 categories:
-  - فرزندان
+  - کودکان / نوجوانان
 openingTimes:
   - 
     close: '2019-07-25T14: 30: 00.000Z'
