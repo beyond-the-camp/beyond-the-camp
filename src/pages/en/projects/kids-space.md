@@ -2,7 +2,7 @@
 title: Kids space
 cover: /img/kids-space.jpg
 categories:
-  - Children
+  - Children/ teenagers
 openingTimes:
   - close: 2019-07-25T14:30:00.000Z
     day: Monday
