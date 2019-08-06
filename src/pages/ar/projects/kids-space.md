@@ -2,7 +2,7 @@
 title: مساحة الاطفال
 cover: /img/kids-space.jpg
 categories:
-  - الأطفال
+  - الأطفال / المراهقين
 openingTimes:
   - 
     close: '2019-07-25T14: 30: 00.000Z'
