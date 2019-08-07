@@ -21,6 +21,10 @@ module.exports = {
       screens: {
         lg: '960px',
         xl: '960px'
+      },
+      flex: {
+        '2': '2 2 0%',
+        '3': '3 3 0%'
       }
     }
   },

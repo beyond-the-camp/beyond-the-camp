@@ -24,12 +24,16 @@ export const OpeningTimes = ({ days }: Props) => (
           const prevDay = index > 0 ? days[index - 1].day : undefined;
           const isSameDay = day.day === prevDay;
           return (
-            <div key={day.day} className="flex justify-start">
-              <div className="flex-1">{isSameDay ? '' : day.day}</div>
-              <div className="flex-1">
-                <FormattedTime value={day.open} />
-                {' - '}
-                <FormattedTime value={day.close} />
+            <div key={day.day} className="flex sm:px-5">
+              <div className="flex flex-2 sm:flex-1">
+                {isSameDay ? '' : day.day}
+              </div>
+              <div className="flex flex-3 sm:flex-1">
+                <span>
+                  <FormattedTime value={new Date(day.open)} />
+                  <span>{' - '}</span>
+                  <FormattedTime value={new Date(day.close)} />
+                </span>
               </div>
             </div>
           );
