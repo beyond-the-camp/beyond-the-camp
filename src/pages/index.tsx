@@ -4,8 +4,7 @@ import * as React from 'react';
 
 import { Link } from 'gatsby';
 
-import { Layout } from '../components/Layout';
-import { ListCard } from '../components/ListCard';
+import { Layout, ListCard } from '../components';
 import { getLanguageName, getLocaleList } from '../utils/languages';
 
 const storeLocale = (locale: string) => {

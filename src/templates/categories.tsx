@@ -2,8 +2,7 @@ import * as React from 'react';
 
 import { graphql, Link } from 'gatsby';
 
-import { Layout } from '../components/Layout';
-import { ListCard } from '../components/ListCard';
+import { Layout, ListCard } from '../components';
 import { LocaleType } from '../utils/types';
 
 interface CategoryNode {

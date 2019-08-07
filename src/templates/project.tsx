@@ -2,9 +2,14 @@ import * as React from 'react';
 
 import { graphql } from 'gatsby';
 
-import { HeroTitle, HeroMedia } from '../components/HeroTitle';
-import { Layout } from '../components/Layout';
-import { OpeningTimes } from '../components/OpeningTimes';
+import { HeroMedia } from '../components/HeroTitle';
+import {
+  HeroTitle,
+  Layout,
+  OpeningTimes,
+  Location,
+  Information
+} from '../components';
 import { LocaleType } from '../utils/types';
 
 interface OpeningTime {
@@ -34,74 +39,21 @@ export const ProjectTemplate = (props: TemplateProps) => {
       <HeroTitle media={cover} title={title} />
 
       <div className="max-w-3xl mx-auto px-4 text-center">
-        <article className="bg-white border p-4 mb-4">
-          <h3 className="text-center">Information</h3>
-          {html ? (
-            <div
-              dangerouslySetInnerHTML={{
-                __html: html
-              }}
-            />
-          ) : (
-            props.children
-          )}
+        <article className="mb-4">
+          <Information html={html}>{props.children}</Information>
         </article>
         <aside className="md:flex flex-row flex-wrap justify-between">
-          <div className="bg-white border p-4 mb-4 md:w-2/5 h-full md:mr-4 flex-grow">
+          <div className="mb-4 md:w-2/5 h-full md:mr-4 flex-grow">
             <OpeningTimes days={openingTimes} />
           </div>
-          <div className="bg-white border p-4 md:w-2/5 h-full flex-grow text-center">
-            <h3>Location</h3>
-            {locationText ? <p>{locationText}</p> : null}
+          <div className="md:w-2/5 h-full flex-grow text-center">
+            <Location text={locationText} />
           </div>
         </aside>
       </div>
     </div>
   );
 };
-
-interface PageProps {
-  data: {
-    project: {
-      fields: {
-        slug: string;
-        language: LocaleType;
-      };
-      frontmatter: {
-        title: string;
-        cover: HeroMedia;
-        categories: string[];
-        openingTimes: OpeningTime[];
-        location?: {
-          description: string;
-        };
-      };
-      html: string;
-    };
-  };
-}
-
-const Project = (props: PageProps) => {
-  const {
-    data: { project }
-  } = props;
-  const { html, frontmatter, fields } = project;
-  const { title, cover, openingTimes, location } = frontmatter;
-
-  return (
-    <Layout language={fields.language}>
-      <ProjectTemplate
-        title={title}
-        cover={cover}
-        html={html}
-        openingTimes={openingTimes}
-        location={location}
-      />
-    </Layout>
-  );
-};
-
-export default Project;
 
 export const projectQuery = graphql`
   query ProjectPageQuery($id: String!) {
@@ -129,3 +81,46 @@ export const projectQuery = graphql`
     }
   }
 `;
+
+interface ProjectQueryResult {
+  data: {
+    project: {
+      fields: {
+        slug: string;
+        language: LocaleType;
+      };
+      frontmatter: {
+        title: string;
+        cover: HeroMedia;
+        categories: string[];
+        openingTimes: OpeningTime[];
+        location?: {
+          description: string;
+        };
+      };
+      html: string;
+    };
+  };
+}
+
+const Project = (props: ProjectQueryResult) => {
+  const {
+    data: { project }
+  } = props;
+  const { html, frontmatter, fields } = project;
+  const { title, cover, openingTimes, location } = frontmatter;
+
+  return (
+    <Layout language={fields.language}>
+      <ProjectTemplate
+        title={title}
+        cover={cover}
+        html={html}
+        openingTimes={openingTimes}
+        location={location}
+      />
+    </Layout>
+  );
+};
+
+export default Project;
