@@ -8,14 +8,12 @@ interface OpeningTimes {
   close: string;
 }
 
-type OpeningDays = OpeningTimes[];
-
 interface Props {
-  days: OpeningDays;
+  days: OpeningTimes[];
 }
 
 export const OpeningTimes = ({ days }: Props) => (
-  <>
+  <div className="bg-white border p-4">
     <h3>
       <FormattedMessage id="OPENING_TIMES" />
     </h3>
@@ -36,5 +34,5 @@ export const OpeningTimes = ({ days }: Props) => (
             </div>
           );
         })}
-  </>
+  </div>
 );

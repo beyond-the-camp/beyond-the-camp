@@ -1,7 +1,7 @@
 import * as React from 'react';
 
 import { ProjectTemplate } from '../../templates/project';
-import { Layout } from '../../components/Layout';
+import { Layout } from '../../components';
 
 interface Props {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
