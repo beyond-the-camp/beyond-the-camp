@@ -1,4 +1,4 @@
 ---
-title: Alimentation/Boisson
+title: Food/ Drink
 ---
 
