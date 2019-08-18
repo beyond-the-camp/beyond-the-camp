@@ -1,4 +1,4 @@
 ---
-title: Centre communautaire
+title: Community centre
 ---
 
