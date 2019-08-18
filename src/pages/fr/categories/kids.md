@@ -1,4 +1,0 @@
----
-title: Enfants / adolescents
----
-

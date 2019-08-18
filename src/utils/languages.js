@@ -1,10 +1,7 @@
 /*eslint-env node*/
 
 const languages = {
-  en: { name: 'English', direction: 'ltr' },
-  fa: { name: 'فارسی', direction: 'rtl' },
-  ar: { name: 'العربية', direction: 'rtl' },
-  fr: { name: 'Français', direction: 'ltr' }
+  en: { name: 'English', direction: 'ltr' }
 };
 
 /**
@@ -43,7 +40,7 @@ function getTextDirection(locale) {
  * @returns {keyof languages}
  */
 function getPrimaryLocale() {
-  return 'en_GB';
+  return 'en';
 }
 
 module.exports = {

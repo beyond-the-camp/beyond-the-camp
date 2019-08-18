@@ -1,4 +1,0 @@
----
-title: Barber / tailor
----
-

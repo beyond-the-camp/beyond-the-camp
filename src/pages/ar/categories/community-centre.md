@@ -1,4 +1,0 @@
----
-title: Community centre
----
-

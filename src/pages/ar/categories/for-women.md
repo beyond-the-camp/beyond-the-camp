@@ -1,4 +1,0 @@
----
-title: For women
----
-
