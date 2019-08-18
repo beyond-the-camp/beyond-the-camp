@@ -1,4 +1,4 @@
 ---
-title: 'Cours de langue'
+title: 'Language classes'
 ---
 
