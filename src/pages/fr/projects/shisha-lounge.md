@@ -1,33 +1,33 @@
 ---
-title: Salon Shisha
+title: Shisha lounge
 cover: /img/sisha_square.jpg
 categories:
-  - Centre communautaire
+  - Community centre
 openingTimes:
   - 
     close: 2019-07-30T16:45:00.000Z
-    day: Lundi
+    day: Monday
     open: 2019-07-30T15:45:00.000Z
   - 
     close: 2019-07-30T16:45:00.000Z
-    day: Mardi
+    day: Tuesday
     open: 2019-07-30T15:45:00.000Z
   - 
     close: 2019-07-30T16:45:00.000Z
-    day: Mercredi
+    day: Wednesday
     open: 2019-07-30T15:45:00.000Z
   - 
     close: 2019-07-30T16:45:00.000Z
-    day: Jeudi
+    day: Thursday
     open: 2019-07-30T15:45:00.000Z
   - 
     close: 2019-07-30T16:45:00.000Z
-    day: Vendredi
+    day: Friday
     open: 2019-07-30T15:45:00.000Z
 location:
-  description: Chez une famille heureuse
+  description: At One Happy Family
 ---
 
-Partagez un shisha avec vos amis pour quelques drachmas (obtenez-les de la One Happy Family Bank)
+Share a shisha together with your friends for some drachmas (get these from the One Happy Family Bank)
 
-Plus de 18 secondes seulement.
+Strictly over 18s only.
