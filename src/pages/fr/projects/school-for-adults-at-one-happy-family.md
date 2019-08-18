@@ -1,33 +1,33 @@
 ---
-title: Ecole de langue pour adultes dans une famille Happy
+title: Language school for adults at One Happy Family
 cover: /img/school-adults.jpg
 categories:
-  - Ecole pour adultes ou enfants
-  - Centre communautaire
-  - 'Cours de langue'
+  - School for adults or children
+  - Community centre
+  - 'Language classes'
 openingTimes:
   - 
     close: 2019-06-09T14:00:00.000Z
-    day: Lundi
+    day: Monday
     open: 2019-06-09T11:30:00.000Z
   - 
     close: 2019-06-09T14:00:00.000Z
-    day: Mardi
+    day: Tuesday
     open: 2019-06-09T11:30:00.000Z
   - 
     close: 2019-06-09T14:00:00.000Z
-    day: Mercredi
+    day: Wednesday
     open: 2019-06-09T11:30:00.000Z
   - 
     close: 2019-06-09T14:00:00.000Z
-    day: Jeudi
+    day: Thursday
     open: 2019-06-09T11:30:00.000Z
   - 
     close: 2019-06-09T14:00:00.000Z
-    day: Vendredi
+    day: Friday
     open: 2019-06-09T11:30:00.000Z
 location:
-  description: Chez une famille heureuse
+  description: At One Happy Family
 ---
 
-Cours anglais et grec disponibles. Vous pouvez vous inscrire pour les cours pendant la dernière semaine de chaque mois. Pour plus de détails, veuillez vous adresser à la réception de l'information à une famille Happy.
+English and Greek classes available. You can register for classes during the last week of each month. For details please ask at the information desk at One Happy Family.
