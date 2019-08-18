@@ -1,25 +1,25 @@
 ---
-title: Groupe en cours
+title: Running group
 cover: /img/running-1.jpg
 categories:
-  - Sports / Gym
-  - Pour les femmes
-  - Centre communautaire
+  - Sports/ Gym
+  - For women
+  - Community centre
 openingTimes:
   - 
     close: 2019-06-23T18:00:00.000Z
-    day: Lundi
+    day: Monday
     open: 2019-06-23T16:30:00.000Z
   - 
     close: 2019-06-23T18:00:00.000Z
-    day: Mercredi
+    day: Wednesday
     open: 2019-06-23T16:30:00.000Z
   - 
     close: 2019-06-23T18:00:00.000Z
-    day: Vendredi
+    day: Friday
     open: 2019-06-23T16:30:00.000Z
 location:
-  description: Rencontrez le groupe à Yoga et Sport pour les réfugiés (YSFR) Gym
+  description: Meet the group at Yoga and Sport for Refugees (YSFR) Gym
 ---
 
-La course est un excellent moyen d'exercer et de rencontrer de nouveaux amis. Rejoignez le groupe Yoga et Sport for Refugees (YSFR) le lundi, le mercredi et le vendredi.
+Running is a great way to exercise and meet new friends. Join the Yoga and Sport for Refugees (YSFR) running group on Mondays, Wednesdays and Fridays.
