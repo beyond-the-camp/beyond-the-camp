@@ -1,53 +1,53 @@
 ---
-title: Café à une famille heureuse
+title: Cafe at One Happy Family
 cover: /img/cafe_square.jpg
 categories:
   - Cafe
-  - Centre communautaire
-  - Alimentation/Boisson
+  - Community centre
+  - Food/ Drink
 openingTimes:
   - 
     close: 2019-06-09T14:30:00.000Z
-    day: Lundi
+    day: Monday
     open: 2019-06-09T11:30:00.000Z
   - 
     close: 2019-06-21T16:45:00.000Z
-    day: Lundi
+    day: Monday
     open: 2019-06-21T16:00:00.000Z
   - 
     close: 2019-06-09T14:30:00.000Z
-    day: Mardi
+    day: Tuesday
     open: 2019-06-09T11:30:00.000Z
   - 
     close: 2019-06-21T16:45:00.000Z
-    day: Mardi
+    day: Tuesday
     open: 2019-06-21T16:00:00.000Z
   - 
     close: 2019-06-09T14:30:00.000Z
-    day: Mercredi
+    day: Wednesday
     open: 2019-06-09T11:30:00.000Z
   - 
     close: 2019-06-21T16:45:00.000Z
-    day: Mercredi
+    day: Wednesday
     open: 2019-06-21T16:00:00.000Z
   - 
     close: 2019-06-09T14:30:00.000Z
-    day: Jeudi
+    day: Thursday
     open: 2019-06-09T11:30:00.000Z
   - 
     close: 2019-06-21T16:45:00.000Z
-    day: Jeudi
+    day: Thursday
     open: 2019-06-21T16:00:00.000Z
   - 
     close: 2019-06-09T14:30:00.000Z
-    day: Vendredi
+    day: Friday
     open: 2019-06-09T11:30:00.000Z
   - 
     close: 2019-06-21T16:45:00.000Z
-    day: Vendredi
+    day: Friday
     open: 2019-06-21T16:00:00.000Z
 location:
-  description: à une famille heureuse
+  description: at One Happy Family
 ---
 
-Un environnement agréable pour socialiser et se détendre. Café, thé et autres boissons peuvent être achetés avec des tiroirs (vous pouvez les acheter à la banque chez une famille Happy)
+A nice environment to socialise and relax. Coffee, tea and other drinks can be bought with drachmas (get these from the bank at One Happy Family)
