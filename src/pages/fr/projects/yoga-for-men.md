@@ -1,32 +1,32 @@
 ---
-title: 'Yoga pour les hommes'
+title: 'Yoga for men'
 cover: /img/yoga-men.jpg
 categories:
-  - Sports / Gym
+  - Sports/ Gym
   - Yoga
 openingTimes:
   - 
     close: 2019-06-20T13:00:00.000Z
-    day: Lundi
+    day: Monday
     open: 2019-06-20T12:00:00.000Z
   - 
     close: 2019-06-20T13:00:00.000Z
-    day: Mardi
+    day: Tuesday
     open: 2019-06-20T12:00:00.000Z
   - 
     close: 2019-06-20T13:00:00.000Z
-    day: Mercredi
+    day: Wednesday
     open: 2019-06-20T12:00:00.000Z
   - 
     close: 2019-06-20T13:00:00.000Z
-    day: Jeudi
+    day: Thursday
     open: 2019-06-20T12:00:00.000Z
   - 
     close: 2019-06-20T13:00:00.000Z
-    day: Vendredi
+    day: Friday
     open: 2019-06-20T12:00:00.000Z
 location:
-  description: 'Chez une famille Happy, YSFR Yoga Tent'
+  description: 'At One Happy Family, YSFR Yoga Tent'
 ---
 
-Cours de Yoga avec Yoga et Sport pour les réfugiés (YSFR) pour les hommes avec des enseignants amicals et professionnels
+Yoga classes with Yoga and Sport for Refugees (YSFR) for men with friendly and professional teachers
