@@ -1,52 +1,52 @@
 ---
-title: Espace informatique / Cyber Café chez une famille Happy
+title: Computer space/ Cyber Cafe at One Happy Family
 cover: /img/cyber_cafe-400x400.jpg
 categories:
-  - Centre communautaire
-  - Ordinateurs
+  - Community centre
+  - Computers
 openingTimes:
   - 
     close: 2019-06-09T14:30:00.000Z
-    day: Lundi
+    day: Monday
     open: 2019-06-09T11:30:00.000Z
   - 
     close: 2019-06-21T16:45:00.000Z
-    day: Lundi
+    day: Monday
     open: 2019-06-21T16:00:00.000Z
   - 
     close: 2019-06-09T14:30:00.000Z
-    day: Mardi
+    day: Tuesday
     open: 2019-06-09T11:30:00.000Z
   - 
     close: 2019-06-21T16:45:00.000Z
-    day: Mardi
+    day: Tuesday
     open: 2019-06-21T16:00:00.000Z
   - 
     close: 2019-06-09T14:30:00.000Z
-    day: Mercredi
+    day: Wednesday
     open: 2019-06-09T11:30:00.000Z
   - 
     close: 2019-06-21T16:45:00.000Z
-    day: Mercredi
+    day: Wednesday
     open: 2019-06-21T16:00:00.000Z
   - 
     close: 2019-06-09T14:30:00.000Z
-    day: Jeudi
+    day: Thursday
     open: 2019-06-09T11:30:00.000Z
   - 
     close: 2019-06-21T16:45:00.000Z
-    day: Jeudi
+    day: Thursday
     open: 2019-06-21T16:00:00.000Z
   - 
     close: 2019-06-09T14:30:00.000Z
-    day: Vendredi
+    day: Friday
     open: 2019-06-09T11:30:00.000Z
   - 
     close: 2019-06-21T16:45:00.000Z
-    day: Vendredi
+    day: Friday
     open: 2019-06-21T16:00:00.000Z
 location:
-  description: à une famille heureuse
+  description: at One Happy Family
 ---
 
-Accès Internet gratuit, impression, copie et cours d'ordinateur. Pour plus de détails, visitez-nous.
+Free internet access, printing, making copies and computer classes. Visit us for more details.
