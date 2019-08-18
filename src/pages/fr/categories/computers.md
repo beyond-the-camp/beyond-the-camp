@@ -1,4 +1,4 @@
 ---
-title: Ordinateurs
+title: Computers
 ---
 
