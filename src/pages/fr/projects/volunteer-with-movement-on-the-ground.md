@@ -2,27 +2,27 @@
 title: Volunteer with Movement on the Ground
 cover: /img/movement.jpeg
 categories:
-  - Volontaire
+  - Volunteering
 openingTimes:
   - 
     close: 2019-08-06T17:00:00.000Z
-    day: Lundi
+    day: Monday
     open: 2019-08-06T08:00:00.000Z
   - 
     close: 2019-08-06T17:00:00.000Z
-    day: Mardi
+    day: Tuesday
     open: 2019-08-06T08:00:00.000Z
   - 
     close: 2019-08-06T17:00:00.000Z
-    day: Mercredi
+    day: Wednesday
     open: 2019-08-06T08:00:00.000Z
   - 
     close: 2019-08-06T17:00:00.000Z
-    day: Jeudi
+    day: Thursday
     open: 2019-08-06T08:00:00.000Z
   - 
     close: 2019-08-06T17:00:00.000Z
-    day: Vendredi
+    day: Friday
     open: 2019-08-06T08:00:00.000Z
 location:
   description: 'lower part of the Olive Grove, find the ISO BOX opposite SOMY'
