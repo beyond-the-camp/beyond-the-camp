@@ -30,17 +30,21 @@ const LanguagePage = () => (
         ))}
         <li key="fr" className="w-1/2 h-full">
           <Link to="" className="no-underline p-1 block md:p-3">
-            <ListCard>Français (Coming soon)</ListCard>
+            <ListCard>Français - Traduction à venir</ListCard>
           </Link>
         </li>
         <li key="ar" className="w-1/2 h-full">
           <Link to="" className="no-underline p-1 block md:p-3">
-            <ListCard>العربية (Coming soon)</ListCard>
+            <ListCard>
+              <span dir="rtl">العربية - قريباً</span>
+            </ListCard>
           </Link>
         </li>
         <li key="fa" className="w-1/2 h-full">
           <Link to="" className="no-underline p-1 block md:p-3">
-            <ListCard>فارسی (Coming soon)</ListCard>
+            <ListCard>
+              <span dir="rtl">فارسی - به زودی</span>
+            </ListCard>
           </Link>
         </li>
       </ul>

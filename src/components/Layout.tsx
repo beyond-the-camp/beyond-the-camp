@@ -12,13 +12,15 @@ import { addLocaleData, IntlProvider } from 'react-intl';
 
 // Locale data
 import * as enData from 'react-intl/locale-data/en';
+import * as frData from 'react-intl/locale-data/fr';
 
 // Messages
 import * as en from '../i18n/en.json';
+import * as fr from '../i18n/fr.json';
 
-const messages = { en };
+const messages = { en, fr };
 
-addLocaleData([...enData]);
+addLocaleData([...enData, ...frData]);
 
 interface Props {
   language: LocaleType;

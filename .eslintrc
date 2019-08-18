@@ -1,8 +1,5 @@
 {
   "parser": "@typescript-eslint/parser",
-  "parserOptions": {
-    "project": "./tsconfig.json"
-  },
   "plugins": ["@typescript-eslint", "react"],
   "settings": {
     "react": {
@@ -17,8 +14,9 @@
     "prettier"
   ],
   "rules": {
-    "@typescript-eslint/array-type": ["error", "array-simple"],
-    "@typescript-eslint/explicit-function-return-type": "off"
+    "@typescript-eslint/array-type": ["error", { "default": "array-simple" }],
+    "@typescript-eslint/explicit-function-return-type": "off",
+    "@typescript-eslint/ban-ts-ignore": "off"
   },
   "overrides": [
     {
