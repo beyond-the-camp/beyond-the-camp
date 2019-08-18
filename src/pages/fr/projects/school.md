@@ -1,34 +1,34 @@
 ---
-title: Ecole
-cover: /img/école-de-paix-400x400-2-.jpg
+title: School
+cover: /img/school-of-peace-400x400-2-.jpg
 categories:
-  - Centre communautaire
-  - Enfants
+  - Community centre
+  - Kids
 openingTimes:
   - 
     close: 2019-05-11T18:00:00.000Z
-    day: Lundi
+    day: Monday
     open: 2019-05-11T11:00:00.000Z
   - 
     close: 2019-05-11T18:00:00.000Z
-    day: Mardi
+    day: Tuesday
     open: 2019-05-11T11:00:00.000Z
   - 
     close: 2019-05-11T18:00:00.000Z
-    day: Mercredi
+    day: Wednesday
     open: 2019-05-11T11:00:00.000Z
   - 
     close: 2019-05-11T18:00:00.000Z
-    day: Jeudi
+    day: Thursday
     open: 2019-05-11T11:00:00.000Z
   - 
     close: 2019-05-11T18:00:00.000Z
-    day: Vendredi
+    day: Friday
     open: 2019-05-11T11:00:00.000Z
 location:
-  description: à une famille heureuse
+  description: at One Happy Family
 ---
 
-École de Paix
+School of Peace
 
-Info sur la signature de votre enfant...
+Info on signing up your child...
