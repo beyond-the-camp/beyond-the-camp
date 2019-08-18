@@ -1,34 +1,34 @@
 ---
-title: Formation des compétences des médias
+title: Media skills training
 cover: /img/media-class.jpg
 categories:
-  - Centre communautaire
-  - 'Photographie, vidéo et audio'
+  - Community centre
+  - 'Photography, video and audio projects'
 openingTimes:
   - 
     close: 2019-05-16T17:30:00.000Z
-    day: Lundi
+    day: Monday
     open: 2019-05-16T13:30:00.000Z
   - 
     close: 2019-05-16T17:30:00.000Z
-    day: Mardi
+    day: Tuesday
     open: 2019-05-16T13:30:00.000Z
   - 
     close: 2019-05-16T17:30:00.000Z
-    day: Mercredi
+    day: Wednesday
     open: 2019-05-16T13:30:00.000Z
   - 
     close: 2019-05-16T17:30:00.000Z
-    day: Jeudi
+    day: Thursday
     open: 2019-05-16T13:30:00.000Z
   - 
     close: 2019-05-16T17:30:00.000Z
-    day: Vendredi
+    day: Friday
     open: 2019-05-16T13:30:00.000Z
 location:
-  description: Studio de production de médias de réfugiés chez une famille heureuse
+  description: Refugee Media Production studio at One Happy Family
 ---
 
-Venez apprendre la photographie, la production vidéo, l'enregistrement sonore et le design graphique, en travaillant avec une équipe d'enseignants professionnels et dévoués.
+Come and learn photography, video production, sound recording and graphic design, working with a team of professional and dedicated teachers.
 
-Ensemble, nous avons créé des courts métrages, des documentaires, des expositions photographiques, enregistré de la musique en direct chez One Happy Family et produit un magazine écrit, recherché et conçu par des réfugiés vivant à Lesvos.
+Together here we have created short films, documentaries, photography exhibitions, recorded live music at One Happy Family and produced a magazine which was written, researched and designed by refugees living in Lesvos.
