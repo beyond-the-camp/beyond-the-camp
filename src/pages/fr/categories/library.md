@@ -1,4 +1,4 @@
 ---
-title: Bibliothèque
+title: Library
 ---
 
