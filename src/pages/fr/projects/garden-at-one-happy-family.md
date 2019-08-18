@@ -1,33 +1,33 @@
 ---
-title: Jardin d'une famille heureuse
+title: Garden at One Happy Family
 cover: /img/garden.jpg
 categories:
-  - Pour les femmes
-  - Centre communautaire
-  - Enfants
+  - For women
+  - Community centre
+  - Children
 openingTimes:
   - 
     close: 2019-07-30T18:00:00.000Z
-    day: Lundi
+    day: Monday
     open: 2019-07-30T11:00:00.000Z
   - 
     close: 2019-07-30T18:00:00.000Z
-    day: Mardi
+    day: Tuesday
     open: 2019-07-30T11:00:00.000Z
   - 
     close: 2019-07-30T18:00:00.000Z
-    day: Mercredi
+    day: Wednesday
     open: 2019-07-30T11:00:00.000Z
   - 
     close: 2019-07-30T18:00:00.000Z
-    day: Jeudi
+    day: Thursday
     open: 2019-07-30T11:00:00.000Z
   - 
     close: 2019-07-30T18:00:00.000Z
-    day: Vendredi
+    day: Friday
     open: 2019-07-30T11:00:00.000Z
 location:
-  description: Chez une famille heureuse
+  description: At One Happy Family
 ---
 
-Dans une famille joyeuse, vous trouverez le jardin, un endroit paisible et paisible pour vous détendre et profiter des plantes et des fleurs. Il y a également des activités régulières, y compris des cours de sciences pour les enfants, ainsi que des cours de plantation et de jardinage
+Within One Happy Family you'll find the garden, a peaceful and quiet place to relax and enjoy the plants and flowers. There are also regular activities here including science classes for children, as well as planting and gardening classes
