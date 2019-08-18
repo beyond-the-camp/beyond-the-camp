@@ -1,4 +1,4 @@
 ---
-title: 'Photographie, vidéo et audio'
+title: 'Photography, video and audio projects'
 ---
 
