@@ -1,32 +1,32 @@
 ---
-title: Déjeuner à une famille heureuse
+title: Lunch at One Happy Family
 cover: /img/eating_room_square.jpg
 categories:
-  - Centre communautaire
-  - Alimentation/Boisson
+  - Community centre
+  - Food/ Drink
 openingTimes:
   - 
     close: 2019-06-09T16:00:00.000Z
-    day: Lundi
+    day: Monday
     open: 2019-06-09T15:00:00.000Z
   - 
     close: 2019-06-09T16:00:00.000Z
-    day: Mardi
+    day: Tuesday
     open: 2019-06-09T15:00:00.000Z
   - 
     close: 2019-06-09T16:00:00.000Z
-    day: Mercredi
+    day: Wednesday
     open: 2019-06-09T15:00:00.000Z
   - 
     close: 2019-06-09T16:00:00.000Z
-    day: Jeudi
+    day: Thursday
     open: 2019-06-09T15:00:00.000Z
   - 
     close: 2019-06-09T16:00:00.000Z
-    day: Vendredi
+    day: Friday
     open: 2019-06-09T15:00:00.000Z
 location:
-  description: à une famille heureuse
+  description: at One Happy Family
 ---
 
-Le déjeuner délicieux est servi dans la salle à manger de la famille One Happy tous les jours à 16h00. Vous pouvez vous asseoir dans la salle à manger ou dans l'une des nombreuses autres options de sièges au centre.
+Delicious lunch is served in the dining room at One Happy family every day at 4pm. You may sit in the dining area or in one of the many other seating options at the centre.
