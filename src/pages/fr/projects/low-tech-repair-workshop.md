@@ -1,36 +1,36 @@
 ---
-title: Atelier de réparation / technique
+title: Low tech/ repair workshop
 cover: /img/low-tech.jpg
 categories:
-  - Centre communautaire
-  - Correction et construction de projets
+  - Community centre
+  - Fixing and building projects
 openingTimes:
   - 
     close: 2019-05-16T17:00:00.000Z
-    day: Lundi
+    day: Monday
     open: 2019-05-16T11:00:00.000Z
   - 
     close: 2019-05-16T17:00:00.000Z
-    day: Mardi
+    day: Tuesday
     open: 2019-05-16T11:00:00.000Z
   - 
     close: 2019-05-16T17:00:00.000Z
-    day: Mercredi
+    day: Wednesday
     open: 2019-05-16T11:00:00.000Z
   - 
     close: 2019-05-16T17:00:00.000Z
-    day: Jeudi
+    day: Thursday
     open: 2019-05-16T11:00:00.000Z
   - 
     close: 2019-05-16T17:00:00.000Z
-    day: Vendredi
+    day: Friday
     open: 2019-05-16T11:00:00.000Z
 location:
-  description: Makerspace de faible technologie chez une famille Happy
+  description: Low-tech Makerspace at One Happy Family
 ---
 
-Le Makerspace de faible technologie est ouvert tous les jours de la semaine. Vous pouvez emprunter des outils ou travailler sur vos compétences manuelles et apprendre à réparer des vélos, des téléphones, des casques, des haut-parleurs, des machines à sciage ou tout autre chose!
+The Low-tech Makerspace is open every day of the week. You can borrow tools or work on your manual skills, and learn to fix bikes, phones, headsets, speakers, sawing machines or anything else!
 
-Les mardis et jeudi, nous serons là pour vous offrir des conseils et des pièces de rechange pour vos projets.
+On Tuesdays and Thursdays we will be there to offer advice and spare parts for your projects.
 
-Le vendredi, nous avons un atelier où vous pouvez apprendre une nouvelle compétence ou créer un nouvel objet!
+On Fridays we have a workshop where you can learn a new skill or create a new object!
