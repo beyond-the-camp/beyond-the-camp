@@ -16,7 +16,7 @@ function getHomePath(lang) {
  * @param {string} category Slug identifying category.
  */
 function getCategoryPath(lang, category) {
-  return `${getHomePath(lang)}/p/${category}`;
+  return `${getHomePath(lang)}/${category}`;
 }
 
 /**
@@ -27,7 +27,7 @@ function getCategoryPath(lang, category) {
  * @param {string} project Slug identifying project.
  */
 function getProjectPath(lang, category, project) {
-  return `${getCategoryPath(lang, category)}/${project}`;
+  return `${getHomePath(lang)}/${project}`;
 }
 
 module.exports = {
