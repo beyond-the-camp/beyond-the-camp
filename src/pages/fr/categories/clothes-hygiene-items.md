@@ -1,4 +1,4 @@
 ---
-title: Cloches / articles d'hygiène
+title: Clothes/ hygiene items
 ---
 
