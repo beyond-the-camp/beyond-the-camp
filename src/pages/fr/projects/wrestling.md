@@ -1,23 +1,23 @@
 ---
-title: Enveloppement
-cover: /img/lutte-2.jpg
+title: Wrestling
+cover: /img/wrestling-2.jpg
 categories:
-  - Sports / Gym
+  - Sports/ Gym
 openingTimes:
   - 
     close: 2019-06-20T11:00:00.000Z
-    day: Lundi
+    day: Monday
     open: 2019-06-20T09:30:00.000Z
   - 
     close: 2019-06-20T11:00:00.000Z
-    day: Mercredi
+    day: Wednesday
     open: 2019-06-20T09:30:00.000Z
   - 
     close: 2019-06-20T11:00:00.000Z
-    day: Vendredi
+    day: Friday
     open: 2019-06-20T09:30:00.000Z
 location:
-  description: gymnase YSFR
+  description: YSFR gym
 ---
 
-Cours de lutte sûrs et amusants tous les jours à la salle de sport Yoga et Sport pour les réfugiés (YSFR)
+Safe and fun wrestling classes every day at the Yoga and Sport for Refugees (YSFR) gym
