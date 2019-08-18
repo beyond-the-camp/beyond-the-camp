@@ -1,33 +1,33 @@
 ---
-title: 'Yoga pour les femmes'
+title: 'Yoga for women'
 cover: /img/yoga-women.jpeg
 categories:
-  - Sports / Gym
+  - Sports/ Gym
   - Yoga
-  - Pour les femmes
+  - For women
 openingTimes:
   - 
     close: 2019-06-20T15:30:00.000Z
-    day: Lundi
+    day: Monday
     open: 2019-06-20T13:30:00.000Z
   - 
     close: 2019-06-20T14:30:00.000Z
-    day: Mardi
+    day: Tuesday
     open: 2019-06-20T13:30:00.000Z
   - 
     close: 2019-06-20T15:30:00.000Z
-    day: Mercredi
+    day: Wednesday
     open: 2019-06-20T13:30:00.000Z
   - 
     close: 2019-06-20T14:30:00.000Z
-    day: Jeudi
+    day: Thursday
     open: 2019-06-20T13:30:00.000Z
   - 
     close: 2019-06-20T15:30:00.000Z
-    day: Vendredi
+    day: Friday
     open: 2019-06-20T13:30:00.000Z
 location:
-  description: 'Chez une famille Happy, YSFR Yoga Tent'
+  description: 'At One Happy Family, YSFR Yoga Tent'
 ---
 
-Cours de Yoga avec Yoga et Sport pour les réfugiés (YSFR) pour les femmes avec des enseignants amicals et professionnels
+Yoga classes with Yoga and Sport for Refugees (YSFR) for women with friendly and professional teachers
