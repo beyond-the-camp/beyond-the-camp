@@ -1,32 +1,32 @@
 ---
-title: Acheter chez une famille Happy
+title: Shop at One Happy Family
 cover: /img/shop2.png
 categories:
-  - Centre communautaire
-  - Cloches / articles d'hygiène
+  - Community centre
+  - Clothes/ hygiene items
 openingTimes:
   - 
     close: 2019-07-30T16:30:00.000Z
-    day: Lundi
+    day: Monday
     open: 2019-07-30T16:00:00.000Z
   - 
     close: 2019-07-30T16:30:00.000Z
-    day: Mardi
+    day: Tuesday
     open: 2019-07-30T16:00:00.000Z
   - 
     close: 2019-07-30T16:30:00.000Z
-    day: Mercredi
+    day: Wednesday
     open: 2019-07-30T16:00:00.000Z
   - 
     close: 2019-07-30T16:30:00.000Z
-    day: Jeudi
+    day: Thursday
     open: 2019-07-30T16:00:00.000Z
   - 
     close: 2019-07-30T16:30:00.000Z
-    day: Vendredi
+    day: Friday
     open: 2019-07-30T16:00:00.000Z
 location:
-  description: Chez une famille heureuse
+  description: At One Happy Family
 ---
 
-Vous pouvez acheter ici des articles hygiéniques et sanitaires en utilisant des tirs (visitez la One Happy Family Bank pour obtenir vos tirs)
+Here you can buy hygiene and sanitary items using drachmas (visit the One Happy Family Bank to get your drachmas)
