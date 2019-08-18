@@ -1,4 +1,4 @@
 ---
-title: Barbe / queue
+title: Barber / tailor
 ---
 
