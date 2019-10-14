@@ -3,7 +3,7 @@ title: Kickboxing for kids
 cover: /img/kickboxing-1.jpg
 categories:
   - Sports/ Gym
-  - Children
+  - Children/ teenagers
 openingTimes:
   - 
     close: 2019-06-20T11:00:00.000Z
