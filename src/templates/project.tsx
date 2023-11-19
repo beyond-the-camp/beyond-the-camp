@@ -1,6 +1,8 @@
 import * as React from 'react';
 
-import { graphql } from 'gatsby';
+import { HeadProps, PageProps, graphql } from 'gatsby';
+import { getTextDirection } from '../utils/languages';
+import { LocaleType } from '../utils/types';
 
 import { HeroMedia } from '../components/HeroTitle';
 import {
@@ -8,9 +10,8 @@ import {
   Layout,
   OpeningTimes,
   Location,
-  Information
+  Information,
 } from '../components';
-import { LocaleType } from '../utils/types';
 
 interface OpeningTime {
   day: string;
@@ -83,30 +84,26 @@ export const projectQuery = graphql`
 `;
 
 interface ProjectQueryResult {
-  data: {
-    project: {
-      fields: {
-        slug: string;
-        language: LocaleType;
-      };
-      frontmatter: {
-        title: string;
-        cover: HeroMedia;
-        categories: string[];
-        openingTimes: OpeningTime[];
-        location?: {
-          description: string;
-        };
-      };
-      html: string;
+  project: {
+    fields: {
+      slug: string;
+      language: LocaleType;
     };
+    frontmatter: {
+      title: string;
+      cover: HeroMedia;
+      categories: string[];
+      openingTimes: OpeningTime[];
+      location?: {
+        description: string;
+      };
+    };
+    html: string;
   };
 }
 
-const Project = (props: ProjectQueryResult) => {
-  const {
-    data: { project }
-  } = props;
+const Project = ({ data }: PageProps<ProjectQueryResult>) => {
+  const project = data.project;
   const { html, frontmatter, fields } = project;
   const { title, cover, openingTimes, location } = frontmatter;
 
@@ -124,3 +121,18 @@ const Project = (props: ProjectQueryResult) => {
 };
 
 export default Project;
+
+export const Head = ({ data }: HeadProps<ProjectQueryResult>) => {
+  const language = data.project.fields.language;
+
+  return (
+    <>
+      <title>BeyondMoria</title>
+      <html lang={language} dir={getTextDirection(language)} />
+      <link
+        href="https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap"
+        rel="stylesheet"
+      />
+    </>
+  );
+};

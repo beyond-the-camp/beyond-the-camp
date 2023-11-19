@@ -1,11 +1,11 @@
 import * as React from 'react';
 
 import { graphql } from 'gatsby';
-import Img, { FluidObject } from 'gatsby-image';
+import { GatsbyImage, IGatsbyImageData } from 'gatsby-plugin-image';
 
 export interface HeroMedia {
   childImageSharp: {
-    fluid: FluidObject;
+    gatsbyImageData: IGatsbyImageData;
   };
 }
 
@@ -23,9 +23,14 @@ export const HeroTitle = ({ media, title }: Props) => (
     <div className="absolute inset-0">
       {media &&
         (isFluidMedia(media) ? (
-          <Img className="w-full h-full" fluid={media.childImageSharp.fluid} />
+          <GatsbyImage
+            alt="Hero image"
+            image={media.childImageSharp.gatsbyImageData}
+            className="w-full h-full"
+          />
         ) : (
           <img
+            alt=""
             className="absolute top-0 left-0 object-cover object-center w-full h-full"
             src={media}
           />
@@ -44,9 +49,7 @@ export const HeroTitle = ({ media, title }: Props) => (
 export const query = graphql`
   fragment HeroMediaFragment on File {
     childImageSharp {
-      fluid(maxWidth: 1000) {
-        ...GatsbyImageSharpFluid
-      }
+      gatsbyImageData(layout: FULL_WIDTH)
     }
   }
 `;

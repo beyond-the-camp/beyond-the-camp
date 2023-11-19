@@ -1,10 +1,6 @@
-/** @type {import('tailwindcss').Config} */
+/*eslint-env node*/
+
 module.exports = {
-  content: [
-    "./src/pages/*.{js,jsx,ts,tsx}",
-    "./src/templates/*.{js,jsx,ts,tsx}",
-    "./src/components/**/*.{js,jsx,ts,tsx}"
-  ],
   theme: {
     extend: {
       colors: {
@@ -30,8 +26,10 @@ module.exports = {
         '2': '2 2 0%',
         '3': '3 3 0%'
       }
-    },
+    }
   },
-  plugins: [],
-}
-
+  variants: {
+    opacity: ['responsive', 'hover']
+  },
+  plugins: []
+};

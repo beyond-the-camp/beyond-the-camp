@@ -1,9 +1,7 @@
-@responsive {
-  @variants hover {
-    .c-elevate {
-      transform: translateY(-5px);
-      box-shadow: 3px 7px 12px #e4e4e4;
-      transition: 0.4s ease-out all;
-    }
+@layer components {
+  .c-elevate {
+    transform: translateY(-5px);
+    box-shadow: 3px 7px 12px #e4e4e4;
+    transition: 0.4s ease-out all;
   }
 }
