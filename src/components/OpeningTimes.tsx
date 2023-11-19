@@ -2,14 +2,14 @@ import * as React from 'react';
 
 import { FormattedMessage, FormattedTime } from 'react-intl';
 
-interface OpeningTimes {
+interface OpeningTimesData {
   day: string;
   open: string;
   close: string;
 }
 
 interface Props {
-  days: OpeningTimes[];
+  days: OpeningTimesData[];
 }
 
 export const OpeningTimes = ({ days }: Props) => (
@@ -19,7 +19,7 @@ export const OpeningTimes = ({ days }: Props) => (
     </h3>
     {days &&
       days
-        .filter(day => day.day && day.open && day.close)
+        .filter((day) => day.day && day.open && day.close)
         .map((day, index, days) => {
           const prevDay = index > 0 ? days[index - 1].day : undefined;
           const isSameDay = day.day === prevDay;

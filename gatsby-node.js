@@ -2,13 +2,11 @@
 
 const { createFilePath } = require(`gatsby-source-filesystem`);
 const path = require(`path`);
-const { fmImagesToRelative } = require('gatsby-remark-relative-images');
 const { getLocaleList } = require('./src/utils/languages');
 // const routes = require('./src/utils/routes');
 
 exports.onCreateNode = ({ node, getNode, actions }) => {
   const { createNodeField } = actions;
-  fmImagesToRelative(node); // convert image paths for gatsby images
 
   if (node.internal.type === `MarkdownRemark`) {
     const slug = createFilePath({

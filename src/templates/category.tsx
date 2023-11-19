@@ -1,9 +1,10 @@
 import * as React from 'react';
 
-import { graphql, Link } from 'gatsby';
+import { graphql, HeadProps, Link } from 'gatsby';
 
 import { Layout, ListCard } from '../components';
 import { LocaleType } from '../utils/types';
+import { getTextDirection } from '../utils/languages';
 
 interface ProjectNode {
   id: string;
@@ -28,6 +29,23 @@ interface Props {
     category: string;
   };
 }
+
+export const Head = ({
+  pageContext,
+}: HeadProps<unknown, Props['pageContext']>) => {
+  const { language } = pageContext;
+
+  return (
+    <>
+      <title>BeyondMoria</title>
+      <html lang={language} dir={getTextDirection(language)} />
+      <link
+        href="https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap"
+        rel="stylesheet"
+      />
+    </>
+  );
+};
 
 const Category = (props: Props) => {
   const { data, pageContext } = props;
